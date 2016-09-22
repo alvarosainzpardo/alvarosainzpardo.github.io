@@ -52,13 +52,28 @@
         },
         {
             "location": "/vim/",
-            "text": "Vim",
+            "text": "Vim\n\n\n\n\n.vimrc\n\n\nPlugin manager\n\n\nPlugins",
             "title": "Vim"
         },
         {
             "location": "/vim/#vim",
             "text": "",
             "title": "Vim"
+        },
+        {
+            "location": "/vim/#vimrc",
+            "text": "",
+            "title": ".vimrc"
+        },
+        {
+            "location": "/vim/#plugin-manager",
+            "text": "",
+            "title": "Plugin manager"
+        },
+        {
+            "location": "/vim/#plugins",
+            "text": "",
+            "title": "Plugins"
         }
     ]
 }
