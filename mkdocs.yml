@@ -1,0 +1,7 @@
+site_name: Documentación de Alvaro
+remote_branch: master
+theme: flatly
+pages:
+- Home: index.md
+- Video: video.md
+- Vim: vim.md
