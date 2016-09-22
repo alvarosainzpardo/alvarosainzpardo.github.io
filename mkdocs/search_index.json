@@ -1,6 +1,26 @@
 {
     "docs": [
         {
+            "location": "/",
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Home"
+        },
+        {
+            "location": "/#welcome-to-mkdocs",
+            "text": "For full documentation visit  mkdocs.org .",
+            "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/#commands",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Commands"
+        },
+        {
+            "location": "/#project-layout",
+            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "title": "Project layout"
+        },
+        {
             "location": "/video/",
             "text": "Video\n\n\n\n\nTest de velocidad de conexi\u00f3n a Internet\n\n\nEl test de velocidad que Netflix recomienda en su documentaci\u00f3n es \nFast\n.\n\n\nAncho de banda\n\n\n\n\nCalidad SD: recomendado 3Mbits/s\n\n\nCalidad HD: recomendado 5Mbits/s\n\n\nCalidad UltraHD: recomentado 25Mbits/s\n\n\n\n\nCalidades\n\n\nHD\n\n\nResoluci\u00f3n horizontal de 720p o 1080p.",
             "title": "Video"
