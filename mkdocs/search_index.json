@@ -52,7 +52,7 @@
         },
         {
             "location": "/brew/",
-            "text": "Homebrew\n\n\n\n\nComandos\n\n\nActualizar la versi\u00f3n de brew y la informaci\u00f3n de paquetes\n\n\nbrew update\n\n\n\n\nActualizar los paquetes instalados\n\n\nbrew upgrade",
+            "text": "Homebrew\n\n\n\n\nComandos\n\n\nActualizar la versi\u00f3n de brew y la informaci\u00f3n de paquetes\n\n\n$ brew update\n\n\n\n\nActualizar los paquetes instalados\n\n\n$ brew upgrade",
             "title": "Homebrew"
         },
         {
@@ -62,18 +62,8 @@
         },
         {
             "location": "/brew/#comandos",
-            "text": "",
+            "text": "Actualizar la versi\u00f3n de brew y la informaci\u00f3n de paquetes  $ brew update  Actualizar los paquetes instalados  $ brew upgrade",
             "title": "Comandos"
-        },
-        {
-            "location": "/brew/#actualizar-la-version-de-brew-y-la-informacion-de-paquetes",
-            "text": "brew update",
-            "title": "Actualizar la versi\u00f3n de brew y la informaci\u00f3n de paquetes"
-        },
-        {
-            "location": "/brew/#actualizar-los-paquetes-instalados",
-            "text": "brew upgrade",
-            "title": "Actualizar los paquetes instalados"
         },
         {
             "location": "/vim/",
