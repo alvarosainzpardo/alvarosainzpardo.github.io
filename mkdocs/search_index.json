@@ -51,6 +51,31 @@
             "title": "HD"
         },
         {
+            "location": "/brew/",
+            "text": "Homebrew\n\n\n\n\nComandos\n\n\nActualizar la versi\u00f3n de brew y la informaci\u00f3n de paquetes\n\n\nbrew update\n\n\n\n\nActualizar los paquetes instalados\n\n\nbrew upgrade",
+            "title": "Homebrew"
+        },
+        {
+            "location": "/brew/#homebrew",
+            "text": "",
+            "title": "Homebrew"
+        },
+        {
+            "location": "/brew/#comandos",
+            "text": "",
+            "title": "Comandos"
+        },
+        {
+            "location": "/brew/#actualizar-la-version-de-brew-y-la-informacion-de-paquetes",
+            "text": "brew update",
+            "title": "Actualizar la versi\u00f3n de brew y la informaci\u00f3n de paquetes"
+        },
+        {
+            "location": "/brew/#actualizar-los-paquetes-instalados",
+            "text": "brew upgrade",
+            "title": "Actualizar los paquetes instalados"
+        },
+        {
             "location": "/vim/",
             "text": "Vim\n\n\n\n\n.vimrc\n\n\n\n\nPlugin manager\n\n\n\n\nPlugins",
             "title": "Vim"
