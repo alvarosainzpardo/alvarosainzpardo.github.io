@@ -82,7 +82,7 @@
         },
         {
             "location": "/vim/",
-            "text": "Vim\n\n\n\n\n.vimrc\n\n\n\n\nMapeo de teclas\n\n\nMapeo de teclas del sistema en macOSX\n\n\nEn muchos tutoriales sobre vim en macOSX se recomienda mapear la tecla CAPSLOCK por ESC. El motivo es que la tecla ESC en el teclado del mac est\u00e1 muy lejos en la esquina superior izquierda, es muy peque\u00f1a y es una tecla muy usada en vim. AVISO: Este mapeo no se puede hacer dentro de vim, se tiene que hacer a nivel de sistema operativo. De esta forma, el mapeo afectar\u00e1 al funcionamiento de todo el sistema, no \u00fanicamente la aplicaci\u00f3n vim.\n\n\nNo tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuaci\u00f3n el programa para realizarlo, para referencia futura.\n\n\nEl programa para mapear la tecla CAPSLOCK es \nSeil\n. El mismo desarrollador tiene otra utilidad para hacer mapeos m\u00e1s generales de teclado llamada \nKarabiner\n.\n\n\n\n\nPlugin manager\n\n\n\n\nPlugins",
+            "text": "Vim\n\n\n\n\n.vimrc\n\n\n\n\nMapeo de teclas\n\n\nMapeo de teclas del sistema en OSX\n\n\nEn muchos tutoriales sobre vim en OSX se recomienda mapear la tecla \nCaps Lock\n por \nEsc\n. El motivo es que la tecla \nEsc\n en el teclado del mac est\u00e1 muy lejos en la esquina superior izquierda, es muy peque\u00f1a y es una tecla muy usada en vim. AVISO: Este mapeo no se puede hacer dentro de vim, se tiene que hacer a nivel de sistema operativo. De esta forma, el mapeo afectar\u00e1 al funcionamiento de todo el sistema, no \u00fanicamente la aplicaci\u00f3n vim.\n\n\nNo tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuaci\u00f3n el programa para realizarlo, para referencia futura.\n\n\nEl programa para mapear la tecla \nCaps Lock\n es \nSeil\n. El mismo desarrollador tiene otra utilidad para hacer mapeos m\u00e1s generales de teclado llamada \nKarabiner\n.\n\n\n\n\nPlugin manager\n\n\n\n\nPlugins",
             "title": "Vim"
         },
         {
@@ -101,9 +101,9 @@
             "title": "Mapeo de teclas"
         },
         {
-            "location": "/vim/#mapeo-de-teclas-del-sistema-en-macosx",
-            "text": "En muchos tutoriales sobre vim en macOSX se recomienda mapear la tecla CAPSLOCK por ESC. El motivo es que la tecla ESC en el teclado del mac est\u00e1 muy lejos en la esquina superior izquierda, es muy peque\u00f1a y es una tecla muy usada en vim. AVISO: Este mapeo no se puede hacer dentro de vim, se tiene que hacer a nivel de sistema operativo. De esta forma, el mapeo afectar\u00e1 al funcionamiento de todo el sistema, no \u00fanicamente la aplicaci\u00f3n vim.  No tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuaci\u00f3n el programa para realizarlo, para referencia futura.  El programa para mapear la tecla CAPSLOCK es  Seil . El mismo desarrollador tiene otra utilidad para hacer mapeos m\u00e1s generales de teclado llamada  Karabiner .",
-            "title": "Mapeo de teclas del sistema en macOSX"
+            "location": "/vim/#mapeo-de-teclas-del-sistema-en-osx",
+            "text": "En muchos tutoriales sobre vim en OSX se recomienda mapear la tecla  Caps Lock  por  Esc . El motivo es que la tecla  Esc  en el teclado del mac est\u00e1 muy lejos en la esquina superior izquierda, es muy peque\u00f1a y es una tecla muy usada en vim. AVISO: Este mapeo no se puede hacer dentro de vim, se tiene que hacer a nivel de sistema operativo. De esta forma, el mapeo afectar\u00e1 al funcionamiento de todo el sistema, no \u00fanicamente la aplicaci\u00f3n vim.  No tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuaci\u00f3n el programa para realizarlo, para referencia futura.  El programa para mapear la tecla  Caps Lock  es  Seil . El mismo desarrollador tiene otra utilidad para hacer mapeos m\u00e1s generales de teclado llamada  Karabiner .",
+            "title": "Mapeo de teclas del sistema en OSX"
         },
         {
             "location": "/vim/#plugin-manager",
