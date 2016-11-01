@@ -6,7 +6,11 @@ Este sitio web está hecho con MkDocs. Para más información, visitar [mkdocs.o
 
 ---
 
-## Commands
+## Guia de MkDocs
+
+* `mkdocs gh-deploy --clean` - Desplegar/Actualizar la documentación en Github.
+
+## Otros comandos
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
