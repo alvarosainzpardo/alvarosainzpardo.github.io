@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/",
-            "text": "Documentaci\u00f3n de Alvaro Sainz-Pardo.\n\n\nDocumentaci\u00f3n y apuntes sobre temas diversos, relacionados con trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programaci\u00f3n.\n\n\nEste sitio web est\u00e1 hecho con MkDocs. Para m\u00e1s informaci\u00f3n, visitar\n\n\nmkdocs.org\n.\n\n\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "Documentaci\u00f3n de Alvaro Sainz-Pardo.\n\n\nDocumentaci\u00f3n y apuntes sobre temas diversos, relacionados con mi trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programaci\u00f3n.\n\n\nEste sitio web est\u00e1 hecho con MkDocs. Para m\u00e1s informaci\u00f3n, visitar \nmkdocs.org\n.\n\n\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
             "title": "Home"
         },
         {
             "location": "/#documentacion-de-alvaro-sainz-pardo",
-            "text": "Documentaci\u00f3n y apuntes sobre temas diversos, relacionados con trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programaci\u00f3n.  Este sitio web est\u00e1 hecho con MkDocs. Para m\u00e1s informaci\u00f3n, visitar  mkdocs.org .",
+            "text": "Documentaci\u00f3n y apuntes sobre temas diversos, relacionados con mi trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programaci\u00f3n.  Este sitio web est\u00e1 hecho con MkDocs. Para m\u00e1s informaci\u00f3n, visitar  mkdocs.org .",
             "title": "Documentaci\u00f3n de Alvaro Sainz-Pardo."
         },
         {
