@@ -8,16 +8,20 @@ Este sitio web está hecho con MkDocs. Para más información, visitar [mkdocs.o
 
 ## Guia de MkDocs
 
-* `mkdocs gh-deploy --clean` - Desplegar/Actualizar la documentación en Github.
+Esta documentación la mantengo en Github Pages, en el repositorio correspondiente al Github Pages de mi cuenta, o sea el repositorio alvarosainzpardo.github.io. En este repositorio tengo dos ramas (branches). La rama `master` es la que gestiona MkDocs. Los archivos fuente de la documentación los tengo en la rama `docs`.
 
-## Otros comandos
+### Comandos principales de MkDocs
+
+* `mkdocs gh-deploy --clean` - Desplegar/Actualizar la documentación MkDocs en Github.
+
+### Otros comandos
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
 * `mkdocs help` - Print this help message.
 
-## Project layout
+### Project layout
 
     mkdocs.yml    # The configuration file.
     docs/
