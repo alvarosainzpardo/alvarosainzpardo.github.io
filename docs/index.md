@@ -1,6 +1,9 @@
-# Welcome to MkDocs
+# Documentación de Alvaro Sainz-Pardo.
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+Documentación y apuntes sobre temas diversos, relacionados con trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programación.
+
+Este sitio web está hecho con MkDocs. Para más información, visitar  
+[mkdocs.org](http://mkdocs.org).
 
 ---
 
