@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Documentaci\u00f3n de Alvaro Sainz-Pardo.\n\n\nDocumentaci\u00f3n y apuntes sobre temas diversos, relacionados con mi trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programaci\u00f3n.\n\n\nEste sitio web est\u00e1 hecho con MkDocs. Para m\u00e1s informaci\u00f3n, visitar \nmkdocs.org\n.\n\n\n\n\nGuia de MkDocs\n\n\n\n\nmkdocs gh-deploy --clean\n - Desplegar/Actualizar la documentaci\u00f3n en Github.\n\n\n\n\nOtros comandos\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "Documentaci\u00f3n de Alvaro Sainz-Pardo.\n\n\nDocumentaci\u00f3n y apuntes sobre temas diversos, relacionados con mi trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programaci\u00f3n.\n\n\nEste sitio web est\u00e1 hecho con MkDocs. Para m\u00e1s informaci\u00f3n, visitar \nmkdocs.org\n.\n\n\n\n\nGuia de MkDocs\n\n\nEsta documentaci\u00f3n la mantengo en Github Pages, en el repositorio correspondiente al Github Pages de mi cuenta, o sea el repositorio alvarosainzpardo.github.io. En este repositorio tengo dos ramas (branches). La rama \nmaster\n es la que gestiona MkDocs. Los archivos fuente de la documentaci\u00f3n los tengo en la rama \ndocs\n.\n\n\nComandos principales de MkDocs\n\n\n\n\nmkdocs gh-deploy --clean\n - Desplegar/Actualizar la documentaci\u00f3n en Github.\n\n\n\n\nOtros comandos\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
             "title": "Home"
         },
         {
@@ -12,8 +12,13 @@
         },
         {
             "location": "/#guia-de-mkdocs",
-            "text": "mkdocs gh-deploy --clean  - Desplegar/Actualizar la documentaci\u00f3n en Github.",
+            "text": "Esta documentaci\u00f3n la mantengo en Github Pages, en el repositorio correspondiente al Github Pages de mi cuenta, o sea el repositorio alvarosainzpardo.github.io. En este repositorio tengo dos ramas (branches). La rama  master  es la que gestiona MkDocs. Los archivos fuente de la documentaci\u00f3n los tengo en la rama  docs .",
             "title": "Guia de MkDocs"
+        },
+        {
+            "location": "/#comandos-principales-de-mkdocs",
+            "text": "mkdocs gh-deploy --clean  - Desplegar/Actualizar la documentaci\u00f3n en Github.",
+            "title": "Comandos principales de MkDocs"
         },
         {
             "location": "/#otros-comandos",
