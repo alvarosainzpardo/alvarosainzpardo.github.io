@@ -1,7 +1,11 @@
 site_name: Documentación de Alvaro
 remote_branch: master
-theme: flatly
+theme: mkdocs
 pages:
 - Home: index.md
-- Video: video.md
-- Vim: vim.md
+- Trabajo:
+  - Video: video.md
+  - Espacios Digitales: espacios_digitales.md
+- Personal:
+  - Homebrew: brew.md
+  - Vim: vim.md
