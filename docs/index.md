@@ -21,7 +21,7 @@ Esta documentación la mantengo en Github Pages, en el repositorio correspondien
 * `mkdocs build` - Build the documentation site.
 * `mkdocs help` - Print this help message.
 
-### Project layout
+### Estructura del proyecto
 
     mkdocs.yml    # The configuration file.
     docs/
