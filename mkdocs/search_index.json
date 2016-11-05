@@ -77,7 +77,7 @@
         },
         {
             "location": "/markdown/",
-            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\n(Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]\n\n\n(Mastering Markdown)[https://guides.github.com/features/mastering-markdown/]\n\n\n\n\nCabeceras\n\n\n# Esto es una cabecera <H1>\n## Esto es una cabecera <H2>\n### Esto es una cabecera <H3>\n#### Esto es una cabecera <H4>\n##### Esto es una cabecera <H5>\n###### Esto es una cabecera\n\n\n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera",
+            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\n(Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]\n\n\n(Mastering Markdown)[https://guides.github.com/features/mastering-markdown/]\n\n\n\n\nCabeceras\n\n\n# Esto es una cabecera <H1>\n## Esto es una cabecera <H2>\n### Esto es una cabecera <H3>\n#### Esto es una cabecera <H4>\n##### Esto es una cabecera <H5>\n###### Esto es una cabecera <H6>\n\n\n\n\nEsto es una cabecera \\<H1>\n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera",
             "title": "Markdown"
         },
         {
@@ -92,8 +92,13 @@
         },
         {
             "location": "/markdown/#cabeceras",
-            "text": "# Esto es una cabecera <H1>\n## Esto es una cabecera <H2>\n### Esto es una cabecera <H3>\n#### Esto es una cabecera <H4>\n##### Esto es una cabecera <H5>\n###### Esto es una cabecera",
+            "text": "# Esto es una cabecera <H1>\n## Esto es una cabecera <H2>\n### Esto es una cabecera <H3>\n#### Esto es una cabecera <H4>\n##### Esto es una cabecera <H5>\n###### Esto es una cabecera <H6>",
             "title": "Cabeceras"
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera-h162",
+            "text": "",
+            "title": "Esto es una cabecera \\&lt;H1>"
         },
         {
             "location": "/markdown/#esto-es-una-cabecera",
@@ -117,11 +122,6 @@
         },
         {
             "location": "/markdown/#esto-es-una-cabecera_4",
-            "text": "",
-            "title": "Esto es una cabecera "
-        },
-        {
-            "location": "/markdown/#esto-es-una-cabecera_5",
             "text": "",
             "title": "Esto es una cabecera "
         },
