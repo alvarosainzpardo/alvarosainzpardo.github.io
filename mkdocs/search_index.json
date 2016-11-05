@@ -77,7 +77,7 @@
         },
         {
             "location": "/markdown/",
-            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\nMarkdown Cheatsheet\n\n\nMastering Markdown\n\n\n\n\nCabeceras\n\n\n\n\n# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n\n\n\n\nH1\n\n\nH2\n\n\nH3\n\n\nH4\n\n\nH5\n\n\nH6",
+            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\nMarkdown Cheatsheet\n\n\nMastering Markdown\n\n\n\n\nCabeceras\n\n\n# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n\n\n\n\nH1\n\n\nH2\n\n\nH3\n\n\nH4\n\n\nH5\n\n\nH6\n\n\n\u00c9nfasis\n\n\nEl texto en it\u00e1lica, con \nasteriscos\n o \nguiones bajos\n.\n\n\nEl texto en negrita, con \ndos asteriscos\n o \ndos guiones bajos\n.\n\n\nSe puede combinar la negrita y la it\u00e1lica, con \nasteriscos y \nguiones bajos\n.\n\n\nEl texto tachado, con ~~dos tildes~~.",
             "title": "Markdown"
         },
         {
@@ -124,6 +124,11 @@
             "location": "/markdown/#h6",
             "text": "",
             "title": "H6"
+        },
+        {
+            "location": "/markdown/#enfasis",
+            "text": "El texto en it\u00e1lica, con  asteriscos  o  guiones bajos .  El texto en negrita, con  dos asteriscos  o  dos guiones bajos .  Se puede combinar la negrita y la it\u00e1lica, con  asteriscos y  guiones bajos .  El texto tachado, con ~~dos tildes~~.",
+            "title": "\u00c9nfasis"
         },
         {
             "location": "/brew/",
