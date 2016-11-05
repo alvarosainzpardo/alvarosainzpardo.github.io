@@ -77,7 +77,7 @@
         },
         {
             "location": "/markdown/",
-            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\n(Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]\n\n\n(Mastering Markdown)[https://guides.github.com/features/mastering-markdown/]\n\n\n\n\nCabeceras\n\n\nH1\n\n\nH2\n\n\nH3\n\n\nH4\n\n\nH5\n\n\nH6",
+            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\n(Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]\n\n\n(Mastering Markdown)[https://guides.github.com/features/mastering-markdown/]\n\n\n\n\nCabeceras\n\n\nCabecera H1\n\n\nCabecera H2\n\n\nCabecera H3\n\n\nCabecera H4\n\n\nCabecera H5\n\n\nCabecera H6",
             "title": "Markdown"
         },
         {
@@ -96,34 +96,34 @@
             "title": "Cabeceras"
         },
         {
-            "location": "/markdown/#h1",
+            "location": "/markdown/#cabecera-h1",
             "text": "",
-            "title": "H1"
+            "title": "Cabecera H1"
         },
         {
-            "location": "/markdown/#h2",
+            "location": "/markdown/#cabecera-h2",
             "text": "",
-            "title": "H2"
+            "title": "Cabecera H2"
         },
         {
-            "location": "/markdown/#h3",
+            "location": "/markdown/#cabecera-h3",
             "text": "",
-            "title": "H3"
+            "title": "Cabecera H3"
         },
         {
-            "location": "/markdown/#h4",
+            "location": "/markdown/#cabecera-h4",
             "text": "",
-            "title": "H4"
+            "title": "Cabecera H4"
         },
         {
-            "location": "/markdown/#h5",
+            "location": "/markdown/#cabecera-h5",
             "text": "",
-            "title": "H5"
+            "title": "Cabecera H5"
         },
         {
-            "location": "/markdown/#h6",
+            "location": "/markdown/#cabecera-h6",
             "text": "",
-            "title": "H6"
+            "title": "Cabecera H6"
         },
         {
             "location": "/brew/",
