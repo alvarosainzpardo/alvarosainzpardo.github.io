@@ -76,6 +76,11 @@
             "title": "Omnicanalidad y cliente omnicanal"
         },
         {
+            "location": "/markdown/",
+            "text": "",
+            "title": "Markdown"
+        },
+        {
             "location": "/brew/",
             "text": "Homebrew\n\n\n\n\nComandos\n\n\nActualizar la versi\u00f3n de brew y la informaci\u00f3n de paquetes\n\n\n$ brew update\n\n\n\n\nActualizar los paquetes instalados\n\n\n$ brew upgrade",
             "title": "Homebrew"
