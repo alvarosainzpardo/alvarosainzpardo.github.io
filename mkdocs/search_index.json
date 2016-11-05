@@ -77,8 +77,83 @@
         },
         {
             "location": "/markdown/",
-            "text": "",
+            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\n(Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]\n\n\n(Mastering Markdown)[https://guides.github.com/features/mastering-markdown/]\n\n\n\n\nCabeceras\n\n\n\u00b4\u00b4\u00b4\n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera\n\n\n\u00b4\u00b4\u00b4\n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera",
             "title": "Markdown"
+        },
+        {
+            "location": "/markdown/#referencia-rapida-de-markdown",
+            "text": "",
+            "title": "Referencia r\u00e1pida de Markdown"
+        },
+        {
+            "location": "/markdown/#enlaces",
+            "text": "Hay buenos tutoriales de Markdown en:   (Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]  (Mastering Markdown)[https://guides.github.com/features/mastering-markdown/]",
+            "title": "Enlaces"
+        },
+        {
+            "location": "/markdown/#cabeceras",
+            "text": "\u00b4\u00b4\u00b4",
+            "title": "Cabeceras"
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_1",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_2",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_3",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_4",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_5",
+            "text": "\u00b4\u00b4\u00b4",
+            "title": "Esto es una cabecera"
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_6",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_7",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_8",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_9",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_10",
+            "text": "",
+            "title": "Esto es una cabecera "
+        },
+        {
+            "location": "/markdown/#esto-es-una-cabecera_11",
+            "text": "",
+            "title": "Esto es una cabecera "
         },
         {
             "location": "/brew/",
