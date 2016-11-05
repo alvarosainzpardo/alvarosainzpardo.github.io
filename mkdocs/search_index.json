@@ -77,7 +77,7 @@
         },
         {
             "location": "/markdown/",
-            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\n(Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]\n\n\n(Mastering Markdown)[https://guides.github.com/features/mastering-markdown/]\n\n\n\n\nCabeceras\n\n\n# Esto es una cabecera <H1>\n## Esto es una cabecera <H2>\n### Esto es una cabecera <H3>\n#### Esto es una cabecera <H4>\n##### Esto es una cabecera <H5>\n###### Esto es una cabecera <H6>\n\n\n\n\nEsto es una cabecera \\<H1>\n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera \n\n\nEsto es una cabecera",
+            "text": "Referencia r\u00e1pida de Markdown\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\n(Markdown Cheatsheet)[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet]\n\n\n(Mastering Markdown)[https://guides.github.com/features/mastering-markdown/]\n\n\n\n\nCabeceras\n\n\nH1\n\n\nH2\n\n\nH3\n\n\nH4\n\n\nH5\n\n\nH6",
             "title": "Markdown"
         },
         {
@@ -92,38 +92,38 @@
         },
         {
             "location": "/markdown/#cabeceras",
-            "text": "# Esto es una cabecera <H1>\n## Esto es una cabecera <H2>\n### Esto es una cabecera <H3>\n#### Esto es una cabecera <H4>\n##### Esto es una cabecera <H5>\n###### Esto es una cabecera <H6>",
+            "text": "",
             "title": "Cabeceras"
         },
         {
-            "location": "/markdown/#esto-es-una-cabecera-h162",
+            "location": "/markdown/#h1",
             "text": "",
-            "title": "Esto es una cabecera \\&lt;H1>"
+            "title": "H1"
         },
         {
-            "location": "/markdown/#esto-es-una-cabecera",
+            "location": "/markdown/#h2",
             "text": "",
-            "title": "Esto es una cabecera "
+            "title": "H2"
         },
         {
-            "location": "/markdown/#esto-es-una-cabecera_1",
+            "location": "/markdown/#h3",
             "text": "",
-            "title": "Esto es una cabecera "
+            "title": "H3"
         },
         {
-            "location": "/markdown/#esto-es-una-cabecera_2",
+            "location": "/markdown/#h4",
             "text": "",
-            "title": "Esto es una cabecera "
+            "title": "H4"
         },
         {
-            "location": "/markdown/#esto-es-una-cabecera_3",
+            "location": "/markdown/#h5",
             "text": "",
-            "title": "Esto es una cabecera "
+            "title": "H5"
         },
         {
-            "location": "/markdown/#esto-es-una-cabecera_4",
+            "location": "/markdown/#h6",
             "text": "",
-            "title": "Esto es una cabecera "
+            "title": "H6"
         },
         {
             "location": "/brew/",
