@@ -3,8 +3,8 @@
 
     
     <url>
-     <loc>/</loc>
-     <lastmod>2016-11-05</lastmod>
+     <loc>None/</loc>
+     <lastmod>2017-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,14 +12,14 @@
     
         
     <url>
-     <loc>/video/</loc>
-     <lastmod>2016-11-05</lastmod>
+     <loc>None/video/</loc>
+     <lastmod>2017-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/espacios_digitales/</loc>
-     <lastmod>2016-11-05</lastmod>
+     <loc>None/espacios_digitales/</loc>
+     <lastmod>2017-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -28,20 +28,14 @@
     
         
     <url>
-     <loc>/markdown/</loc>
-     <lastmod>2016-11-05</lastmod>
+     <loc>None/brew/</loc>
+     <lastmod>2017-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/brew/</loc>
-     <lastmod>2016-11-05</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/vim/</loc>
-     <lastmod>2016-11-05</lastmod>
+     <loc>None/vim/</loc>
+     <lastmod>2017-06-15</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
