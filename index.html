@@ -86,6 +86,12 @@
                         
                             
 <li >
+    <a href="markdown/">Markdown</a>
+</li>
+
+                        
+                            
+<li >
     <a href="brew/">Homebrew</a>
 </li>
 
@@ -134,9 +140,7 @@
     
         <li class="main active"><a href="#documentacion-de-alvaro-sainz-pardo">Documentación de Alvaro Sainz-Pardo.</a></li>
         
-            <li><a href="#commands">Commands</a></li>
-        
-            <li><a href="#project-layout">Project layout</a></li>
+            <li><a href="#guia-de-mkdocs">Guia de MkDocs</a></li>
         
     
     </ul>
@@ -147,14 +151,20 @@
 <p>Documentación y apuntes sobre temas diversos, relacionados con mi trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programación.</p>
 <p>Este sitio web está hecho con MkDocs. Para más información, visitar <a href="http://mkdocs.org">mkdocs.org</a>.</p>
 <hr />
-<h2 id="commands">Commands</h2>
+<h2 id="guia-de-mkdocs">Guia de MkDocs</h2>
+<p>Esta documentación la mantengo en Github Pages, en el repositorio correspondiente al Github Pages de mi cuenta, o sea el repositorio alvarosainzpardo.github.io. En este repositorio tengo dos ramas (branches). La rama <code>master</code> es la que gestiona MkDocs. Los archivos fuente de la documentación los tengo en la rama <code>docs</code>.</p>
+<h3 id="comandos-principales-de-mkdocs">Comandos principales de MkDocs</h3>
+<ul>
+<li><code>mkdocs gh-deploy --clean</code> - Desplegar/Actualizar la documentación MkDocs en Github.</li>
+</ul>
+<h3 id="otros-comandos">Otros comandos</h3>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
 <li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
 <li><code>mkdocs build</code> - Build the documentation site.</li>
 <li><code>mkdocs help</code> - Print this help message.</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
+<h3 id="estructura-del-proyecto">Estructura del proyecto</h3>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
@@ -206,5 +216,5 @@ docs/
 
 <!--
 MkDocs version : 0.15.3
-Build Date UTC : 2017-06-15 13:58:40.376006
+Build Date UTC : 2017-06-15 14:43:29.723162
 -->

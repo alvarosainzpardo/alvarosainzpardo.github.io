@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Documentaci\u00f3n de Alvaro Sainz-Pardo.\n\n\nDocumentaci\u00f3n y apuntes sobre temas diversos, relacionados con mi trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programaci\u00f3n.\n\n\nEste sitio web est\u00e1 hecho con MkDocs. Para m\u00e1s informaci\u00f3n, visitar \nmkdocs.org\n.\n\n\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "Documentaci\u00f3n de Alvaro Sainz-Pardo.\n\n\nDocumentaci\u00f3n y apuntes sobre temas diversos, relacionados con mi trabajo o con intereses personales, fundamentalmente herramientas de desarrollo y lenguajes de programaci\u00f3n.\n\n\nEste sitio web est\u00e1 hecho con MkDocs. Para m\u00e1s informaci\u00f3n, visitar \nmkdocs.org\n.\n\n\n\n\nGuia de MkDocs\n\n\nEsta documentaci\u00f3n la mantengo en Github Pages, en el repositorio correspondiente al Github Pages de mi cuenta, o sea el repositorio alvarosainzpardo.github.io. En este repositorio tengo dos ramas (branches). La rama \nmaster\n es la que gestiona MkDocs. Los archivos fuente de la documentaci\u00f3n los tengo en la rama \ndocs\n.\n\n\nComandos principales de MkDocs\n\n\n\n\nmkdocs gh-deploy --clean\n - Desplegar/Actualizar la documentaci\u00f3n MkDocs en Github.\n\n\n\n\nOtros comandos\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nEstructura del proyecto\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
             "title": "Home"
         },
         {
@@ -11,18 +11,28 @@
             "title": "Documentaci\u00f3n de Alvaro Sainz-Pardo."
         },
         {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
+            "location": "/#guia-de-mkdocs",
+            "text": "Esta documentaci\u00f3n la mantengo en Github Pages, en el repositorio correspondiente al Github Pages de mi cuenta, o sea el repositorio alvarosainzpardo.github.io. En este repositorio tengo dos ramas (branches). La rama  master  es la que gestiona MkDocs. Los archivos fuente de la documentaci\u00f3n los tengo en la rama  docs .",
+            "title": "Guia de MkDocs"
         },
         {
-            "location": "/#project-layout",
+            "location": "/#comandos-principales-de-mkdocs",
+            "text": "mkdocs gh-deploy --clean  - Desplegar/Actualizar la documentaci\u00f3n MkDocs en Github.",
+            "title": "Comandos principales de MkDocs"
+        },
+        {
+            "location": "/#otros-comandos",
+            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
+            "title": "Otros comandos"
+        },
+        {
+            "location": "/#estructura-del-proyecto",
             "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Project layout"
+            "title": "Estructura del proyecto"
         },
         {
             "location": "/video/",
-            "text": "Video\n\n\n\n\nRecursos, documentaci\u00f3n, enlaces\n\n\nEn la web de documentaci\u00f3n \nMedium\n hay un articulo de Arpad Kuni, director de operaciones de red de Ustream, introductorio y divulgativo sobre algunos temas b\u00e1sicos de streaming. El art\u00edculo, titulado \nEnterprise Video Delivery - Where to start?\n est\u00e1 enfocado al streaming interno, por red corporativa, pero comenta conceptos de codificaci\u00f3n y protocolos, como HLS o MPEG-DASH.\n\n\nEl test de velocidad que Netflix recomienda en su documentaci\u00f3n es \nFast\n.\n\n\nAncho de banda\n\n\n\n\nCalidad SD: recomendado 3Mbits/s\n\n\nCalidad HD: recomendado 5Mbits/s\n\n\nCalidad UltraHD: recomentado 25Mbits/s\n\n\n\n\nCalidades\n\n\nHD\n\n\nResoluci\u00f3n horizontal de 720p o 1080p.",
+            "text": "Video\n\n\n\n\nRecursos, documentaci\u00f3n, enlaces\n\n\nEn la web de documentaci\u00f3n \nMedium\n hay un articulo de Arpad Kuni, director de operaciones de red de Ustream, introductorio y divulgativo sobre algunos temas b\u00e1sicos de streaming. El art\u00edculo, titulado \nEnterprise Video Delivery - Where to start?\n est\u00e1 enfocado al streaming interno, por red corporativa, pero comenta conceptos de codificaci\u00f3n y protocolos, como HLS o MPEG-DASH.\n\n\nNetflix\n\n\nEl test de velocidad que Netflix recomienda en su documentaci\u00f3n es \nFast\n.\n\n\nAncho de banda\n\n\n\n\nCalidad SD: recomendado 3Mbits/s\n\n\nCalidad HD: recomendado 5Mbits/s\n\n\nCalidad UltraHD: recomentado 25Mbits/s\n\n\n\n\nCalidades\n\n\nHD\n\n\nResoluci\u00f3n horizontal de 720p o 1080p.",
             "title": "Video"
         },
         {
@@ -32,8 +42,13 @@
         },
         {
             "location": "/video/#recursos-documentacion-enlaces",
-            "text": "En la web de documentaci\u00f3n  Medium  hay un articulo de Arpad Kuni, director de operaciones de red de Ustream, introductorio y divulgativo sobre algunos temas b\u00e1sicos de streaming. El art\u00edculo, titulado  Enterprise Video Delivery - Where to start?  est\u00e1 enfocado al streaming interno, por red corporativa, pero comenta conceptos de codificaci\u00f3n y protocolos, como HLS o MPEG-DASH.  El test de velocidad que Netflix recomienda en su documentaci\u00f3n es  Fast .",
+            "text": "En la web de documentaci\u00f3n  Medium  hay un articulo de Arpad Kuni, director de operaciones de red de Ustream, introductorio y divulgativo sobre algunos temas b\u00e1sicos de streaming. El art\u00edculo, titulado  Enterprise Video Delivery - Where to start?  est\u00e1 enfocado al streaming interno, por red corporativa, pero comenta conceptos de codificaci\u00f3n y protocolos, como HLS o MPEG-DASH.",
             "title": "Recursos, documentaci\u00f3n, enlaces"
+        },
+        {
+            "location": "/video/#netflix",
+            "text": "El test de velocidad que Netflix recomienda en su documentaci\u00f3n es  Fast .",
+            "title": "Netflix"
         },
         {
             "location": "/video/#ancho-de-banda",
@@ -64,6 +79,71 @@
             "location": "/espacios_digitales/#omnicanalidad-y-cliente-omnicanal",
             "text": "Ejemplos de soluciones en las que las empresas de retail est\u00e1n invirtiendo (seg\u00fan Retail Technology Study 2016) son plataformas software y proyectos de integraci\u00f3n que permiten a los clientes finales:   hacer compras online dentro de la tienda f\u00edsica  comprar o reservar art\u00edculos online y recogerlos en la tienda f\u00edsica  utilizar stock de art\u00edculos de la tienda f\u00edsica para cursar un pedido online",
             "title": "Omnicanalidad y cliente omnicanal"
+        },
+        {
+            "location": "/markdown/",
+            "text": "Referencia r\u00e1pida de Markdown\n\n\n\n\nEnlaces\n\n\nHay buenos tutoriales de Markdown en:\n\n\n\n\nMarkdown Cheatsheet\n\n\nMastering Markdown\n\n\n\n\n\n\nCabeceras\n\n\n# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6\n\n\n\n\nH1\n\n\nH2\n\n\nH3\n\n\nH4\n\n\nH5\n\n\nH6\n\n\n\n\nP\u00e1rrafos\n\n\n\nPara empezar un p\u00e1rrafo nuevo, se deja arriba una l\u00ednea en blanco. En otros elementos de Markdown (listas, l\u00edneas de separaci\u00f3n) tambi\u00e9n hay que poner una l\u00ednea en blanco encima.\n\nEste es otro p\u00e1rrafo.\nEsta es una l\u00ednea nueva sin dejar una l\u00ednea en blanco antes, esta l\u00ednea va a ir a continuaci\u00f3n de la anterior, como si no hubiese habido un salto de l\u00ednea.\n\nSi se quiere hacer un salto de l\u00ednea sin empezar un nuevo p\u00e1rrafo, se dejan dos espacios en blanco al final de la l\u00ednea anterior.  \nUna nueva l\u00ednea en el mismo p\u00e1rrafo.\n\n\n\n\nPara empezar un p\u00e1rrafo nuevo, se deja arriba una l\u00ednea en blanco. En otros elementos de Markdown (listas, l\u00edneas de separaci\u00f3n) tambi\u00e9n hay que poner una l\u00ednea en blanco encima.\n\n\nEste es otro p\u00e1rrafo.\nEsta es una l\u00ednea nueva sin dejar una l\u00ednea en blanco antes, esta l\u00ednea va a ir a continuaci\u00f3n de la anterior, como si no hubiese habido un salto de l\u00ednea.\n\n\nSi se quiere hacer un salto de l\u00ednea sin empezar un nuevo p\u00e1rrafo, se dejan dos espacios en blanco al final de la l\u00ednea anterior.\n\nUna nueva l\u00ednea en el mismo p\u00e1rrafo.\n\n\n\n\n\u00c9nfasis\n\n\nEl texto en *it\u00e1lica*, con *asteriscos* o _guiones bajos_.\n\nEl texto en **negrita**, con **dos asteriscos** o __dos guiones bajos__.\n\nSe puede combinar la **negrita** y la _it\u00e1lica_, con **asteriscos y _guiones bajos_**.\n\nEl texto tachado, con ~~dos tildes~~.\n\n\n\n\nEl texto en \nit\u00e1lica\n, con \nasteriscos\n o \nguiones bajos\n.\n\n\nEl texto en \nnegrita\n, con \ndos asteriscos\n o \ndos guiones bajos\n.\n\n\nSe puede combinar la \nnegrita\n y la \nit\u00e1lica\n, con \nasteriscos y \nguiones bajos\n.\n\n\nEl texto tachado, con ~~dos tildes~~.\n\n\n\n\nListas",
+            "title": "Markdown"
+        },
+        {
+            "location": "/markdown/#referencia-rapida-de-markdown",
+            "text": "",
+            "title": "Referencia r\u00e1pida de Markdown"
+        },
+        {
+            "location": "/markdown/#enlaces",
+            "text": "Hay buenos tutoriales de Markdown en:   Markdown Cheatsheet  Mastering Markdown",
+            "title": "Enlaces"
+        },
+        {
+            "location": "/markdown/#cabeceras",
+            "text": "# H1\n## H2\n### H3\n#### H4\n##### H5\n###### H6",
+            "title": "Cabeceras"
+        },
+        {
+            "location": "/markdown/#h1",
+            "text": "",
+            "title": "H1"
+        },
+        {
+            "location": "/markdown/#h2",
+            "text": "",
+            "title": "H2"
+        },
+        {
+            "location": "/markdown/#h3",
+            "text": "",
+            "title": "H3"
+        },
+        {
+            "location": "/markdown/#h4",
+            "text": "",
+            "title": "H4"
+        },
+        {
+            "location": "/markdown/#h5",
+            "text": "",
+            "title": "H5"
+        },
+        {
+            "location": "/markdown/#h6",
+            "text": "",
+            "title": "H6"
+        },
+        {
+            "location": "/markdown/#parrafos",
+            "text": "Para empezar un p\u00e1rrafo nuevo, se deja arriba una l\u00ednea en blanco. En otros elementos de Markdown (listas, l\u00edneas de separaci\u00f3n) tambi\u00e9n hay que poner una l\u00ednea en blanco encima.\n\nEste es otro p\u00e1rrafo.\nEsta es una l\u00ednea nueva sin dejar una l\u00ednea en blanco antes, esta l\u00ednea va a ir a continuaci\u00f3n de la anterior, como si no hubiese habido un salto de l\u00ednea.\n\nSi se quiere hacer un salto de l\u00ednea sin empezar un nuevo p\u00e1rrafo, se dejan dos espacios en blanco al final de la l\u00ednea anterior.  \nUna nueva l\u00ednea en el mismo p\u00e1rrafo.  Para empezar un p\u00e1rrafo nuevo, se deja arriba una l\u00ednea en blanco. En otros elementos de Markdown (listas, l\u00edneas de separaci\u00f3n) tambi\u00e9n hay que poner una l\u00ednea en blanco encima.  Este es otro p\u00e1rrafo.\nEsta es una l\u00ednea nueva sin dejar una l\u00ednea en blanco antes, esta l\u00ednea va a ir a continuaci\u00f3n de la anterior, como si no hubiese habido un salto de l\u00ednea.  Si se quiere hacer un salto de l\u00ednea sin empezar un nuevo p\u00e1rrafo, se dejan dos espacios en blanco al final de la l\u00ednea anterior. \nUna nueva l\u00ednea en el mismo p\u00e1rrafo.",
+            "title": "P\u00e1rrafos"
+        },
+        {
+            "location": "/markdown/#enfasis",
+            "text": "El texto en *it\u00e1lica*, con *asteriscos* o _guiones bajos_.\n\nEl texto en **negrita**, con **dos asteriscos** o __dos guiones bajos__.\n\nSe puede combinar la **negrita** y la _it\u00e1lica_, con **asteriscos y _guiones bajos_**.\n\nEl texto tachado, con ~~dos tildes~~.  El texto en  it\u00e1lica , con  asteriscos  o  guiones bajos .  El texto en  negrita , con  dos asteriscos  o  dos guiones bajos .  Se puede combinar la  negrita  y la  it\u00e1lica , con  asteriscos y  guiones bajos .  El texto tachado, con ~~dos tildes~~.",
+            "title": "\u00c9nfasis"
+        },
+        {
+            "location": "/markdown/#listas",
+            "text": "",
+            "title": "Listas"
         },
         {
             "location": "/brew/",

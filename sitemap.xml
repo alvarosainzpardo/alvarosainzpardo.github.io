@@ -28,6 +28,12 @@
     
         
     <url>
+     <loc>None/markdown/</loc>
+     <lastmod>2017-06-15</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>None/brew/</loc>
      <lastmod>2017-06-15</lastmod>
      <changefreq>daily</changefreq>
