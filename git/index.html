@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Homebrew - Documentación de Alvaro</title>
+        <title>Git - Documentación de Alvaro</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -65,16 +65,16 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Personal <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li >
-    <a href="../git/">Git</a>
+<li class="active">
+    <a href="./">Git</a>
 </li>
                             
 <li >
     <a href="../markdown/">Markdown</a>
 </li>
                             
-<li class="active">
-    <a href="./">Homebrew</a>
+<li >
+    <a href="../brew/">Homebrew</a>
 </li>
                             
 <li >
@@ -91,12 +91,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../markdown/">
+                        <a rel="next" href="../espacios_digitales/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../vim/">
+                        <a rel="prev" href="../markdown/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -108,22 +108,64 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#homebrew">Homebrew</a></li>
-            <li><a href="#comandos">Comandos</a></li>
+        <li class="main active"><a href="#guia-rapida-de-git">Guia rápida de git</a></li>
+            <li><a href="#enlaces-documentacion">Enlaces, documentación</a></li>
+            <li><a href="#empezar-a-usar-git-en-un-ordenador-nuevo">Empezar a usar git en un ordenador nuevo</a></li>
+            <li><a href="#configurar-git-detras-de-un-proxy">Configurar git detrás de un proxy</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="homebrew">Homebrew</h1>
+<h1 id="guia-rapida-de-git">Guia rápida de git</h1>
 <hr />
-<h2 id="comandos">Comandos</h2>
-<p>Actualizar la versión de brew y la información de paquetes</p>
-<pre><code class="bash">$ brew update
+<h2 id="enlaces-documentacion">Enlaces, documentación</h2>
+<hr />
+<h2 id="empezar-a-usar-git-en-un-ordenador-nuevo">Empezar a usar git en un ordenador nuevo</h2>
+<p>Para empezar a utilizar git en un nuevo ordenador, hay que realizar dos tareas:</p>
+<ul>
+<li>Configurar git en el nuevo ordenador</li>
+<li>Crear y configurar la clave ssh para conectarse a github.com desde el nuevo ordenador</li>
+</ul>
+<h3 id="configurar-git-en-un-nuevo-ordenador">Configurar git en un nuevo ordenador</h3>
+<p>Antes de crear un repositorio nuevo, o clonar uno existente, después de instalar el software de git, hay que configurar el usuario, tanto el <em>username</em> como el <em>email</em>.</p>
+<p>Configurar el <em>username</em>. La opción <code>-- global</code> es para que la opción aplique de forma global a todos los repositorios:</p>
+<pre><code class="bash">$ git config --global user.name &quot;Alvaro Sainz-Pardo&quot;
 </code></pre>
 
-<p>Actualizar los paquetes instalados</p>
-<pre><code class="bash">$ brew upgrade
-</code></pre></div>
+<p>Consultar el valor de la variable <code>user.name</code>:</p>
+<pre><code class="bash">$ git config --global user.name
+</code></pre>
+
+<p>Configurar el email:</p>
+<pre><code class="bash">$ git config --global user.email &quot;alvarosainzpardo@gmail.com&quot;
+</code></pre>
+
+<p>Consultar el valor de la variable <code>user.email</code>:</p>
+<pre><code class="bash">$ git config --global user.email
+</code></pre>
+
+<p>Para borrar el valor de una variable se utiliza la opción <code>--unset</code>:</p>
+<pre><code class="bash">$ git config --global --unset user.name
+$ git config --global --unset user.email
+</code></pre>
+
+<h3 id="crear-y-configurar-la-clave-ssh-para-conectarse-a-githubcom">Crear y configurar la clave ssh para conectarse a github.com</h3>
+<hr />
+<h2 id="configurar-git-detras-de-un-proxy">Configurar git detrás de un proxy</h2>
+<p>Si te conectas a github.com mediante http, lo que hay que hacer es configurar la variable <code>http.proxy</code> con el valor correspondiente al proxy de la red:</p>
+<pre><code class="bash">$ git config --global http.proxy http://&lt;user&gt;:&lt;passwd&gt;@&lt;proxyserver&gt;:&lt;port&gt;/
+</code></pre>
+
+<p>También la variable <code>https.proxy</code>:</p>
+<pre><code class="bash">$ git config --global https.proxy http://&lt;user&gt;:&lt;passwd&gt;@&lt;proxyserver&gt;:&lt;port&gt;/
+</code></pre>
+
+<p>Por ejemplo:</p>
+<pre><code class="bash">$ git config --global http.proxy http://ds01170:&lt;passwd&gt;@proxyinternet.tesa:8080/
+$ git config --global https.proxy http://ds01170:&lt;passwd&gt;@proxyinternet.tesa:8080/
+</code></pre>
+
+<p>Si te conectas a github.com mediante ssh, cuando accedes detrás de un proxy tienes que configurar el ssh para que utilice un proxy para las conexiones.</p></div>
         </div>
 
         <footer class="col-md-12">
