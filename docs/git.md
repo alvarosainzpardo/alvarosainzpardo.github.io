@@ -35,8 +35,41 @@ Configurar el email:
 $ git config --global user.email "alvarosainzpardo@gmail.com"
 ```
 
-Consultar el valor de la variable `email`:
+Consultar el valor de la variable `user.email`:
 
 ```bash
 $ git config --global user.email
 ```
+
+Para borrar el valor de una variable se utiliza la opción `--unset`:
+```bash
+$ git config --global --unset user.name
+$ git config --global --unset user.email
+```
+
+### Crear y configurar la clave ssh para conectarse a github.com
+
+---
+
+## Configurar git detrás de un proxy
+
+Si te conectas a github.com mediante http, lo que hay que hacer es configurar la variable `http.proxy` con el valor correspondiente al proxy de la red:
+
+```bash
+$ git config --global http.proxy http://<user>:<passwd>@<proxyserver>:<port>/
+```
+
+También la variable `https.proxy`:
+
+```bash
+$ git config --global https.proxy http://<user>:<passwd>@<proxyserver>:<port>/
+```
+
+Por ejemplo:
+
+```bash
+$ git config --global http.proxy http://ds01170:<passwd>@proxyinternet.tesa:8080/
+$ git config --global https.proxy http://ds01170:<passwd>@proxyinternet.tesa:8080/
+```
+
+Si te conectas a github.com mediante ssh, cuando accedes detrás de un proxy tienes que configurar el ssh para que utilice un proxy para las conexiones.
