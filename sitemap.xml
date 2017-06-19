@@ -28,6 +28,12 @@
     
         
     <url>
+     <loc>/git/</loc>
+     <lastmod>2017-06-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/markdown/</loc>
      <lastmod>2017-06-19</lastmod>
      <changefreq>daily</changefreq>
