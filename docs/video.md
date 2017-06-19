@@ -4,7 +4,7 @@
 
 ## Enlaces, documentación, recursos
 
-En la web de documentación [Medium](https://medium.com/) hay un articulo de Arpad Kuni, director de operaciones de red de Ustream, introductorio y divulgativo sobre algunos temas básicos de streaming. El artículo, titulado [Enterprise Video Delivery - Where to start?](https://medium.com/@ArpadKun/enterprise-video-delivery-where-to-start-40735c84262f), está enfocado al streaming interno, por red corporativa, pero comenta conceptos de codificación y protocolos, como HLS o MPEG-DASH.
+En la web de documentación [Medium](https://medium.com/) hay un articulo de Arpad Kuni, director de operaciones de red de Ustream, introductorio y divulgativo sobre algunos temas básicos de streaming. El artículo, titulado [Enterprise Video Delivery - Where to start?](https://medium.com/@ArpadKun/enterprise-video-delivery-where-to-start-40735c84262f), está enfocado al streaming interno, por red corporativa, pero comenta conceptos de codificación y protocolos de _live streaming_, como HLS o MPEG-DASH.
 
 ### Netflix
 
