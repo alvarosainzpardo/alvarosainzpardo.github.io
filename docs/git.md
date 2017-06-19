@@ -17,7 +17,7 @@ Para empezar a utilizar git en un nuevo ordenador, hay que realizar dos tareas:
 
 Antes de crear un repositorio nuevo, o clonar uno existente, después de instalar el software de git, hay que configurar el usuario, tanto el _username_ como el _email_.
 
-Configurar el _username_. La opción `-- global` es para que la opción aplique de forma global a todos los repositorios:
+Configurar el _username_. La opción `--global` es para que la opción aplique de forma global a todos los repositorios:
 
 ```bash
 $ git config --global user.name "Alvaro Sainz-Pardo"
