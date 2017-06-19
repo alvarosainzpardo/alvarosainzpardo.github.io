@@ -10,7 +10,7 @@ En la web de documentación [Medium](https://medium.com/) hay un articulo de Arp
 
 El test de velocidad que Netflix recomienda en su documentación es [Fast](http://fast.com/).
 
-El blog técnico de Netflix es [The Netflix Tech Blog](https://medium.com/netflix-techblog).
+El blog técnico de Netflix se llama [The Netflix Tech Blog](https://medium.com/netflix-techblog).
 
 En el artículo [Per-Title Encode Optimization](https://medium.com/netflix-techblog/per-title-encode-optimization-7e99442b62a2) Netflix explica la nueva forma de codificar los archivos, dando información sobre cómo lo hacían antes, con _settings_ fijos en función de la resolución, sin tener en cuenta la complejidad variable de las imágenes codificadas. Ahora codifican con calidad variable en función de la complejidad. En el artículo hay información general sobre codificación, y una tabla de Mbit/s en función de la resolución.
 
