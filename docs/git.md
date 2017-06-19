@@ -72,4 +72,11 @@ $ git config --global http.proxy http://ds01170:<passwd>@proxyinternet.tesa:8080
 $ git config --global https.proxy http://ds01170:<passwd>@proxyinternet.tesa:8080/
 ```
 
-Si te conectas a github.com mediante ssh, cuando accedes detrás de un proxy tienes que configurar el ssh para que utilice un proxy para las conexiones.
+Para eliminar el valor de las variables para el proxy, se utiliza la opción `--unset`:
+
+```bash
+$ git config --global --unset http.proxy
+$ git config --global --unset https.proxy
+```
+
+Si la conexión a github.com es mediante ssh, cuando se accede detrás de un proxy hay que configurar el ssh para que utilice un proxy para las conexiones.
