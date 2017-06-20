@@ -71,4 +71,12 @@ El archivo .pem tiene que tener permisos de lectura únicamente para el propieta
 La configuracíón equivalente en el archivo `~/.ssh/config`sería:
 
 	Host <host>
-	  IdentityFile <path/file.pem>
+		IdentityFile <path/file.pem>
+
+### Configuración del servidor
+
+Cuando el servidor ssh está configurado para aceptar únicamente conexiones sin password mediante clave privada, en el directorio `.ssh` del usuario hay que copiar el archivo `authorized_keys` que se haya generado para el usuario por defecto de la maquina virtual.
+
+El directorio `.ssh` tiene que tener permisos de lectura/escritura/ejecución sólo para el propietario (`chmod 700 ~/.ssh`) y el archivo `authorized_keys` permisos de lectura/escritura únicamente para el propietario (`chmod 600 authorized_keys`).
+
+Además, hay que comprobar que el el archivo de configuración del servidor sshd (`/etc/ssh/sshd_config`) esté autorizado el acceso por ssh para el nuevo usuario. Esto hay que hacerlo **obligatoriamente en las máquinas virtuales Ubuntu de Fiware**.
