@@ -92,7 +92,7 @@
         },
         {
             "location": "/ssh/",
-            "text": "Guia r\u00e1pida de ssh\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nSSH via HTTP proxy in OSX\n\n\nConnect with SSH through a proxy\n\n\n\n\n\n\nUsar ssh detr\u00e1s de un proxy\n\n\nEl comando para realizar una conexi\u00f3n ssh a trav\u00e9s de un servidor proxy es:\n\n\n$ ssh <user>@<host> -o \"ProxyCommand=nc -X connect -x <proxyhost>:<proxyport> %h %p\"\n\n\n\n\nPor ejemplo:\n\n\n$ ssh asainz@sulaco.ttcloud.net -o \"ProxyCommand=nc -X connect -x proxyinternet.tesa:8080 %h %p\"\n\n\n\n\nPara que este comando funcione, el servidor proxy tiene que aceptar el m\u00e9todo de conexi\u00f3n \nCONNECT\n y el comando \nnc\n tiene que estar instalado en el sistema.\n\n\nPara usar un proxy socks5 el comando es:\n\n\n$ ssh <user>@<host> -o \"ProxyCommand=nc -X 5 -x <proxyhost>:<proxyport> %h %p\"\n\n\n\n\nY para usar un proxy socks4 se utilizar\u00eda la opci\u00f3n \n-X 4\n.\n\n\nPara no tener que teclear el comando cada vez que se utiliza el cliente ssh se puede configurar esta opci\u00f3n en el archivo de configuraci\u00f3n de ssh, \n~/.ssh/config\n.\n\n\nSe puede a\u00f1adir la opci\u00f3n para todos los hosts:\n\n\nHost *\n    ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p\n    ServerAliveInterval   10\n\n\n\nO para un host en concreto:\n\n\nHost sulaco.ttcloud.net\n    ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p\n    ServerAliveInterval   10\n\n\n\nLa opci\u00f3n \nServerAliveInterval\nes para que el proxy no desconecte despu\u00e9s de un periodo de inactividad.",
+            "text": "Guia r\u00e1pida de ssh\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nSSH via HTTP proxy in OSX\n\n\nConnect with SSH through a proxy\n\n\nConnecting to Your Linux Instance Using SSH\n\n\n\n\n\n\nUsar ssh detr\u00e1s de un proxy\n\n\nEl comando para realizar una conexi\u00f3n ssh a trav\u00e9s de un servidor proxy es:\n\n\n$ ssh <user>@<host> -o \"ProxyCommand=nc -X connect -x <proxyhost>:<proxyport> %h %p\"\n\n\n\n\nPor ejemplo:\n\n\n$ ssh asainz@sulaco.ttcloud.net -o \"ProxyCommand=nc -X connect -x proxyinternet.tesa:8080 %h %p\"\n\n\n\n\nPara que este comando funcione, el servidor proxy tiene que aceptar el m\u00e9todo de conexi\u00f3n \nCONNECT\n y el comando \nnc\n tiene que estar instalado en el sistema.\n\n\nPara usar un proxy socks5 el comando es:\n\n\n$ ssh <user>@<host> -o \"ProxyCommand=nc -X 5 -x <proxyhost>:<proxyport> %h %p\"\n\n\n\n\nY para usar un proxy socks4 se utilizar\u00eda la opci\u00f3n \n-X 4\n.\n\n\nPara no tener que teclear el comando cada vez que se utiliza el cliente ssh se puede configurar esta opci\u00f3n en el archivo de configuraci\u00f3n de ssh, \n~/.ssh/config\n.\n\n\nSe puede a\u00f1adir la opci\u00f3n para todos los hosts:\n\n\nHost *\n    ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p\n    ServerAliveInterval   10\n\n\n\nO para un host en concreto:\n\n\nHost sulaco.ttcloud.net\n    ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p\n    ServerAliveInterval   10\n\n\n\nLa opci\u00f3n \nServerAliveInterval\nes para que el proxy no desconecte despu\u00e9s de un periodo de inactividad.\n\n\n\n\nAutenticaci\u00f3n con clave privada (archivos .pem)\n\n\nPara conectarse a m\u00e1quinas virtuales de Amazon y Fiware, hay que utilizar la autenticaci\u00f3n con clave privada (archivos .pem)\n\n\nConfiguraci\u00f3n del cliente\n\n\n\n\nSSH Config Files\n\n\n\n\nLa opci\u00f3n para conectarse a un servidor que requiere autenticaci\u00f3n por clave privada es \n-i <archivo.pem>\n:\n\n\n$ ssh <user>@<host> -i <path/file.pem>\n\n\n\n\nEl archivo .pem tiene que tener permisos de lectura \u00fanicamente para el propietario del archivo (\nchmod 400 <archivo.pem>\n).\n\n\nLa configurac\u00ed\u00f3n equivalente en el archivo \n~/.ssh/config\nser\u00eda:\n\n\nHost <host>\n  IdentityFile <path/file.pem>",
             "title": "Ssh"
         },
         {
@@ -102,13 +102,23 @@
         },
         {
             "location": "/ssh/#enlaces-documentacion",
-            "text": "SSH via HTTP proxy in OSX  Connect with SSH through a proxy",
+            "text": "SSH via HTTP proxy in OSX  Connect with SSH through a proxy  Connecting to Your Linux Instance Using SSH",
             "title": "Enlaces, documentaci\u00f3n"
         },
         {
             "location": "/ssh/#usar-ssh-detras-de-un-proxy",
             "text": "El comando para realizar una conexi\u00f3n ssh a trav\u00e9s de un servidor proxy es:  $ ssh <user>@<host> -o \"ProxyCommand=nc -X connect -x <proxyhost>:<proxyport> %h %p\"  Por ejemplo:  $ ssh asainz@sulaco.ttcloud.net -o \"ProxyCommand=nc -X connect -x proxyinternet.tesa:8080 %h %p\"  Para que este comando funcione, el servidor proxy tiene que aceptar el m\u00e9todo de conexi\u00f3n  CONNECT  y el comando  nc  tiene que estar instalado en el sistema.  Para usar un proxy socks5 el comando es:  $ ssh <user>@<host> -o \"ProxyCommand=nc -X 5 -x <proxyhost>:<proxyport> %h %p\"  Y para usar un proxy socks4 se utilizar\u00eda la opci\u00f3n  -X 4 .  Para no tener que teclear el comando cada vez que se utiliza el cliente ssh se puede configurar esta opci\u00f3n en el archivo de configuraci\u00f3n de ssh,  ~/.ssh/config .  Se puede a\u00f1adir la opci\u00f3n para todos los hosts:  Host *\n    ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p\n    ServerAliveInterval   10  O para un host en concreto:  Host sulaco.ttcloud.net\n    ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p\n    ServerAliveInterval   10  La opci\u00f3n  ServerAliveInterval es para que el proxy no desconecte despu\u00e9s de un periodo de inactividad.",
             "title": "Usar ssh detr\u00e1s de un proxy"
+        },
+        {
+            "location": "/ssh/#autenticacion-con-clave-privada-archivos-pem",
+            "text": "Para conectarse a m\u00e1quinas virtuales de Amazon y Fiware, hay que utilizar la autenticaci\u00f3n con clave privada (archivos .pem)",
+            "title": "Autenticaci\u00f3n con clave privada (archivos .pem)"
+        },
+        {
+            "location": "/ssh/#configuracion-del-cliente",
+            "text": "SSH Config Files   La opci\u00f3n para conectarse a un servidor que requiere autenticaci\u00f3n por clave privada es  -i <archivo.pem> :  $ ssh <user>@<host> -i <path/file.pem>  El archivo .pem tiene que tener permisos de lectura \u00fanicamente para el propietario del archivo ( chmod 400 <archivo.pem> ).  La configurac\u00ed\u00f3n equivalente en el archivo  ~/.ssh/config ser\u00eda:  Host <host>\n  IdentityFile <path/file.pem>",
+            "title": "Configuraci\u00f3n del cliente"
         },
         {
             "location": "/vim/",

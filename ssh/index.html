@@ -115,6 +115,7 @@
         <li class="main active"><a href="#guia-rapida-de-ssh">Guia rápida de ssh</a></li>
             <li><a href="#enlaces-documentacion">Enlaces, documentación</a></li>
             <li><a href="#usar-ssh-detras-de-un-proxy">Usar ssh detrás de un proxy</a></li>
+            <li><a href="#autenticacion-con-clave-privada-archivos-pem">Autenticación con clave privada (archivos .pem)</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -125,6 +126,7 @@
 <ul>
 <li><a href="http://www.perkin.org.uk/posts/ssh-via-http-proxy-in-osx.html">SSH via HTTP proxy in OSX</a></li>
 <li><a href="https://stackoverflow.com/questions/19161960/connect-with-ssh-through-a-proxy">Connect with SSH through a proxy</a></li>
+<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html">Connecting to Your Linux Instance Using SSH</a></li>
 </ul>
 <hr />
 <h2 id="usar-ssh-detras-de-un-proxy">Usar ssh detrás de un proxy</h2>
@@ -153,7 +155,23 @@
     ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p
     ServerAliveInterval   10
 </code></pre>
-<p>La opción <code>ServerAliveInterval</code>es para que el proxy no desconecte después de un periodo de inactividad.</p></div>
+<p>La opción <code>ServerAliveInterval</code>es para que el proxy no desconecte después de un periodo de inactividad.</p>
+<hr />
+<h2 id="autenticacion-con-clave-privada-archivos-pem">Autenticación con clave privada (archivos .pem)</h2>
+<p>Para conectarse a máquinas virtuales de Amazon y Fiware, hay que utilizar la autenticación con clave privada (archivos .pem)</p>
+<h3 id="configuracion-del-cliente">Configuración del cliente</h3>
+<ul>
+<li><a href="https://michaelheap.com/ssh-config-files/">SSH Config Files</a></li>
+</ul>
+<p>La opción para conectarse a un servidor que requiere autenticación por clave privada es <code>-i &lt;archivo.pem&gt;</code>:</p>
+<pre><code class="bash">$ ssh &lt;user&gt;@&lt;host&gt; -i &lt;path/file.pem&gt;
+</code></pre>
+
+<p>El archivo .pem tiene que tener permisos de lectura únicamente para el propietario del archivo (<code>chmod 400 &lt;archivo.pem&gt;</code>).</p>
+<p>La configuracíón equivalente en el archivo <code>~/.ssh/config</code>sería:</p>
+<pre><code>Host &lt;host&gt;
+  IdentityFile &lt;path/file.pem&gt;
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
