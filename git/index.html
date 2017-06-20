@@ -154,6 +154,34 @@ $ git config --global --unset user.email
 </code></pre>
 
 <h3 id="crear-y-configurar-la-clave-ssh-para-conectarse-a-githubcom">Crear y configurar la clave ssh para conectarse a github.com</h3>
+<p>Los pasos que hay que dar para autorizar la conexión a github.com desde un ordenador nuevo son:</p>
+<ul>
+<li>Crear la clave en el ordenador nuevo</li>
+<li>Importar la clave en la cuenta de github.com</li>
+<li>Probar la conexión</li>
+</ul>
+<h4 id="crear-la-clave-en-el-ordenador-nuevo">Crear la clave en el ordenador nuevo</h4>
+<p>Crear la clave con el siguiente comando, poniendo la dirección de correo de la cuenta en github.com:</p>
+<pre><code class="bash">$ ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;
+</code></pre>
+
+<p>Cuando pregunte por la localización del archivo, pulsar Enter:</p>
+<pre><code class="bash">Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter]
+</code></pre>
+
+<p>Cuando pregunte por la <em>passphrase</em>, teclear una <em>passphrase</em> o pulsar Enter:</p>
+<pre><code class="bash">Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+</code></pre>
+
+<h4 id="importar-la-clave-en-la-cuenta-de-githubcom">Importar la clave en la cuenta de github.com</h4>
+<p>Seguir las instrucciones de <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">Adding a new SSH key to your GitHub account</a>.</p>
+<h4 id="probar-la-conexion">Probar la conexión</h4>
+<p>Para probar que la nueva conexión funciona se utiliza el siguiente comando:</p>
+<pre><code class="bash">$ ssh -T git@github.com
+</code></pre>
+
+<p>Si hay errores de conexión, seguir las instrucciones de <a href="https://help.github.com/articles/error-permission-denied-publickey/">Error: Permission denied (publickey)</a>.</p>
 <hr />
 <h2 id="configurar-git-detras-de-un-proxy">Configurar git detrás de un proxy</h2>
 <p>Si te conectas a github.com mediante http, lo que hay que hacer es configurar la variable <code>http.proxy</code> con el valor correspondiente al proxy de la red:</p>
@@ -174,7 +202,7 @@ $ git config --global https.proxy http://ds01170:&lt;passwd&gt;@proxyinternet.te
 $ git config --global --unset https.proxy
 </code></pre>
 
-<p>Si la conexión a github.com es mediante ssh, cuando se accede detrás de un proxy hay que configurar el ssh para que utilice un proxy para las conexiones.</p></div>
+<p>Si la conexión a github.com es mediante ssh, cuando se accede detrás de un proxy hay que <a href="http://docs.alvarosainzpardo.com/ssh/#usar-ssh-detras-de-un-proxy">configurar el ssh para que utilice un proxy</a> para las conexiones.</p></div>
         </div>
 
         <footer class="col-md-12">
