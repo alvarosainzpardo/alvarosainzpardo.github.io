@@ -47,7 +47,76 @@ $ git config --global --unset user.name
 $ git config --global --unset user.email
 ```
 
-### Crear y configurar la clave ssh para conectarse a github.com
+### Crear y configurar la clave ssh para conectarse a GitHub
+
+Hay dos tipos de URLs que se pueden utilizar para referenciar los repositorios remotos en GitHub: http y ssh.
+
+Si se utilizan urls de tipo ssh, los pasos que hay que dar para autorizar la conexión a GitHub desde un ordenador nuevo son:
+
+* Crear la clave en el ordenador nuevo
+* Importar la clave en la cuenta de github.com
+* Probar la conexión
+
+#### Crear la clave en el ordenador nuevo
+
+Crear la clave con el siguiente comando, poniendo la dirección de correo de la cuenta en github.com:
+
+```bash
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+Cuando pregunte por la localización del archivo, pulsar Enter:
+
+```bash
+Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter]
+```
+
+Cuando pregunte por la _passphrase_, teclear una _passphrase_ o pulsar Enter:
+
+```bash
+Enter passphrase (empty for no passphrase): [Type a passphrase]
+Enter same passphrase again: [Type passphrase again]
+```
+
+#### Importar la clave en la cuenta de github.com
+
+Seguir las instrucciones de [Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
+
+#### Probar la conexión
+
+Para probar que la nueva conexión funciona se utiliza el siguiente comando:
+
+```bash
+$ ssh -T git@github.com
+```
+
+Si hay errores de conexión, seguir las instrucciones de [Error: Permission denied (publickey)](https://help.github.com/articles/error-permission-denied-publickey/).
+
+---
+
+## Acceso mediante http
+
+Si se utiliza http, no hay que crear claves de ssh ni darlas de alta en la cuenta de GitHub, simplemente hay que usar la url de tipo http al clonar el repositorio remoto. Por ejemplo:
+
+```bash
+$ git clone https://github.com/alvarosainzpardo/dotfiles.git
+```
+
+Este método de conexión funciona también si se está detrás de un proxy (ver instrucciones). La desventaja es que se pregunta el usuario y la clave de GitHub cada vez que se utiliza un comando git. Para evitar que esto ocurra, se puede utilizar un _credential helper_ que cachea el usuario/password durante un tiempo determinado.
+
+Para activar el _credential helper_:
+
+```bash
+$ git config --global credential.helper cache
+# Set git to use the credential memory cache
+```
+
+Para cambiar el tiempo predeterminado de cacheo de 15 minutos:
+
+```bash
+$ git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+```
 
 ---
 
