@@ -6,6 +6,7 @@
 
 * [SSH via HTTP proxy in OSX](http://www.perkin.org.uk/posts/ssh-via-http-proxy-in-osx.html)
 * [Connect with SSH through a proxy](https://stackoverflow.com/questions/19161960/connect-with-ssh-through-a-proxy)
+* [Connecting to Your Linux Instance Using SSH](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
 
 ---
 
@@ -49,4 +50,25 @@ O para un host en concreto:
 
 La opción `ServerAliveInterval`es para que el proxy no desconecte después de un periodo de inactividad.
 
+---
 
+## Autenticación con clave privada (archivos .pem)
+
+Para conectarse a máquinas virtuales de Amazon y Fiware, hay que utilizar la autenticación con clave privada (archivos .pem)
+
+### Configuración del cliente
+
+* [SSH Config Files](https://michaelheap.com/ssh-config-files/)
+
+La opción para conectarse a un servidor que requiere autenticación por clave privada es `-i <archivo.pem>`:
+
+```bash
+$ ssh <user>@<host> -i <path/file.pem>
+```
+
+El archivo .pem tiene que tener permisos de lectura únicamente para el propietario del archivo (`chmod 400 <archivo.pem>`).
+
+La configuracíón equivalente en el archivo `~/.ssh/config`sería:
+
+	Host <host>
+	  IdentityFile <path/file.pem>
