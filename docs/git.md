@@ -79,4 +79,4 @@ $ git config --global --unset http.proxy
 $ git config --global --unset https.proxy
 ```
 
-Si la conexión a github.com es mediante ssh, cuando se accede detrás de un proxy hay que configurar el ssh para que utilice un proxy para las conexiones.
+Si la conexión a github.com es mediante ssh, cuando se accede detrás de un proxy hay que [configurar el ssh para que utilice un proxy](http://docs.alvarosainzpardo.com/ssh/#usar-ssh-detras-de-un-proxy) para las conexiones.
