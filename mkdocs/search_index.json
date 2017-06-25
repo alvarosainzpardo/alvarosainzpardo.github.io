@@ -294,6 +294,46 @@
             "location": "/brew/#comandos",
             "text": "Actualizar la versi\u00f3n de brew y la informaci\u00f3n de paquetes  $ brew update  Actualizar los paquetes instalados  $ brew upgrade",
             "title": "Comandos"
+        },
+        {
+            "location": "/lossless/",
+            "text": "Archivos de audio \nlossless\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nHow To tell between a 'real' FLAC and a 'fake' FLAC?\n\n\nHow To tell between a 'real' FLAC and a 'fake' FLAC?\n\n\nSpectral Analysis\n\n\nTranscode Spectral Study - A Primer on Spectral Analysis and How to Spot Transcodes\n\n\n\n\n\n\nSoftware para detectar si un archivo FLAC es autentico o no\n\n\nTAU - AuCDtect\n\n\nTrue Audio Checker - Project Description\n\n\nEs un programa que realiza un test autom\u00e1tico para comprobar si un archivo FLAC, APE, etc es aut\u00e9ntico o no. El software es para Windows, con varias opciones de descarga y hay un plugin para Foobar2000.\n\n\nLossless Audio Checker\n\n\nLossless Audio Checker\n\n\nEs otro programa que hace test autom\u00e1ticos para determinar la autenticidad de un archivo FLAC. Tiene un cliente gr\u00e1fico solo para Windows y una utilidad de linea de comandos para varios sistemas operativos, incluido Mac, que solo analiza archivos WAV (antes hay que convertir el FLAC en WAV).\n\n\nSpek\n\n\nSpek \u2013 Acoustic Spectrum Analyser\n\n\nEs un analizador de espectro multiformato, tambi\u00e9n disponible para Mac.\n\n\nAudacity\n\n\nTambi\u00e9n permite hacer an\u00e1lisis del espectro del archivo. En este \nvideo\n hay un buen tutorial.",
+            "title": "Lossless"
+        },
+        {
+            "location": "/lossless/#archivos-de-audio-lossless",
+            "text": "",
+            "title": "Archivos de audio lossless"
+        },
+        {
+            "location": "/lossless/#enlaces-documentacion",
+            "text": "How To tell between a 'real' FLAC and a 'fake' FLAC?  How To tell between a 'real' FLAC and a 'fake' FLAC?  Spectral Analysis  Transcode Spectral Study - A Primer on Spectral Analysis and How to Spot Transcodes",
+            "title": "Enlaces, documentaci\u00f3n"
+        },
+        {
+            "location": "/lossless/#software-para-detectar-si-un-archivo-flac-es-autentico-o-no",
+            "text": "",
+            "title": "Software para detectar si un archivo FLAC es autentico o no"
+        },
+        {
+            "location": "/lossless/#tau-aucdtect",
+            "text": "True Audio Checker - Project Description  Es un programa que realiza un test autom\u00e1tico para comprobar si un archivo FLAC, APE, etc es aut\u00e9ntico o no. El software es para Windows, con varias opciones de descarga y hay un plugin para Foobar2000.",
+            "title": "TAU - AuCDtect"
+        },
+        {
+            "location": "/lossless/#lossless-audio-checker",
+            "text": "Lossless Audio Checker  Es otro programa que hace test autom\u00e1ticos para determinar la autenticidad de un archivo FLAC. Tiene un cliente gr\u00e1fico solo para Windows y una utilidad de linea de comandos para varios sistemas operativos, incluido Mac, que solo analiza archivos WAV (antes hay que convertir el FLAC en WAV).",
+            "title": "Lossless Audio Checker"
+        },
+        {
+            "location": "/lossless/#spek",
+            "text": "Spek \u2013 Acoustic Spectrum Analyser  Es un analizador de espectro multiformato, tambi\u00e9n disponible para Mac.",
+            "title": "Spek"
+        },
+        {
+            "location": "/lossless/#audacity",
+            "text": "Tambi\u00e9n permite hacer an\u00e1lisis del espectro del archivo. En este  video  hay un buen tutorial.",
+            "title": "Audacity"
         }
     ]
 }
