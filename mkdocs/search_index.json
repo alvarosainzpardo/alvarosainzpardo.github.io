@@ -297,7 +297,7 @@
         },
         {
             "location": "/robocopy/",
-            "text": "Guia del comando \nrobocopy\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nComando para hacer backup de los contenidos de un directorio\n\n\nC:\\>robocopy <origen> <destino> /mir /sl /xjd /xa:sh /xd \"AppData\" /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\\robocopy.log\n\n\n\n\nExplicaci\u00f3n de las opciones\n\n\n\n\n/mir\n: realiza\n\n\n/sl\n:",
+            "text": "Guia del comando \nrobocopy\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nRobocopy\n\n\nRobocopy and a Few Examples\n\n\nComo usar el comando Robocopy en Windows, ejemplos pr\u00e1cticos y c\u00f3digos\n\n\n\n\n\n\nComando para hacer backup de los contenidos de un directorio\n\n\nC:\\>robocopy <origen> <destino> /mir /sl /xjd /xa:sh /xd \"AppData\" /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\\robocopy.log\n\n\n\n\nExplicaci\u00f3n de las opciones\n\n\n\n\n/mir\n: realiza una copia exacta o espejo del directorio origen en el directorio destino. Si en el directorio origen se han borrado archivos, se eliminar\u00e1n en el directorio destino\n\n\n/sl\n: copia los enlaces simb\u00f3licos como enlaces simb\u00f3licos en el destino\n\n\n/xjd\n: excluye \njunction points\n en este caso directorios. Otras opciones pueden ser \n/xjf\npara excluir \njunction points\n de archivos y \n/xj\npara excluir todos los \njuntion points\n, tanto archivos como directorios\n\n\n/xa:sh\n: excluye archivos de sistema (s) y ocultos (h)\n\n\n/xd \"AppData\"\n: excluye los (sub)directorios llamados \nAppData\n\n\n/xf *.inf\n: excluye los archivos .inf\n\n\n/copy:dat\n: copia los datos, atributos y \ntimestamp\n de los archivos origen\n\n\n/dcopy:t\n: copia, o mantiene, el \ntimestamp\n de los directorios origen\n\n\n/r:0\n: no realiza ning\u00fan reintento si se produce un error\n\n\n/w:1\n: tiempo de espera transcurrido entre reintentos (aplicable cuando /r tiene valor mayor que 0)\n\n\n/mt\n: utiliza \nmultithreading\n cuando la cpu tiene varios n\u00facleos\n\n\n/ndl\n: sin lista de directorios, no registra los nombres de directorio\n\n\n/tee\n: copia la salida est\u00e1ndar del comando en el archivo de log\n\n\n/log+:<archivo.log>: realiza un log en el archivo especificado, la opci\u00f3n\n+` sirve para a\u00f1adir el contenido del log si el archivo ya existe (append)",
             "title": "Robocopy"
         },
         {
@@ -307,7 +307,7 @@
         },
         {
             "location": "/robocopy/#enlaces-documentacion",
-            "text": "",
+            "text": "Robocopy  Robocopy and a Few Examples  Como usar el comando Robocopy en Windows, ejemplos pr\u00e1cticos y c\u00f3digos",
             "title": "Enlaces, documentaci\u00f3n"
         },
         {
@@ -317,7 +317,7 @@
         },
         {
             "location": "/robocopy/#explicacion-de-las-opciones",
-            "text": "/mir : realiza  /sl :",
+            "text": "/mir : realiza una copia exacta o espejo del directorio origen en el directorio destino. Si en el directorio origen se han borrado archivos, se eliminar\u00e1n en el directorio destino  /sl : copia los enlaces simb\u00f3licos como enlaces simb\u00f3licos en el destino  /xjd : excluye  junction points  en este caso directorios. Otras opciones pueden ser  /xjf para excluir  junction points  de archivos y  /xj para excluir todos los  juntion points , tanto archivos como directorios  /xa:sh : excluye archivos de sistema (s) y ocultos (h)  /xd \"AppData\" : excluye los (sub)directorios llamados  AppData  /xf *.inf : excluye los archivos .inf  /copy:dat : copia los datos, atributos y  timestamp  de los archivos origen  /dcopy:t : copia, o mantiene, el  timestamp  de los directorios origen  /r:0 : no realiza ning\u00fan reintento si se produce un error  /w:1 : tiempo de espera transcurrido entre reintentos (aplicable cuando /r tiene valor mayor que 0)  /mt : utiliza  multithreading  cuando la cpu tiene varios n\u00facleos  /ndl : sin lista de directorios, no registra los nombres de directorio  /tee : copia la salida est\u00e1ndar del comando en el archivo de log  /log+:<archivo.log>: realiza un log en el archivo especificado, la opci\u00f3n +` sirve para a\u00f1adir el contenido del log si el archivo ya existe (append)",
             "title": "Explicaci\u00f3n de las opciones"
         },
         {

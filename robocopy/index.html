@@ -130,15 +130,32 @@
 <h1 id="guia-del-comando-robocopy">Guia del comando <em>robocopy</em></h1>
 <hr />
 <h2 id="enlaces-documentacion">Enlaces, documentación</h2>
+<ul>
+<li><a href="https://technet.microsoft.com/en-us/library/cc733145(WS.10).aspx">Robocopy</a></li>
+<li><a href="https://social.technet.microsoft.com/wiki/contents/articles/1073.robocopy-and-a-few-examples.aspx">Robocopy and a Few Examples</a></li>
+<li><a href="https://norfipc.com/comandos/como-usar-comando-robocopy-ejemplos.html">Como usar el comando Robocopy en Windows, ejemplos prácticos y códigos</a></li>
+</ul>
 <hr />
 <h2 id="comando-para-hacer-backup-de-los-contenidos-de-un-directorio">Comando para hacer backup de los contenidos de un directorio</h2>
-<pre><code class="cmd">C:\&gt;robocopy &lt;origen&gt; &lt;destino&gt; /mir /sl /xjd /xa:sh /xd &quot;AppData&quot; /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\robocopy.log
+<pre><code>C:\&gt;robocopy &lt;origen&gt; &lt;destino&gt; /mir /sl /xjd /xa:sh /xd &quot;AppData&quot; /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\robocopy.log
 </code></pre>
 
 <h3 id="explicacion-de-las-opciones">Explicación de las opciones</h3>
 <ul>
-<li><code>/mir</code>: realiza</li>
-<li><code>/sl</code>:  </li>
+<li><code>/mir</code>: realiza una copia exacta o espejo del directorio origen en el directorio destino. Si en el directorio origen se han borrado archivos, se eliminarán en el directorio destino</li>
+<li><code>/sl</code>: copia los enlaces simbólicos como enlaces simbólicos en el destino</li>
+<li><code>/xjd</code>: excluye <em>junction points</em> en este caso directorios. Otras opciones pueden ser <code>/xjf</code>para excluir <em>junction points</em> de archivos y <code>/xj</code>para excluir todos los <em>juntion points</em>, tanto archivos como directorios</li>
+<li><code>/xa:sh</code>: excluye archivos de sistema (s) y ocultos (h)</li>
+<li><code>/xd "AppData"</code>: excluye los (sub)directorios llamados <code>AppData</code></li>
+<li><code>/xf *.inf</code>: excluye los archivos .inf</li>
+<li><code>/copy:dat</code>: copia los datos, atributos y <em>timestamp</em> de los archivos origen</li>
+<li><code>/dcopy:t</code>: copia, o mantiene, el <em>timestamp</em> de los directorios origen</li>
+<li><code>/r:0</code>: no realiza ningún reintento si se produce un error</li>
+<li><code>/w:1</code>: tiempo de espera transcurrido entre reintentos (aplicable cuando /r tiene valor mayor que 0)</li>
+<li><code>/mt</code>: utiliza <em>multithreading</em> cuando la cpu tiene varios núcleos</li>
+<li><code>/ndl</code>: sin lista de directorios, no registra los nombres de directorio</li>
+<li><code>/tee</code>: copia la salida estándar del comando en el archivo de log</li>
+<li><code>/log+:&lt;archivo.log&gt;: realiza un log en el archivo especificado, la opción</code>+` sirve para añadir el contenido del log si el archivo ya existe (append)</li>
 </ul></div>
         </div>
 
