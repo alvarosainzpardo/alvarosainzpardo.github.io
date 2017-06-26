@@ -297,7 +297,7 @@
         },
         {
             "location": "/robocopy/",
-            "text": "Guia del comando \nrobocopy\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nComando para hacer backup de los contenidos de un directorio\n\n\n\u00b4\u00b4\u00b4cmd\nC:>robocopy \n \n /mir /sl /xjd /xa:sh /xd \"AppData\" /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\\robocopy.log\n\u00b4\u00b4\u00b4\n\n\nExplicaci\u00f3n de las opciones\n\n\n\n\n/mir\n: realiza\n\n\n/sl\n:",
+            "text": "Guia del comando \nrobocopy\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nComando para hacer backup de los contenidos de un directorio\n\n\nC:\\>robocopy <origen> <destino> /mir /sl /xjd /xa:sh /xd \"AppData\" /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\\robocopy.log\n\n\n\n\nExplicaci\u00f3n de las opciones\n\n\n\n\n/mir\n: realiza\n\n\n/sl\n:",
             "title": "Robocopy"
         },
         {
@@ -312,7 +312,7 @@
         },
         {
             "location": "/robocopy/#comando-para-hacer-backup-de-los-contenidos-de-un-directorio",
-            "text": "\u00b4\u00b4\u00b4cmd\nC:>robocopy     /mir /sl /xjd /xa:sh /xd \"AppData\" /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\\robocopy.log\n\u00b4\u00b4\u00b4",
+            "text": "C:\\>robocopy <origen> <destino> /mir /sl /xjd /xa:sh /xd \"AppData\" /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\\robocopy.log",
             "title": "Comando para hacer backup de los contenidos de un directorio"
         },
         {
