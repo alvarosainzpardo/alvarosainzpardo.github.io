@@ -22,6 +22,8 @@ El programa para mapear la tecla **Caps Lock** es [Seil](https://pqrs.org/osx/ka
 
 ### Vundle
 
+[Vundle](https://github.com/VundleVim/Vundle.vim) es un verdadero _plugin manager_, en el sentido de que, a partir de la configuración que se hace en el archivo _.vimrc_, descarga automáticamente los plugins y tiene comandos para actualizar la versión de los plugins instalados, etc. Es más completo que **Pathogen** en cuanto a funcionalidad.
+
 #### Instalación
 
 #### Uso
