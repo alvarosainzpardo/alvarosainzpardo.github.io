@@ -18,7 +18,19 @@ El programa para mapear la tecla **Caps Lock** es [Seil](https://pqrs.org/osx/ka
 
 ---
 
-## Plugin manager
+## Plugin managers
+
+### Vundle
+
+#### Instalación
+
+#### Uso
+
+### Pathogen
+
+#### Instalación
+
+#### Uso
 
 ---
 
