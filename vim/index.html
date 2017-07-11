@@ -121,6 +121,7 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#vim">Vim</a></li>
+            <li><a href="#documentacion-tutoriales-enlaces">Documentación, tutoriales, enlaces</a></li>
             <li><a href="#vimrc">.vimrc</a></li>
             <li><a href="#mapeo-de-teclas">Mapeo de teclas</a></li>
             <li><a href="#plugin-managers">Plugin managers</a></li>
@@ -130,6 +131,10 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="vim">Vim</h1>
+<hr />
+<h2 id="documentacion-tutoriales-enlaces">Documentación, tutoriales, enlaces</h2>
+<p>En <a href="http://vimcasts.org/">vimcasts.org</a> hay 68 tutoriales en video y 50 artículos sobre Vim. Realizados por Drew Neil, el autor del libro <a href="https://pragprog.com/book/dnvim2/practical-vim-second-edition">Practical Vim</a>.</p>
+<p>El artículo <a href="https://idyllic.co/blog/vim-and-moi/">My experience with Vim</a> tiene una lista de plugins recomendados.</p>
 <hr />
 <h2 id="vimrc">.vimrc</h2>
 <hr />
@@ -141,13 +146,26 @@
 <hr />
 <h2 id="plugin-managers">Plugin managers</h2>
 <h3 id="vundle">Vundle</h3>
+<p><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> es un verdadero <em>plugin manager</em>, en el sentido de que, a partir de la configuración que se hace en el archivo <em>.vimrc</em>, descarga automáticamente los plugins y tiene comandos para actualizar la versión de los plugins instalados, etc. Es más completo que <strong>Pathogen</strong> en cuanto a funcionalidad.</p>
 <h4 id="instalacion">Instalación</h4>
 <h4 id="uso">Uso</h4>
 <h3 id="pathogen">Pathogen</h3>
 <h4 id="instalacion_1">Instalación</h4>
 <h4 id="uso_1">Uso</h4>
 <hr />
-<h2 id="plugins">Plugins</h2></div>
+<h2 id="plugins">Plugins</h2>
+<h3 id="fugitive">Fugitive</h3>
+<p><a href="https://github.com/tpope/vim-fugitive">Fugitive</a> es un recubrimiento del comando git.</p>
+<h4 id="instalacion_2">Instalación</h4>
+<p>Añadir:</p>
+<p>´´´
+Plugin 'tpope/vim-fugitive'
+´´´</p>
+<p>En la sección de Vundle del <em>.vimrc</em>.</p>
+<h4 id="tutoriales-documentacion">Tutoriales, documentación</h4>
+<ul>
+<li>Hay una serie de 5 tutoriales en video en <a href="http://vimcasts.org/">vimcasts.org</a>. El primero de ellos es este: <a href="http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/">Fugitive.vim - a complement to command line git</a></li>
+</ul></div>
         </div>
 
         <footer class="col-md-12">
