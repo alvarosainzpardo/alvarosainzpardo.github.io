@@ -2,6 +2,14 @@
 
 ---
 
+## Documentación, tutoriales, enlaces
+
+En [vimcasts.org](http://vimcasts.org/) hay 68 tutoriales en video y 50 artículos sobre Vim. Realizados por Drew Neil, el autor del libro [Practical Vim](https://pragprog.com/book/dnvim2/practical-vim-second-edition).
+
+El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tiene una lista de plugins recomendados.
+
+---
+
 ## .vimrc
 
 ---
@@ -38,3 +46,20 @@ El programa para mapear la tecla **Caps Lock** es [Seil](https://pqrs.org/osx/ka
 
 ## Plugins
 
+### Fugitive
+
+[Fugitive](https://github.com/tpope/vim-fugitive) es un recubrimiento del comando git.
+
+#### Instalación
+
+Añadir:
+
+´´´
+Plugin 'tpope/vim-fugitive'
+´´´
+
+En la sección de Vundle del _.vimrc_.
+
+#### Tutoriales, documentación
+
+* Hay una serie de 5 tutoriales en video en [vimcasts.org](http://vimcasts.org/). El primero de ellos es este: [Fugitive.vim - a complement to command line git](http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/)
