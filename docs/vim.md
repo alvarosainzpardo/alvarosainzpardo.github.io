@@ -58,7 +58,7 @@ Añadir:
 Plugin 'tpope/vim-fugitive'
 ```
 
-En la sección de Vundle del _.vimrc_.
+En la sección de Vundle de `.vimrc` añadir:
 
 #### Tutoriales, documentación
 
