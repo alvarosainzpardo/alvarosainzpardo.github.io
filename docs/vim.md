@@ -54,9 +54,9 @@ El programa para mapear la tecla **Caps Lock** es [Seil](https://pqrs.org/osx/ka
 
 Añadir:
 
-´´´
+```
 Plugin 'tpope/vim-fugitive'
-´´´
+```
 
 En la sección de Vundle del _.vimrc_.
 
