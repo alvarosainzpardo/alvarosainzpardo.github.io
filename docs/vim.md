@@ -50,6 +50,10 @@ El programa para mapear la tecla **Caps Lock** es [Seil](https://pqrs.org/osx/ka
 
 [Fugitive](https://github.com/tpope/vim-fugitive) es un recubrimiento del comando git.
 
+#### Tutoriales, documentación
+
+* Hay una serie de 5 tutoriales en video en [vimcasts.org](http://vimcasts.org/). El primero de ellos es este: [Fugitive.vim - a complement to command line git](http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/)
+
 #### Instalación
 
 En la sección de **Vundle** de `.vimrc`, añadir:
@@ -57,7 +61,5 @@ En la sección de **Vundle** de `.vimrc`, añadir:
 ```
 Plugin 'tpope/vim-fugitive'
 ```
+#### Uso
 
-#### Tutoriales, documentación
-
-* Hay una serie de 5 tutoriales en video en [vimcasts.org](http://vimcasts.org/). El primero de ellos es este: [Fugitive.vim - a complement to command line git](http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/)
