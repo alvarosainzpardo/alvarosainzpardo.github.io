@@ -63,3 +63,10 @@ Plugin 'tpope/vim-fugitive'
 ```
 #### Uso
 
+Los comandos de Fugitive empiezan con G (g mayúscula). Se utilizan en modo vim normal, tecleando los dos puntos (:). Los comandos más habituales son:
+
+* **Gwrite**: guarda el archivo e invoca el commando `git add`
+* **Gread**: descarta los cambios del archivo que se está editando y recupera la última versión guardada en git. Una vez recuperada, vuelve a abrirla en el buffer de edición
+* **Gcommit**: invoca el comando `git commit` abriendo una ventana de edición para poder escribir el mensaje del commit
+* **Gpush**: invoca el comando `git push`
+* **Gpull**: invoca el comando `git pull`
