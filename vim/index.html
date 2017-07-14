@@ -123,9 +123,10 @@
         <li class="main active"><a href="#vim">Vim</a></li>
             <li><a href="#documentacion-tutoriales-enlaces">Documentación, tutoriales, enlaces</a></li>
             <li><a href="#vimrc">.vimrc</a></li>
-            <li><a href="#mapeo-de-teclas">Mapeo de teclas</a></li>
+            <li><a href="#colores-esquemas-de-color">Colores / Esquemas de color</a></li>
             <li><a href="#plugin-managers">Plugin managers</a></li>
             <li><a href="#plugins">Plugins</a></li>
+            <li><a href="#mapeo-de-teclas">Mapeo de teclas</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -138,11 +139,40 @@
 <hr />
 <h2 id="vimrc">.vimrc</h2>
 <hr />
-<h2 id="mapeo-de-teclas">Mapeo de teclas</h2>
-<h3 id="mapeo-de-teclas-del-sistema-en-osx">Mapeo de teclas del sistema en OSX</h3>
-<p>En muchos tutoriales sobre vim en OSX se recomienda mapear la tecla <strong>Caps Lock</strong> por <strong>Esc</strong>. El motivo es que la tecla <strong>Esc</strong> en el teclado del mac está muy lejos en la esquina superior izquierda, es muy pequeña y es una tecla muy usada en vim. AVISO: Este mapeo no se puede hacer dentro de vim, se tiene que hacer a nivel de sistema operativo. De esta forma, el mapeo afectará al funcionamiento de todo el sistema, no únicamente la aplicación vim.</p>
-<p>No tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuación el programa para realizarlo, para referencia futura.</p>
-<p>El programa para mapear la tecla <strong>Caps Lock</strong> es <a href="https://pqrs.org/osx/karabiner/seil.html.en">Seil</a>. El mismo desarrollador tiene otra utilidad para hacer mapeos más generales de teclado llamada <a href="https://pqrs.org/osx/karabiner/index.html.en">Karabiner</a>.</p>
+<h2 id="colores-esquemas-de-color">Colores / Esquemas de color</h2>
+<h3 id="true-colors-en-el-terminal">True Colors en el terminal</h3>
+<p>Los esquemas de color no se ven igual en versión <em>gui</em> que en terminal. Esto es porque en la versión <em>gui</em> vim utiliza todos los colores que proporciona el entorno gráfico (utiliza <em>true color</em>) mientras que, por defecto, vim utiliza 256 colores en modo terminal, aunque el terminal tenga soporte para <em>true color</em>.</p>
+<p>El emulador de terminal tiene tres modos de color:</p>
+<ul>
+<li>paleta de 16 colores</li>
+<li>paleta de 256 colores</li>
+<li>paleta de colores <em>true color</em></li>
+</ul>
+<p>La paleta de 256 colores es fija, no se puede cambiar. Algunos esquemas de color tienen una versión de 256 colores, en la que utilizan los colores fijos lo más parecidos posible a los colores <em>true color</em> originales de la paleta.</p>
+<p>La paleta de 16 colores sí que se puede cambiar por lo que, en teoría, se pueden configurar esos 16 colores para que sean iguales a los de la paleta del esquema de color. Lo que ocurre es que es muy probable que los colores que quedan bien en vim en cuanto se sale de vim y se ejecuta otro programa (por ejemplo tmux) se vean mal. Esta opción no suele usarse, la opción habitual para cuando no hay soporte para <em>true color</em> es la anterior, utilizar una versión del esquema de color para los 256 colores fijos del terminal.</p>
+<p>Cuando el emulador de terminal tiene soporte para <em>true color</em> están disponibles 32 millones de colores (colores de 24 bits) por lo que cualquier paleta de colores de cualquier programa se ve perfectamente. Es exactamente igual que lo que pasa en el escritorio gráfico.</p>
+<p>Para saber si un emulador de terminal tiene soporte para <em>true color</em> o no, el siguiente comando:</p>
+<pre><code class="bash">$ printf &quot;\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n&quot;
+</code></pre>
+
+<p>debe escribir la palabra TRUECOLOR en color rojo en un emulador de terminal con soporte para <em>true color</em>. También se puede ejecutar el siguiente comando <em>awk</em>, que en un terminar con soporte para <em>true color</em> debe mostrar un degradado de colores contínuo:</p>
+<pre><code class="awk">$ awk 'BEGIN{
+    s=&quot;/\\/\\/\\/\\/\\&quot;; s=s s s s s s s s;
+    for (colnum = 0; colnum&lt;77; colnum++) {
+        r = 255-(colnum*255/76);
+        g = (colnum*510/76);
+        b = (colnum*255/76);
+        if (g&gt;255) g = 510-g;
+        printf &quot;\033[48;2;%d;%d;%dm&quot;, r,g,b;
+        printf &quot;\033[38;2;%d;%d;%dm&quot;, 255-r,255-g,255-b;
+        printf &quot;%s\033[0m&quot;, substr(s,colnum+1,1);
+    }
+    printf &quot;\n&quot;;
+}'
+</code></pre>
+
+<p>Para que vim utilice <em>true colors</em> en modo terminal hay que añadir <code>set termguicolors</code> en <code>.vimrc</code>. Los terminales <strong>mintty</strong> (Cygwin), <strong>iTerm2</strong> (Mac) y <strong>gnuterm</strong> (Linux) tienen soporte para <em>true color</em>.</p>
+<p>[12/07/2017] Hay un problema con el <em>colorscheme</em> <strong>Solarized</strong> en modo terminal con el <em>true color</em> activado. Los colores salen totalmente cambiados, tanto con el background light como dark.</p>
 <hr />
 <h2 id="plugin-managers">Plugin managers</h2>
 <h3 id="vundle">Vundle</h3>
@@ -173,7 +203,13 @@
 <li><strong>Gcommit</strong>: invoca el comando <code>git commit</code> abriendo una ventana de edición para poder escribir el mensaje del commit</li>
 <li><strong>Gpush</strong>: invoca el comando <code>git push</code></li>
 <li><strong>Gpull</strong>: invoca el comando <code>git pull</code></li>
-</ul></div>
+</ul>
+<hr />
+<h2 id="mapeo-de-teclas">Mapeo de teclas</h2>
+<h3 id="mapeo-de-teclas-del-sistema-en-osx">Mapeo de teclas del sistema en OSX</h3>
+<p>En muchos tutoriales sobre vim en OSX se recomienda mapear la tecla <strong>Caps Lock</strong> por <strong>Esc</strong>. El motivo es que la tecla <strong>Esc</strong> en el teclado del mac está muy lejos en la esquina superior izquierda, es muy pequeña y es una tecla muy usada en vim. AVISO: Este mapeo no se puede hacer dentro de vim, se tiene que hacer a nivel de sistema operativo. De esta forma, el mapeo afectará al funcionamiento de todo el sistema, no únicamente la aplicación vim.</p>
+<p>No tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuación el programa para realizarlo, para referencia futura.</p>
+<p>El programa para mapear la tecla <strong>Caps Lock</strong> es <a href="https://pqrs.org/osx/karabiner/seil.html.en">Seil</a>. El mismo desarrollador tiene otra utilidad para hacer mapeos más generales de teclado llamada <a href="https://pqrs.org/osx/karabiner/index.html.en">Karabiner</a>.</p></div>
         </div>
 
         <footer class="col-md-12">
