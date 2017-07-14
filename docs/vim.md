@@ -18,6 +18,7 @@ El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tien
 
 ### True Colors en el terminal
 
+
 Los esquemas de color no se ven igual en el _gui_ que en el terminal. Esto es porque, por defecto, vim utiliza 256 colores en modo terminal, aunque el terminal tenga soporte para _true color_.
 
 Para que vim utilice _true colors_ en el terminal hay que añadir `set termguicolors` en `.vimrc`. Los terminales **mintty** (Cygwin), **iTerm2** (Mac) y **gnuterm** (Linux) tienen soporte para _true color_. Actualmente, hay un problema con el _colorscheme_ **Solarized** en terminal con el _true color_ activado. Los colores salen totalmente cambiados, tanto en background light como dark.
