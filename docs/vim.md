@@ -18,10 +18,47 @@ El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tien
 
 ### True Colors en el terminal
 
+Los esquemas de color no se ven igual en versión _gui_ que en terminal. Esto es porque en la versión _gui_ vim utiliza todos los colores que proporciona el entorno gráfico (utiliza _true color_) mientras que, por defecto, vim utiliza 256 colores en modo terminal, aunque el terminal tenga soporte para _true color_.
 
-Los esquemas de color no se ven igual en el _gui_ que en el terminal. Esto es porque, por defecto, vim utiliza 256 colores en modo terminal, aunque el terminal tenga soporte para _true color_.
+El emulador de terminal tiene tres modos de color:
 
-Para que vim utilice _true colors_ en el terminal hay que añadir `set termguicolors` en `.vimrc`. Los terminales **mintty** (Cygwin), **iTerm2** (Mac) y **gnuterm** (Linux) tienen soporte para _true color_. Actualmente, hay un problema con el _colorscheme_ **Solarized** en terminal con el _true color_ activado. Los colores salen totalmente cambiados, tanto en background light como dark.
+* paleta de 16 colores
+* paleta de 256 colores
+* paleta de colores _true color_
+
+La paleta de 256 colores es fija, no se puede cambiar. Algunos esquemas de color tienen una versión de 256 colores, en la que utilizan los colores fijos lo más parecidos posible a los colores _true color_ originales de la paleta.
+
+La paleta de 16 colores sí que se puede cambiar por lo que, en teoría, se pueden configurar esos 16 colores para que sean iguales a los de la paleta del esquema de color. Lo que ocurre es que es muy probable que los colores que quedan bien en vim en cuanto se sale de vim y se ejecuta otro programa (por ejemplo tmux) se vean mal. Esta opción no suele usarse, la opción habitual para cuando no hay soporte para _true color_ es la anterior, utilizar una versión del esquema de color para los 256 colores fijos del terminal.
+
+Cuando el emulador de terminal tiene soporte para _true color_ están disponibles 32 millones de colores (colores de 24 bits) por lo que cualquier paleta de colores de cualquier programa se ve perfectamente. Es exactamente igual que lo que pasa en el escritorio gráfico.
+
+Para saber si un emulador de terminal tiene soporte para _true color_ o no, el siguiente comando:
+
+```bash
+$ printf "\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n"
+```
+
+debe escribir la palabra TRUECOLOR en color rojo en un emulador de terminal con soporte para _true color_. También se puede ejecutar el siguiente comando _awk_, que en un terminar con soporte para _true color_ debe mostrar un degradado de colores contínuo:
+
+```awk
+$ awk 'BEGIN{
+    s="/\\/\\/\\/\\/\\"; s=s s s s s s s s;
+    for (colnum = 0; colnum<77; colnum++) {
+        r = 255-(colnum*255/76);
+        g = (colnum*510/76);
+        b = (colnum*255/76);
+        if (g>255) g = 510-g;
+        printf "\033[48;2;%d;%d;%dm", r,g,b;
+        printf "\033[38;2;%d;%d;%dm", 255-r,255-g,255-b;
+        printf "%s\033[0m", substr(s,colnum+1,1);
+    }
+    printf "\n";
+}'
+```
+
+Para que vim utilice _true colors_ en modo terminal hay que añadir `set termguicolors` en `.vimrc`. Los terminales **mintty** (Cygwin), **iTerm2** (Mac) y **gnuterm** (Linux) tienen soporte para _true color_.
+
+[12/07/2017] Hay un problema con el _colorscheme_ **Solarized** en modo terminal con el _true color_ activado. Los colores salen totalmente cambiados, tanto con el background light como dark.
 
 ---
 
