@@ -16,7 +16,26 @@ El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tien
 
 ## Colores / Esquemas de color
 
-### True Colors en el terminal
+### Esquemas de color
+
+* Base16
+* Solarized
+* Gruvbox
+* Molokai
+* Badwolf
+* Wombat
+
+### Base16
+
+Es una especie de _framework_ que proporciona un esquema de 16 colores por defecto y una configuración muy bien diseñada para _syntax highlighting_
+
+### True Color en el terminal
+
+#### Enlaces
+
+* [Colours in terminal](https://gist.github.com/XVilka/8346728): un enlace a git con una explicación muy buena sobre los diferentes modos de color de los emuladores de terminal, cómo detectar si el emulador de terminal tiene soporte para _true color_ y una lista de emuladores de terminal y programas con soporte para _true color_
+* [Support for True Color (16 millions colors)](https://github.com/jonas/tig/issues/227): otro enlace a git con explicación de modos de color en los emuladores de terminal y soporte para _true color_ en diferentes programas. Tiene enlaces a utilidades interesantes, como un programa que es capaz de mostrar una imagen en el emulador de terminar cuando tiene soporte para _true color_
+* [Using True Color in Vim with Tmux](https://deductivelabs.com/en/2016/03/using-true-color-vim-tmux/): una buena explicación de los diferentes modos de color en los emuladores de terminal y un buen tutorial de cómo activar el soporte para _true color_ en vim y en **tmux**
 
 Los esquemas de color no se ven igual en versión _gui_ que en terminal. Esto es porque en la versión _gui_ vim utiliza todos los colores que proporciona el entorno gráfico (utiliza _true color_) mientras que, por defecto, vim utiliza 256 colores en modo terminal, aunque el terminal tenga soporte para _true color_.
 
