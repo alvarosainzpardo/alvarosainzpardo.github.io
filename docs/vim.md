@@ -27,7 +27,29 @@ El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tien
 
 ### Base16
 
-Es una especie de _framework_ que proporciona un esquema de 16 colores por defecto y una configuración muy bien diseñada para _syntax highlighting_
+No es sólo un esquema de colores, es un _framework_ que proporciona un esquema de 16 colores (tiene una combinación de 16 colores por defecto pero hay muchas combinaciones diferentes) y una configuración para hacer _syntax highlighting_ muy bien diseñada.
+
+* La web principal del proyecto es https://github.com/chriskempson/base16
+* Los diferentes temas creados con Base16 se pueden previsualizar en https://chriskempson.github.io/base16/
+* Los temas Base16 para vim están en https://github.com/chriskempson/base16-vim
+
+#### Instalación
+
+Añadir lo siguiente al `vimrc` y ejecutar `PluginInstall` en Vim:
+
+```
+Plugin 'chriskempson/base16-vim'
+```
+
+Seleccionar el esquema de color deseado, por ejemplo:
+
+```
+colorscheme base16-default-dark
+```
+
+La lista de temas de color disponibles en Base16 está en https://github.com/chriskempson/base16-vim/tree/master/colors.
+
+La página de Base16 para vim tiene bastantes recetas para configurar Base16 para vim en modo terminal. Consultar también https://github.com/chriskempson/base16-iterm2 para información sobre colores Base16 para iTerm2 y https://github.com/chriskempson/base16-shell, que es una utilidad para configurar los colores del terminal.
 
 ### True Color en el terminal
 
