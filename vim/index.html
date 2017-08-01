@@ -140,7 +140,40 @@
 <h2 id="vimrc">.vimrc</h2>
 <hr />
 <h2 id="colores-esquemas-de-color">Colores / Esquemas de color</h2>
-<h3 id="true-colors-en-el-terminal">True Colors en el terminal</h3>
+<h3 id="esquemas-de-color">Esquemas de color</h3>
+<ul>
+<li>Base16</li>
+<li>Solarized</li>
+<li>Gruvbox</li>
+<li>Molokai</li>
+<li>Badwolf</li>
+<li>Wombat</li>
+</ul>
+<h3 id="base16">Base16</h3>
+<p>No es sólo un esquema de colores, es un <em>framework</em> que proporciona un esquema de 16 colores (tiene una combinación de 16 colores por defecto pero hay muchas combinaciones diferentes) y una configuración para hacer <em>syntax highlighting</em> muy bien diseñada.</p>
+<ul>
+<li>La web principal del proyecto es https://github.com/chriskempson/base16</li>
+<li>Los diferentes temas creados con Base16 se pueden previsualizar en https://chriskempson.github.io/base16/</li>
+<li>Los temas Base16 para vim están en https://github.com/chriskempson/base16-vim</li>
+</ul>
+<h4 id="instalacion">Instalación</h4>
+<p>Añadir lo siguiente al <code>vimrc</code> y ejecutar <code>PluginInstall</code> en Vim:</p>
+<pre><code>Plugin 'chriskempson/base16-vim'
+</code></pre>
+
+<p>Seleccionar el esquema de color deseado, por ejemplo:</p>
+<pre><code>colorscheme base16-default-dark
+</code></pre>
+
+<p>La lista de temas de color disponibles en Base16 está en https://github.com/chriskempson/base16-vim/tree/master/colors.</p>
+<p>La página de Base16 para vim tiene bastantes recetas para configurar Base16 para vim en modo terminal. Consultar también https://github.com/chriskempson/base16-iterm2 para información sobre colores Base16 para iTerm2 y https://github.com/chriskempson/base16-shell, que es una utilidad para configurar los colores del terminal.</p>
+<h3 id="true-color-en-el-terminal">True Color en el terminal</h3>
+<h4 id="enlaces">Enlaces</h4>
+<ul>
+<li><a href="https://gist.github.com/XVilka/8346728">Colours in terminal</a>: un enlace a git con una explicación muy buena sobre los diferentes modos de color de los emuladores de terminal, cómo detectar si el emulador de terminal tiene soporte para <em>true color</em> y una lista de emuladores de terminal y programas con soporte para <em>true color</em></li>
+<li><a href="https://github.com/jonas/tig/issues/227">Support for True Color (16 millions colors)</a>: otro enlace a git con explicación de modos de color en los emuladores de terminal y soporte para <em>true color</em> en diferentes programas. Tiene enlaces a utilidades interesantes, como un programa que es capaz de mostrar una imagen en el emulador de terminar cuando tiene soporte para <em>true color</em></li>
+<li><a href="https://deductivelabs.com/en/2016/03/using-true-color-vim-tmux/">Using True Color in Vim with Tmux</a>: una buena explicación de los diferentes modos de color en los emuladores de terminal y un buen tutorial de cómo activar el soporte para <em>true color</em> en vim y en <strong>tmux</strong></li>
+</ul>
 <p>Los esquemas de color no se ven igual en versión <em>gui</em> que en terminal. Esto es porque en la versión <em>gui</em> vim utiliza todos los colores que proporciona el entorno gráfico (utiliza <em>true color</em>) mientras que, por defecto, vim utiliza 256 colores en modo terminal, aunque el terminal tenga soporte para <em>true color</em>.</p>
 <p>El emulador de terminal tiene tres modos de color:</p>
 <ul>
@@ -177,10 +210,10 @@
 <h2 id="plugin-managers">Plugin managers</h2>
 <h3 id="vundle">Vundle</h3>
 <p><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> es un verdadero <em>plugin manager</em>, en el sentido de que, a partir de la configuración que se hace en el archivo <em>.vimrc</em>, descarga automáticamente los plugins y tiene comandos para actualizar la versión de los plugins instalados, etc. Es más completo que <strong>Pathogen</strong> en cuanto a funcionalidad.</p>
-<h4 id="instalacion">Instalación</h4>
+<h4 id="instalacion_1">Instalación</h4>
 <h4 id="uso">Uso</h4>
 <h3 id="pathogen">Pathogen</h3>
-<h4 id="instalacion_1">Instalación</h4>
+<h4 id="instalacion_2">Instalación</h4>
 <h4 id="uso_1">Uso</h4>
 <hr />
 <h2 id="plugins">Plugins</h2>
@@ -190,7 +223,7 @@
 <ul>
 <li>Hay una serie de 5 tutoriales en video en <a href="http://vimcasts.org/">vimcasts.org</a>. El primero de ellos es este: <a href="http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/">Fugitive.vim - a complement to command line git</a></li>
 </ul>
-<h4 id="instalacion_2">Instalación</h4>
+<h4 id="instalacion_3">Instalación</h4>
 <p>En la sección de <strong>Vundle</strong> de <code>.vimrc</code>, añadir:</p>
 <pre><code>Plugin 'tpope/vim-fugitive'
 </code></pre>
