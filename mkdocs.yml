@@ -8,8 +8,8 @@ pages:
   - Espacios Digitales: espacios_digitales.md
 - Personal:
   - Data Science:
-    - R: data_science/R.md
     - Python: data_science/python.md
+    - R: data_science/R.md
   - Ssh: ssh.md
   - Vim: vim.md
   - Git: git.md
