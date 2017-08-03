@@ -91,6 +91,21 @@
             "title": "Omnicanalidad y cliente omnicanal"
         },
         {
+            "location": "/data_science/cursos/",
+            "text": "Cursos de Data Science\n\n\nFoundations of Data Science\n\n\nFoundations of Data Science: A Data Science Course for Everyone\n es un curso de la Universidad de Berkeley de nivel introductorio, apto para estudiantes de entrada de cualquier universidad, que ha sido espec\u00edficamente dise\u00f1ado para estudiantes que no han recibido previamente ning\u00fan curso sobre estad\u00edstica o data science. Todos los materiales est\u00e1n disponibles en la \nweb del curso\n, as\u00ed como el \nlibro de texto del curso\n, los \nvideos de las clases\n y las \nslides del curso\n.\n\n\nEl curso hace un uso extensivo de la herramienta \nJupyter Notebook\n que se explica en el art\u00edculo \nThe course of the future \u2013 and the technology behind it\n.",
+            "title": "Cursos"
+        },
+        {
+            "location": "/data_science/cursos/#cursos-de-data-science",
+            "text": "",
+            "title": "Cursos de Data Science"
+        },
+        {
+            "location": "/data_science/cursos/#foundations-of-data-science",
+            "text": "Foundations of Data Science: A Data Science Course for Everyone  es un curso de la Universidad de Berkeley de nivel introductorio, apto para estudiantes de entrada de cualquier universidad, que ha sido espec\u00edficamente dise\u00f1ado para estudiantes que no han recibido previamente ning\u00fan curso sobre estad\u00edstica o data science. Todos los materiales est\u00e1n disponibles en la  web del curso , as\u00ed como el  libro de texto del curso , los  videos de las clases  y las  slides del curso .  El curso hace un uso extensivo de la herramienta  Jupyter Notebook  que se explica en el art\u00edculo  The course of the future \u2013 and the technology behind it .",
+            "title": "Foundations of Data Science"
+        },
+        {
             "location": "/data_science/python/",
             "text": "Data Science en Python\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\nEl autor Jake VanderPlas tiene una serie de art\u00edculos divulgativos en O'Reilly sobre Python y m\u00f3dulos de Python para data science:\n\n\n\n\nTodos los art\u00edculos est\u00e1n en \nPosts by Jake VanderPlas\n: Python, scikit-learn, handling missing data, Pandas, Seaborn, Support Vector Machines, etc\n\n\nA Whirlwind Tour of Python\n: tutorial de python, sintaxis, tipos de datos, m\u00f3dulos para data science, etc. Este art\u00edculo est\u00e1 disponible como ebook en formato \nepub\n, \nmobi\n y \npdf\n\n\nIntroduction to scikit-learn\n\n\nVarios art\u00edculos sobre Pandas: \nIntroducing Pandas Objects\n, \nOperations in Pandas\n, \nData Indexing and Selection\n, \nPivot Tables in Python\n\n\nIntroduction to Support Vector Machines\n\n\nData visualization with Seaborn\n\n\nHandling missing data\n\n\n\n\nEl libro de Jake VanderPlas se titula \nPython Data Science Handbook\n\n\nJupyter Notebook\n\n\n\n\nThe Jupyter notebook\n: documentaci\u00f3n\n\n\nJupyterHub\n: instalaci\u00f3n multiusuario de Jupyter. Se utiliza en el courso Foundations de la UC Berkeley\n\n\nZero to JupyterHub\n: documentaci\u00f3n sobre JupyterHub",
             "title": "Python"
