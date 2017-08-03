@@ -7,6 +7,9 @@ pages:
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md
 - Personal:
+  - Data Science:
+    - R: data_science/R.md
+    - Python: data_science/python.md
   - Ssh: ssh.md
   - Vim: vim.md
   - Git: git.md
