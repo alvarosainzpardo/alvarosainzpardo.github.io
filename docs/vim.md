@@ -30,9 +30,9 @@ El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tien
 
 No es sólo un esquema de colores, es un _framework_ que proporciona un esquema de 16 colores (tiene una combinación de 16 colores por defecto pero hay muchas combinaciones diferentes) y una configuración para hacer _syntax highlighting_ muy bien diseñada.
 
-* La web principal del proyecto es https://github.com/chriskempson/base16
-* Los diferentes temas creados con Base16 se pueden previsualizar en https://chriskempson.github.io/base16/
-* Los temas Base16 para vim están en https://github.com/chriskempson/base16-vim
+* La web principal del proyecto es [https://github.com/chriskempson/base16](https://github.com/chriskempson/base16)
+* Los diferentes temas creados con Base16 se pueden previsualizar en [https://chriskempson.github.io/base16/](https://chriskempson.github.io/base16/)
+* Los temas Base16 para vim están en [https://github.com/chriskempson/base16-vim](https://github.com/chriskempson/base16-vim)
 
 #### Instalación
 
