@@ -91,8 +91,23 @@
             "title": "Omnicanalidad y cliente omnicanal"
         },
         {
+            "location": "/data_science/python/",
+            "text": "Data Science en Python\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\nEl autor Jake VanderPlas tiene una serie de art\u00edculos divulgativos en O'Reilly sobre Python y m\u00f3dulos de Python para data science:\n\n\n\n\nTodos los art\u00edculos est\u00e1n en \nPosts by Jake VanderPlas\n: Python, scikit-learn, handling missing data, Pandas, Seaborn, Support Vector Machines, etc\n\n\nA Whirlwind Tour of Python\n: tutorial de python, sintaxis, tipos de datos, m\u00f3dulos para data science, etc. Este art\u00edculo est\u00e1 disponible como ebook en formato \nepub\n, \nmobi\n y \npdf\n\n\nIntroduction to scikit-learn\n\n\nVarios art\u00edculos sobre Pandas: \nIntroducing Pandas Objects\n, \nOperations in Pandas\n, \nData Indexing and Selection\n, \nPivot Tables in Python\n\n\nIntroduction to Support Vector Machines\n\n\nData visualization with Seaborn\n\n\nHandling missing data\n\n\n\n\nEl libro de Jake VanderPlas se titula \nPython Data Science Handbook",
+            "title": "Python"
+        },
+        {
+            "location": "/data_science/python/#data-science-en-python",
+            "text": "",
+            "title": "Data Science en Python"
+        },
+        {
+            "location": "/data_science/python/#enlaces-tutoriales-documentacion-libros",
+            "text": "El autor Jake VanderPlas tiene una serie de art\u00edculos divulgativos en O'Reilly sobre Python y m\u00f3dulos de Python para data science:   Todos los art\u00edculos est\u00e1n en  Posts by Jake VanderPlas : Python, scikit-learn, handling missing data, Pandas, Seaborn, Support Vector Machines, etc  A Whirlwind Tour of Python : tutorial de python, sintaxis, tipos de datos, m\u00f3dulos para data science, etc. Este art\u00edculo est\u00e1 disponible como ebook en formato  epub ,  mobi  y  pdf  Introduction to scikit-learn  Varios art\u00edculos sobre Pandas:  Introducing Pandas Objects ,  Operations in Pandas ,  Data Indexing and Selection ,  Pivot Tables in Python  Introduction to Support Vector Machines  Data visualization with Seaborn  Handling missing data   El libro de Jake VanderPlas se titula  Python Data Science Handbook",
+            "title": "Enlaces, tutoriales, documentaci\u00f3n, libros"
+        },
+        {
             "location": "/data_science/R/",
-            "text": "Data Science en R",
+            "text": "Data Science en R\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\nEl art\u00edculo \nR\u2019s tidytext turns messy text into valuable insight\n comenta la utilizaci\u00f3n del m\u00f3dulo \ntydytext\n para realizar miner\u00eda de texto en R. El art\u00edculo es un \nabstract\n del libro \nText Mining with R: A tidy approach\n. El libro est\u00e1 \ndisponible para su lectura online\n y tiene un \nrepositorio GitHub\n.",
             "title": "R"
         },
         {
@@ -101,14 +116,9 @@
             "title": "Data Science en R"
         },
         {
-            "location": "/data_science/python/",
-            "text": "Data Science en Python",
-            "title": "Python"
-        },
-        {
-            "location": "/data_science/python/#data-science-en-python",
-            "text": "",
-            "title": "Data Science en Python"
+            "location": "/data_science/R/#enlaces-tutoriales-documentacion-libros",
+            "text": "El art\u00edculo  R\u2019s tidytext turns messy text into valuable insight  comenta la utilizaci\u00f3n del m\u00f3dulo  tydytext  para realizar miner\u00eda de texto en R. El art\u00edculo es un  abstract  del libro  Text Mining with R: A tidy approach . El libro est\u00e1  disponible para su lectura online  y tiene un  repositorio GitHub .",
+            "title": "Enlaces, tutoriales, documentaci\u00f3n, libros"
         },
         {
             "location": "/ssh/",
