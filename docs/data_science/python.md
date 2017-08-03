@@ -13,3 +13,9 @@ El autor Jake VanderPlas tiene una serie de artículos divulgativos en O'Reilly 
 * [Handling missing data](https://www.oreilly.com/learning/handling-missing-data)
 
 El libro de Jake VanderPlas se titula [Python Data Science Handbook](http://shop.oreilly.com/product/0636920034919.do)
+
+## Jupyter Notebook
+
+* [The Jupyter notebook](https://jupyter-notebook.readthedocs.io/): documentación
+* [JupyterHub](https://github.com/jupyterhub/jupyterhub): instalación multiusuario de Jupyter. Se utiliza en el courso Foundations de la UC Berkeley
+* [Zero to JupyterHub](https://zero-to-jupyterhub.readthedocs.io/): documentación sobre JupyterHub
