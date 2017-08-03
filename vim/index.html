@@ -166,6 +166,7 @@
 <li>Molokai</li>
 <li>Badwolf</li>
 <li>Wombat</li>
+<li><a href="https://github.com/endel/vim-github-colorscheme">Github</a></li>
 </ul>
 <h3 id="base16">Base16</h3>
 <p>No es sólo un esquema de colores, es un <em>framework</em> que proporciona un esquema de 16 colores (tiene una combinación de 16 colores por defecto pero hay muchas combinaciones diferentes) y una configuración para hacer <em>syntax highlighting</em> muy bien diseñada.</p>
@@ -185,6 +186,17 @@
 
 <p>La lista de temas de color disponibles en Base16 está en https://github.com/chriskempson/base16-vim/tree/master/colors.</p>
 <p>La página de Base16 para vim tiene bastantes recetas para configurar Base16 para vim en modo terminal. Consultar también https://github.com/chriskempson/base16-iterm2 para información sobre colores Base16 para iTerm2 y https://github.com/chriskempson/base16-shell, que es una utilidad para configurar los colores del terminal.</p>
+<p><strong>[UPDATE: 02/08/17]</strong>: parece ser que hay emuladores de terminal en los que se puede cambiar la paleta de 256 colores, por ejemplo iTerm2. En el esquema de color Base16 se puede utilizar esta opción (cambiar la paleta de 256 colores) incluso se proporciona un <em>shell script</em> para cambiar los colores 17-21 de la paleta (para dejar los colores 0-15 sin cambiar y no afectar a otros programas) y versiones específicas de los temas de color para esta configuración. Hay más información sobre este tema en la página <a href="https://vi.stackexchange.com/questions/8935/how-to-install-base16-for-iterm2">How to install base16 for iTerm2?</a>.</p>
+<h3 id="onedarkvim">onedark.vim</h3>
+<p><a href="https://github.com/joshdick/onedark.vim">onedark.vim</a> es un tema para vim inspirado en el excelente tema One Dark del editor Atom. El tema <a href="https://github.com/chriskempson/base16-vim/blob/master/colors/base16-onedark.vim">base16-onedark</a> del esquema de colores Base16 está inspirado en este tema. Este tema tiene versiones para <em>true color</em> y para las paletas de 16 y 256 colores.</p>
+<p>En la sección de instalación de la página del tema hay instrucciones para:</p>
+<ul>
+<li>detectar si el terminal tiene soporte para <em>true color</em></li>
+<li>configurar tmux para usar el tema</li>
+<li>seleccionar las opciones de paleta de 16 y de 256 colores</li>
+<li>configurar vim-airline</li>
+<li>solucionar problemas comununes con <em>true color</em> y las paletas de 16 y 256 colores</li>
+</ul>
 <h3 id="true-color-en-el-terminal">True Color en el terminal</h3>
 <h4 id="enlaces">Enlaces</h4>
 <ul>
@@ -199,9 +211,10 @@
 <li>paleta de 256 colores</li>
 <li>paleta de colores <em>true color</em></li>
 </ul>
-<p>La paleta de 256 colores es fija, no se puede cambiar. Algunos esquemas de color tienen una versión de 256 colores, en la que utilizan los colores fijos lo más parecidos posible a los colores <em>true color</em> originales de la paleta.</p>
-<p>La paleta de 16 colores sí que se puede cambiar por lo que, en teoría, se pueden configurar esos 16 colores para que sean iguales a los de la paleta del esquema de color. Lo que ocurre es que es muy probable que los colores que quedan bien en vim en cuanto se sale de vim y se ejecuta otro programa (por ejemplo tmux) se vean mal. Esta opción no suele usarse, la opción habitual para cuando no hay soporte para <em>true color</em> es la anterior, utilizar una versión del esquema de color para los 256 colores fijos del terminal.</p>
-<p>Cuando el emulador de terminal tiene soporte para <em>true color</em> están disponibles 32 millones de colores (colores de 24 bits) por lo que cualquier paleta de colores de cualquier programa se ve perfectamente. Es exactamente igual que lo que pasa en el escritorio gráfico.</p>
+<p>La paleta de 16 colores está formada por 8 colores estándar y 8 variantes "brillantes" de esos colores estándar. Los colores estándar son: negro, rojo, verde, amarillo, azul, magenta, cyan y blanco. El negro "estándar" es negro mientras que el negro "brillante" es un gris oscuro. El blanco "estándar" es un gris claro mientras que el blanco "brillante" es blanco. Muchos programas de terminal asumen esta disposición de colores. La paleta de 16 colores sí que se puede cambiar por lo que, en teoría, se pueden configurar esos 16 colores para que sean iguales a los de la paleta del esquema de color. Lo que ocurre es que es muy probable que los colores que quedan bien en vim en cuanto se sale de vim y se ejecuta otro programa (por ejemplo tmux) ya se vean mal. El motivo es que el otro programa no tiene forma de saber que se ha cambiado la paleta de 16 colores y da por sentado que se está usando la paleta estándar de 16 colores. Por este motivo, no suele usarse esta opción (cambiar la paleta de 16 colores) para cambiar los colores de vim en modo terminal.</p>
+<p>La paleta de 256 colores es fija, no se puede cambiar. Algunos esquemas de color tienen una versión de 256 colores, en la que utilizan los colores fijos más parecidos posible a los colores <em>true color</em> originales de la paleta. Esta es la opción más utilizada para cambiar los colores de vim en modo terminal, porque no se modifica la paleta de 16 colores y los otros programas de terminal no se ven afectados.</p>
+<p><strong>[UPDATE: 02/08/17]</strong>: parece ser que hay emuladores de terminal en los que se puede cambiar la paleta de 256 colores, por ejemplo iTerm2. En el esquema de color Base16 se puede utilizar esta opción (cambiar la paleta de 256 colores) incluso se proporciona un <em>shell script</em> para cambiar los colores 17-21 de la paleta (para dejar los colores 0-15 sin cambiar y no afectar a otros programas) y versiones específicas de los temas de color para esta configuración.</p>
+<p>Cuando el emulador de terminal tiene soporte para <em>true color</em> están disponibles 32 millones de colores (colores de 24 bits) por lo que cualquier paleta de colores de cualquier programa se ve perfectamente. Es exactamente igual que lo que pasa cuando se utiliza un escritorio gráfico (Mac, Windows, etc). Esta es la opción recomendada.</p>
 <p>Para saber si un emulador de terminal tiene soporte para <em>true color</em> o no, el siguiente comando:</p>
 <pre><code class="bash">$ printf &quot;\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n&quot;
 </code></pre>
@@ -223,7 +236,7 @@
 </code></pre>
 
 <p>Para que vim utilice <em>true colors</em> en modo terminal hay que añadir <code>set termguicolors</code> en <code>.vimrc</code>. Los terminales <strong>mintty</strong> (Cygwin), <strong>iTerm2</strong> (Mac) y <strong>gnuterm</strong> (Linux) tienen soporte para <em>true color</em>.</p>
-<p>[12/07/2017] Hay un problema con el <em>colorscheme</em> <strong>Solarized</strong> en modo terminal con el <em>true color</em> activado. Los colores salen totalmente cambiados, tanto con el background light como dark.</p>
+<p><strong>[UPDATE: 12/07/2017]</strong> Hay un problema con el <em>colorscheme</em> <strong>Solarized</strong> en modo terminal con el <em>true color</em> activado. Los colores salen totalmente cambiados, tanto con el background light como dark.</p>
 <hr />
 <h2 id="plugin-managers">Plugin managers</h2>
 <h3 id="vundle">Vundle</h3>
