@@ -14,6 +14,8 @@ El autor Jake VanderPlas tiene una serie de artículos divulgativos en O'Reilly 
 
 El libro de Jake VanderPlas se titula [Python Data Science Handbook](http://shop.oreilly.com/product/0636920034919.do)
 
+[An end to end implementation of a Machine Learning pipeline](https://spandan-madan.github.io/DeepLearningProject/) es un tutorial que cubre el ciclo completo de un proyecto de machine learning, empezando por la captura (_scrapping_) de datos, en este caso datos de películas obtenidos de IMDB y TMDB. El objetivo del proyecto es predecir el género de una película a partir de datos textuales y visuales (el poster de la película). Se capturan los datos, se construye un dataset a partir de los datos capturados, se crean modelos prdictivos, tanto modelos _tradicionales_ como modelos que utilizan _deep learning_. Todo el código en python está disponible en el [repositorio github del proyecto](https://github.com/Spandan-Madan/DeepLearningProject) y en el [README](https://github.com/Spandan-Madan/DeepLearningProject/blob/master/README.md) hay instrucciones de instalación. Se utiliza Python 2.7 porque TensorFlow no es compatible con Python > 3.5.
+
 ## Jupyter Notebook
 
 * [The Jupyter notebook](https://jupyter-notebook.readthedocs.io/): documentación
