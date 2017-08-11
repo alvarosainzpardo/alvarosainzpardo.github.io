@@ -50,6 +50,15 @@ O para un host en concreto:
 
 La opción `ServerAliveInterval`es para que el proxy no desconecte después de un periodo de inactividad.
 
+### nc en Mac OSX
+
+La versión de nc de OSX tiene un problema de compatibilidad con los proxies http. No es compatible con proxies que utilizan HTTP 1.1, sólo es compatible con HTTP 1.0. El proxy de Telefónica utiliza HTTP 1.1, por lo que no se puede usar nc. Una alternativa que funciona perfectamente es [ncat](https://nmap.org/ncat/), que forma parte del paquete [nmap](https://nmap.org/).
+
+La opción para utilizar ncat en el archivo `~/.ssh/config` es:
+
+	Host *
+		ProxyCommand          ncat --proxy proxyhost:proxyport --proxy-auth user:passwd %h %p
+
 ---
 
 ## Autenticación con clave privada (archivos .pem)
