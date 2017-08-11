@@ -182,6 +182,12 @@
     ServerAliveInterval   10
 </code></pre>
 <p>La opción <code>ServerAliveInterval</code>es para que el proxy no desconecte después de un periodo de inactividad.</p>
+<h3 id="nc-en-mac-osx">nc en Mac OSX</h3>
+<p>La versión de nc de OSX tiene un problema de compatibilidad con los proxies http. No es compatible con proxies que utilizan HTTP 1.1, sólo es compatible con HTTP 1.0. El proxy de Telefónica utiliza HTTP 1.1, por lo que no se puede usar nc. Una alternativa que funciona perfectamente es <a href="https://nmap.org/ncat/">ncat</a>, que forma parte del paquete <a href="https://nmap.org/">nmap</a>.</p>
+<p>La opción para utilizar ncat en el archivo <code>~/.ssh/config</code> es:</p>
+<pre><code>Host *
+    ProxyCommand          ncat --proxy proxyhost:proxyport --proxy-auth user:passwd %h %p
+</code></pre>
 <hr />
 <h2 id="autenticacion-con-clave-privada-archivos-pem">Autenticación con clave privada (archivos .pem)</h2>
 <p>Para conectarse a máquinas virtuales de Amazon y Fiware, hay que utilizar la autenticación con clave privada (archivos .pem)</p>
