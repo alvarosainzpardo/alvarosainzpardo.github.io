@@ -18,6 +18,29 @@ Have you heard people talking about machine learning but only have a fuzzy idea 
 
 This guide is for anyone who is curious about machine learning but has no idea where to start. I imagine there are a lot of people who tried reading the wikipedia article, got frustrated and gave up wishing someone would just give them a high-level explanation. That’s what this is.
 
+### [Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463)
+
+The Most Complete List of Best AI Cheat Sheets. Over the past few months, I have been collecting AI cheat sheets. From time to time I share them with friends and colleagues and recently I have been getting asked a lot, so I decided to organize and share the entire collection. To make things more interesting and give context, I added descriptions and/or excerpts for each major topic.
+
+### [Machine Learning for Humans](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12)
+
+Simple, plain-English explanations accompanied by math, code, and real-world examples.
+
+[Update 9/2/17] This series is now available as a full-length e-book! [Download here](https://www.dropbox.com/s/vvh0lkxcljgzlhy/machine_learning_for_humans.pdf?dl=0).
+
+For inquiries, please contact ml4humans@gmail.com.
+
+#### Roadmap
+
+* [Part 1: Why Machine Learning Matters](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12). The big picture of artificial intelligence and machine learning — past, present, and future.
+* [Part 2.1: Supervised Learning](https://medium.com/@v_maini/supervised-learning-740383a2feab). Learning with an answer key. Introducing linear regression, loss functions, overfitting, and gradient descent.
+* [Part 2.2: Supervised Learning II](https://medium.com/@v_maini/supervised-learning-2-5c1c23f3560d). Two methods of classification: logistic regression and SVMs.
+* [Part 2.3: Supervised Learning III](https://medium.com/@v_maini/supervised-learning-3-b1551b9c4930). Non-parametric learners: k-nearest neighbors, decision trees, random forests. Introducing cross-validation, hyperparameter tuning, and ensemble models.
+* [Part 3: Unsupervised Learning](https://medium.com/@v_maini/unsupervised-learning-f45587588294). Clustering: k-means, hierarchical. Dimensionality reduction: principal components analysis (PCA), singular value decomposition (SVD).
+* [Part 4: Neural Networks & Deep Learning](https://medium.com/@v_maini/neural-networks-deep-learning-cdad8aeae49b). Why, where, and how deep learning works. Drawing inspiration from the brain. Convolutional neural networks (CNNs), recurrent neural networks (RNNs). Real-world applications.
+* [Part 5: Reinforcement Learning](https://medium.com/@v_maini/reinforcement-learning-6eacf258b265). Exploration and exploitation. Markov decision processes. Q-learning, policy learning, and deep reinforcement learning. The value learning problem.
+* [Appendix: The Best Machine Learning Resources](https://medium.com/@v_maini/how-to-learn-machine-learning-24d53bb64aa1). A curated list of resources for creating your machine learning curriculum.
+
 ### Enlaces
 
 * [Object detection: an overview in the age of Deep Learning](https://tryolabs.com/blog/2017/08/30/object-detection-an-overview-in-the-age-of-deep-learning/)
