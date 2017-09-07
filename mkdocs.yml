@@ -8,6 +8,7 @@ pages:
   - Espacios Digitales: espacios_digitales.md
 - Personal:
   - Data Science:
+    - General: data_science/general.md
     - Cursos: data_science/cursos.md
     - Python: data_science/python.md
     - R: data_science/R.md
