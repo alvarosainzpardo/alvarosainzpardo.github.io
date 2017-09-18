@@ -18,8 +18,15 @@ El libro de Jake VanderPlas se titula [Python Data Science Handbook](http://shop
 
 Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquetes científicos de análisis de datos en Python (como NumPy o SciPy). Conda es un gestor de paquetes software (tipo apt o yum) hecho en Python y multiplataforma. Sirve para gestionar paquetes de software no sólo de Python (de JavaScript, por ejemplo) aunque se utiliza fundamentalmente para Python. Por encima de Conda, se han creado distribuciones de Python que incluyen también un conjunto de paquetes ya preinstalados y configurados, como por ejemplo Anaconda. En el artículo [Conda: Myths and Misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) hay una buena explicación de Conda, las diferencias con pip+virtualenv, cuándo utilizar uno u otro y los motivos que llevaron a la creación de Conda. Cuando se usa Conda, lo primero que se hace es crear un entorno y dentro de ese entorno se instala python y los paquetes necesarios.
 
+### Otros enlaces
+
+* [Quick Tip: The easiest way to grab data out of a web page in Python](https://medium.com/@ageitgey/quick-tip-the-easiest-way-to-grab-data-out-of-a-web-page-in-python-7153cecfca58): tutorial para hacer _web scrapping_ usando pandas, que tiene una función que devuelve un data frame por cada tabla que tenga la página web
+
 ## Jupyter Notebook
 
-* [The Jupyter notebook](https://jupyter-notebook.readthedocs.io/): documentación
+### Enlaces
+
+* [What is Jupyter?](https://www.oreilly.com/ideas/what-is-jupyter): es una descripción introductoria muy buena sobre Jupyter, para qué sirve, cómo instalarlo y usarlo, cómo integrarlo con Docker para resolver los problemas de distribución del software necesario para ejecurar los programas, etc. Explica el soporte que Github le da a Jupyter (si se sube un archivo .ipynb a un repositorio, Github ejecuta el código y publica una página estática con los resultados). Se menciona el entorno cloud [Binder](http://mybinder.org/) que permite ejecutar notebooks en la nube. Explica la forma de trabajar con Jupyter, Github y Docker para distribuir y compartir notebooks. Hay dockerfiles específicos de Jupyter. Hay extensiones de Jupyter para crear elementos gráficos de aplicación, para hacer dashboards, para crear mapas basados en OpenStreetMap, para hacer visualizaciones de datos en 2D y 3D, para d3.js. Explica para qué sirve la utilidad nbviewer y cómo usarla. También da una lista de notebooks en python sobre temas de data science y machine learning.
+* [The Jupyter notebook](https://jupyter-notebook.readthedocs.io/): documentación oficial
 * [JupyterHub](https://github.com/jupyterhub/jupyterhub): instalación multiusuario de Jupyter. Se utiliza en el courso Foundations de la UC Berkeley
 * [Zero to JupyterHub](https://zero-to-jupyterhub.readthedocs.io/): documentación sobre JupyterHub
