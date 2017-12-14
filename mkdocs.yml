@@ -4,6 +4,7 @@ theme: mkdocs
 pages:
 - Home: index.md
 - Trabajo:
+  - Smart Cities: smart_cities.md
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md
 - Personal:
