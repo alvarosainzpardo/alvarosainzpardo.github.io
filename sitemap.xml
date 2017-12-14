@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,14 +12,20 @@
     
         
     <url>
+     <loc>/smart_cities/</loc>
+     <lastmod>2017-12-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/video/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/espacios_digitales/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,43 +41,43 @@
         
     <url>
      <loc>/ssh/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/vim/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/git/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/markdown/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/brew/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/robocopy/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/lossless/</loc>
-     <lastmod>2017-10-09</lastmod>
+     <lastmod>2017-12-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
