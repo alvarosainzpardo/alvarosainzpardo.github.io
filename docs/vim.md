@@ -2,11 +2,17 @@
 
 ---
 
-## Documentación, tutoriales, enlaces
+## Documentación, tutoriales, enlaces, libros
 
 En [vimcasts.org](http://vimcasts.org/) hay 68 tutoriales en video y 50 artículos sobre Vim. Realizados por Drew Neil, el autor del libro [Practical Vim](https://pragprog.com/book/dnvim2/practical-vim-second-edition).
 
 El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tiene una lista de plugins recomendados.
+
+### Libros
+
+[A Byte of Vim](https://vim.swaroopch.com/) es un libro sobre Vim (versión 7). Se puede leer online en la web del libro y también está disponible su descarga gratuita en formato ebook: [pdf](https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-vim), [epub](https://www.gitbook.com/download/epub/book/swaroopch/byte-of-vim) y [mobi](https://www.gitbook.com/download/mobi/book/swaroopch/byte-of-vim). El libro en formato _raw_ está disponible en su [repositorio github](https://github.com/swaroopch/byte-of-vim).
+
+[Vim for humans](https://vimebook.com/en) es un libro introductorio cuyo objetivo es simplificar la curva de aprendizaje cuando se empieza a usar Vim.
 
 ---
 

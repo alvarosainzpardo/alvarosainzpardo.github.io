@@ -1,10 +1,11 @@
 site_name: Documentación de Alvaro
 remote_branch: master
-theme: mkdocs
+theme: readthedocs
 pages:
 - Home: index.md
 - Trabajo:
   - Smart Cities: smart_cities.md
+  - FIWARE: fiware.md
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md
 - Personal:
