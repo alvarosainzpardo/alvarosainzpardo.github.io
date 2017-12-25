@@ -8,6 +8,7 @@ Hay buenos tutoriales de Markdown en:
 
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+* [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
 
 ---
 

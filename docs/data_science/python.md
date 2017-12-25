@@ -14,6 +14,8 @@ El autor Jake VanderPlas tiene una serie de artículos divulgativos en O'Reilly 
 
 El libro de Jake VanderPlas se titula [Python Data Science Handbook](http://shop.oreilly.com/product/0636920034919.do)
 
+---
+
 [An end to end implementation of a Machine Learning pipeline](https://spandan-madan.github.io/DeepLearningProject/) es un tutorial que cubre el ciclo completo de un proyecto de machine learning, empezando por la captura (_scrapping_) de datos, en este caso datos de películas obtenidos de IMDB y TMDB. El objetivo del proyecto es predecir el género de una película a partir de datos textuales y visuales (el poster de la película). Se capturan los datos, se construye un dataset a partir de los datos capturados, se crean modelos prdictivos, tanto modelos _tradicionales_ como modelos que utilizan _deep learning_. Todo el código en python está disponible en el [repositorio github del proyecto](https://github.com/Spandan-Madan/DeepLearningProject) y en el [README](https://github.com/Spandan-Madan/DeepLearningProject/blob/master/README.md) hay instrucciones de instalación. Se utiliza Python 2.7 porque TensorFlow no es compatible con Python > 3.5.
 
 Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquetes científicos de análisis de datos en Python (como NumPy o SciPy). Conda es un gestor de paquetes software (tipo apt o yum) hecho en Python y multiplataforma. Sirve para gestionar paquetes de software no sólo de Python (de JavaScript, por ejemplo) aunque se utiliza fundamentalmente para Python. Por encima de Conda, se han creado distribuciones de Python que incluyen también un conjunto de paquetes ya preinstalados y configurados, como por ejemplo Anaconda. En el artículo [Conda: Myths and Misconceptions](https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/) hay una buena explicación de Conda, las diferencias con pip+virtualenv, cuándo utilizar uno u otro y los motivos que llevaron a la creación de Conda. Cuando se usa Conda, lo primero que se hace es crear un entorno y dentro de ese entorno se instala python y los paquetes necesarios.
@@ -24,6 +26,13 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 * [Python API tutorial - An Introduction to using APIs](https://www.dataquest.io/blog/python-api-tutorial/)
 * [Python and JSON: Working with large datasets using Pandas](https://www.dataquest.io/blog/python-json-tutorial/)
 * [folium - Python Data, Leaflet.js Maps](https://github.com/python-visualization/folium)
+
+### Libros
+
+* [10 Free Must-Read Books for Machine Learning and Data Science](https://www.kdnuggets.com/2017/04/10-free-must-read-books-machine-learning-data-science.html): Quick collection of such books to start your fair weather study off on the right foot. The list begins with a base of statistics, moves on to machine learning foundations, progresses to a few bigger picture titles, has a quick look at an advanced topic or 2, and ends off with something that brings it all together.
+* [18 New Must Read Books for Data Scientists on R and Python](https://www.analyticsvidhya.com/blog/2016/10/18-new-must-read-books-for-data-scientists-on-r-and-python/)
+
+---
 
 ## Jupyter Notebook
 

@@ -4,15 +4,20 @@
 
 ## Documentación, tutoriales, enlaces, libros
 
-En [vimcasts.org](http://vimcasts.org/) hay 68 tutoriales en video y 50 artículos sobre Vim. Realizados por Drew Neil, el autor del libro [Practical Vim](https://pragprog.com/book/dnvim2/practical-vim-second-edition).
-
-El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tiene una lista de plugins recomendados.
+* En [vimcasts.org](http://vimcasts.org/) hay 68 tutoriales en video y 50 artículos sobre Vim. Realizados por Drew Neil, el autor del libro [Practical Vim](https://pragprog.com/book/dnvim2/practical-vim-second-edition).
+* [Official Vim Documentation](https://vim.sourceforge.io/docs.php)
+* [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
+* El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tiene una lista de plugins recomendados.
+* [Indenting source code](http://vim.wikia.com/wiki/Indenting_source_code)
+* [Setup Vim, Powerline and iTerm2 on Mac OS X](https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x)
 
 ### Libros
 
 [A Byte of Vim](https://vim.swaroopch.com/) es un libro sobre Vim (versión 7). Se puede leer online en la web del libro y también está disponible su descarga gratuita en formato ebook: [pdf](https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-vim), [epub](https://www.gitbook.com/download/epub/book/swaroopch/byte-of-vim) y [mobi](https://www.gitbook.com/download/mobi/book/swaroopch/byte-of-vim). El libro en formato _raw_ está disponible en su [repositorio github](https://github.com/swaroopch/byte-of-vim).
 
-[Vim for humans](https://vimebook.com/en) es un libro introductorio cuyo objetivo es simplificar la curva de aprendizaje cuando se empieza a usar Vim.
+[Vim for humans](https://vimebook.com/en) es un libro introductorio cuyo objetivo es simplificar la curva de aprendizaje cuando se empieza a usar Vim. Los primeros capítulos enseñan a configurar Vim para hacerlo equivalente a otros editores de texto y que el usuario principiante no pierda tiempo. A partir de ahí, se enseña "la forma Vim de hacer las cosas", con un nivel introductorio.
+
+[Use Vim Like A Pro](https://leanpub.com/VimLikeAPro)
 
 ---
 
