@@ -5,6 +5,7 @@ pages:
 - Home: index.md
 - Trabajo:
   - Smart Cities: smart_cities.md
+  - Universidad de Málaga: uma.md
   - FIWARE: fiware.md
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md

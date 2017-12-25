@@ -21,6 +21,9 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 ### Otros enlaces
 
 * [Quick Tip: The easiest way to grab data out of a web page in Python](https://medium.com/@ageitgey/quick-tip-the-easiest-way-to-grab-data-out-of-a-web-page-in-python-7153cecfca58): tutorial para hacer _web scrapping_ usando pandas, que tiene una función que devuelve un data frame por cada tabla que tenga la página web
+* [Python API tutorial - An Introduction to using APIs](https://www.dataquest.io/blog/python-api-tutorial/)
+* [Python and JSON: Working with large datasets using Pandas](https://www.dataquest.io/blog/python-json-tutorial/)
+* [folium - Python Data, Leaflet.js Maps](https://github.com/python-visualization/folium)
 
 ## Jupyter Notebook
 
