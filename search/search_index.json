@@ -76,6 +76,21 @@
             "title": "Catalunya"
         },
         {
+            "location": "/uma/",
+            "text": "Universidad de M\u00e1laga - Red de pruebas tecnolog\u00edas Smart City\n\n\n\n\nNode-RED\n\n\n\n\nWeb oficial de Node-RED\n, con informaci\u00f3n sobre \nc\u00f3mo ejecutar una instancia local de Node-RED usando docker\n\n\nThe Things Network\n tiene un \nforo dedicado a Multitech Conduits\n con varios posts que tratan sobre Node-RED y con informaci\u00f3n interesante, como \neste post que en el que se hay c\u00f3digo fuente para decodificar el payload LoRa\n. Esta b\u00fasqueda devuelve \ntodos los mensajes del foro que hablan de Node-RED",
+            "title": "Universidad de M\u00e1laga"
+        },
+        {
+            "location": "/uma/#universidad-de-malaga-red-de-pruebas-tecnologias-smart-city",
+            "text": "",
+            "title": "Universidad de M\u00e1laga - Red de pruebas tecnolog\u00edas Smart City"
+        },
+        {
+            "location": "/uma/#node-red",
+            "text": "Web oficial de Node-RED , con informaci\u00f3n sobre  c\u00f3mo ejecutar una instancia local de Node-RED usando docker  The Things Network  tiene un  foro dedicado a Multitech Conduits  con varios posts que tratan sobre Node-RED y con informaci\u00f3n interesante, como  este post que en el que se hay c\u00f3digo fuente para decodificar el payload LoRa . Esta b\u00fasqueda devuelve  todos los mensajes del foro que hablan de Node-RED",
+            "title": "Node-RED"
+        },
+        {
             "location": "/fiware/",
             "text": "FIWARE\n\n\n\n\nEnlaces, documentaci\u00f3n, recursos\n\n\n\n\nFIWARE IoT Stack\n: punto de entrada a toda la documentaci\u00f3n de FIWARE sobre el stack sw de IoT.\n\n\nQuick start on device connection to the platform (with Ultralight 2.0)\n: guia r\u00e1pida sobre c\u00f3mo conectar dispositivos IoT a la plataforma usando el protocolo Ultralight 2.0: registro del dispositivo, env\u00edo de medidas y env\u00edo de comandos al dispositivo.\n\n\nC\u00f3mo conectar una \u201ccosa\u201d por HTTP utilizando Ultralight 2.0\n: entrada del blog de \nSemotic\n, escrita por \nJos\u00e9 Benitez\n, en la que explican c\u00f3mo: Instalar, desplegar y configurar un stack IoT de FIWARE (IoT Agent UL y CB) usando docker y docker-compose; conectar un dispositivo Edison a la plataforma por UL2.0; conectar un sensor de temperatura y una pantalla LCD a la Edison; programar en Javascript (node.js) con el Intel SDK (en Mac); conectar un dashboard Freeboard a la plataforma.",
             "title": "FIWARE"
