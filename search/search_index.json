@@ -171,6 +171,51 @@
             "title": "Omnicanalidad y cliente omnicanal"
         },
         {
+            "location": "/programming/emmet/",
+            "text": "Emmet\n\n\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\n\n\nEmmet \u2014 the essential toolkit for web-developers\n: web oficial\n\n\nEmmet Documentation\n\n\nAbbreviations Syntax\n\n\n\n\n\n\nEmmet.vim\n: plugin de Emmet para Vim\n\n\nEn el README del \ngithub de Emmet.vim\n hay un buen \ntutorial",
+            "title": "Emmet"
+        },
+        {
+            "location": "/programming/emmet/#emmet",
+            "text": "",
+            "title": "Emmet"
+        },
+        {
+            "location": "/programming/emmet/#enlaces-tutoriales-documentacion-libros",
+            "text": "Emmet \u2014 the essential toolkit for web-developers : web oficial  Emmet Documentation  Abbreviations Syntax    Emmet.vim : plugin de Emmet para Vim  En el README del  github de Emmet.vim  hay un buen  tutorial",
+            "title": "Enlaces, tutoriales, documentaci\u00f3n, libros"
+        },
+        {
+            "location": "/programming/javascript/",
+            "text": "JavaScript\n\n\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\n\n\nEloquent JavaScript\n\n\nLearning JavaScript Design Patterns\n\n\nJavaScript - Mozilla Developer Network\n\n\nClosures\n\n\nClosures\n\n\nClosures explained with JavaScript\n\n\nA brief introduction to closures\n\n\nClosures explained with JavaScript\n\n\n\n\n\n\nPatr\u00f3n M\u00f3dulo (Module Pattern)\n\n\nEl Patr\u00f3n M\u00f3dulo Javascript en Profundidad\n\n\nEntendiendo el patr\u00f3n de dise\u00f1o M\u00f3dulo\n\n\n\n\n\n\nIIFE (Inmediately-Invoked Function Expression)\n\n\nFunciones autoejecutables en Javascript\n\n\nImmediately-Invoked Function Expression (IIFE)\n\n\n\n\n\n\nDouglas Crockford\n\n\nDouglas Crockford's JavaScript\n\n\nJavaScript: The Good Parts\n\n\nThe Good Parts - Youtube Playlist\n\n\n\n\n\n\nJSFiddle\n: editor online de JavaScript, HTML y CSS. Para probar y compartir c\u00f3digo",
+            "title": "JavaScript"
+        },
+        {
+            "location": "/programming/javascript/#javascript",
+            "text": "",
+            "title": "JavaScript"
+        },
+        {
+            "location": "/programming/javascript/#enlaces-tutoriales-documentacion-libros",
+            "text": "Eloquent JavaScript  Learning JavaScript Design Patterns  JavaScript - Mozilla Developer Network  Closures  Closures  Closures explained with JavaScript  A brief introduction to closures  Closures explained with JavaScript    Patr\u00f3n M\u00f3dulo (Module Pattern)  El Patr\u00f3n M\u00f3dulo Javascript en Profundidad  Entendiendo el patr\u00f3n de dise\u00f1o M\u00f3dulo    IIFE (Inmediately-Invoked Function Expression)  Funciones autoejecutables en Javascript  Immediately-Invoked Function Expression (IIFE)    Douglas Crockford  Douglas Crockford's JavaScript  JavaScript: The Good Parts  The Good Parts - Youtube Playlist    JSFiddle : editor online de JavaScript, HTML y CSS. Para probar y compartir c\u00f3digo",
+            "title": "Enlaces, tutoriales, documentaci\u00f3n, libros"
+        },
+        {
+            "location": "/programming/python/",
+            "text": "Python\n\n\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\n\n\nEmmet \u2014 the essential toolkit for web-developers\n: web oficial",
+            "title": "Python"
+        },
+        {
+            "location": "/programming/python/#python",
+            "text": "",
+            "title": "Python"
+        },
+        {
+            "location": "/programming/python/#enlaces-tutoriales-documentacion-libros",
+            "text": "Emmet \u2014 the essential toolkit for web-developers : web oficial",
+            "title": "Enlaces, tutoriales, documentaci\u00f3n, libros"
+        },
+        {
             "location": "/data_science/general/",
             "text": "Data Science en general\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\nData Science Primer: Basic Concepts for Beginners\n\n\nThis collection of concise introductory data science tutorials\n cover topics including the difference between data mining and statistics, supervised vs. unsupervised learning, and the types of patterns we can mine from data.\n\n\nMachine Learning is Fun!\n\n\nConjunto de 8 art\u00edculos en Medium. Nivel inicial, con buenas explicaciones e intuiciones para los diferentes conceptos.\n\n\nUpdate: This article is part of a series. Check out the full series: \nPart 1\n, \nPart 2\n, \nPart 3\n, \nPart 4\n, \nPart 5\n, \nPart 6\n, \nPart 7\n and \nPart 8!\n\n\nBigger update: The content of this article is now available as a \nfull-length video course that walks you through every step of the code\n. You can take the course for free (and access everything else on Lynda.com free for 30 days) if you \nsign up with this link\n.\n\n\nHave you heard people talking about machine learning but only have a fuzzy idea of what that means? Are you tired of nodding your way through conversations with co-workers? Let\u2019s change that!\n\n\nThis guide is for anyone who is curious about machine learning but has no idea where to start. I imagine there are a lot of people who tried reading the wikipedia article, got frustrated and gave up wishing someone would just give them a high-level explanation. That\u2019s what this is.\n\n\nCheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data\n\n\nThe Most Complete List of Best AI Cheat Sheets. Over the past few months, I have been collecting AI cheat sheets. From time to time I share them with friends and colleagues and recently I have been getting asked a lot, so I decided to organize and share the entire collection. To make things more interesting and give context, I added descriptions and/or excerpts for each major topic.\n\n\nMachine Learning for Humans\n\n\nSimple, plain-English explanations accompanied by math, code, and real-world examples.\n\n\n[Update 9/2/17] This series is now available as a full-length e-book! \nDownload here\n.\n\n\nFor inquiries, please contact ml4humans@gmail.com.\n\n\nRoadmap\n\n\n\n\nPart 1: Why Machine Learning Matters\n. The big picture of artificial intelligence and machine learning\u200a\u2014\u200apast, present, and future.\n\n\nPart 2.1: Supervised Learning\n. Learning with an answer key. Introducing linear regression, loss functions, overfitting, and gradient descent.\n\n\nPart 2.2: Supervised Learning II\n. Two methods of classification: logistic regression and SVMs.\n\n\nPart 2.3: Supervised Learning III\n. Non-parametric learners: k-nearest neighbors, decision trees, random forests. Introducing cross-validation, hyperparameter tuning, and ensemble models.\n\n\nPart 3: Unsupervised Learning\n. Clustering: k-means, hierarchical. Dimensionality reduction: principal components analysis (PCA), singular value decomposition (SVD).\n\n\nPart 4: Neural Networks & Deep Learning\n. Why, where, and how deep learning works. Drawing inspiration from the brain. Convolutional neural networks (CNNs), recurrent neural networks (RNNs). Real-world applications.\n\n\nPart 5: Reinforcement Learning\n. Exploration and exploitation. Markov decision processes. Q-learning, policy learning, and deep reinforcement learning. The value learning problem.\n\n\nAppendix: The Best Machine Learning Resources\n. A curated list of resources for creating your machine learning curriculum.\n\n\n\n\nArticulos de la web Unsupervised Methods\n\n\nEn la web \nUnsupervised Methods\n hay varios art\u00edculos con recopilaciones de informaci\u00f3n muy interesantes, \"curated lists\" de art\u00edculos, cursos, bloggers, tutoriales, etc. Estos son los art\u00edculos que me han llamado la atenci\u00f3n:\n\n\n\n\nMy Curated List of AI and Machine Learning Resources from Around the Web\n: only include links to free content. There is enough free content to keep you busy for a while. It\u2019s amazing just how much information is available on machine learning, deep learning, and artificial intelligence on the web. This article should give you a sense of the scope. I\u2019ve created sections below that contain: well-known researchers, AI organizations, video courses, bloggers, Medium writers, books, YouTube channels, Quora topics, subreddits, Github repos, podcasts, newsletters, conferences, research links, tutorials, and cheat sheets.\n\n\nOver 150 of the Best Machine Learning, NLP, and Python Tutorials I\u2019ve Found\n: a list of the best tutorial content that I\u2019ve found so far. It\u2019s by no means an exhaustive list of every ML-related tutorial on the web\u200a\u2014\u200athat would be overwhelming and duplicative. Plus, there is a bunch of mediocre content out there. My goal was to link to the best tutorials I found on the important subtopics within machine learning and NLP. I\u2019ve split this post into four sections: Machine Learning, NLP, Python, and Math.\n\n\nCheat Sheet of Machine Learning and Python (and Math) Cheat Sheets\n: There are many facets to Machine Learning. As I started brushing up on the subject, I came across various \u201ccheat sheets\u201d that compactly listed all the key points I needed to know for a given topic. Eventually, I compiled over 20 Machine Learning-related cheat sheets. Some I reference frequently and thought others may benefit from them too. This post contains 27 of the better cheat sheets I\u2019ve found on the web. Let me know if I\u2019m missing any you like. Given how rapidly the Machine Learning space is evolving, I imagine these will go out of date quickly, but at least as of June 1, 2017, they are pretty current.\n\n\n\n\nEnlaces\n\n\n\n\nObject detection: an overview in the age of Deep Learning\n\n\nEssential Cheat Sheets for Machine Learning and Deep Learning Engineers\n: tiene tambi\u00e9n un \nrepositorio Github\n\n\nCheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data\n: cheat sheets para topolog\u00edas de redes neuronales, numpy, scikit-learn, python basics for data science, pandas, bokeh, tensorflow, keras, data wrangling con pandas, data wrangling con dplyr y tidyr, algebra lineal con scipy, matplotlib, visualizaci\u00f3n de datos con ggplot2, complejidad de algoritmos, etc.\n\n\nProbabilistic programming from scratch\n: programaci\u00f3n probabil\u00edstica, inferencia Bayesiana\n\n\nJake Vanderplas - Statistics for Hackers - PyCon 2016\n\n\n\u00bfPedaleas en la ciudad?: Analiza con Excel la seguridad de los ciclistas en Madrid\n: art\u00edculo del blog de \nLUCA\n en el que se hace un an\u00e1lisis descriptivo de datos de accidentes de bicicleta descargados del portal de datos abiertos del ayuntamiento de Madrid. El an\u00e1lisis se hace con Excel, y hay informaci\u00f3n sobre caracter\u00edsticas y funciones avanzadas de las tablas din\u00e1micas\n\n\nTus datos m\u00e1s limpios...(II). Excel, \"Waterproof\"\n: otroart\u00edculo del blog de \nLUCA\n, en este se realiza un tratamiento y limpieza de datos usando Excel\n\n\nTus datos m\u00e1s limpios, casi sin frotar\n: art\u00edculo un poco flojillo del blog de \nLUCA\n sobre el problema de la limpieza de datos pero en el que se mencionan las herramientas de limpieza de datos \nOpenRefine\n, \nTrifacta Wrangler\n y \nDataCleaner\n. OpenRefine es una herramienta open source que se denominaba anteriormente Google Refine",
             "title": "General"
@@ -524,21 +569,6 @@
             "location": "/vim/#mapeo-de-teclas-del-sistema-en-osx",
             "text": "En muchos tutoriales sobre vim en OSX se recomienda mapear la tecla  Caps Lock  por  Esc . El motivo es que la tecla  Esc  en el teclado del mac est\u00e1 muy lejos en la esquina superior izquierda, es muy peque\u00f1a y es una tecla muy usada en vim. AVISO: Este mapeo no se puede hacer dentro de vim, se tiene que hacer a nivel de sistema operativo. De esta forma, el mapeo afectar\u00e1 al funcionamiento de todo el sistema, no \u00fanicamente la aplicaci\u00f3n vim.  No tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuaci\u00f3n el programa para realizarlo, para referencia futura.  El programa para mapear la tecla  Caps Lock  es  Seil . El mismo desarrollador tiene otra utilidad para hacer mapeos m\u00e1s generales de teclado llamada  Karabiner .",
             "title": "Mapeo de teclas del sistema en OSX"
-        },
-        {
-            "location": "/emmet/",
-            "text": "Emmet\n\n\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\n\n\nEmmet \u2014 the essential toolkit for web-developers\n: web oficial\n\n\nEmmet Documentation\n\n\nAbbreviations Syntax\n\n\n\n\n\n\nEmmet.vim\n: plugin de Emmet para Vim\n\n\nEn el README del \ngithub de Emmet.vim\n hay un buen \ntutorial",
-            "title": "Emmet"
-        },
-        {
-            "location": "/emmet/#emmet",
-            "text": "",
-            "title": "Emmet"
-        },
-        {
-            "location": "/emmet/#enlaces-tutoriales-documentacion-libros",
-            "text": "Emmet \u2014 the essential toolkit for web-developers : web oficial  Emmet Documentation  Abbreviations Syntax    Emmet.vim : plugin de Emmet para Vim  En el README del  github de Emmet.vim  hay un buen  tutorial",
-            "title": "Enlaces, tutoriales, documentaci\u00f3n, libros"
         },
         {
             "location": "/git/",
