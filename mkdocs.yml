@@ -10,6 +10,10 @@ pages:
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md
 - Personal:
+  - Programación:
+    - Emmet: programming/emmet.md
+    - JavaScript: programming/javascript.md
+    - Python: programming/python.md
   - Data Science:
     - General: data_science/general.md
     - Cursos: data_science/cursos.md
@@ -17,7 +21,6 @@ pages:
     - R: data_science/R.md
   - Ssh: ssh.md
   - Vim: vim.md
-  - Emmet: emmet.md
   - Git: git.md
   - Markdown: markdown.md
   - Homebrew: brew.md
