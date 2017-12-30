@@ -4,6 +4,8 @@
 
 ## Enlaces, tutoriales, documentación, libros
 
+---
+
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -23,5 +25,7 @@
     * [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do)
     * [The Good Parts - Youtube Playlist](https://www.youtube.com/playlist?list=PLEzQf147-uEpvTa1bHDNlxUL2klHUMHJu)
 * [JSFiddle](https://jsfiddle.net/): editor online de JavaScript, HTML y CSS. Para probar y compartir código
+* [The Definitive JavaScript Handbook for your next developer interview](https://medium.freecodecamp.org/the-definitive-javascript-handbook-for-a-developer-interview-44ffc6aeb54e)
+
 ---
 
