@@ -10,6 +10,10 @@ Hay buenos tutoriales de Markdown en:
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
 
+Editores online de Markdown, con capacidad de gestionat y publicar sitios web completos en Github Pages:
+* [Prose](https://github.com/prose/prose)
+* [StackEdit](https://stackedit.io/)
+
 ---
 
 ## Cabeceras
