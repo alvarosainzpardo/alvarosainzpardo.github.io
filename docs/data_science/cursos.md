@@ -6,6 +6,22 @@
 
 El curso hace un uso extensivo de la herramienta **Jupyter Notebook** que se explica en el artículo [The course of the future – and the technology behind it](http://data.berkeley.edu/news/coursefuture).
 
+## Johns Hopkins’ Data Science Specialization
+
+[Data Science Specialization](https://www.coursera.org/specializations/jhu-data-science) Launch Your Career in Data Science. A nine-course introduction to data science, developed and taught by leading professors.
+
+Ask the right questions, manipulate data sets, and create visualizations to communicate results.  This Specialization covers the concepts and tools you'll need throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results.
+
+In the final Capstone Project, you’ll apply the skills learned by building a data product using real-world data. At completion, students will have a portfolio demonstrating their mastery of the material.
+
+## Neural Networks for Machine Learning
+
+[Neural Networks for Machine Learning](https://www.coursera.org/learn/neural-networks) Learn about artificial neural networks and how they're being used for machine learning, as applied to speech and object recognition, image segmentation, modeling language and human motion, etc. We'll emphasize both the basic algorithms and the practical tricks needed to get them to work well.
+
+This course contains the same content presented on Coursera beginning in 2013. It is not a continuation or update of the original course. It has been adapted for the new platform.
+
+Please be advised that the course is suited for an intermediate level learner - comfortable with calculus and with experience programming (Python).
+
 ## Plan de estudios "Machine Learning for Software Engineers"
 
 Un ingeniero de software vietnamita, Nam Vu, ha diseñado un plan de estudios para convertirse en data scientist. El plan está diseñado considerando que un ingeniero de software no ha recibido tanta formación matemática como la que recibe un estudiante universitario americano de _Computer Science_ y está muy orientado a conseguir resultados prácticos con los modelos, a conseguir lo que se pretente (predecir, clasificar, etc) y menos orientado a dar las bases teóricas que sustentan las diferentes técnicas y modelos (todo esto según la descripción del plan de estudios que hace el propio autor).
@@ -30,11 +46,25 @@ Similar to Andrew Ng, Sebastian Thrun is a Stanford Professor and is also co-fou
 
 Rivaled to Coursera, Udacity is also one of the leading MOOCs and has their own machine learning course. Udacity’s machine learning course is a tad more difficult than Coursera’s. Therefore it would be wiser to start with Andrew Ng’s and then move on to this one. The course can be found [here](https://www.udacity.com/course/intro-to-machine-learning--ud120).
 
+## fast.ai : Making neural nets uncool again
+
+[fast.ai](http://www.fast.ai/) is dedicated to making the power of deep learning accessible to all. Deep learning is dramatically improving medicine, education, agriculture, transport and many other fields, with the greatest potential impact in the developing world. For its full potential to be met, the technology needs to be much easier to use, more reliable, and more intuitive than it is today.
+
+La web tiene un blog con artículos de Rachel Thomas (co-fundadora de fast.ai) y varios recursos formativos, por ejemplo, de algebra lineal. El curso esta [aqui](http://course.fast.ai/).
+
 ## CS231n: Convolutional Neural Networks for Visual Recognition
 
 Computer Vision has become ubiquitous in our society, with applications in search, image understanding, apps, mapping, medicine, drones, and self-driving cars. Core to many of these applications are visual recognition tasks such as image classification, localization and detection. Recent developments in neural network (aka “deep learning”) approaches have greatly advanced the performance of these state-of-the-art visual recognition systems. [This course](http://cs231n.stanford.edu/) is a deep dive into details of the deep learning architectures with a focus on learning end-to-end models for these tasks, particularly image classification. During the 10-week course, students will learn to implement, train and debug their own neural networks and gain a detailed understanding of cutting-edge research in computer vision. The final assignment will involve training a multi-million parameter convolutional neural network and applying it on the largest image classification dataset (ImageNet). We will focus on teaching how to set up the problem of image recognition, the learning algorithms (e.g. backpropagation), practical engineering tricks for training and fine-tuning the networks and guide the students through hands-on assignments and a final course project. Much of the background and materials of this course will be drawn from the [ImageNet Challenge](http://image-net.org/challenges/LSVRC/2014/index).
 
 [These notes](http://cs231n.github.io/) accompany the course: tutorials about Python, iPython, Google Cloud, Google GPUs, neural networks, convolutional neural networks. Worth reading.
+
+## CS 20SI: Tensorflow for Deep Learning Research
+
+Tensorflow is a powerful open-source software library for machine learning developed by researchers at Google Brain. It has many pre-built functions to ease the task of building different neural networks. Tensorflow allows distribution of computation across different computers, as well as multiple CPUs and GPUs within a single machine. TensorFlow provides a Python API, as well as a less documented C++ API. For this course, we will be using Python. 
+
+[This course](http://cs20si.stanford.edu/) will cover the fundamentals and contemporary usage of the Tensorflow library for deep learning research. We aim to help students understand the graphical computational model of Tensorflow, explore the functions it has to offer, and learn how to build and structure models best suited for a deep learning project. Through the course, students will use Tensorflow to build models of different complexity, from simple linear/logistic regression to convolutional neural network and recurrent neural networks with LSTM to solve tasks such as word embeddings, translation, optical character recognition. Students will also learn best practices to structure a model and manage research experiments.
+
+Resources: [Course homepage](https://web.stanford.edu/class/cs20si/), [detailled syllabus and class notes](http://web.stanford.edu/class/cs20si/syllabus.html) and [github repository](https://github.com/chiphuyen/stanford-tensorflow-tutorials).
 
 ## 42 Steps to Mastering Data Science
 

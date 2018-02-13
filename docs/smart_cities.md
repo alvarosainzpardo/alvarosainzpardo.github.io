@@ -10,6 +10,8 @@
 
 ### Centro
 
+* (13/02/18) [El 94% de municipios de Ávila se integran en el servicio de información de Administración Electrónica de la Diputación](https://www.esmartcity.es/2018/02/13/94-por-ciento-municipios-avila-se-integran-servicio-informacion-administracion-electronica-diputacion): Un total de 231 entidades públicas de los municipios de la provincia de Ávila se han integrado en el servicio de información de Administración Electrónica de la Diputación provincial que facilita el acceso de las administraciones locales a los servicios telemáticos de la Administración General del Estado. Esta cifra supone que el 94% de las localidades consideradas, se han unido.
+
 ### Sur
 
 * (20/12/2017) [Málaga sustituirá más de 6.000 puntos de luz por tecnología LED](https://www.eysmunicipales.es/actualidad/mlaga-sustituir-ms-de-6000-puntos-de-luz-por-tecnologa-led): El Ayuntamiento de Málaga, a través del área de Servicios Operativos, renovará gracias a su Plan ‘Más barrios, más Málaga’ de Inversiones Financieramente Sostenibles más de 6.000 puntos de luz en 1.223 calles de la ciudad para abaratar el consumo eléctrico y mejorar la calidad del alumbrado. De esta manera se va ampliando paulatinamente a toda la ciudad la instalación de tecnología led. En estos momentos la capital cuenta con un 10% de farolas con tecnología led y con la ejecución de este nuevo contrato se pasará a un 20% de los 64.000 puntos de luz que hay en Málaga. En concreto, en 2018 se beneficiarán de esta renovación los distritos de Bailén Miraflores, Ciudad Jardín y Palma-Palmilla.
