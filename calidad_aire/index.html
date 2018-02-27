@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Ssh - Documentación de Alvaro</title>
+  <title>Calidad del Aire - Documentación de Alvaro</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Ssh";
-    var mkdocs_page_input_path = "ssh.md";
-    var mkdocs_page_url = "/ssh/";
+    var mkdocs_page_name = "Calidad del Aire";
+    var mkdocs_page_input_path = "calidad_aire.md";
+    var mkdocs_page_url = "/calidad_aire/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -60,9 +60,21 @@
                     
     <a class="" href="../smart_cities/">Smart Cities</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../calidad_aire/">Calidad del Aire</a>
+    <a class="current" href="./">Calidad del Aire</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#calidad-aire">Calidad Aire</a></li>
+    
+
+    <li class="toctree-l3"><a href="#enlaces-recursos-tutoriales-documentacion">Enlaces, recursos, tutoriales, documentación</a></li>
+    
+
+    <li class="toctree-l3"><a href="#informacion-general">Información general</a></li>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -127,25 +139,9 @@
                 </li>
     </ul>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Ssh</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#guia-rapida-de-ssh">Guia rápida de ssh</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#enlaces-documentacion">Enlaces, documentación</a></li>
-        
-            <li><a class="toctree-l4" href="#usar-ssh-detras-de-un-proxy">Usar ssh detrás de un proxy</a></li>
-        
-            <li><a class="toctree-l4" href="#autenticacion-con-clave-privada-archivos-pem">Autenticación con clave privada (archivos .pem)</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../ssh/">Ssh</a>
                 </li>
                 <li class="">
                     
@@ -196,11 +192,11 @@
     
       
         
-          <li>Personal &raquo;</li>
+          <li>Trabajo &raquo;</li>
         
       
     
-    <li>Ssh</li>
+    <li>Calidad del Aire</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -210,68 +206,22 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="guia-rapida-de-ssh">Guia rápida de ssh</h1>
-<hr />
-<h2 id="enlaces-documentacion">Enlaces, documentación</h2>
+                <h1 id="calidad-aire">Calidad Aire</h1>
+<h1 id="enlaces-recursos-tutoriales-documentacion">Enlaces, recursos, tutoriales, documentación</h1>
 <ul>
-<li><a href="http://www.perkin.org.uk/posts/ssh-via-http-proxy-in-osx.html">SSH via HTTP proxy in OSX</a></li>
-<li><a href="https://stackoverflow.com/questions/19161960/connect-with-ssh-through-a-proxy">Connect with SSH through a proxy</a></li>
-<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html">Connecting to Your Linux Instance Using SSH</a></li>
+<li><a href="http://aqicn.org/here/es/">Worldwide Air Quality</a></li>
+<li><a href="http://www.bsc.es/caliope/es/pronosticos?default_model=0&amp;default_domain=1&amp;language=es">Pronóstico calidad aire del Sistema Calíope</a></li>
+<li><a href="http://www.juntadeandalucia.es/medioambiente/site/portalweb/menuitem.7e1cf46ddf59bb227a9ebe205510e1ca/?vgnextoid=87d17cb254ee4010VgnVCM1000000624e50aRCRD&amp;vgnextchannel=3b43de552afae310VgnVCM2000000624e50aRCRD">Informes mensuales de calidad del aire de la Junta de Andalucía</a></li>
+<li>(18/01/18) <a href="http://www.laopiniondemalaga.es/malaga/2018/01/18/proyecto-curmos-le-vale-malaga/981097.html">El proyecto CURMOS le vale a Málaga el premio Ciudad Sostenible</a></li>
+<li><a href="https://urbanclouds.city/es/calidad-del-aire-exterior/">CURMOS - Calidad del aire en exterior</a></li>
 </ul>
-<hr />
-<h2 id="usar-ssh-detras-de-un-proxy">Usar ssh detrás de un proxy</h2>
-<p>El comando para realizar una conexión ssh a través de un servidor proxy es:</p>
-<pre><code class="bash">$ ssh &lt;user&gt;@&lt;host&gt; -o &quot;ProxyCommand=nc -X connect -x &lt;proxyhost&gt;:&lt;proxyport&gt; %h %p&quot;
-</code></pre>
-
-<p>Por ejemplo:</p>
-<pre><code class="bash">$ ssh asainz@sulaco.ttcloud.net -o &quot;ProxyCommand=nc -X connect -x proxyinternet.tesa:8080 %h %p&quot;
-</code></pre>
-
-<p>Para que este comando funcione, el servidor proxy tiene que aceptar el método de conexión <code>CONNECT</code> y el comando <code>nc</code> tiene que estar instalado en el sistema.</p>
-<p>Para usar un proxy socks5 el comando es:</p>
-<pre><code class="bash">$ ssh &lt;user&gt;@&lt;host&gt; -o &quot;ProxyCommand=nc -X 5 -x &lt;proxyhost&gt;:&lt;proxyport&gt; %h %p&quot;
-</code></pre>
-
-<p>Y para usar un proxy socks4 se utilizaría la opción <code>-X 4</code>.</p>
-<p>Para no tener que teclear el comando cada vez que se utiliza el cliente ssh se puede configurar esta opción en el archivo de configuración de ssh, <code>~/.ssh/config</code>.</p>
-<p>Se puede añadir la opción para todos los hosts:</p>
-<pre><code>Host *
-    ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p
-    ServerAliveInterval   10
-</code></pre>
-<p>O para un host en concreto:</p>
-<pre><code>Host sulaco.ttcloud.net
-    ProxyCommand          nc -X connect -x proxyhost:proxyport %h %p
-    ServerAliveInterval   10
-</code></pre>
-<p>La opción <code>ServerAliveInterval</code>es para que el proxy no desconecte después de un periodo de inactividad.</p>
-<h3 id="nc-en-mac-osx">nc en Mac OSX</h3>
-<p>La versión de nc de OSX tiene un problema de compatibilidad con los proxies http. No es compatible con proxies que utilizan HTTP 1.1, sólo es compatible con HTTP 1.0. El proxy de Telefónica utiliza HTTP 1.1, por lo que no se puede usar nc. Una alternativa que funciona perfectamente es <a href="https://nmap.org/ncat/">ncat</a>, que forma parte del paquete <a href="https://nmap.org/">nmap</a>.</p>
-<p>La opción para utilizar ncat en el archivo <code>~/.ssh/config</code> es:</p>
-<pre><code>Host *
-    ProxyCommand          ncat --proxy proxyhost:proxyport --proxy-auth user:passwd %h %p
-</code></pre>
-<hr />
-<h2 id="autenticacion-con-clave-privada-archivos-pem">Autenticación con clave privada (archivos .pem)</h2>
-<p>Para conectarse a máquinas virtuales de Amazon y Fiware, hay que utilizar la autenticación con clave privada (archivos .pem)</p>
-<h3 id="configuracion-del-cliente">Configuración del cliente</h3>
+<h1 id="informacion-general">Información general</h1>
+<p>El Índice de Calidad del Aire es una medida "sintética" de la calidad del aire de uso general/habitual, que permite la publicación y comparación de los datos entre ciudades. Es una medida basada en los valores de los siguientes gases: O3, NO2, CO, SO2, PM10, PM25. Todas las ciudades que he visto miden estos gases, con algunas excepciones, y publican la información de los valores de estos gases así como una medida de índice de calidad del aire. El sistema Caliope tiene una <a href="http://www.bsc.es/caliope/es/ica/bsc">descripción del ICA y la tabla de valores de los diferentes gases</a>.</p>
 <ul>
-<li><a href="https://michaelheap.com/ssh-config-files/">SSH Config Files</a></li>
+<li>Madrid: <a href="http://www.mambiente.munimadrid.es/sica/scripts/index.php?lang=es">Portal web de Calidad del Aire del Ayuntamiento de Madrid</a></li>
+<li><a href="http://medioambiente.malaga.eu/es/ambitos-de-actuacion/calidad-del-aire/informes-mensuales-de-la-junta-de-andalucia/">Medioambiente Málaga - informes mensuales de la Junta de Andalucía</a></li>
+<li><a href="http://medioambiente.malaga.eu/es/ambitos-de-actuacion/calidad-del-aire/proyecto-curmos-calidad-del-aire-de-malaga/">Medioambiente Málaga - proyecto CURMOS</a></li>
 </ul>
-<p>La opción para conectarse a un servidor que requiere autenticación por clave privada es <code>-i &lt;archivo.pem&gt;</code>:</p>
-<pre><code class="bash">$ ssh &lt;user&gt;@&lt;host&gt; -i &lt;path/file.pem&gt;
-</code></pre>
-
-<p>El archivo .pem tiene que tener permisos de lectura únicamente para el propietario del archivo (<code>chmod 400 &lt;archivo.pem&gt;</code>).</p>
-<p>La configuracíón equivalente en el archivo <code>~/.ssh/config</code>sería:</p>
-<pre><code>Host &lt;host&gt;
-    IdentityFile &lt;path/file.pem&gt;
-</code></pre>
-<h3 id="configuracion-del-servidor">Configuración del servidor</h3>
-<p>Cuando el servidor ssh está configurado para aceptar únicamente conexiones sin password mediante clave privada, en el directorio <code>.ssh</code> del usuario hay que copiar el archivo <code>authorized_keys</code> que se haya generado para el usuario por defecto de la maquina virtual.</p>
-<p>El directorio <code>.ssh</code> tiene que tener permisos de lectura/escritura/ejecución sólo para el propietario (<code>chmod 700 ~/.ssh</code>) y el archivo <code>authorized_keys</code> permisos de lectura/escritura únicamente para el propietario (<code>chmod 600 ~/.ssh/authorized_keys</code>).</p>
-<p>Además, hay que comprobar que el el archivo de configuración del servidor sshd (<code>/etc/ssh/sshd_config</code>) esté autorizado el acceso por ssh para el nuevo usuario. Esto hay que hacerlo <strong>obligatoriamente en las máquinas virtuales Ubuntu de Fiware</strong>.</p>
               
             </div>
           </div>
@@ -279,10 +229,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../vim/" class="btn btn-neutral float-right" title="Vim">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../uma/" class="btn btn-neutral float-right" title="Universidad de Málaga">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../data_science/R/" class="btn btn-neutral" title="R"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../smart_cities/" class="btn btn-neutral" title="Smart Cities"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -308,10 +258,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../data_science/R/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../smart_cities/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../vim/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../uma/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
