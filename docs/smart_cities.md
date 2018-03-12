@@ -10,7 +10,6 @@
 
 ### Centro
 
-* (12/03/18) [Un panel de expertos debate sobre la ciudad basada en Blockchain](https://www.esmartcity.es/2018/03/12/panel-expertos-debate-ciudad-basada-blockchain): El uso del blockchain en el desarrollo de las ciudades inteligentes será abordado por el panel de expertos que se reúne este martes, 13 de marzo, en el encuentro ‘[El futuro de las ciudades: una mirada hacia la sociedad blockchain](https://clubs.ie.edu/ieufics/rsvp_boot?id=300012246)’ en Madrid. Alex Preukschat, coordinador de Blockchain España, Monica Zeng, fundadora de ‘/human.sh’, y Luis Iván Cuende, cofundador de Aragon, se acercarán al presente y futuro de la tecnología de cadena de bloques junto a los autores del trabajo *Blockchain4Cities*, Javier Alaves, coordinador de este trabajo y cofundador de MainBot, Gildo Seisdedos, profesor de IE Business School y Stefan Junestrand, director general de Grupo Tecma Red.
 * (13/02/18) [El 94% de municipios de Ávila se integran en el servicio de información de Administración Electrónica de la Diputación](https://www.esmartcity.es/2018/02/13/94-por-ciento-municipios-avila-se-integran-servicio-informacion-administracion-electronica-diputacion): Un total de 231 entidades públicas de los municipios de la provincia de Ávila se han integrado en el servicio de información de Administración Electrónica de la Diputación provincial que facilita el acceso de las administraciones locales a los servicios telemáticos de la Administración General del Estado. Esta cifra supone que el 94% de las localidades consideradas, se han unido.
 
 ### Sur
@@ -50,6 +49,7 @@
 
 ### Otros
 
+* (12/03/18) [Un panel de expertos debate sobre la ciudad basada en Blockchain](https://www.esmartcity.es/2018/03/12/panel-expertos-debate-ciudad-basada-blockchain): El uso del blockchain en el desarrollo de las ciudades inteligentes será abordado por el panel de expertos que se reúne este martes, 13 de marzo, en el encuentro ‘[El futuro de las ciudades: una mirada hacia la sociedad blockchain](https://clubs.ie.edu/ieufics/rsvp_boot?id=300012246)’ en Madrid. Alex Preukschat, coordinador de Blockchain España, Monica Zeng, fundadora de ‘/human.sh’, y Luis Iván Cuende, cofundador de Aragon, se acercarán al presente y futuro de la tecnología de cadena de bloques junto a los autores del trabajo *Blockchain4Cities*, Javier Alaves, coordinador de este trabajo y cofundador de MainBot, Gildo Seisdedos, profesor de IE Business School y Stefan Junestrand, director general de Grupo Tecma Red.
 * (22/01/2018) [El Sistema de Inteligencia Turística de Segittur gana uno de los Premios de la Organización Mundial del Turismo](https://www.esmartcity.es/2018/01/22/sistema-de-inteligencia-turistica-de-segittur-gana-premios-organizacion-mundial-del-turismo): El [Sistema de Inteligencia Turística (SIT)](http://www.segittur.es/es/proyectos/proyecto-detalle/Sistema-de-Inteligencia-Turstica-/) de Segittur ha ganado el premio a la Innovación en Investigación y Tecnología de la Organización Mundial del Turismo, en una ceremonia que tuvo lugar en el marco de Fitur.
 
 ---
