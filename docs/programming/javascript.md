@@ -32,6 +32,9 @@
     * [The most essential list of resources for Front-End beginners ](https://github.com/thedaviddias/Resources-Front-End-Beginner)
     * [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)
     * [The Front-End Checklist](https://frontendchecklist.io/)
+* [An Introduction to NGINX for Developers](https://medium.freecodecamp.org/an-introduction-to-nginx-for-developers-62179b6a458f)
+* [The easy way to start automatically testing your website](https://medium.freecodecamp.org/how-to-easily-start-automatically-testing-your-website-8629ea8df04a)
+* [What is Glitch?](https://medium.com/glitch/what-is-glitch-90cd75e40277)
 
 ---
 
