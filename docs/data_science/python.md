@@ -44,3 +44,14 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 * [The Jupyter notebook](https://jupyter-notebook.readthedocs.io/): documentación oficial
 * [JupyterHub](https://github.com/jupyterhub/jupyterhub): instalación multiusuario de Jupyter. Se utiliza en el courso Foundations de la UC Berkeley
 * [Zero to JupyterHub](https://zero-to-jupyterhub.readthedocs.io/): documentación sobre JupyterHub
+
+---
+
+## Pandas
+
+### Enlaces
+
+* [Intro to Pandas for Excel Super Users](https://towardsdatascience.com/intro-to-pandas-for-excel-super-users-dac1b38f12b0)
+* [Common Excel Task in Python: Vlookup with Pandas Merge](https://medium.com/importexcel/common-excel-task-in-python-vlookup-with-pandas-merge-c99d4e108988)
+* [Common Excel Tasks Demonstrated in Pandas](http://pbpython.com/excel-pandas-comp.html)
+* [Common Excel Tasks Demonstrated in Pandas - Part 2](http://pbpython.com/excel-pandas-comp-2.html)

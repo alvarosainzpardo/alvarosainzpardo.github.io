@@ -105,3 +105,9 @@ Kok-Leong takes an extremely different approach in teaching machine learning. Ko
 Andrej Karpathy was previously a Research Scientist at OpenAI, and CS graduate student at Stanford University. He is now the director of AI at Tesla, appointed by Elon Musk.
 
 Andrej’s blog, karpathy.github.io, provides good insights on niche subjects in machine learning. It is by no means supposed to serve as an introduction or tutorial on machine learning. However, for more experienced practitioners, his blog can serve to be extremely useful. He even provides other gems like “A Survival Guide to a PhD”. His blog can be found [here](http://karpathy.github.io/).
+
+---
+
+## Enlaces
+
+* [How to download Coursera’s courses before they’re gone forever](https://medium.freecodecamp.org/the-day-472-free-online-courses-will-vanish-from-the-internet-3060bb4e9704)

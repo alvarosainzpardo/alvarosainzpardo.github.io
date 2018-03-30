@@ -4,8 +4,6 @@
 
 ## Enlaces, tutoriales, documentación, libros
 
----
-
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -26,6 +24,14 @@
     * [The Good Parts - Youtube Playlist](https://www.youtube.com/playlist?list=PLEzQf147-uEpvTa1bHDNlxUL2klHUMHJu)
 * [JSFiddle](https://jsfiddle.net/): editor online de JavaScript, HTML y CSS. Para probar y compartir código
 * [The Definitive JavaScript Handbook for your next developer interview](https://medium.freecodecamp.org/the-definitive-javascript-handbook-for-a-developer-interview-44ffc6aeb54e)
+* [When you create software to learn programming, your most important user is you](https://medium.freecodecamp.org/when-you-create-software-to-learn-programming-your-most-important-user-is-you-c2e57cd5a75f)
+    * [Collection Tracker](https://github.com/rafcollier/collectiontracker)
+    * [First and Last](http://rogercollier.com/firstlastapp/)
+* [The Ultimate Guide to Learning Full Stack Web Development in 6 months, for $30](https://codeburst.io/the-ultimate-guide-to-learning-full-stack-web-development-in-6-months-for-30-72b3854a7458): This article will cover everything you need to know! You’ll first learn the basics of Web Development with an online coding bootcamp ($15). You’ll follow that up with an advanced bootcamp ($15). Then, we’ll jump into free tutorials, articles, and documentation where you will reinforce everything you’ve learned in the first two bootcamps. Next, you’ll build a few projects with your new skills and open-source them on GitHub. Finally, we’ll focus on resume creation, interview preparation, and salary negotiation.
+* [How my open source project earned 6,000 stars on GitHub in just 5 days](https://medium.freecodecamp.org/how-my-first-project-won-6000-stars-on-github-in-5-days-6340ec99829e)
+    * [The most essential list of resources for Front-End beginners ](https://github.com/thedaviddias/Resources-Front-End-Beginner)
+    * [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)
+    * [The Front-End Checklist](https://frontendchecklist.io/)
 
 ---
 

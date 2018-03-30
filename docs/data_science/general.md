@@ -51,6 +51,7 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 
 ### Enlaces
 
+* [Machine Learning Zero-to-Hero: Everything you need in order to compete on Kaggle for the first time, step-by-step!](https://towardsdatascience.com/machine-learning-zero-to-hero-everything-you-need-in-order-to-compete-on-kaggle-for-the-first-time-18644e701cf1)
 * [Object detection: an overview in the age of Deep Learning](https://tryolabs.com/blog/2017/08/30/object-detection-an-overview-in-the-age-of-deep-learning/)
 * [Essential Cheat Sheets for Machine Learning and Deep Learning Engineers](https://startupsventurecapital.com/essential-cheat-sheets-for-machine-learning-and-deep-learning-researchers-efb6a8ebd2e5): tiene también un [repositorio Github](https://github.com/kailashahirwar/cheatsheets-ai)
 * [Cheat Sheets for AI, Neural Networks, Machine Learning, Deep Learning & Big Data](https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463): cheat sheets para topologías de redes neuronales, numpy, scikit-learn, python basics for data science, pandas, bokeh, tensorflow, keras, data wrangling con pandas, data wrangling con dplyr y tidyr, algebra lineal con scipy, matplotlib, visualización de datos con ggplot2, complejidad de algoritmos, etc.
