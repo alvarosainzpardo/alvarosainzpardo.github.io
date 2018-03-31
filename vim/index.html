@@ -320,9 +320,43 @@
 <p><a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> es un verdadero <em>plugin manager</em>, en el sentido de que, a partir de la configuración que se hace en el archivo <em>.vimrc</em>, descarga automáticamente los plugins y tiene comandos para actualizar la versión de los plugins instalados, etc. Es más completo que <strong>Pathogen</strong> en cuanto a funcionalidad.</p>
 <h4 id="instalacion_1">Instalación</h4>
 <h4 id="uso">Uso</h4>
-<h3 id="pathogen">Pathogen</h3>
+<h3 id="vim-plug">vim-plug</h3>
+<p><a href="https://github.com/junegunn/vim-plug">vim-plug</a> es otro <em>plugin manager</em>, más moderno que Vundle, que tiene varias ventajas: instalación/update en paralelo de plugins (acelera el arranque), se autoinstala de forma muy sencilla, carga diferida de plugins de forma condicional (p.e., cuando se edita un determinado tipo de archivo) lo que también acelera el arranque al cargarse menos plugins al inicio, etc.</p>
+<h4 id="enlaces_1">Enlaces</h4>
+<ul>
+<li><a href="https://github.com/junegunn/vim-plug">Github de vim-plug</a></li>
+<li><a href="https://github.com/junegunn/vim-plug/wiki/tutorial">Tutorial</a></li>
+<li><a href="https://github.com/junegunn/vim-plug/wiki/tips">Tips</a></li>
+<li><a href="https://github.com/junegunn/vim-plug/wiki/faq">FAQ</a></li>
+</ul>
 <h4 id="instalacion_2">Instalación</h4>
+<p><a href="https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim">Descargar plug.vim</a>
+y grabarlo en el directorio "autoload"</p>
+<h5 id="vim_1">Vim</h5>
+<pre><code class="sh">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</code></pre>
+
+<h4 id="neovim">Neovim</h4>
+<pre><code class="sh">curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</code></pre>
+
+<p>Se puede automatizar la instalación poniendo el comando en el archivo de configuración de Vim tal y como se sugiere <a href="https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation">aqui</a>:</p>
+<p>Place the following code in your .vimrc before <code>plug#begin()</code> call</p>
+<pre><code class="vim">if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+</code></pre>
+
+<p>Note that <code>--sync</code> flag is used to block the execution until the installer finishes.</p>
+<p>(If you're behind an HTTP proxy, you may need to add <code>--insecure</code> option to the curl command. In that case, you also need to set $GIT_SSL_NO_VERIFY to true.)</p>
 <h4 id="uso_1">Uso</h4>
+<h3 id="pathogen">Pathogen</h3>
+<h4 id="instalacion_3">Instalación</h4>
+<h4 id="uso_2">Uso</h4>
 <hr />
 <h2 id="plugins">Plugins</h2>
 <h3 id="fugitive">Fugitive</h3>
@@ -331,12 +365,12 @@
 <ul>
 <li>Hay una serie de 5 tutoriales en video en <a href="http://vimcasts.org/">vimcasts.org</a>. El primero de ellos es este: <a href="http://vimcasts.org/episodes/fugitive-vim---a-complement-to-command-line-git/">Fugitive.vim - a complement to command line git</a></li>
 </ul>
-<h4 id="instalacion_3">Instalación</h4>
+<h4 id="instalacion_4">Instalación</h4>
 <p>En la sección de <strong>Vundle</strong> de <code>.vimrc</code>, añadir:</p>
 <pre><code>Plugin 'tpope/vim-fugitive'
 </code></pre>
 
-<h4 id="uso_2">Uso</h4>
+<h4 id="uso_3">Uso</h4>
 <p>Los comandos de Fugitive empiezan con G (g mayúscula). Se utilizan en modo vim normal, tecleando los dos puntos (:). Los comandos más habituales son:</p>
 <ul>
 <li><strong>Gwrite</strong>: guarda el archivo e invoca el commando <code>git add</code></li>
