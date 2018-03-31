@@ -141,6 +141,54 @@ Para que vim utilice _true colors_ en modo terminal hay que añadir `set termgui
 
 #### Uso
 
+### vim-plug
+
+[vim-plug](https://github.com/junegunn/vim-plug) es otro _plugin manager_, más moderno que Vundle, que tiene varias ventajas: instalación/update en paralelo de plugins (acelera el arranque), se autoinstala de forma muy sencilla, carga diferida de plugins de forma condicional (p.e., cuando se edita un determinado tipo de archivo) lo que también acelera el arranque al cargarse menos plugins al inicio, etc.
+
+#### Enlaces
+
+* [Github de vim-plug](https://github.com/junegunn/vim-plug)
+* [Tutorial](https://github.com/junegunn/vim-plug/wiki/tutorial)
+* [Tips](https://github.com/junegunn/vim-plug/wiki/tips)
+* [FAQ](https://github.com/junegunn/vim-plug/wiki/faq)
+
+#### Instalación
+
+[Descargar plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
+y grabarlo en el directorio "autoload"
+
+##### Vim
+
+```sh
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+#### Neovim
+
+```sh
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+Se puede automatizar la instalación poniendo el comando en el archivo de configuración de Vim tal y como se sugiere [aqui](https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation):
+
+Place the following code in your .vimrc before `plug#begin()` call
+
+```vim
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+```
+
+Note that `--sync` flag is used to block the execution until the installer finishes.
+
+(If you're behind an HTTP proxy, you may need to add `--insecure` option to the curl command. In that case, you also need to set $GIT_SSL_NO_VERIFY to true.)
+
+#### Uso
+
 ### Pathogen
 
 #### Instalación
