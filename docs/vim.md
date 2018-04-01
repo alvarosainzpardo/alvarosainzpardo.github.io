@@ -19,6 +19,86 @@
 
 [Use Vim Like A Pro](https://leanpub.com/VimLikeAPro)
 
+[Learn Vimscript the Hard Way](http://learnvimscriptthehardway.stevelosh.com/)
+
+---
+
+## Neovim
+
+### Enlaces
+
+* [Neovim](https://neovim.io/)
+* [Github de Neovim](https://github.com/neovim/neovim)
+* [Wiki](https://github.com/neovim/neovim/wiki)
+* [Neovim with Python on macOS](https://sergeykalistratov.com/neovim-with-python-on-macos/)
+* [Switching to NeoVim (Part 1)](https://arusahni.net/blog/2015/03/switching-to-neovim-part-1.html)
+* [Switching to NeoVim (Part 2)](https://arusahni.net/blog/2015/04/switching-to-neovim-part-2.html): con información para configurar la sección del plugin manager del `.vimrc` de forma que sea compatible con Vim y con Neovim. Su archivo `.vimrc` está [aqui](https://github.com/arusahni/dotfiles/blob/master/vimrc). He usado lo que cuenta para configurar mi `.vimrc`
+
+### Instalación
+
+The default config file location is:
+
+```sh
+~/.config/nvim/init.vim
+```
+
+Puede ser un nuevo archivo o un link simbólico al `~/.vimrc` existente (como en mi caso) para tener un único archivo de configuración válido para Vim y para Neovim..
+
+```sh
+$ mkdir -p ~/.config/nvim
+$ ln -s ~/.vimrc ~/.config/nvim/init.vim
+```
+
+o:
+
+```sh
+$ mkdir -p ~/.config/nvim
+$ ln -s ~/.vim/vimrc ~/.config/nvim/init.vim
+```
+
+#### Ubuntu
+
+Para instalar la versión estable:
+
+```sh
+$ sudo add-apt-repository ppa:neovim-ppa/stable
+```
+
+Para instalar la última versión de desarrollo/inestable:
+
+```sh
+$ sudo add-apt-repository ppa:neovim-ppa/unstable
+```
+
+Después, ejecutar:
+
+```sh
+$ sudo apt-get update
+$ sudo apt-get install neovim
+```
+
+#### macOS
+
+```sh
+$ brew install neovim
+```
+
+#### Instalar el soporte para python
+
+```sh
+$ pip2 install -U neovim
+$ pip3 install -U neovim
+```
+
+To complete python integration, add the following lines to your `~/.config/nvim/init.vim`:
+
+```vim
+let g:python2_host_prog = '/usr/local/bin/python'
+let g:python3_host_prog = '/usr/local/bin/python3'
+```
+
+Next, you should check `:CheckHealth` command in nvim to see any issues with plugins and Python providers.
+
 ---
 
 ## .vimrc
@@ -131,15 +211,117 @@ Para que vim utilice _true colors_ en modo terminal hay que añadir `set termgui
 
 ---
 
+### Silent commands
+
+Para suprimir los mensjes de un comando, ejecutarlo con `silent` delante. Si se quieren suprimir ademas los posibles mensjes de error, entonces ejecutarlo con `silent!` delante. Si es un comando shell, `silent` también elimina la necesidad de pulsar \<CR\> después de la ejecución del comando.
+
+Ejemplos:
+
+```vim
+" If colorscheme one doesn't exist, no error messages are displayed
+silent! colorscheme one
+" Silent execution of shell commands
+silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+### Execute
+
+:exe[cute] {expr1} ..   Executes the string that results from the evaluation of {expr1} as an Ex command.  Multiple arguments are concatenated, with a space in between.  To avoid the extra space use the "." operator to concatenate strings into one argument.
+
+Ejemplos:
+
+```vim
+silent execute '!mkdir -p ' . s:root_path . '/bundle'
+silent execute '!git clone https://github.com/VundleVim/Vundle.vim.git ' . s:root_path . '/bundle/Vundle.vim'
+```
+
+#### Comprobar que un plugin está cargado antes de ejecutar un comando
+
+Utilizar `if exists()` con alguna variable, función o comando proporcionado por el plugin para comprobar que está cargado.
+Por ejemplo:
+
+```vim
+if exists('*SyntasticStatuslineFlag')
+  set statusline+=%{SyntasticStatuslineFlag()}
+endif
+```
+
+Opciones de `exists()`:
+
+* exists('varname'): para una variable
+* exists('\*funcname'): para una función
+* exists(':cmdname'): para un comando
+* exists('&optname'): para una opción
+
+[How can I test for plugins and only include them if they exist in .vimrc?](https://superuser.com/questions/552323/how-can-i-test-for-plugins-and-only-include-them-if-they-exist-in-vimrc): en esta página dan varias soluciones al problema de comprobar si está cargado un plugin antes de utilizar comandos. Una solución propone crear una función para establecer opciones de plugins, ejecutar esta función después de la carga de los plugins, con `autocmd VimEnter * call <function>`
+
+---
+
 ## Plugin managers
 
 ### Vundle
 
 [Vundle](https://github.com/VundleVim/Vundle.vim) es un verdadero _plugin manager_, en el sentido de que, a partir de la configuración que se hace en el archivo _.vimrc_, descarga automáticamente los plugins y tiene comandos para actualizar la versión de los plugins instalados, etc. Es más completo que **Pathogen** en cuanto a funcionalidad.
 
+#### Enlaces
+
+* [Vundle](https://github.com/VundleVim/Vundle.vim): documentation in the README.md
+* [auto installing vundle from your vimrc](https://erikzaadi.com/2012/03/19/auto-installing-vundle-from-your-vimrc/)
+
 #### Instalación
 
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+Put this at the top of your `.vimrc` to use Vundle. Remove plugins you don't need, they are for illustration purposes.
+
+ ```vim
+ set nocompatible              " be iMproved, required
+ filetype off                  " required
+
+ " set the runtime path to include Vundle and initialize
+ set rtp+=~/.vim/bundle/Vundle.vim
+ call vundle#begin()
+ " alternatively, pass a path where Vundle should install plugins
+ "call vundle#begin('~/some/path/here')
+
+ " let Vundle manage Vundle, required
+ Plugin 'VundleVim/Vundle.vim'
+
+ " The following are examples of different formats supported.
+ " Keep Plugin commands between vundle#begin/end.
+ " plugin on GitHub repo
+ Plugin 'tpope/vim-fugitive'
+ " plugin from http://vim-scripts.org/vim/scripts.html
+ " Plugin 'L9'
+ " Git plugin not hosted on GitHub
+ Plugin 'git://git.wincent.com/command-t.git'
+ " git repos on your local machine (i.e. when working on your own plugin)
+ Plugin 'file:///home/gmarik/path/to/plugin'
+ " The sparkup vim script is in a subdirectory of this repo called vim.
+ " Pass the path to set the runtimepath properly.
+ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+ " Install L9 and avoid a Naming conflict if you've already installed a
+ " different version somewhere else.
+ " Plugin 'ascenator/L9', {'name': 'newL9'}
+
+ " All of your Plugins must be added before the following line
+ call vundle#end()            " required
+ filetype plugin indent on    " required
+ " To ignore plugin indent changes, instead use:
+ "filetype plugin on
+ " Put your non-Plugin stuff after this line
+ ```
+
 #### Uso
+
+Brief help:
+
+* :PluginList       - lists configured plugins
+* :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+* :PluginSearch foo - searches for foo; append `!` to refresh local cache
+* :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+
+See `:help vundle` for more details or wiki for FAQ
 
 ### vim-plug
 
@@ -149,13 +331,15 @@ Para que vim utilice _true colors_ en modo terminal hay que añadir `set termgui
 
 * [Github de vim-plug](https://github.com/junegunn/vim-plug)
 * [Tutorial](https://github.com/junegunn/vim-plug/wiki/tutorial)
+* [Wiki](https://github.com/junegunn/vim-plug/wiki)
 * [Tips](https://github.com/junegunn/vim-plug/wiki/tips)
 * [FAQ](https://github.com/junegunn/vim-plug/wiki/faq)
+* [How to Switch from Vundle to vim-plug](http://adam.garrett-harris.com/how-to-switch-from-vundle-to-vim-plug/): con info sobre post-update hooks (por ejemplo, para instalar jshint después de instalar el plugin syntastic)
 
 #### Instalación
 
 [Descargar plug.vim](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim)
-y grabarlo en el directorio "autoload"
+y grabarlo en el directorio "autoload".
 
 ##### Vim
 
@@ -171,15 +355,16 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-Se puede automatizar la instalación poniendo el comando en el archivo de configuración de Vim tal y como se sugiere [aqui](https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation):
+Se puede automatizar la instalación poniendo el comando en el archivo de configuración de Vim tal y como se sugiere [aqui](https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation).
 
-Place the following code in your .vimrc before `plug#begin()` call
+Place the following code in your .vimrc before `plug#begin()` call:
 
 ```vim
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  autocmd VimEnter * PlugInstall --sync
 endif
 ```
 
@@ -188,6 +373,84 @@ Note that `--sync` flag is used to block the execution until the installer finis
 (If you're behind an HTTP proxy, you may need to add `--insecure` option to the curl command. In that case, you also need to set $GIT_SSL_NO_VERIFY to true.)
 
 #### Uso
+
+Add a vim-plug section to your `~/.vimrc` (or `~/.config/nvim/init.vim` for Neovim):
+
+1. Begin the section with `call plug#begin('~/.vim/plugged')` (or `call plug#begin('~/.config/nvim/plugged')` for Neovim)
+1. List the plugins with `Plug` commands
+1. `call plug#end()` to update `&runtimepath` and initialize plugin system
+    - Automatically executes `filetype plugin indent on` and `syntax enable`.
+      You can revert the settings after the call. e.g. `filetype indent off`, `syntax off`, etc.
+
+#### Example
+
+```vim
+" Specify a directory for plugins
+" - For Neovim: ~/.config/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-master branch
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+
+" Initialize plugin system
+call plug#end()
+```
+
+Reload .vimrc and `:PlugInstall` to install plugins.
+
+### Commands
+
+| Command                             | Description                                                        |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| `PlugInstall [name ...] [#threads]` | Install plugins                                                    |
+| `PlugUpdate [name ...] [#threads]`  | Install or update plugins                                          |
+| `PlugClean[!]`                      | Remove unused directories (bang version will clean without prompt) |
+| `PlugUpgrade`                       | Upgrade vim-plug itself                                            |
+| `PlugStatus`                        | Check the status of plugins                                        |
+| `PlugDiff`                          | Examine changes from the previous update and the pending changes   |
+| `PlugSnapshot[!] [output path]`     | Generate script for restoring the current snapshot of the plugins  |
+
+##### Actualizar plugins
+
+Run `:PlugUpdate` to update the plugins. After the update is finished, you can review the changes by pressing `D` in the window. Or you can do it later by running `:PlugDiff`.
+
+##### Actualizar vim-plug
+
+Ejecutar `:PlugUpgrade` después de `:PlugUpdate`.
+
+##### Eliminar plugins
+
+1. Delete or comment out Plug commands for the plugins you want to remove.
+1. Reload vimrc (:source ~/.vimrc) or restart Vim
+1. Run :PlugClean. It will detect and remove undeclared plugins.
 
 ### Pathogen
 
