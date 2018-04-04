@@ -28,6 +28,7 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 * [Python API tutorial - An Introduction to using APIs](https://www.dataquest.io/blog/python-api-tutorial/)
 * [Python and JSON: Working with large datasets using Pandas](https://www.dataquest.io/blog/python-json-tutorial/)
 * [folium - Python Data, Leaflet.js Maps](https://github.com/python-visualization/folium)
+* [Are dogs appreciated fairly on @dog_rates?](https://vknight.org/unpeudemath/math/2018/03/28/rating-dog-rates.html): ejemplo de uso de varias librerías para analizar datos de una cuenta de Twitter que da puntuación a perros. La librería que usa para acceder a los datos de Twitter es [tweepy](http://www.tweepy.org/). [Repositorio Github](https://github.com/drvinceknight/DataScienceingDogRates) con un [notebook Jupyter](https://github.com/drvinceknight/DataScienceingDogRates/blob/master/main.ipynb).
 
 ### Libros
 
