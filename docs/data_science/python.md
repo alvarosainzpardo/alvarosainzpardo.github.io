@@ -24,6 +24,19 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 
 ### Otros enlaces
 
+* [Python para todos (3): ScyPy, NumPy, Pandas ...¿Qué librerías necesitamos?](http://data-speaks.luca-d3.com/2018/04/python-todos-3-librerias.html): contiene una descripción de librerías de data science para Python:
+    * NumPy : Acrónimo de  Numerical Python. Su características más potente es que puede trabajar con matrices (array) de n dimensiones. También ofrece funciones básicas de algebra lineal, transformada de Fourier, capacidades avanzadas con números aleatorios, y herramientas de integración con otros lenguajes de bajo nivel como Fortran, C y C++
+    * SciPy: Acrónimo de Scientific Python. SciPy está construida sobre la librería NumPy. Es una de las más útiles por la gran variedad que tiene de módulos de alto nivel sobre ciencia e ingeniería, como transformada discreta de Fourier, álgebre lineal, y matrices de optimización.
+    * Matplotlib: es una librería de gráficos, desde histogramas, hasta gráficos de líneas o mapas de calor. También se pueden usar comandos de Latex para agregar expresiones matemáticas a tu gráfica.
+    * Pandas: se utiliza para operaciones y manipulaciones de datos estructurados. Es muy habitual usarlo en la fase de depuración y preparación de los datos. Es una librería que se ha añadido recientemente, pero su gran utilidad ha impulsado el uso de Python en la comunidad científica.
+    * Scikit Learn para machine learning: Construida sobre NumPy, SciPy y matplotlib, esta librería contiene un gran número de eficientes herramientas para machine learning y modelado estadístico, como por ejemplo, algoritmos de clasificación, regresión, clustering y reducción de dimensionalidad.
+    * Statsmodels: para modelado estadístico. Es un módulo de Python que permite a los usuarios explorar datos, hacer estimaciones de modelos estadísticos y realizar test estadísticos. Ofrece una extensa lista de estadísticas descriptivas, test, funciones gráficas etc para diferentes tipos de datos y estimadores.
+    * Seaborn: basada en matplotlib, se usa para hacer más atractivos los gráficos e información estadística en Python. Su objetivo es hacer de las situar las visualizaciones en el centro de las tareas de exploración e interpretación de los datos.
+    * Bokeh: permite generar gráficos interactivos, y aplicaciones web. Permite generar gráficos 3D atractivos y puede trabajar de forma interactiva y alto rendimiento con datos en streaming,
+    * Blaze: extiende las capacidades de Numpy y Pandas a datos distribuidos y en streaming. Se puede usar para acceder a datos de un gran número de fuentes como Bcolz, MongoDB, SQLAlchemy, Apache Spark, PyTables, etc.
+    * Scrapy: se usa para rastrear la web. Es un entorno muy útil para obtener determinados patrones de datos. Desde la url de la home de una web, puede "bucear" en las distintas páginas del sitio para recopilar información.
+    * SymPy: se usa para cálculo simbólico, desde aritmética, a cálculo, álgebra, matemáticas discretas y física cuántica. También permite formatear los resultados en código LaTeX.
+    * Requests for accessing the web: trabaja de foram similar a la librería estándar urllib2, pero es más sencilla de codificar. 
 * [Quick Tip: The easiest way to grab data out of a web page in Python](https://medium.com/@ageitgey/quick-tip-the-easiest-way-to-grab-data-out-of-a-web-page-in-python-7153cecfca58): tutorial para hacer _web scrapping_ usando pandas, que tiene una función que devuelve un data frame por cada tabla que tenga la página web
 * [Python API tutorial - An Introduction to using APIs](https://www.dataquest.io/blog/python-api-tutorial/)
 * [Python and JSON: Working with large datasets using Pandas](https://www.dataquest.io/blog/python-json-tutorial/)
