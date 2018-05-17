@@ -54,6 +54,7 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 
 ### Enlaces
 
+* [Boost Your Jupyter Notebook Productivity](https://towardsdatascience.com/jupyter-notebook-hints-1f26b08429ad): helpful tips for boosting your productivity with Juypter.
 * [What is Jupyter?](https://www.oreilly.com/ideas/what-is-jupyter): es una descripción introductoria muy buena sobre Jupyter, para qué sirve, cómo instalarlo y usarlo, cómo integrarlo con Docker para resolver los problemas de distribución del software necesario para ejecurar los programas, etc. Explica el soporte que Github le da a Jupyter (si se sube un archivo .ipynb a un repositorio, Github ejecuta el código y publica una página estática con los resultados). Se menciona el entorno cloud [Binder](http://mybinder.org/) que permite ejecutar notebooks en la nube. Explica la forma de trabajar con Jupyter, Github y Docker para distribuir y compartir notebooks. Hay dockerfiles específicos de Jupyter. Hay extensiones de Jupyter para crear elementos gráficos de aplicación, para hacer dashboards, para crear mapas basados en OpenStreetMap, para hacer visualizaciones de datos en 2D y 3D, para d3.js. Explica para qué sirve la utilidad nbviewer y cómo usarla. También da una lista de notebooks en python sobre temas de data science y machine learning.
 * [The Jupyter notebook](https://jupyter-notebook.readthedocs.io/): documentación oficial
 * [JupyterHub](https://github.com/jupyterhub/jupyterhub): instalación multiusuario de Jupyter. Se utiliza en el courso Foundations de la UC Berkeley
