@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Robocopy - Documentación de Alvaro</title>
+  <title>Tmux - Documentación de Alvaro</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Robocopy";
-    var mkdocs_page_input_path = "robocopy.md";
-    var mkdocs_page_url = "/robocopy/";
+    var mkdocs_page_name = "Tmux";
+    var mkdocs_page_input_path = "tmux.md";
+    var mkdocs_page_url = "/tmux/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -135,9 +135,21 @@
                     
     <a class="" href="../vim/">Vim</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../tmux/">Tmux</a>
+    <a class="current" href="./">Tmux</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#guia-rapida-de-tmux">Guia rápida de tmux</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#enlaces-documentacion">Enlaces, documentación</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -151,23 +163,9 @@
                     
     <a class="" href="../brew/">Homebrew</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Robocopy</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#guia-del-comando-robocopy">Guia del comando robocopy</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#enlaces-documentacion">Enlaces, documentación</a></li>
-        
-            <li><a class="toctree-l4" href="#comando-para-hacer-backup-de-los-contenidos-de-un-directorio">Comando para hacer backup de los contenidos de un directorio</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../robocopy/">Robocopy</a>
                 </li>
                 <li class="">
                     
@@ -202,7 +200,7 @@
         
       
     
-    <li>Robocopy</li>
+    <li>Tmux</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -212,35 +210,13 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="guia-del-comando-robocopy">Guia del comando <em>robocopy</em></h1>
+                <h1 id="guia-rapida-de-tmux">Guia rápida de tmux</h1>
 <hr />
 <h2 id="enlaces-documentacion">Enlaces, documentación</h2>
 <ul>
-<li><a href="https://technet.microsoft.com/en-us/library/cc733145(WS.10).aspx">Robocopy</a></li>
-<li><a href="https://social.technet.microsoft.com/wiki/contents/articles/1073.robocopy-and-a-few-examples.aspx">Robocopy and a Few Examples</a></li>
-<li><a href="https://norfipc.com/comandos/como-usar-comando-robocopy-ejemplos.html">Como usar el comando Robocopy en Windows, ejemplos prácticos y códigos</a></li>
-</ul>
-<hr />
-<h2 id="comando-para-hacer-backup-de-los-contenidos-de-un-directorio">Comando para hacer backup de los contenidos de un directorio</h2>
-<pre><code>C:\&gt;robocopy &lt;origen&gt; &lt;destino&gt; /mir /sl /xjd /xa:sh /xd &quot;AppData&quot; /xf *.inf /copy:dat /dcopy:t /r:0 /w:1 /mt /ndl /tee /log+:\robocopy.log
-</code></pre>
-
-<h3 id="explicacion-de-las-opciones">Explicación de las opciones</h3>
-<ul>
-<li><code>/mir</code>: realiza una copia exacta o espejo del directorio origen en el directorio destino. Si en el directorio origen se han borrado archivos, se eliminarán en el directorio destino</li>
-<li><code>/sl</code>: copia los enlaces simbólicos como enlaces simbólicos en el destino</li>
-<li><code>/xjd</code>: excluye <em>junction points</em> en este caso directorios. Otras opciones pueden ser <code>/xjf</code>para excluir <em>junction points</em> de archivos y <code>/xj</code>para excluir todos los <em>juntion points</em>, tanto archivos como directorios</li>
-<li><code>/xa:sh</code>: excluye archivos de sistema (s) y ocultos (h)</li>
-<li><code>/xd "AppData"</code>: excluye los (sub)directorios llamados <code>AppData</code></li>
-<li><code>/xf *.inf</code>: excluye los archivos .inf</li>
-<li><code>/copy:dat</code>: copia los datos, atributos y <em>timestamp</em> de los archivos origen</li>
-<li><code>/dcopy:t</code>: copia, o mantiene, el <em>timestamp</em> de los directorios origen</li>
-<li><code>/r:0</code>: no realiza ningún reintento si se produce un error</li>
-<li><code>/w:1</code>: tiempo de espera transcurrido entre reintentos (aplicable cuando /r tiene valor mayor que 0)</li>
-<li><code>/mt</code>: utiliza <em>multithreading</em> cuando la cpu tiene varios núcleos</li>
-<li><code>/ndl</code>: sin lista de directorios, no registra los nombres de directorio</li>
-<li><code>/tee</code>: copia la salida estándar del comando en el archivo de log</li>
-<li><code>/log+:&lt;archivo.log&gt;: realiza un log en el archivo especificado, la opción</code>+` sirve para añadir el contenido del log si el archivo ya existe (append)</li>
+<li><a href="https://tmuxp.git-pull.com/en/latest/about_tmux.html">The Tao of tmux</a>: manual de uso muy detallado. Está editado en formato libro, <a href="https://leanpub.com/the-tao-of-tmux/read">disponible para su lectura online en Leanpub</a></li>
+<li><a href="https://til.hashrocket.com/?_utf8=%E2%9C%93&amp;q=tmux">Today I Learned - posts about tmux</a></li>
+<li><a href="https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/">copy paste in tmux</a></li>
 </ul>
               
             </div>
@@ -249,10 +225,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../lossless/" class="btn btn-neutral float-right" title="Lossless">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../git/" class="btn btn-neutral float-right" title="Git">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../brew/" class="btn btn-neutral" title="Homebrew"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../vim/" class="btn btn-neutral" title="Vim"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -278,10 +254,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../brew/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../vim/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../lossless/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../git/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
