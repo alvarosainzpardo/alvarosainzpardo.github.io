@@ -22,6 +22,7 @@ pages:
     - R: data_science/R.md
   - Ssh: ssh.md
   - Vim: vim.md
+  - Tmux: tmux.md
   - Git: git.md
   - Markdown: markdown.md
   - Homebrew: brew.md
