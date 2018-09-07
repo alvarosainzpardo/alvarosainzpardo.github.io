@@ -47,6 +47,20 @@ $ git config --global --unset user.name
 $ git config --global --unset user.email
 ```
 
+Después de configurar el `user.name` y el `user.email`, es aconsejable configurar las prefencias de fin de línea para los archivos de texto, dependiendo del sistema operativo (Unix/Mac o Windows).
+
+Para Unix/Mac:
+```bash
+$ git config --global core.autocrlf input
+$ git config --global core.safecrlf true
+```
+
+Para Windows:
+```bash
+$ git config --global core.autocrlf true
+$ git config --global core.safecrlf true
+```
+
 ### Crear y configurar la clave ssh para conectarse a GitHub
 
 Hay dos tipos de URLs que se pueden utilizar para referenciar los repositorios remotos en GitHub: http y ssh.
