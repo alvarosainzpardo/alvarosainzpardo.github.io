@@ -1,113 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/smart_cities/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/calidad_aire/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/uma/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/fiware/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/video/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/espacios_digitales/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/programming/emmet/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/programming/javascript/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/programming/python/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/data_science/general/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/data_science/cursos/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/data_science/python/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/data_science/R/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/ssh/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/vim/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/tmux/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/git/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/ubuntu/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/markdown/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/brew/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-09-05</lastmod>
+     <loc>/robocopy/</loc>
+     <lastmod>2018-09-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/lossless/</loc>
+     <lastmod>2018-09-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

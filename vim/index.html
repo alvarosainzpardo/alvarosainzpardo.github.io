@@ -13,19 +13,18 @@
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/highlight.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Vim";
     var mkdocs_page_input_path = "vim.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/vim/";
   </script>
   
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -39,7 +38,7 @@
         <a href=".." class="icon icon-home"> Documentación de Alvaro</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
@@ -145,7 +144,7 @@
         
             <li><a class="toctree-l4" href="#neovim">Neovim</a></li>
         
-            <li><a class="toctree-l4" href="#vimrc">.vimrc</a></li>
+            <li><a class="toctree-l4" href="#buffers-ventanas-pestanas">Buffers, ventanas, pestañas</a></li>
         
             <li><a class="toctree-l4" href="#colores-esquemas-de-color">Colores / Esquemas de color</a></li>
         
@@ -167,6 +166,10 @@
                 <li class="">
                     
     <a class="" href="../git/">Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../ubuntu/">Ubuntu</a>
                 </li>
                 <li class="">
                     
@@ -295,7 +298,40 @@ let g:python3_host_prog = '/usr/local/bin/python3'
 
 <p>Next, you should check <code>:CheckHealth</code> command in nvim to see any issues with plugins and Python providers.</p>
 <hr />
-<h2 id="vimrc">.vimrc</h2>
+<h2 id="buffers-ventanas-pestanas">Buffers, ventanas, pestañas</h2>
+<p>Son tres conceptos que se mezclan un poco en vim, sobre todo si eres un principiante.</p>
+<p>Vim, de forma estándar, arranca con una ventana que ocupa toda el área de trabajo de vim (el emulador de terminal o la ventana del sistema operativo). En esa ventana se pueden abrir muchos archivos, por ejemplo ejecutando:</p>
+<pre><code class="sh">$ vim *.c
+</code></pre>
+
+<p>Después de ejecutar ese comando, en la ventana de vim sólo se mostrará el último de esos archivos que se haya abierto (posiblemente según el orden alfabético de los mismos), pero todos los archivos están abiertos en sus correspondientes buffers de edición, sólo que están ocultos, no se muestran en la ventana. En una ventana sólo se puede mostrar un buffer a la vez. Para trabajar con todos esos buffers abiertos, se puede ir cambiando el buffer que se muestra en la ventana o se pueden abrir más ventanas, dividiendo la "ventana de la aplicación vim" en varias ventanas de edición, cada ventana mostrando un buffer de edición diferente. Incluso se puede abrir el mismo buffer en dos ventanas distintas, para ver en cada ventana una zona distinta del mismo archivo.</p>
+<h3 id="ventanas">Ventanas</h3>
+<p>Cuando se abre una nueva ventana, se divide el área de trabajo de vim. Se puede dividir verticalmente u horizontalmente.</p>
+<p>Se puede abrir una nueva ventana que edite un buffer nuevo o se puede abrir una ventana que también edite el buffer activo.</p>
+<p>Para abrir una nueva ventana horizontalmente, se utiliza el comando <code>:new</code>, el comando <code>:vnew</code> abre una nueva ventana vertical. El comando <code>:split</code> divide el área de trabajo en dos ventanas, horizontalmente, editando ambas el buffer activo. Para hacer lo mismo, pero diviendo verticalmente el área de trabajo, utiliza el comando <code>:vsplit</code>.</p>
+<p>Para moverse entre las ventanas, utiliza el comando <code>:w</code> seguido de <code>flecha arriba</code>, <code>flecha abajo</code>, etc. o seguido de <code>h, j, k o l</code>. El comando <code>:wh</code> activa la ventana de la derecha, el comando <code>:wj</code> activa la ventana de abajo, y así sucesivamente.</p>
+<p>Para cerrar la venta activa, utiliza <code>:wq</code>, o simplemente <code>:q</code> (debe haber alguna diferencia entre los dos comandos, pero ahora mismo no la conozco). Se cierra la ventana, pero el buffer sigue abierto, aunque se queda oculto. El comando <code>:wo</code> cierra todas las ventanas abiertas, excepto la ventana activa (cierra las otras ventanas).</p>
+<p>Para cambiar el tamaño de una ventana, se utiliza el comando <code>resize</code>, que tiene variantes en función de que la ventana sea horizontal (por tanto se aumenta o disminuye el número de líneas) o vertical (se aumenta o disminuye el número de columnas). Ejemplos:</p>
+<ul>
+<li><code>:resize 30</code> (abreviado <code>:res 25</code>): cambia el tamaño de la ventana activa a 25 líneas</li>
+<li><code>:vertical resize 75</code> o <code>:vert res 75</code>: cambia el tamaño de la ventana activa a 75 columnas</li>
+<li><code>:res +10</code> añade diez filas, <code>:res -10</code> las quita</li>
+<li><code>:vert res +10</code> añade 10 columnas, <code>:vert res -10'</code> quita 10 columnas</li>
+</ul>
+<p>Los atajos de teclado de esos comandos son:</p>
+<ul>
+<li><code>Ctrl+w</code> <code>+/-</code>: incrementar/decrementar altura (ej: <code>25 Ctrl+w +</code>)</li>
+<li><code>Ctrl+w</code> <code>&gt;/&lt;</code>: incrementar/decrementar anchura (ej: <code>30 Ctrl+w &gt;</code>)</li>
+<li><code>Ctrl+w</code> <code>_</code>: establecer altura (ej: <code>30 Ctrl+w _</code>)</li>
+<li><code>Ctrl+w</code> <code>|</code>: establecer anchura (ej: <code>40 Ctrl+w |</code>)</li>
+<li><code>Ctrl+w</code> <code>=</code>: todas las ventanas con la misma altura/anchura</li>
+</ul>
+<p>Cambiar el tamaño de las ventanas se hace mucho más cómodamente cuando está activo el modo ratón. Con el modo ratón activo, las ventanas se redimensionan pulsando en el borde de la ventana y arrastrando, igual que en un entorno gráfico. <code>:set mouse=n</code> activa el ratón en modo normal, <code>:set mouse=i</code> lo activa en modo inserción, <code>:set mouse=v</code> lo activa en modo visual y <code>:set mouse=a</code> lo activa en todos los modos. Si se está utilizando vim en una sesión de tmux, además de <code>:set mouse=a</code> hay que ejecutar el comando <code>:set ttyterm=xterm2</code>.</p>
+<h3 id="buffers">Buffers</h3>
+<p>El comando <code>:ls</code> muestra la lista de los buffers abiertos, con el número de cada buffer y el archivo que le corresponde. El comando <code>:bn</code> cambia al siguiente buffer de la lista y el comando <code>:bp</code> cambia al anterior. Para seleccionar un buffer concreto, utiliza el comando <code>:b</code> seguido del número de buffer, por ejemplo <code>:b2</code>. Para editar un buffer, también se puede usar el comando <code>:b</code> seguido del nombre del archivo. Se puede escribir el nombre del archivo parcialmente y pulsar <code>tab</code> para completarlo. En caso de existir varios nombres que contengan el texto escrito, pulsando <code>tab</code> varias veces se van recorriendo cíclicamente los nombres.</p>
+<p>Para cerrar un buffer, utiliza el comando <code>:bd</code> o <code>:bw</code>, aparentemente hacen lo mismo. Son el equivalente a <code>Ctrl+W</code> o <code>Cmd+W</code> en otros editores. Si el buffer se ha modificado y no se ha guardado, el buffer no se cerrará a menos que se añada <code>!</code>
+al comando.</p>
+<h3 id="pestanas">Pestañas</h3>
 <hr />
 <h2 id="colores-esquemas-de-color">Colores / Esquemas de color</h2>
 <h3 id="esquemas-de-color">Esquemas de color</h3>
@@ -676,8 +712,9 @@ call plug#end()
     </span>
 </div>
     <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
 
 </body>
 </html>
