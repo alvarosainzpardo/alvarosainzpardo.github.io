@@ -4,6 +4,8 @@
 
 ## Enlaces, documentación
 
+* [Git Inmersion](http://gitimmersion.com/index.html): tutorial de git interactivo, inspirado en la premisa de que conocer algo es hacerlo.
+
 ---
 
 ## Empezar a usar git en un ordenador nuevo
