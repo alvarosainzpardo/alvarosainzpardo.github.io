@@ -4,7 +4,13 @@
 
 ## Enlaces, documentación
 
+* [Git Quick Reference](http://jonas.nitro.dk/git/quick-reference.html)
 * [Git Inmersion](http://gitimmersion.com/index.html): tutorial de git interactivo, inspirado en la premisa de que conocer algo es hacerlo.
+* [Understanding Git Conceptually](https://www.sbf5.com/~cduan/technical/git/)
+* Artículos de [Better Explained](https://betterexplained.com/) sobre sistemas de control de versiones:
+    * [A Visual Guide to Version Control](https://betterexplained.com/articles/a-visual-guide-to-version-control/)
+    * [Intro to Distributed Version Control (Illustrated)](https://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/)
+    * [Aha! Moments When Learning Git](https://betterexplained.com/articles/aha-moments-when-learning-git/)
 
 ---
 
