@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Universidad de Málaga - Documentación de Alvaro</title>
+  <title>Atom - Documentación de Alvaro</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Universidad de M\u00e1laga";
-    var mkdocs_page_input_path = "uma.md";
-    var mkdocs_page_url = "/uma/";
+    var mkdocs_page_name = "Atom";
+    var mkdocs_page_input_path = "atom.md";
+    var mkdocs_page_url = "/atom/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -64,23 +64,9 @@
                     
     <a class="" href="../calidad_aire/">Calidad del Aire</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Universidad de Málaga</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#universidad-de-malaga-red-de-pruebas-tecnologias-smart-city">Universidad de Málaga - Red de pruebas tecnologías Smart City</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#node-red">Node-RED</a></li>
-        
-            <li><a class="toctree-l4" href="#multitech">Multitech</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../uma/">Universidad de Málaga</a>
                 </li>
                 <li class="">
                     
@@ -141,9 +127,23 @@
                 </li>
     </ul>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../atom/">Atom</a>
+    <a class="current" href="./">Atom</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#atom">Atom</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#enlaces-documentacion">Enlaces, documentación</a></li>
+        
+            <li><a class="toctree-l4" href="#remote-atom">Remote Atom</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -210,11 +210,11 @@
     
       
         
-          <li>Trabajo &raquo;</li>
+          <li>Personal &raquo;</li>
         
       
     
-    <li>Universidad de Málaga</li>
+    <li>Atom</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -224,36 +224,31 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="universidad-de-malaga-red-de-pruebas-tecnologias-smart-city">Universidad de Málaga - Red de pruebas tecnologías Smart City</h1>
+                <h1 id="atom">Atom</h1>
 <hr />
-<h2 id="node-red">Node-RED</h2>
+<h2 id="enlaces-documentacion">Enlaces, documentación</h2>
+<hr />
+<h2 id="remote-atom">Remote Atom</h2>
+<p>El editor TextMate tiene una funcionalidad de edición remota de ficheros a través de una sesión ssh. Esta funcionalidad ha sido copiada posteriormente por otros editores, como Visual Studio Code o Atom.</p>
+<p>Para utilizar esta funcionalidad:</p>
 <ul>
-<li><a href="https://nodered.org/">Web oficial de Node-RED</a>, con información sobre <a href="https://nodered.org/docs/platforms/docker">cómo ejecutar una instancia local de Node-RED usando docker</a></li>
-<li><a href="http://www.multitech.net/developer/software/aep/node-red-and-rest-api-cloud-service/">Connect Node-RED to Any Cloud Service’s REST API</a>: flujo de Node-RED que recibe datos LoRa y los envía a una cloud externa</li>
-<li><a href="https://developers.sensetecnic.com/article/using-fred-clound-node-red-with-multitech-lorawan-gateway/">Using FRED (Cloud Node-RED) with the MultiTech LoRaWAN gateway</a>: otro artículo con un flujo Node-RED en un Multitech Conduit que recibe datos de un dispositivo LoRa y los envía a una cloud</li>
-<li><a href="https://www.leverege.com/blogpost/lorawan-node-red-deployment-tips">LoRaWAN and Node-RED Tutorial and Deployment Tips</a>: This series is intended for developers and hackers looking to test out a LoRaWAN network using MultiTech’s Conduit and mDot RF modules. The Things Network has an extensive forum and support for public gateways and nodes in Europe, but little documentation exists for those wanting to test a private network in the US. This is the first post in a four-part guide which covers:<ol>
-<li><a href="https://www.leverege.com/blogpost/lorawan-node-red-deployment-tips">Configuring the Conduit &amp; Starter Kit</a></li>
-<li><a href="https://www.leverege.com/blogpost/lorawan-node-red-deployment-tips-part-ii">Node-RED &amp; Bypassing IBM Bluemix</a></li>
-<li><a href="https://www.leverege.com/blogpost/lorawan-node-red-deployment-tips-part-iii">Programming MultiTech Developer Kit &amp; Adding Sensors</a></li>
-<li><a href="https://www.leverege.com/blogpost/lorawan-node-red-deployment-tips-part-iv">Using the mDot, xbee shield, and Arduino</a></li>
-</ol>
-</li>
-<li><a href="http://support.nke-watteco.com/multitech-tutorial/">Multitech tutorial</a></li>
-<li><a href="https://www.thethingsnetwork.org/">The Things Network</a> tiene un <a href="https://www.thethingsnetwork.org/forum/c/gateways/multitech-gateway">foro dedicado a Multitech Conduits</a> con varios posts que tratan sobre Node-RED y con información interesante, como <a href="https://www.thethingsnetwork.org/forum/t/node-red-payload/10467/6">este post que en el que hay código fuente para decodificar el payload LoRa</a>. Esta búsqueda devuelve <a href="https://www.thethingsnetwork.org/forum/search?q=node-red%20category%3A11">todos los mensajes del foro que hablan de Node-RED</a></li>
-<li><a href="https://www.thethingsnetwork.org/">The Things Network</a> tiene algo de <a href="https://www.thethingsnetwork.org/docs/applications/nodered/">documentación sobre Node-RED</a>, en particular <a href="https://www.thethingsnetwork.org/docs/applications/nodered/quick-start.html">una guia rápida para hacer un flujo Node-RED que recibe datos de LoRa y los envía a The Things Network</a></li>
-<li><a href="https://www.thethingsnetwork.org/docs/gateways/multitech/aep.html">Guia de The Things Network para configurar un Multitech Conduit</a> y para <a href="https://www.thethingsnetwork.org/docs/gateways/multitech/connect-private.html">conectarlo a un back-end privado</a></li>
+<li>Se tiene que ejecutar una sesión ssh haciendo <em>remote port forwarding</em> del puerto 52698:</li>
 </ul>
-<hr />
-<h2 id="multitech">Multitech</h2>
+<pre><code class="bash">$ ssh -R 52698:localhost:52698 &lt;user@host&gt;
+</code></pre>
+
 <ul>
-<li><a href="http://www.multitech.net/developer/products/multiconnect-conduit-platform/basestation/">MultiConnect Conduit IP67 Base Station</a></li>
-<li><a href="http://www.multitech.net/developer/software/aep/">AEP Information</a></li>
-<li><a href="http://www.multitech.net/developer/software/aep/">LoRa Information</a></li>
-<li><a href="http://www.multitech.net/developer/software/aep/getting-started-aep/">Getting Started with AEP</a></li>
-<li><a href="http://www.multitech.net/developer/software/lora/getting-started-with-lora-conduit-aep/">AEP: Getting Started with LoRa</a></li>
-<li><a href="http://www.multitech.net/developer/software/lora/conduit-aep-lora-communication/">Conduit AEP: LoRa Communication and Node-RED</a></li>
+<li>En la máquina remota, se tiene que editar el archivo ejecutando <code>rmate &lt;nombre de archivo&gt;</code></li>
+<li>En la máquina local, el editor Atom tiene que tener instalado el paquete <code>Remote Atom</code> con el servidor arrancado</li>
 </ul>
-<hr />
+<h3 id="utilidad-rmate">Utilidad rmate</h3>
+<p>Existen dos versiones de este programa: la origina desarrollada por TextMate, que está implementada en Ruby, y un portado usando shell script, que es más fácil de instalar porque no tiene la dependencia de Ruby.</p>
+<ul>
+<li><a href="https://github.com/aurora/rmate">aurora/rmate</a>: <code>rmate</code> implementado en shell script. Esta es la versión que yo utilizo</li>
+<li><a href="https://github.com/textmate/rmate">textmate/rmate</a>: la versión original de TextMate, implementada en Ruby</li>
+</ul>
+<h3 id="paquete-remote-atom">Paquete Remote Atom</h3>
+<p>Para instalar el paquete Remote Atom, seleccionas "Preferences...", después "+ seleccionas Install" y en la ventana de instalar paquetes buscas el paquete <code>remote-atom</code>. Hay que instalar la versión del usuario <em>randy3k</em>.</p>
               
             </div>
           </div>
@@ -261,10 +256,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../fiware/" class="btn btn-neutral float-right" title="FIWARE">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../git/" class="btn btn-neutral float-right" title="Git">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../calidad_aire/" class="btn btn-neutral" title="Calidad del Aire"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../data_science/R/" class="btn btn-neutral" title="R"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -290,10 +285,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../calidad_aire/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../data_science/R/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../fiware/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../git/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
