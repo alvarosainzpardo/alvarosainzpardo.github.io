@@ -4,6 +4,8 @@
 
 ## Enlaces, documentación
 
+* [Git Inmersion](http://gitimmersion.com/index.html): tutorial de git interactivo, inspirado en la premisa de que conocer algo es hacerlo.
+
 ---
 
 ## Empezar a usar git en un ordenador nuevo
@@ -45,6 +47,20 @@ Para borrar el valor de una variable se utiliza la opción `--unset`:
 ```bash
 $ git config --global --unset user.name
 $ git config --global --unset user.email
+```
+
+Después de configurar el `user.name` y el `user.email`, es aconsejable configurar las prefencias de fin de línea para los archivos de texto, dependiendo del sistema operativo (Unix/Mac o Windows).
+
+Para Unix/Mac:
+```bash
+$ git config --global core.autocrlf input
+$ git config --global core.safecrlf true
+```
+
+Para Windows:
+```bash
+$ git config --global core.autocrlf true
+$ git config --global core.safecrlf true
 ```
 
 ### Crear y configurar la clave ssh para conectarse a GitHub

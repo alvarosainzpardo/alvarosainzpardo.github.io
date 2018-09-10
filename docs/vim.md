@@ -101,7 +101,55 @@ Next, you should check `:CheckHealth` command in nvim to see any issues with plu
 
 ---
 
-## .vimrc
+## Buffers, ventanas, pestañas
+
+Son tres conceptos que se mezclan un poco en vim, sobre todo si eres un principiante.
+
+Vim, de forma estándar, arranca con una ventana que ocupa toda el área de trabajo de vim (el emulador de terminal o la ventana del sistema operativo). En esa ventana se pueden abrir muchos archivos, por ejemplo ejecutando:
+
+```sh
+$ vim *.c
+```
+
+Después de ejecutar ese comando, en la ventana de vim sólo se mostrará el último de esos archivos que se haya abierto (posiblemente según el orden alfabético de los mismos), pero todos los archivos están abiertos en sus correspondientes buffers de edición, sólo que están ocultos, no se muestran en la ventana. En una ventana sólo se puede mostrar un buffer a la vez. Para trabajar con todos esos buffers abiertos, se puede ir cambiando el buffer que se muestra en la ventana o se pueden abrir más ventanas, dividiendo la "ventana de la aplicación vim" en varias ventanas de edición, cada ventana mostrando un buffer de edición diferente. Incluso se puede abrir el mismo buffer en dos ventanas distintas, para ver en cada ventana una zona distinta del mismo archivo.
+
+### Ventanas
+
+Cuando se abre una nueva ventana, se divide el área de trabajo de vim. Se puede dividir verticalmente u horizontalmente.
+
+Se puede abrir una nueva ventana que edite un buffer nuevo o se puede abrir una ventana que también edite el buffer activo.
+
+Para abrir una nueva ventana horizontalmente, se utiliza el comando `:new`, el comando `:vnew` abre una nueva ventana vertical. El comando `:split` divide el área de trabajo en dos ventanas, horizontalmente, editando ambas el buffer activo. Para hacer lo mismo, pero diviendo verticalmente el área de trabajo, utiliza el comando `:vsplit`.
+
+Para moverse entre las ventanas, utiliza el comando `:w` seguido de `flecha arriba`, `flecha abajo`, etc. o seguido de `h, j, k o l`. El comando `:wh` activa la ventana de la derecha, el comando `:wj` activa la ventana de abajo, y así sucesivamente.
+
+Para cerrar la venta activa, utiliza `:wq`, o simplemente `:q` (debe haber alguna diferencia entre los dos comandos, pero ahora mismo no la conozco). Se cierra la ventana, pero el buffer sigue abierto, aunque se queda oculto. El comando `:wo` cierra todas las ventanas abiertas, excepto la ventana activa (cierra las otras ventanas).
+
+Para cambiar el tamaño de una ventana, se utiliza el comando `resize`, que tiene variantes en función de que la ventana sea horizontal (por tanto se aumenta o disminuye el número de líneas) o vertical (se aumenta o disminuye el número de columnas). Ejemplos:
+
+* `:resize 30` (abreviado `:res 25`): cambia el tamaño de la ventana activa a 25 líneas
+* `:vertical resize 75` o `:vert res 75`: cambia el tamaño de la ventana activa a 75 columnas
+* `:res +10` añade diez filas, `:res -10` las quita
+* `:vert res +10` añade 10 columnas, `:vert res -10'` quita 10 columnas
+
+Los atajos de teclado de esos comandos son:
+
+* `Ctrl+w` `+/-`: incrementar/decrementar altura (ej: `25 Ctrl+w +`)
+* `Ctrl+w` `>/<`: incrementar/decrementar anchura (ej: `30 Ctrl+w >`)
+* `Ctrl+w` `_`: establecer altura (ej: `30 Ctrl+w _`)
+* `Ctrl+w` `|`: establecer anchura (ej: `40 Ctrl+w |`)
+* `Ctrl+w` `=`: todas las ventanas con la misma altura/anchura
+
+Cambiar el tamaño de las ventanas se hace mucho más cómodamente cuando está activo el modo ratón. Con el modo ratón activo, las ventanas se redimensionan pulsando en el borde de la ventana y arrastrando, igual que en un entorno gráfico. `:set mouse=n` activa el ratón en modo normal, `:set mouse=i` lo activa en modo inserción, `:set mouse=v` lo activa en modo visual y `:set mouse=a` lo activa en todos los modos. Si se está utilizando vim en una sesión de tmux, además de `:set mouse=a` hay que ejecutar el comando `:set ttyterm=xterm2`.
+
+### Buffers
+
+El comando `:ls` muestra la lista de los buffers abiertos, con el número de cada buffer y el archivo que le corresponde. El comando `:bn` cambia al siguiente buffer de la lista y el comando `:bp` cambia al anterior. Para seleccionar un buffer concreto, utiliza el comando `:b` seguido del número de buffer, por ejemplo `:b2`. Para editar un buffer, también se puede usar el comando `:b` seguido del nombre del archivo. Se puede escribir el nombre del archivo parcialmente y pulsar `tab` para completarlo. En caso de existir varios nombres que contengan el texto escrito, pulsando `tab` varias veces se van recorriendo cíclicamente los nombres.
+
+Para cerrar un buffer, utiliza el comando `:bd` o `:bw`, aparentemente hacen lo mismo. Son el equivalente a `Ctrl+W` o `Cmd+W` en otros editores. Si el buffer se ha modificado y no se ha guardado, el buffer no se cerrará a menos que se añada `!`
+al comando.
+
+### Pestañas
 
 ---
 
