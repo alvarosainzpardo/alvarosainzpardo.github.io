@@ -55,7 +55,7 @@ $ git config --global --unset user.name
 $ git config --global --unset user.email
 ```
 
-Después de configurar el `user.name` y el `user.email`, es aconsejable configurar las prefencias de fin de línea para los archivos de texto, dependiendo del sistema operativo (Unix/Mac o Windows).
+Después de configurar el `user.name` y el `user.email`, es aconsejable configurar las prefencias de fin de línea para los archivos de texto, dependiendo del sistema operativo que se esté usando (Unix/Mac o Windows).
 
 Para Unix/Mac:
 ```bash
