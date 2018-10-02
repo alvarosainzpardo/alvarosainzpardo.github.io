@@ -103,6 +103,27 @@ Para hacer de este barrio emblemático un lugar para todas las personas y un des
 
 ### Otros
 
+* (02/10/18) [Estaciones Smart de calidad del aire y contaminación atmosférica](https://www.esmartcity.es/comunicaciones/estaciones-smart-calidad-del-aire-contaminacion-atmosferica): El proyecto aprobado, consiste en el suministro e Integración del Vertical de Calidad del Aire/Ruido en el área identificada de actuación DUSI del municipio. La red de monitorización consiste en el despliegue de 6 estaciones fijas y 6 móviles, ubicadas estas últimas en vehículos de titularidad municipal que van a permitir realizar una caracterización detallada de la calidad del aire del área de interés. Las unidades de monitorización de la red fija dispondrán de sensores de monitorización de calidad del aire y ruido e incorporarán la medida de variables meteorológicas.
+
+ Elementos del sistema:
+
+    * Estaciones de Calidad del Aire con sensores de gases de alta resolución – en rangos de medida esperados de ppb- (NO, NO2, CO, H2S) y un sensor OPC (Opticle Particle Counter – Contador de Partículas Óptico) para muestreo de PM1, PM2.5 y PM10.
+    * Sonómetro Type 2, para medida de nivel sonoro Laeq.
+    * Sensor Velocidad y Dirección del viento, temperatura, Humedad relativa, Presión atmosférica.
+
+Además, estas unidades cumplen con las siguientes normas:
+
+    * Health and Safety: RoHS, EN 50581 (2012)
+    * Electro-Magnetic Compatibility: EN 301 489-1 (V1.9.2), EN 301 489-7 (V1.3.1), EN 301 489-17 (V2.2.1)
+    * Spectrum: EN 301 511 (v.9.0.2), EN 300 328 (v.1.7.1)
+    * Electrical Security: EN 60950-1+A11+A1+A12 (2011)
+
+Referencias
+
+    * [http://dusi.rivasciudad.es](http://dusi.rivasciudad.es/) (19 marzo 2018)
+    * [https://www.labaqua.com](https://www.labaqua.com/) (19 marzo 2018)
+    * [kunak.es](http://www.kunak.es/) (19 marzo 2018)
+
 * (25/09/18) [El Ministerio de Turismo constituirá una Red de Destinos Turísticos Inteligentes el próximo 11 de octubre](https://www.esmartcity.es/2018/09/25/ministerio-turismo-constituira-red-destinos-turisticos-inteligentes-proximo-11-octubre): El próximo 11 de octubre se presenta de manera oficial la Red de Destinos Turísticos Inteligentes que prepara la Secretaría de Estado de Turismo, en un acto de constitución que contará con a ministra de Industria, Comercio y Turismo, Reyes Maroto.
 * (21/09/18) [Indra presenta sus propuestas en torno a la movilidad inteligente y los servicios de transporte del futuro](https://www.esmartcity.es/2018/09/21/indra-presenta-propuestas-movilidad-inteligente-servicios-transporte-futuro): La multinacional española Indra ha dado a conocer ‘Mova Solutions’, su catálogo de propuestas en torno a la gestión inteligente de la movilidad y los servicios de transporte del futuro. Se trata de una serie de soluciones con las que quiere liderar la movilidad inteligente con las que cubre todo el ciclo de vida de cada proyecto. Innotrans e ITS World Congress, ferias del sector transporte que se celebran esta semana en Berlín y Copenhague, respectivamente, son los escenarios donde muestra sus propuestas.
 * (20/09/18) [Sevilla celebra una jornada de información y capacitación sobre el programa Copernicus el próximo 4 de octubre](https://www.esmartcity.es/2018/09/20/sevilla-celebra-jornada-informacion-capacitacion-programa-copernicus-proximo-4-octubre): La Comisión Europea junto al Gobierno de España y el Ayuntamiento de Sevilla organiza la [jornada de capacitación e información “Copernicus para ciudades verdes e inteligentes”](http://copernicus.eu/copernicus-infosession-spain) que se desarrollará el próximo cuatro de octubre en Sevilla. El encuentro quiere promover el conocimiento sobre la gran cantidad de usos que ofrecen los datos y la información de [Copernicus](http://copernicus.eu/), el Programa Europeo de Observación de la Tierra. La jornada formativa está diseñada con un enfoque centrado en los intereses y necesidades locales.
