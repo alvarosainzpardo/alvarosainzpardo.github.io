@@ -23,6 +23,7 @@ pages:
   - Atom: atom.md
   - Git: git.md
   - Homebrew: brew.md
+  - MySQL: mysql.md
   - Ssh: ssh.md
   - Tmux: tmux.md
   - Vim: vim.md
