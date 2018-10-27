@@ -51,6 +51,11 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 
 ### Enlaces
 
+* [Linear Regression in 6 lines of Python](https://towardsdatascience.com/linear-regression-in-6-lines-of-python-5e1d0cd05b8d)
+* Pete Warden: tiene un blog bastante bueno con opiniones interesantes sobre temas de machine learning, últimamente habla de machine learning en dispositivo embebidos. También es el autor de dos portales: uno con herramientas de open data y otro para hacer heat maps a partir de archivos csv
+    * [Pete Warden's blog](https://petewarden.com/)
+    * [Data Science Toolkit](http://www.datasciencetoolkit.org/): tiene todo el código en GitHub y el site se puede clonar en tu propia maquina virtual
+    * [OpenHeatMap](http://www.openheatmap.com/)
 * [Machine Learning Zero-to-Hero: Everything you need in order to compete on Kaggle for the first time, step-by-step!](https://towardsdatascience.com/machine-learning-zero-to-hero-everything-you-need-in-order-to-compete-on-kaggle-for-the-first-time-18644e701cf1)
 * [Object detection: an overview in the age of Deep Learning](https://tryolabs.com/blog/2017/08/30/object-detection-an-overview-in-the-age-of-deep-learning/)
 * [Essential Cheat Sheets for Machine Learning and Deep Learning Engineers](https://startupsventurecapital.com/essential-cheat-sheets-for-machine-learning-and-deep-learning-researchers-efb6a8ebd2e5): tiene también un [repositorio Github](https://github.com/kailashahirwar/cheatsheets-ai)

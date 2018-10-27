@@ -24,6 +24,7 @@ pages:
   - Git: git.md
   - Homebrew: brew.md
   - MySQL: mysql.md
+  - PuTTY: putty.md
   - Ssh: ssh.md
   - Tmux: tmux.md
   - Vim: vim.md
