@@ -51,6 +51,11 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 
 ### Enlaces
 
+* [EXXETA data science and machine learning blog](http://exxeta.github.io/index.html):
+    * [Forecasting for data-driven decision making](http://exxeta.github.io/2018/10/forecast_sales_in_retail)
+    * [Turn your raw sales numbers into deep sales insights and intelligent forecasts](http://exxeta.github.io/2018/10/sales-prediction)
+    * [Use statistical visualization to understand the needs of your customers](http://exxeta.github.io/2018/10/Statistical_Visualization_Customer_Insights)
+* [Getting to Know Keras for New Data Scientists](https://medium.com/@ODSC/getting-to-know-keras-for-new-data-scientists-cebbc42a3122): Keras is a powerful and easy-to-use Python library for developing and evaluating deep learning models. In this article, we’ll lay out the welcome mat to the framework. You should walk away with a handful of useful features to keep in mind as you get up to speed.
 * [Linear Regression in 6 lines of Python](https://towardsdatascience.com/linear-regression-in-6-lines-of-python-5e1d0cd05b8d)
 * Pete Warden: tiene un blog bastante bueno con opiniones interesantes sobre temas de machine learning, últimamente habla de machine learning en dispositivo embebidos. También es el autor de dos portales: uno con herramientas de open data y otro para hacer heat maps a partir de archivos csv
     * [Pete Warden's blog](https://petewarden.com/)
