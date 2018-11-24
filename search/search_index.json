@@ -446,6 +446,26 @@
             "title": "Enlaces"
         },
         {
+            "location": "/data_science/forecasting/",
+            "text": "Forecasting\n\n\nEnlaces, tutoriales\n\n\n\n\n7 methods to perform Time Series forecasting (with Python codes)\n\n\nA Guide to Time Series Forecasting with ARIMA in Python 3\n\n\nUsing Python and Auto ARIMA to Forecast Seasonal Time Series\n\n\nSeasonal ARIMA models\n\n\npmdarima\n: Pyramid brings R's beloved auto.arima to Python, making an even stronger case for why you don't need R for data science. \nhttps://www.alkaline-ml.com/pmdarima\n. Pmdarima (originally pyramid-arima, for the anagram of 'py' + 'arima') is a no-nonsense statistical Python library with a solitary objective: bring R's \nauto.arima\n functionality to Python. Pmdarima operates by wrapping \nstatsmodels.tsa.ARIMA\n and \nstatsmodels.tsa.statespace.SARIMAX\n into one estimator class and creating a more user-friendly estimator interface for programmers familiar with scikit-learn.\n\n\n\n\nDocumentaci\u00f3n, libros\n\n\n\n\nForecasting: Principles and Practice\n: This textbook is intended to provide a comprehensive introduction to forecasting methods and to present enough information about each method for readers to be able to use them sensibly.We use R throughout the book and we intend students to learn how to forecast with R.",
+            "title": "Forecasting"
+        },
+        {
+            "location": "/data_science/forecasting/#forecasting",
+            "text": "",
+            "title": "Forecasting"
+        },
+        {
+            "location": "/data_science/forecasting/#enlaces-tutoriales",
+            "text": "7 methods to perform Time Series forecasting (with Python codes)  A Guide to Time Series Forecasting with ARIMA in Python 3  Using Python and Auto ARIMA to Forecast Seasonal Time Series  Seasonal ARIMA models  pmdarima : Pyramid brings R's beloved auto.arima to Python, making an even stronger case for why you don't need R for data science.  https://www.alkaline-ml.com/pmdarima . Pmdarima (originally pyramid-arima, for the anagram of 'py' + 'arima') is a no-nonsense statistical Python library with a solitary objective: bring R's  auto.arima  functionality to Python. Pmdarima operates by wrapping  statsmodels.tsa.ARIMA  and  statsmodels.tsa.statespace.SARIMAX  into one estimator class and creating a more user-friendly estimator interface for programmers familiar with scikit-learn.",
+            "title": "Enlaces, tutoriales"
+        },
+        {
+            "location": "/data_science/forecasting/#documentacion-libros",
+            "text": "Forecasting: Principles and Practice : This textbook is intended to provide a comprehensive introduction to forecasting methods and to present enough information about each method for readers to be able to use them sensibly.We use R throughout the book and we intend students to learn how to forecast with R.",
+            "title": "Documentaci\u00f3n, libros"
+        },
+        {
             "location": "/data_science/R/",
             "text": "Data Science en R\n\n\nEnlaces, tutoriales, documentaci\u00f3n, libros\n\n\nEl art\u00edculo \nR\u2019s tidytext turns messy text into valuable insight\n comenta la \nutilizaci\u00f3n del m\u00f3dulo tydytext en la web StackOverflow\n para realizar miner\u00eda de texto en R. El art\u00edculo es un \nabstract\n del libro \nText Mining with R: A tidy approach\n. El libro est\u00e1 \ndisponible para su lectura online\n y tiene un \nrepositorio GitHub\n.",
             "title": "R"
