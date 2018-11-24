@@ -282,7 +282,7 @@
         },
         {
             "location": "/programming/ruby/rspec/",
-            "text": "RSpec\n\n\n\n\nEnlaces, tutoriales\n\n\n\n\nTesting for Beginners: RSpec\n\n\nSetting up a BDD Stack on a Rails 5 Application\n\n\nLearn the First Best Practices for Rails and RSpec\n\n\n\n\nDocumentaci\u00f3n, libros",
+            "text": "RSpec\n\n\n\n\nEnlaces, tutoriales\n\n\n\n\nTesting for Beginners: RSpec\n\n\nRuby articles on Semaphore\n\n\nSetting up a BDD Stack on a Rails 5 Application\n\n\n\n\n\n\nLearn the First Best Practices for Rails and RSpec\n\n\n\n\nDocumentaci\u00f3n, libros",
             "title": "RSpec"
         },
         {
@@ -292,7 +292,7 @@
         },
         {
             "location": "/programming/ruby/rspec/#enlaces-tutoriales",
-            "text": "Testing for Beginners: RSpec  Setting up a BDD Stack on a Rails 5 Application  Learn the First Best Practices for Rails and RSpec",
+            "text": "Testing for Beginners: RSpec  Ruby articles on Semaphore  Setting up a BDD Stack on a Rails 5 Application    Learn the First Best Practices for Rails and RSpec",
             "title": "Enlaces, tutoriales"
         },
         {
