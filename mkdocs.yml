@@ -19,6 +19,7 @@ pages:
     - General: data_science/general.md
     - Cursos: data_science/cursos.md
     - Python: data_science/python.md
+    - Forecasting: data_science/forecasting.md
     - R: data_science/R.md
   - Atom: atom.md
   - Git: git.md
