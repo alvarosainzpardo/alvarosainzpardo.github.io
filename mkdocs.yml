@@ -15,6 +15,10 @@ pages:
     - Emmet: programming/emmet.md
     - JavaScript: programming/javascript.md
     - Python: programming/python.md
+    - Ruby:
+      - General: programming/ruby/general.md
+      - Rails: programming/ruby/rails.md
+      - RSpec: programming/ruby/rspec.md
   - Data Science:
     - General: data_science/general.md
     - Cursos: data_science/cursos.md
