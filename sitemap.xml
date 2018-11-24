@@ -51,6 +51,21 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/programming/ruby/general/</loc>
+     <lastmod>2018-11-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/programming/ruby/rails/</loc>
+     <lastmod>2018-11-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/programming/ruby/rspec/</loc>
+     <lastmod>2018-11-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/data_science/general/</loc>
      <lastmod>2018-11-24</lastmod>
      <changefreq>daily</changefreq>
