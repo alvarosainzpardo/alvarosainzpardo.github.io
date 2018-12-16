@@ -56,6 +56,10 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 
 ### Enlaces
 
+* [Haystacks - A data science blog by Caitlin Hudon](https://caitlinhudon.com/)
+    * [Git Your SQL Together (with a Query Library)](https://caitlinhudon.com/2018/11/28/git-sql-together/)
+    * [The Coolest Things I Learned at JupyterCon](https://caitlinhudon.com/2018/08/27/coolest-things-jupytercon/)
+* [Learn Data Science](https://www.learndatasci.com/): Data analytics and machine learning tutorials created by data scientists.
 * [EXXETA data science and machine learning blog](http://exxeta.github.io/index.html):
     * [Forecasting for data-driven decision making](http://exxeta.github.io/2018/10/forecast_sales_in_retail)
     * [Turn your raw sales numbers into deep sales insights and intelligent forecasts](http://exxeta.github.io/2018/10/sales-prediction)
