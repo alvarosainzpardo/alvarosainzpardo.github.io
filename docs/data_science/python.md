@@ -24,6 +24,8 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 
 ### Otros enlaces
 
+* [Ultimate Guide to Web Scraping with Python Part 1: Requests and BeautifulSoup](https://www.learndatasci.com/tutorials/ultimate-guide-web-scraping-w-python-requests-and-beautifulsoup/)
+* [Top 10 IPython Notebook Tutorials for Data Science and Machine Learning](https://www.kdnuggets.com/2016/04/top-10-ipython-nb-tutorials.html)
 * [Python para todos (3): ScyPy, NumPy, Pandas ...¿Qué librerías necesitamos?](http://data-speaks.luca-d3.com/2018/04/python-todos-3-librerias.html): contiene una descripción de librerías de data science para Python:
     * NumPy : Acrónimo de  Numerical Python. Su características más potente es que puede trabajar con matrices (array) de n dimensiones. También ofrece funciones básicas de algebra lineal, transformada de Fourier, capacidades avanzadas con números aleatorios, y herramientas de integración con otros lenguajes de bajo nivel como Fortran, C y C++
     * SciPy: Acrónimo de Scientific Python. SciPy está construida sobre la librería NumPy. Es una de las más útiles por la gran variedad que tiene de módulos de alto nivel sobre ciencia e ingeniería, como transformada discreta de Fourier, álgebre lineal, y matrices de optimización.
@@ -71,3 +73,4 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 * [Common Excel Task in Python: Vlookup with Pandas Merge](https://medium.com/importexcel/common-excel-task-in-python-vlookup-with-pandas-merge-c99d4e108988)
 * [Common Excel Tasks Demonstrated in Pandas](http://pbpython.com/excel-pandas-comp.html)
 * [Common Excel Tasks Demonstrated in Pandas - Part 2](http://pbpython.com/excel-pandas-comp-2.html)
+* [Pythoon Pandas Tutorial: A Complete Introduction for Beginners](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)

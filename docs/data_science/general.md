@@ -49,6 +49,11 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 * [Over 150 of the Best Machine Learning, NLP, and Python Tutorials I’ve Found](https://unsupervisedmethods.com/over-150-of-the-best-machine-learning-nlp-and-python-tutorials-ive-found-ffce2939bd78): a list of the best tutorial content that I’ve found so far. It’s by no means an exhaustive list of every ML-related tutorial on the web — that would be overwhelming and duplicative. Plus, there is a bunch of mediocre content out there. My goal was to link to the best tutorials I found on the important subtopics within machine learning and NLP. I’ve split this post into four sections: Machine Learning, NLP, Python, and Math.
 * [Cheat Sheet of Machine Learning and Python (and Math) Cheat Sheets](https://unsupervisedmethods.com/cheat-sheet-of-machine-learning-and-python-and-math-cheat-sheets-a4afe4e791b6): There are many facets to Machine Learning. As I started brushing up on the subject, I came across various “cheat sheets” that compactly listed all the key points I needed to know for a given topic. Eventually, I compiled over 20 Machine Learning-related cheat sheets. Some I reference frequently and thought others may benefit from them too. This post contains 27 of the better cheat sheets I’ve found on the web. Let me know if I’m missing any you like. Given how rapidly the Machine Learning space is evolving, I imagine these will go out of date quickly, but at least as of June 1, 2017, they are pretty current.
 
+### Libros
+
+* [An Introduction to Statistical Learning with Applications in R](https://www-bcf.usc.edu/~gareth/ISL/)
+    * [ISLR-python](https://github.com/JWarmenhoven/ISLR-python): This repository contains Python code for a selection of tables, figures and LAB sections from the book ['An Introduction to Statistical Learning with Applications in R'](http://www-bcf.usc.edu/%7Egareth/ISL/index.html) by James, Witten, Hastie, Tibshirani (2013).
+
 ### Enlaces
 
 * [EXXETA data science and machine learning blog](http://exxeta.github.io/index.html):
