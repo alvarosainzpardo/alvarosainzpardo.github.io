@@ -24,6 +24,9 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 
 ### Otros enlaces
 
+* [Machine Learning Plus](https://www.machinelearningplus.com/blog/): Simple and straightforward tutorials on machine learning in R and Python. No boring theory. Or never-ending technical specs.  Just simple guides with clear examples.
+    * [Top 50 matplotlib Visualizations – The Master Plots (with full python code)](https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/)
+    * [List Comprehensions in Python – My Simplified Guide](https://www.machinelearningplus.com/python/list-comprehensions-in-python/)
 * [Ultimate Guide to Web Scraping with Python Part 1: Requests and BeautifulSoup](https://www.learndatasci.com/tutorials/ultimate-guide-web-scraping-w-python-requests-and-beautifulsoup/)
 * [Top 10 IPython Notebook Tutorials for Data Science and Machine Learning](https://www.kdnuggets.com/2016/04/top-10-ipython-nb-tutorials.html)
 * [Python para todos (3): ScyPy, NumPy, Pandas ...¿Qué librerías necesitamos?](http://data-speaks.luca-d3.com/2018/04/python-todos-3-librerias.html): contiene una descripción de librerías de data science para Python:
