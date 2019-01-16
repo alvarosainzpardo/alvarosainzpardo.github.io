@@ -36,6 +36,18 @@
 * [The easy way to start automatically testing your website](https://medium.freecodecamp.org/how-to-easily-start-automatically-testing-your-website-8629ea8df04a)
 * [What is Glitch?](https://medium.com/glitch/what-is-glitch-90cd75e40277)
 * [Modern Frontend Developer in 2018](https://medium.com/tech-tajawal/modern-frontend-developer-in-2018-4c2072fa2b9c): The purpose of this roadmap is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to learn what is hip and trendy. You should grow some understanding of why one tool would be better suited for some cases than the other and remember hip and trendy never means best suited for the job.
+* Avoid common errors:
+    * [JavaScript cheat sheet: Tips & tricks](https://jaxenter.com/javascript-crib-notes-136893.html)
+    * [Buggy JavaScript Code: The 10 Most Common Mistakes JavaScript Developers Make](https://www.toptal.com/javascript/10-most-common-javascript-mistakes)
+    * [The Top 11 Mistakes That JavaScript Developers Make](https://www.airpair.com/javascript/posts/eleven-mistakes-developers-javascript)
+* [So You Want to Use JavaScript in The Next Freelance Project ]: this series will be part of the outcome of my study. As the name implies, I will not cover primary level such as “if, else” (condition), “for” (or any kinds of loops), or basic OOP concepts. Instead, I will focus only on differences so you can learn this versatile language like reviewing a pull request, and use it the next day in your next awesome project:
+    * [Some Basics](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-some-basics-470a3ca66cb2)
+    * [String and Array](https://codeburst.io/holmeshe-so-you-want-to-use-javascript-in-the-next-freelance-project-string-and-array-46b0d6def50c)
+    * [This](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-this-d83be51378c4)
+    * [Object (Dictionary)](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-object-dictionary-a0980d906f3d)
+    * [Prototype(1)](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-prototype-1-1908b6d58652)
+    * [Prototype(2)](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-prototype-2-527167ce2857)
+    * [Async](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-async-6639e268caef)
 
 ---
 
