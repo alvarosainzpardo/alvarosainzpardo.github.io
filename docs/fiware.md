@@ -4,6 +4,10 @@
 
 ## Enlaces, documentación, recursos
 
+* [Thinking Cities](https://thinking-cities.readthedocs.io/)
+* [Orchestrator - Apiary](https://orchestrator2.docs.apiary.io/)
+* [IoT Agent Provision API Documentacion - Apiary](https://telefonicaiotiotagents.docs.apiary.io/)
+* [FIWARE Orion - Readthedocs](https://fiware-orion.readthedocs.io/)
 * [FIWARE IoT Stack](http://fiware-iot-stack.readthedocs.io/): punto de entrada a toda la documentación de FIWARE sobre el stack sw de IoT.
 * [Device API](https://fiware-iot-stack.readthedocs.io/en/latest/device_api/index.html): documentación de los protocolos de dispositivo (UL2.0, MQTT)
     * [Send observations](https://fiware-iot-stack.readthedocs.io/en/latest/device_api/index.html#send-observations)
