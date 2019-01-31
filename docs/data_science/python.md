@@ -77,3 +77,11 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 * [Common Excel Tasks Demonstrated in Pandas](http://pbpython.com/excel-pandas-comp.html)
 * [Common Excel Tasks Demonstrated in Pandas - Part 2](http://pbpython.com/excel-pandas-comp-2.html)
 * [Pythoon Pandas Tutorial: A Complete Introduction for Beginners](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
+
+---
+
+## Visualización de datos
+
+### Enlaces
+
+* [The Next Level of Data Visualization in Python](https://towardsdatascience.com/the-next-level-of-data-visualization-in-python-dd6e99039d5e): [Plotly](https://plot.ly/python/), How to make great-looking, fully-interactive plots with a single line of Python
