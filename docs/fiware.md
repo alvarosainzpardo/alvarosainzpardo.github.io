@@ -4,6 +4,8 @@
 
 ## Enlaces, documentación, recursos
 
+* [FIWARE-NGSI v2 Specification](http://telefonicaid.github.io/fiware-orion/api/v2/stable/)
+* [Presentación de Fermín Galán - Orion Context Broker 20181218](https://www.slideshare.net/fermingalan/orion-context-broker-20181218)
 * [Thinking Cities](https://thinking-cities.readthedocs.io/)
 * [Orchestrator - Apiary](https://orchestrator2.docs.apiary.io/)
 * [IoT Agent Provision API Documentacion - Apiary](https://telefonicaiotiotagents.docs.apiary.io/)
