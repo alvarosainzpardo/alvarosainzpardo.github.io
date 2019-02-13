@@ -69,6 +69,16 @@ $ git config --global core.autocrlf true
 $ git config --global core.safecrlf true
 ```
 
+También es conveniente configurar un `.gitignore` global, con extensiones de archivos del sistema operativo, archivos binarios, archivos temporales del editor, etc. Para ello:
+
+1. Crear un archivo `~/.gitignore_global`
+2. Añadir al archivo las reglas deseadas. The Octocat tiene un [Gist con reglas](https://gist.github.com/octocat/9257657) adecuadas para añadir a este archivo. A esas reglas, hay que añadir `*.swp` para ignorar los archivos temporales de `vim`
+3. Ejecutar el siguiente comando:
+
+```bash
+$ git config --global core.excludefile ~/.gitignore_global
+```
+
 ### Crear y configurar la clave ssh para conectarse a GitHub
 
 Hay dos tipos de URLs que se pueden utilizar para referenciar los repositorios remotos en GitHub: http y ssh.
