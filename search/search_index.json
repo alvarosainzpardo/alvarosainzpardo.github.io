@@ -742,7 +742,7 @@
         },
         {
             "location": "/tmux/",
-            "text": "Guia r\u00e1pida de tmux\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nThe Tao of tmux\n: manual de uso muy detallado. Est\u00e1 editado en formato libro, \ndisponible para su lectura online en Leanpub\n\n\nToday I Learned - posts about tmux\n\n\ncopy paste in tmux",
+            "text": "Guia r\u00e1pida de tmux\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nTmux Plugin Manager\n\n\nTmux Resurrect\n: Restore \ntmux\n environment after system restart\n\n\nTmux sensible\n: A set of tmux options that should be acceptable to everyone\n\n\n\n\n\n\nThe Tao of tmux\n: manual de uso muy detallado. Est\u00e1 editado en formato libro, \ndisponible para su lectura online en Leanpub\n\n\nToday I Learned - posts about tmux\n\n\ncopy paste in tmux",
             "title": "Tmux"
         },
         {
@@ -752,7 +752,7 @@
         },
         {
             "location": "/tmux/#enlaces-documentacion",
-            "text": "The Tao of tmux : manual de uso muy detallado. Est\u00e1 editado en formato libro,  disponible para su lectura online en Leanpub  Today I Learned - posts about tmux  copy paste in tmux",
+            "text": "Tmux Plugin Manager  Tmux Resurrect : Restore  tmux  environment after system restart  Tmux sensible : A set of tmux options that should be acceptable to everyone    The Tao of tmux : manual de uso muy detallado. Est\u00e1 editado en formato libro,  disponible para su lectura online en Leanpub  Today I Learned - posts about tmux  copy paste in tmux",
             "title": "Enlaces, documentaci\u00f3n"
         },
         {
