@@ -742,7 +742,7 @@
         },
         {
             "location": "/tmux/",
-            "text": "Guia r\u00e1pida de tmux\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nTmux Plugin Manager\n\n\nTmux Resurrect\n: Restore \ntmux\n environment after system restart\n\n\nTmux sensible\n: A set of tmux options that should be acceptable to everyone\n\n\n\n\n\n\nThe Tao of tmux\n: manual de uso muy detallado. Est\u00e1 editado en formato libro, \ndisponible para su lectura online en Leanpub\n\n\nToday I Learned - posts about tmux\n\n\ncopy paste in tmux",
+            "text": "Guia r\u00e1pida de tmux\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nTmuxinator\n: Create and manage tmux sessions easily\n\n\nUsing Tmuxinator to automate your environment\n\n\nSpecify pane percentage in tmuxinator project\n\n\nMy tmux configuration with tmuxinator\n\n\n\n\n\n\nTmux Plugin Manager\n\n\nTmux Resurrect\n: Restore \ntmux\n environment after system restart\n\n\nTmux sensible\n: A set of tmux options that should be acceptable to everyone\n\n\n\n\n\n\nMaking tmux Pretty and Usable - A Guide to Customizing your tmux.conf\n\n\nA Quick and Easy Guide to tmux\n\n\n\n\n\n\nA minimalist guide to tmux\n: begin windows numbering with 1 and unix porn example\n\n\ntmux man page\n\n\nThe Tao of tmux\n: manual de uso muy detallado. Est\u00e1 editado en formato libro, \ndisponible para su lectura online en Leanpub\n\n\nToday I Learned - posts about tmux\n\n\ncopy paste in tmux\n\n\nTMUX \u2013 The Terminal Multiplexer (Part 1)\n\n\nTMUX \u2013 The Terminal Multiplexer (Part 2)",
             "title": "Tmux"
         },
         {
@@ -752,7 +752,7 @@
         },
         {
             "location": "/tmux/#enlaces-documentacion",
-            "text": "Tmux Plugin Manager  Tmux Resurrect : Restore  tmux  environment after system restart  Tmux sensible : A set of tmux options that should be acceptable to everyone    The Tao of tmux : manual de uso muy detallado. Est\u00e1 editado en formato libro,  disponible para su lectura online en Leanpub  Today I Learned - posts about tmux  copy paste in tmux",
+            "text": "Tmuxinator : Create and manage tmux sessions easily  Using Tmuxinator to automate your environment  Specify pane percentage in tmuxinator project  My tmux configuration with tmuxinator    Tmux Plugin Manager  Tmux Resurrect : Restore  tmux  environment after system restart  Tmux sensible : A set of tmux options that should be acceptable to everyone    Making tmux Pretty and Usable - A Guide to Customizing your tmux.conf  A Quick and Easy Guide to tmux    A minimalist guide to tmux : begin windows numbering with 1 and unix porn example  tmux man page  The Tao of tmux : manual de uso muy detallado. Est\u00e1 editado en formato libro,  disponible para su lectura online en Leanpub  Today I Learned - posts about tmux  copy paste in tmux  TMUX \u2013 The Terminal Multiplexer (Part 1)  TMUX \u2013 The Terminal Multiplexer (Part 2)",
             "title": "Enlaces, documentaci\u00f3n"
         },
         {
