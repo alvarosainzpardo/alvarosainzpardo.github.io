@@ -29,3 +29,4 @@ Los siguientes programas son emuladores de terminal que funcionan como aplicacio
 * [Wetty](https://github.com/krishnasrinivas/wetty)
 * [Xterm.js](https://github.com/xtermjs/xterm.js)
 * [GoTTY](https://github.com/yudai/gotty)
+* [ttyd](https://github.com/tsl0922/ttyd)
