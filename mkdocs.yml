@@ -26,6 +26,7 @@ pages:
     - Forecasting: data_science/forecasting.md
     - R: data_science/R.md
   - Atom: atom.md
+  - Docker: docker.md
   - Git: git.md
   - Homebrew: brew.md
   - MySQL: mysql.md
