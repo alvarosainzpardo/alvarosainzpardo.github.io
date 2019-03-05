@@ -587,7 +587,7 @@
         },
         {
             "location": "/docker/",
-            "text": "Docker\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nControl Docker with systemd\n: to configure the docker daemon network proxy settings, for example. Instead of manually adding and editing a docker systemd config file, you can use the command \nsystemctl edit docker\n, that creates the config file, if it doesn't exist, and then edits the file\n\n\n\n\n\n\nMySQL\n\n\nTo run:\n\n\n$ docker volume create mysql\n$ docker run --rm -d --name mysql -p 3306:3306 -v mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword mysql:5\n\n\n\n\nPostgreSQL\n\n\nTo run:\n\n\n$ docker volume create postgresql\n$ docker run --rm -d --name postgresql -p 5432:5432 -v postgresql:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgresql:9-alpine",
+            "text": "Docker\n\n\n\n\nEnlaces, documentaci\u00f3n\n\n\n\n\nControl Docker with systemd\n: to configure the docker daemon network proxy settings, for example. Instead of manually adding and editing a docker systemd config file, you can use the command \nsystemctl edit docker\n, that creates the config file, if it doesn't exist, and then edits the file\n\n\n\n\n\n\nMySQL\n\n\nTo run:\n\n\n$ docker volume create mysql\n$ docker run --rm -d --name mysql -p 3306:3306 -v mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=mysecretpassword mysql:5\n\n\n\n\nPostgreSQL\n\n\nTo run:\n\n\n$ docker volume create postgres\n$ docker run --rm -d --name postgres -p 5432:5432 -v postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgres:9-alpine",
             "title": "Docker"
         },
         {
@@ -607,7 +607,7 @@
         },
         {
             "location": "/docker/#postgresql",
-            "text": "To run:  $ docker volume create postgresql\n$ docker run --rm -d --name postgresql -p 5432:5432 -v postgresql:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgresql:9-alpine",
+            "text": "To run:  $ docker volume create postgres\n$ docker run --rm -d --name postgres -p 5432:5432 -v postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgres:9-alpine",
             "title": "PostgreSQL"
         },
         {
