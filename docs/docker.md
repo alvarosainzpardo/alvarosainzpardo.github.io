@@ -22,6 +22,6 @@ $ docker run --rm -d --name mysql -p 3306:3306 -v mysql:/var/lib/mysql -e MYSQL_
 To run:
 
 ```bash
-$ docker volume create postgresql
-$ docker run --rm -d --name postgresql -p 5432:5432 -v postgresql:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgresql:9-alpine
+$ docker volume create postgres
+$ docker run --rm -d --name postgres -p 5432:5432 -v postgres:/var/lib/postgresql/data -e POSTGRES_PASSWORD=mysecretpassword postgres:9-alpine
 ```
