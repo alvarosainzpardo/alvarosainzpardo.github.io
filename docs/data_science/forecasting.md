@@ -2,6 +2,8 @@
 
 ## Enlaces, tutoriales
 
+* [Almost Everything You Need to Know About Time Series](https://towardsdatascience.com/almost-everything-you-need-to-know-about-time-series-860241bdc578): Understand moving average, exponential smoothing, stationarity, autocorrelation, SARIMA, and more
+    * [End to End Time Series Analysis and Modelling](https://towardsdatascience.com/end-to-end-time-series-analysis-and-modelling-8c34f09a3014): Apply moving average, exponential smoothing, and SARIMA for stock prediction
 * [7 methods to perform Time Series forecasting (with Python codes)](https://www.analyticsvidhya.com/blog/2018/02/time-series-forecasting-methods/)
 * [A Guide to Time Series Forecasting with ARIMA in Python 3](https://www.digitalocean.com/community/tutorials/a-guide-to-time-series-forecasting-with-arima-in-python-3)
 * [Using Python and Auto ARIMA to Forecast Seasonal Time Series](https://medium.com/@josemarcialportilla/using-python-and-auto-arima-to-forecast-seasonal-time-series-90877adff03c)

@@ -56,6 +56,7 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 
 ### Enlaces
 
+* [Data Versioning](https://emilygorcenski.com/post/data-versioning/)
 * [Haystacks - A data science blog by Caitlin Hudon](https://caitlinhudon.com/)
     * [Git Your SQL Together (with a Query Library)](https://caitlinhudon.com/2018/11/28/git-sql-together/)
     * [The Coolest Things I Learned at JupyterCon](https://caitlinhudon.com/2018/08/27/coolest-things-jupytercon/)
