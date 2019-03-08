@@ -25,6 +25,8 @@ pages:
     - Python: data_science/python.md
     - Forecasting: data_science/forecasting.md
     - R: data_science/R.md
+  - Hi-Fi:
+      - Darkvoice 336SE: hifi/darkvoice.md
   - Atom: atom.md
   - Docker: docker.md
   - Git: git.md
