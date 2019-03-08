@@ -200,6 +200,8 @@
         
             <li><a class="toctree-l4" href="#evolution">Evolution</a></li>
         
+            <li><a class="toctree-l4" href="#onedrive">OneDrive</a></li>
+        
             <li><a class="toctree-l4" href="#aplicaciones-web-de-emulacion-de-terminal-para-el-browser">Aplicaciones web de emulación de terminal para el browser</a></li>
         
         </ul>
@@ -311,6 +313,34 @@
 <li>If prompted, enter your Partners password once more and click OK</li>
 <li>Setup is complete. Email and calendar data will take some time to sync</li>
 </ul>
+<hr />
+<h2 id="onedrive">OneDrive</h2>
+<p>Para intentar acceder al OneDrive for Business desde Linux, he seguido las instrucciones de <a href="https://www.phillipsj.net/posts/using-onedrive-with-linux">Using OneDrive with Linux</a>. He configurado <a href="https://github.com/skilion/onedrive">OneDrive Free Client</a> y <a href="https://rclone.org/">Rclone</a>. Los dos fallan en el mismo paso: cuando hay que dar permiso de acceso a una aplicación de terceros desde la cuenta corporativa de OneDrive.</p>
+<p>OneDrive FreeClient lo tengo descargado en <code>projects/onedrive</code>, se puede borrar el directorio si finalmente no lo uso. El programa, como tal, no llegué a instalarlo, lo probé desde ese directorio. Para poderlo compilar, tuve que instalar lo siguiente, que finalmente se puede desinstalar también:</p>
+<pre><code class="bash">$ sudo apt install libcurl4-openssl-dev libsqlite3-dev
+$ sudo snap install --classic dmd &amp;&amp; sudo snap install --classic dub
+</code></pre>
+
+<p>Rclone sirve para sincronizar muchos servicios de almacenamiento en la nube. Para Rclone sí que tuve que instalar un paquete deb:</p>
+<pre><code class="bash">$ sudo dpkg -i rclone-v1.46-linux-amd64.deb
+</code></pre>
+
+<p>Para desinstalarlo:</p>
+<pre><code class="bash">$ sudo apt remove/purge rclone
+</code></pre>
+
+<h3 id="enlaces">Enlaces</h3>
+<ul>
+<li><a href="https://www.phillipsj.net/posts/using-onedrive-with-linux">Using OneDrive with Linux</a></li>
+<li><a href="https://rclone.org/">Rclone</a></li>
+<li><a href="https://github.com/skilion/onedrive">OneDrive Free Client</a></li>
+<li><a href="https://www.linuxuprising.com/2018/07/how-to-mount-onedrive-in-linux-using.html">How To Mount OneDrive In Linux Using Rclone (Supports Business And Personal Accounts)</a></li>
+<li><a href="https://www.omgubuntu.co.uk/2019/02/insync-support-onedrive-linux-client">InSync is Bringing OneDrive to Linux</a></li>
+<li><a href="https://github.com/derrix060/onedriveClient">onedriveClient</a>: A Microsoft OneDrive and OneDrive for Business client for Linux, written in Python3.</li>
+<li><a href="https://www.addictivetips.com/ubuntu-linux-tips/best-unofficial-microsoft-onedrive-apps-for-linux/">The 4 best unofficial Microsoft OneDrive apps for Linux</a></li>
+<li><a href="https://www.maketecheasier.com/sync-onedrive-linux/">How to Sync Microsoft OneDrive with Linux</a></li>
+</ul>
+<hr />
 <h2 id="aplicaciones-web-de-emulacion-de-terminal-para-el-browser">Aplicaciones web de emulación de terminal para el browser</h2>
 <p>Los siguientes programas son emuladores de terminal que funcionan como aplicaciones web dentro de un browser, de forma que se puede acceder a ellos en una sesion normal HTTP, no se necesita tener abierto el puerto 22 para hacer un ssh:</p>
 <ul>
