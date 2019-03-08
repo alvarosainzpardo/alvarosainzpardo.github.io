@@ -56,6 +56,44 @@ Una vez configurada la cuenta, se puede volver a poner el proxy. La única opci�
 * If prompted, enter your Partners password once more and click OK
 * Setup is complete. Email and calendar data will take some time to sync
 
+---
+
+## OneDrive
+
+Para intentar acceder al OneDrive for Business desde Linux, he seguido las instrucciones de [Using OneDrive with Linux](https://www.phillipsj.net/posts/using-onedrive-with-linux). He configurado [OneDrive Free Client](https://github.com/skilion/onedrive) y [Rclone](https://rclone.org/). Los dos fallan en el mismo paso: cuando hay que dar permiso de acceso a una aplicación de terceros desde la cuenta corporativa de OneDrive.
+
+OneDrive FreeClient lo tengo descargado en `projects/onedrive`, se puede borrar el directorio si finalmente no lo uso. El programa, como tal, no llegué a instalarlo, lo probé desde ese directorio. Para poderlo compilar, tuve que instalar lo siguiente, que finalmente se puede desinstalar también:
+
+```bash
+$ sudo apt install libcurl4-openssl-dev libsqlite3-dev
+$ sudo snap install --classic dmd && sudo snap install --classic dub
+```
+
+Rclone sirve para sincronizar muchos servicios de almacenamiento en la nube. Para Rclone sí que tuve que instalar un paquete deb:
+
+```bash
+$ sudo dpkg -i rclone-v1.46-linux-amd64.deb
+```
+
+Para desinstalarlo:
+
+```bash
+$ sudo apt remove/purge rclone
+```
+
+### Enlaces
+
+* [Using OneDrive with Linux](https://www.phillipsj.net/posts/using-onedrive-with-linux)
+* [Rclone](https://rclone.org/)
+* [OneDrive Free Client](https://github.com/skilion/onedrive)
+* [How To Mount OneDrive In Linux Using Rclone (Supports Business And Personal Accounts)](https://www.linuxuprising.com/2018/07/how-to-mount-onedrive-in-linux-using.html)
+* [InSync is Bringing OneDrive to Linux](https://www.omgubuntu.co.uk/2019/02/insync-support-onedrive-linux-client)
+* [onedriveClient](https://github.com/derrix060/onedriveClient): A Microsoft OneDrive and OneDrive for Business client for Linux, written in Python3.
+* [The 4 best unofficial Microsoft OneDrive apps for Linux](https://www.addictivetips.com/ubuntu-linux-tips/best-unofficial-microsoft-onedrive-apps-for-linux/)
+* [How to Sync Microsoft OneDrive with Linux](https://www.maketecheasier.com/sync-onedrive-linux/)
+
+---
+
 ## Aplicaciones web de emulación de terminal para el browser
 
 Los siguientes programas son emuladores de terminal que funcionan como aplicaciones web dentro de un browser, de forma que se puede acceder a ellos en una sesion normal HTTP, no se necesita tener abierto el puerto 22 para hacer un ssh:
