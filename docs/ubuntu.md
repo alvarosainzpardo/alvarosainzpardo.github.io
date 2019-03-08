@@ -22,6 +22,40 @@ Una vez reiniciado el sistema después de la instalación, hay varias opciones:
 
 ---
 
+## Evolution
+
+### Conexión al servidor Exchange de Office365
+
+Instalar los paquetes `evolution` y `evolution-ews`.
+
+```bash
+$ sudo apt install evolution evolution-evs
+```
+
+Para configurar la cuenta, hay que seguir [estas instrucciones](https://rc.partners.org/kb/article/2702). Cuando se da de alta la cuenta, tienes que estar conectado directamente a internet, sin proxy, para que funcione el paso en el que se hace el 'fetch'.
+
+Una vez configurada la cuenta, se puede volver a poner el proxy. La única opción de proxy que funciona (a fecha de Marzo 2019) es el proxy manual.
+
+#### Instructions:
+
+* Launch or open the Evolution application
+    * If this is a new installation you will be prompted to enter your email information, otherwise to add a new account by going to Edit | Preferences and choose Add from the Mail Accounts menu.
+* Click Next
+* Enter your name as you'd like it to appear and your primary email address "name@partners.org" or "name@mgh.harvard.edu" or name@bwh.harvard.edu" for Email Address, then click Next
+* Click the Skip button
+* On the resulting window, enter the following information for each field:
+    * Server Type: Exchange Web Services
+    * Username: your primary email address i.e. name@partners.org
+    * Host URL: https://outlook.office365.com/EWS/Exchange.asmx
+* Click Fetch URL
+* You will be prompted for your password. Enter your Partners password.
+* Host URL and OAB URL should be successfully discovered. Click Next
+* Click Next to accept Receiving Options
+* Enter any name for the account name, and click Next
+* Click Apply
+* If prompted, enter your Partners password once more and click OK
+* Setup is complete. Email and calendar data will take some time to sync
+
 ## Aplicaciones web de emulación de terminal para el browser
 
 Los siguientes programas son emuladores de terminal que funcionan como aplicaciones web dentro de un browser, de forma que se puede acceder a ellos en una sesion normal HTTP, no se necesita tener abierto el puerto 22 para hacer un ssh:
