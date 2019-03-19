@@ -11,7 +11,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/calidad_aire/</loc>
+     <loc>/utrera/</loc>
      <lastmod>2019-03-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -22,6 +22,11 @@
     </url>
     <url>
      <loc>/fiware/</loc>
+     <lastmod>2019-03-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/calidad_aire/</loc>
      <lastmod>2019-03-19</lastmod>
      <changefreq>daily</changefreq>
     </url>
