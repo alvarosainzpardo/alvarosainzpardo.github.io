@@ -31,13 +31,25 @@ Instalación de dos verticales:
 * Juan Luis Martinez Paredez: responsable IT del Ayto. Utrera
     * jlmartinez@utrera.org
 * Vicente Llanos Siso: el jefe de Begoña, la va a sustituir mientras Begoña está de baja
-    * vllanos@utrera.org
+  Arquitecto Municipal. Director Técnico de Obras
+  Excmo. Ayuntamiento de Utrera
+  Servicio de Obras y Servicios Operativos
+  C/ Veracruz nº 72  -  41710-Utrera (Sevilla)
+  Tf. fijo:   681.27.20.50
+  Tf. móvil:  618.54.58.41
+  e-mail:     vllanos@utrera.org
 
 #### C&G ITsolutions
 
 * Victor García: comercial
     * 663818217
     * vgarcia@cygitsolutions.com
+
+#### Afiven
+
+* Joaquin Gonzalez: el arquitecto que está haciendo el Proyecto Técnico
+    * 650419722 
+    *
 
 #### Urbiótica
 
@@ -71,6 +83,8 @@ Miguel Angel ha comunicado a C&G la instalación en Abril de la Plaza del Altoza
 
 Toda la instalación la hace HOPU. Ha habido unos cambios sobre las ubicaciones indicadas en el pliego. Estamos a la espera de recibir la confirmación de las ubicaciones definitivas para ver la implicación de las nuevas ubicaciones en los costes de instalación y confirmar si HOPU lo asume (en principio, están dispuestos a asumirlo si las implicaciones no son muy grandes). Hemos recibido un documento por correo con los materiales necesarios para la instalación en las nuevas ubicaciones pero no hemos recibido todavía en sí el listado con las nuevas ubicaciones.
 
+La instalacion inicialmente iba a ser en las fachadas de los colegios. Luego cambiaron de opinión y en vez de fachadas lo vamos a poner en farolas, cercanas a los colegios. Nos ha mandado un documento con material necesario para hacer esas instalaciones, pero ese documento no nos sirve para nada.
+
 ---
 
 ## Proveedores, Compras
@@ -82,6 +96,12 @@ Compra y pedido realizado. Es una subcontratación. El pedido tiene un hito corr
 PDTE hitos del pedido
 
 ### Urbiótica
+
+Urbiótica tiene en su pedido 6.000 euros de más. Corresponden a un piloto que se iba a hacer previamente a la instalación, pero este piloto finalmente no se ha realizado, por lo que este dinero sobra. Lo podemos emplear en algún sobrecoste, de momento el único sobrecoste es el concentrador de la Plaza del Altozano.
+
+Urbiótica tiene contratado el suministro de material para la garantía y mantenimiento de los dispositivos durante los 7 años (sustitución y/o reparación de equipos, o cambios de batería). Lo que no está incluido en nuestra cotización es la mano de obra insitu.
+
+Urbiótica puede emplear el dinero sobrante para pagar a C&G la mano de obra necesaria.
 
 PDTE datos solicitud de compra e hitos del pedido
 
