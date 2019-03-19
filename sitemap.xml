@@ -91,6 +91,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>/data_science/nlp/</loc>
+     <lastmod>2019-03-19</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>/data_science/R/</loc>
      <lastmod>2019-03-19</lastmod>
      <changefreq>daily</changefreq>
