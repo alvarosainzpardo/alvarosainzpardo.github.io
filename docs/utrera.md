@@ -79,19 +79,22 @@ Toda la instalación la hace HOPU. Ha habido unos cambios sobre las ubicaciones 
 
 Compra y pedido realizado. Es una subcontratación. El pedido tiene un hito correspondiente a la aceptación del proyecto técnico.
 
+PDTE hitos del pedido
+
 ### Urbiótica
 
-PDTE
+PDTE datos solicitud de compra e hitos del pedido
 
 ### [C&G ITsolutions](https://cygitsolutions.com/)
 
-PDTE
+PDTE datos solicitud de compra e hitos del pedido
 
 ### [HOP](https://hopu.eu/)
 
 Tienen una plataforma compatible FIWARE
 
-PDTE
+PDTE datos solicitud de compra e hitos del pedido
+
 ---
 
 ## Estado actual, temas pendientes
@@ -106,5 +109,7 @@ PDTE
 - [ ] Confirmar con Miguel Angel qué hay que hacer con el documento recibido por correo con lista de materiales para la instalación de calidad ambiental
 - [ ] Datos instalaciones parking Plaza Altozano solicitados en correo del 14/03
 - [ ] Persona responsable en C&G de la instalación en Plaza del Altozano
+- [ ] Revisar con Miguel Angel si hay temas pendientes con M2M (administrativos o de otro tipo)
+- [ ] NB-IoT : gestionar que se haga una prueba e2e con un dispositivo de parking lo antes posible
 
 ---
