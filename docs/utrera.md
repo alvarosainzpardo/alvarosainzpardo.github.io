@@ -14,6 +14,14 @@ El alcalde ha estado siempre en contra de Telefónica. Con este proyecto está c
 
 ---
 
+## Descripción
+
+Instalación de dos verticales:
+
+* Smart Parking
+* Calidad Ambiental
+
+---
 ### Contactos
 
 #### Ayuntamiento de Utrera
@@ -27,15 +35,14 @@ El alcalde ha estado siempre en contra de Telefónica. Con este proyecto está c
 
 #### C&G ITsolutions
 
+* Victor García: comercial
+    * 663818217
+    * vgarcia@cygitsolutions.com
 
----
+#### Urbiótica
 
-## Descripción
-
-Instalación de dos verticales:
-
-* Smart Parking
-* Calidad Ambiental
+* Leonardo G. Rios
+    * leonardo.g.rios@urbiotica.com
 
 ---
 
