@@ -5,7 +5,7 @@ pages:
 - Home: index.md
 - Trabajo:
   - Smart Cities: smart_cities.md
-  - Utrera: utrera.md
+# - Utrera: utrera.md
   - Universidad de Málaga: uma.md
   - FIWARE: fiware.md
   - Calidad del Aire: calidad_aire.md

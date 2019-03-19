@@ -14,6 +14,22 @@ El alcalde ha estado siempre en contra de Telefónica. Con este proyecto está c
 
 ---
 
+### Contactos
+
+#### Ayuntamiento de Utrera
+
+* Begoña Sanchez Cañete: arquitecto del Ayto. Utrera
+    * bsanchez@utrera.org
+* Juan Luis Martinez Paredez: responsable IT del Ayto. Utrera
+    * jlmartinez@utrera.org
+* Vicente Llanos Siso: el jefe de Begoña, la va a sustituir mientras Begoña está de baja
+    * vllanos@utrera.org
+
+#### C&G ITsolutions
+
+
+---
+
 ## Descripción
 
 Instalación de dos verticales:
@@ -37,6 +53,16 @@ La ejecución del proyecto tiene tres partes:
         - Calidad ambiental: HOP Obiquitous, lo hacen todo, proveen la solución completa y realizan la instalación
 1. Garantía y Soporte
     - Plazo : 7 años
+
+### Instalación de smart parking en la Plaza del Altozano
+
+Se ha adelantado al mes de Abril la instalación de las plazas de parking de la Plaza del Altozano. La instalación de las plazas de parking se hará aprox en Mayo porque los sensores de parking con NB-IoT tienen que fabricarse ex-profeso para el proyecto. La instalación se realizará, por tanto, después de las elecciones y se ha decidido adelantar una instalación de plazas de parking. Esta instalación no va a llevar NB-IoT por lo que hay que instalar un dispositivo concentrador, con tarjeta M2M estandar.
+
+Miguel Angel ha comunicado a C&G la instalación en Abril de la Plaza del Altozano.
+
+### Instalación de calidad ambiental
+
+Toda la instalación la hace HOPU. Ha habido unos cambios sobre las ubicaciones indicadas en el pliego. Estamos a la espera de recibir la confirmación de las ubicaciones definitivas para ver la implicación de las nuevas ubicaciones en los costes de instalación y confirmar si HOPU lo asume (en principio, están dispuestos a asumirlo si las implicaciones no son muy grandes). Hemos recibido un documento por correo con los materiales necesarios para la instalación en las nuevas ubicaciones pero no hemos recibido todavía en sí el listado con las nuevas ubicaciones.
 
 ---
 
@@ -69,5 +95,9 @@ PDTE
 - [ ] Rellenar información compra Urbiótica
 - [ ] Rellenar información compra C&G ITsolutions
 - [ ] Rellenar información compra HOP
+- [ ] Datos instalaciones calidad ambiental para el proyecto técnico solicitados en correo
+- [ ] Confirmar con Miguel Angel qué hay que hacer con el documento recibido por correo con lista de materiales para la instalación de calidad ambiental
+- [ ] Datos instalaciones parking Plaza Altozano solicitados en correo del 14/03
+- [ ] Persona responsable en C&G de la instalación en Plaza del Altozano
 
 ---
