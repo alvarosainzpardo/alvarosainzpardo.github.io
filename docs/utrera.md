@@ -64,9 +64,9 @@ PDTE
 
 ### Temas pendientes
 
-- [] Revisar hitos pedido Afivén
-- [] Rellenar información compra Urbiótica
-- [] Rellenar información compra C&G ITsolutions
-- [] Rellenar información compra HOP
+- [ ] Revisar hitos pedido Afivén
+- [ ] Rellenar información compra Urbiótica
+- [ ] Rellenar información compra C&G ITsolutions
+- [ ] Rellenar información compra HOP
 
 ---
