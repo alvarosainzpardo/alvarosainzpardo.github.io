@@ -25,6 +25,7 @@ pages:
     - Cursos: data_science/cursos.md
     - Python: data_science/python.md
     - Forecasting: data_science/forecasting.md
+    - Natural Language Proccessing: data_science/nlp.md
     - R: data_science/R.md
   - Hi-Fi:
       - Darkvoice 336SE: hifi/darkvoice.md

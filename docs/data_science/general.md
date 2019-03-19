@@ -56,6 +56,7 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 
 ### Enlaces
 
+* [Build your own Robust Deep Learning Environment in Minutes](https://towardsdatascience.com/build-your-own-robust-deep-learning-environment-in-minutes-354cf140a5a6): this guide is meant to ease you into racing through the less desirable aspects of setting up your own deep learning environment.
 * [Data Versioning](https://emilygorcenski.com/post/data-versioning/)
 * [Haystacks - A data science blog by Caitlin Hudon](https://caitlinhudon.com/)
     * [Git Your SQL Together (with a Query Library)](https://caitlinhudon.com/2018/11/28/git-sql-together/)
