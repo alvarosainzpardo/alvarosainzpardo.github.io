@@ -50,13 +50,14 @@ Compra y pedido realizado. Es una subcontratación. El pedido tiene un hito corr
 
 PDTE
 
-### C&G ITsolutions (https://cygitsolutions.com/)
+### [C&G ITsolutions](https://cygitsolutions.com/)
 
 PDTE
 
-### HOP (https://hopu.eu/)
+### [HOP](https://hopu.eu/)
 
 Tienen una plataforma compatible FIWARE
+
 PDTE
 ---
 
