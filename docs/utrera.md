@@ -48,13 +48,23 @@ Instalación de dos verticales:
 #### Afiven
 
 * Joaquin Gonzalez: el arquitecto que está haciendo el Proyecto Técnico
-    * 650419722 
-    *
+  movil: 650419722 
+  mail: 
 
 #### Urbiótica
 
 * Leonardo G. Rios
-    * leonardo.g.rios@urbiotica.com
+  mail: leonardo.g.rios@urbiotica.com
+
+#### HOPU
+
+#### Wellness
+
+* Juan María Palomo Romero
+  Wellness Telecom S.L
+  Project Manager, Operations Department.
+  Móvil: +34 659 637 008
+  jmpalomo@wtelecom.es
 
 ---
 
