@@ -29,6 +29,8 @@ pages:
     - R: data_science/R.md
   - Hi-Fi:
       - Darkvoice 336SE: hifi/darkvoice.md
+  - AgileVentures:
+    - Charity Commission API: agileventures/charity_commission_api.md
   - Atom: atom.md
   - Docker: docker.md
   - Git: git.md
