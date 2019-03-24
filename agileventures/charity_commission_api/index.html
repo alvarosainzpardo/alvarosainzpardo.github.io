@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Natural Language Proccessing - Documentación de Alvaro</title>
+  <title>Charity Commission API - Documentación de Alvaro</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Natural Language Proccessing";
-    var mkdocs_page_input_path = "data_science/nlp.md";
+    var mkdocs_page_name = "Charity Commission API";
+    var mkdocs_page_input_path = "agileventures/charity_commission_api.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -124,47 +124,33 @@
                 </li>
     </ul>
                 </li>
-                <li class=" current">
+                <li class="">
                     
     <span class="caption-text">Data Science</span>
     <ul class="subnav">
                 <li class="toctree-l3">
                     
-    <a class="" href="../general/">General</a>
+    <a class="" href="../../data_science/general/">General</a>
                 </li>
                 <li class="toctree-l3">
                     
-    <a class="" href="../cursos/">Cursos</a>
+    <a class="" href="../../data_science/cursos/">Cursos</a>
                 </li>
                 <li class="toctree-l3">
                     
-    <a class="" href="../python/">Python</a>
+    <a class="" href="../../data_science/python/">Python</a>
                 </li>
                 <li class="toctree-l3">
                     
-    <a class="" href="../forecasting/">Forecasting</a>
-                </li>
-                <li class="toctree-l3 current">
-                    
-    <a class="current" href="./">Natural Language Proccessing</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l4"><a href="#natural-language-proccessing">Natural Language Proccessing</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l5" href="#enlaces-tutoriales">Enlaces, tutoriales</a></li>
-        
-            <li><a class="toctree-l5" href="#documentacion-libros">Documentación, libros</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../../data_science/forecasting/">Forecasting</a>
                 </li>
                 <li class="toctree-l3">
                     
-    <a class="" href="../R/">R</a>
+    <a class="" href="../../data_science/nlp/">Natural Language Proccessing</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../data_science/R/">R</a>
                 </li>
     </ul>
                 </li>
@@ -178,13 +164,31 @@
                 </li>
     </ul>
                 </li>
-                <li class="">
+                <li class=" current">
                     
     <span class="caption-text">AgileVentures</span>
     <ul class="subnav">
-                <li class="toctree-l3">
+                <li class="toctree-l3 current">
                     
-    <a class="" href="../../agileventures/charity_commission_api/">Charity Commission API</a>
+    <a class="current" href="./">Charity Commission API</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l4"><a href="#charity-commission-api">Charity Commission API</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l5" href="#como-usar-el-api">Como usar el API</a></li>
+        
+            <li><a class="toctree-l5" href="#informacion-sobre-el-api-soap">Información sobre el API SOAP</a></li>
+        
+            <li><a class="toctree-l5" href="#charity-commission-api-paquete-nodejs">charity-commission-api (paquete Node.js)</a></li>
+        
+            <li><a class="toctree-l5" href="#savon">Savon</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
     </ul>
                 </li>
@@ -269,7 +273,7 @@
     
       
         
-          <li>Data Science &raquo;</li>
+          <li>AgileVentures &raquo;</li>
         
       
         
@@ -277,7 +281,7 @@
         
       
     
-    <li>Natural Language Proccessing</li>
+    <li>Charity Commission API</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -287,13 +291,74 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="natural-language-proccessing">Natural Language Proccessing</h1>
-<h2 id="enlaces-tutoriales">Enlaces, tutoriales</h2>
-<ul>
-<li><a href="https://medium.com/@ODSC/essential-nlp-tools-code-and-tips-39b7b2b7d7ba">Essential NLP Tools, Code, and Tips</a>: Let’s summarize and explain some of the most frequently used algorithms in NLP when defining the vocabulary of terms.</li>
-</ul>
+                <h1 id="charity-commission-api">Charity Commission API</h1>
 <hr />
-<h2 id="documentacion-libros">Documentación, libros</h2>
+<h2 id="como-usar-el-api">Como usar el API</h2>
+<p>La <a href="https://www.gov.uk/government/organisations/charity-commission">Charity Commission</a> tiene un API SOAP para consultar datos.</p>
+<p>En la <a href="https://apps.charitycommission.gov.uk/Showcharity/API/APIHome.aspx">homepage del API de la Charity Commission</a> hay documentación sobre el API para buscar charities <a href="https://apps.charitycommission.gov.uk/Showcharity/API/SearchCharitiesV1/Docs/SearchCharitiesV1Home.aspx">Search Charities API</a>.</p>
+<p>Para poder usar el API, antes hay que <a href="https://apps.charitycommission.gov.uk/Showcharity/APIConsole/AccountRegistration/APIConsoleRegister.aspx">registrarse como usuario desarrollador</a>. Una vez registrado, hay que entrar en la <a href="https://apps.charitycommission.gov.uk/Showcharity/APIConsole/APIConsoleHome.aspx">consola del desarrollador</a> para crear un proyecto y obtener el API Key necesario para utilizar el API. Se pueden crear varios proyectos para un mismo usuario.</p>
+<p>Yo he creado este proyecto:</p>
+<table>
+<thead>
+<tr>
+<th>Project ID</th>
+<th>Project Name</th>
+<th>API Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>224</td>
+<td>test1</td>
+<td>dfd1db9b-7a5d-45f8-b</td>
+</tr>
+</tbody>
+</table>
+<h2 id="informacion-sobre-el-api-soap">Información sobre el API SOAP</h2>
+<p>En <a href="https://apps.charitycommission.gov.uk/Showcharity/API/SearchCharitiesV1/Docs/DevGuideHome.aspx">Developer Guidelines</a> hay una tabla con todas las operaciones del API, una breve descripción de cada operación y enlace a la descripción detallada de cada operación.</p>
+<p>http://apps.charitycommission.gov.uk/Showcharity/API/SearchCharitiesV1/SearchCharitiesV1.asmx?wsdl es el archivo WSDL del API.</p>
+<h3 id="descripciones-detalladas-de-las-operaciones">Descripciones detalladas de las operaciones</h3>
+<h4 id="getcharities"><a href="https://apps.charitycommission.gov.uk/Showcharity/API/SearchCharitiesV1/Docs/dgGetCharities.aspx">GetCharities</a></h4>
+<h4 id="getcharitiesbykeyword"><a href="https://apps.charitycommission.gov.uk/Showcharity/API/SearchCharitiesV1/Docs/dgGetCharitiesByKeyword.aspx">GetCharitiesByKeyword</a></h4>
+<h4 id="getcharitybyregisteredcharitynumber"><a href="https://apps.charitycommission.gov.uk/Showcharity/API/SearchCharitiesV1/Docs/dgGetCharityByRegisteredCharityNumber.aspx">GetCharityByRegisteredCharityNumber</a></h4>
+<hr />
+<h2 id="charity-commission-api-paquete-nodejs"><a href="https://github.com/TimeBandit/charity-commission-api">charity-commission-api</a> (paquete Node.js)</h2>
+<p>This is the <em>Unofficial</em> <a href="https://www.npmjs.com/package/charity-commission-api">node package</a> for the Charity Commission's API. It uses <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promises</a> to wrap asynchronous calls around the API.</p>
+<hr />
+<h2 id="savon">Savon</h2>
+<p>Savon is a SOAP client for the Ruby programming language.</p>
+<ul>
+<li><a href="https://github.com/savonrb/savon">Source code</a> is hosted on GitHub</li>
+<li><a href="http://rubygems.org/gems/savon">Releases</a> are available via RubyGems.org</li>
+<li>Ask questions through the <a href="https://groups.google.com/forum/#!forum/savonrb">mailing list</a> or on <a href="http://stackoverflow.com/questions/tagged/savon">StackOverflow</a></li>
+<li>And receive updates via Twitter</li>
+</ul>
+<p>Documentation by version</p>
+<ul>
+<li><a href="http://savonrb.com/version1/">Version 1</a> (deprecated)</li>
+<li><a href="http://savonrb.com/version2/">Version 2</a> (stable)</li>
+<li><a href="http://savonrb.com/version3/">Version 3</a> (unstable)</li>
+</ul>
+<h3 id="ejemplo-de-como-usar-el-api-de-la-charity-commission">Ejemplo de como usar el API de la Charity Commission</h3>
+<pre><code class="ruby">gem install httpclient
+gem install savon
+
+require 'savon'
+
+# create a client for the service
+client = Savon.client(wsdl: 'http://apps.charitycommission.gov.uk/Showcharity/API/SearchCharitiesV1/SearchCharitiesV1.asmx?wsdl', convert_request_keys_to: :none)
+
+client.operations
+# =&gt; [:get_charity_by_registered_charity_number, :get_charity_by_registered_charity_number_and_subsidiary_number, :get_charities, :get_charities_by_keyword, :get_charities_by_name, :get_charity_account_listing, :get_charity_annual_returns, :get_charity_chart_assets_liabilities_and_people, :get_charity_chart_charitable_spending, :get_charity_chart_compliance_history, :get_charity_chart_financial_history, :get_charity_chart_income, :get_charity_chart_spending, :get_charity_chart_income_and_spending, :get_charity_numbers_chart, :get_charity_financial_compliance_table_data, :get_charity_latest_filing, :get_charity_areas_of_operation, :get_charity_published_report, :get_charity_registrations, :get_charity_submissions, :get_charity_subsidiaries, :get_charity_trustees, :get_trustee_and_related_charities]
+
+# call the 'GetCharitiesByKeyword' operation
+response = client.call(:get_charities_by_keyword, message: {APIKey: 'dfd1db9b-7a5d-45f8-b', strSearch: 'AgileVentures'})
+
+response.body
+# =&gt; {:get_charities_by_keyword_response=&gt;{:get_charities_by_keyword_result=&gt;{:charity_list=&gt;{:registered_charity_number=&gt;&quot;1170963&quot;, :subsidiary_number=&gt;&quot;0&quot;, :charity_name=&gt;&quot;AGILEVENTURES                                                                                                                                         &quot;, :main_charity_name=&gt;&quot;AGILEVENTURES                                                                                                                                         &quot;, :registration_status=&gt;&quot;Registered&quot;, :public_email_address=&gt;&quot;info@agileventures.org&quot;, :main_phone_number=&gt;&quot;07964143662&quot;}}, :@xmlns=&gt;&quot;http://www.charitycommission.gov.uk/&quot;}}
+</code></pre>
+
+<h3 id="enlaces">Enlaces</h3>
 <hr />
               
             </div>
@@ -302,10 +367,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../R/" class="btn btn-neutral float-right" title="R">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../atom/" class="btn btn-neutral float-right" title="Atom">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../forecasting/" class="btn btn-neutral" title="Forecasting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../hifi/darkvoice/" class="btn btn-neutral" title="Darkvoice 336SE"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -331,10 +396,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../forecasting/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../hifi/darkvoice/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../R/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../atom/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
