@@ -8,17 +8,87 @@
 
 ---
 
+## Instalación con mini.iso
+
+Hace una instalación de un sistema minimo. Los paquetes que se instalan se descargan, por lo que para ejecutar esta instalación hay que estar conectado a internet.
+
+Esta instalación no se puede ejecutar en sistemas basados en UEFI, porque el `mini.iso` no tiene los archivos necesarios para arrancar el ordenador en modo UEFI. El ordenador arrancaría en _BIOS compatibility mode_, Para realizar 'instalaciones mini' en modo UEFI hay que usar Ubuntu Server.
+
+En la [página de descripción de esta instalación](https://help.ubuntu.com/community/Installation/MinimalCD) se encuentra el [enlace de descarga del archivo mini.iso correspondiente a Ubuntu 18.04](http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso).
+
+Cuando se ejecuta `tasksel` en la instalación, no seleccionar ningún paquete.
+
+Al instalar GRUB, asegurarse de que se selecciona el dispositivo correspondiente al disco duro. Normalmente, el primer dispositivo de la lista suele ser el disco USB, el disco duro es el segundo.
+
+---
+
 ## Ubuntu GNOME Flashback
 
 Es una sesión GNOME muy ligera, basada en GTK3, que no tiene efectos 3D y que es perfecta para ejecutarse en máquinas virtuales y a través de VNC. Otra ventaja, en comparación por ejemplo con el desktop Mate, es que tiene los programas GNOME de siempre, los mismos que el Ubuntu GNOME estándar.
-
-Para instalar GNOME Flasback desde cero, recomiendo instalar un Ubuntu usado la imagen `mini.iso`. Cuando se ejecuta `tasksel` en la instalación, no seleccionar ningún paquete.
 
 Una vez reiniciado el sistema después de la instalación, hay varias opciones:
 
 * Para una instalación lo más ligera posible, que ocupa en memoria unos 650KB sin ejecutar ningún programa: ejecutar `sudo apt install --no-install-recommends ubuntu-gnome-desktop`, después ejecutar `sudo apt install lightdm gnome-session-flashback`. Al instalar `lightdm` se abrirá una ventana para escoger el session manager (gdm3 o lightdm), seleccionar lightdm. Reiniciar otra vez el sistema. En la ventana del lightdm, pulsar en la rueda para seleccionar la sesión y seleccionar la sesión `GNOME Flashback`. Es una instalación muy ligera pero no se instalan muchos de los paquetes de uso habitual (calculadora, editor de textos, gestor de archivos comprimidos, etc.), que hay que instalar después a mano.
 * Para tener un desktop GNOME completo, con todos los programas habituales instalados, aunque ocupe un poco más de memoria: ejecutar `sudo apt install ubuntu-gnome-desktop`, o `sudo apt install ubuntu-desktop` después ejecutar `sudo apt install lightdm gnome-session-flashback`. Al instalar `lightdm` se abrirá una ventana para escoger el session manager (gdm3 o lightdm), seleccionar lightdm. Reiniciar otra vez el sistema. En la ventana del lightdm, pulsar en la rueda para seleccionar la sesión y seleccionar la sesión `GNOME Flashback`.
 * Otra opción para empezar con ella es `sudo apt install gnome-session` que instala una sesión GNOME3 sin las personalizaciones de Ubuntu y un conjunto mínimo de aplicaciones. Una diferencia entre `gnome-session` y `ubuntu-gnome-desktop` es que `gnome-session` no tiene ninguna de las personalizaciones de Ubuntu, incluido el artwork (colores, fondos de pantalla). A partir de ahí, seguir los siguientes pasos explicados anteriormente.
+
+---
+
+### NetworkManager not managing ethernet device
+
+Seguir las instrucciones de https://askubuntu.com/questions/1112796/networkmanager-not-managing-ethernet-device y https://forum.linuxconfig.org/t/wired-unmanaged-ubuntu-desktop-issue/1574/2.
+
+Hay que editar el archivo `/etc/netplan/01-netcfg.yaml` y dejarlo así:
+
+```
+# This file describes the network interfaces available on your system
+# For more information, see netplan(5).
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp0s3:
+      dhcp4: yes
+```
+
+Una vez editado, ejecutar:
+
+```bash
+$ sudo netplan --debug generate
+$ sudo netplan apply
+```
+
+### Configurar hora para que se la misma que Windows
+
+Por defecto, Linux asume que el RTC del ordenador está en UTC, no en hora local. Sin embargo, Windows asume que el RTC está en hora local.
+
+Para que no haya cambios de hora cuando se hace dual boot entre Linux y Windows, lo más sencillo (y con más soporte) es [configurar Linux para que asuma que el RTC está en hora local](https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/). Para ello, hay que ejecutar lo siguiente en distribuciones que utilizan systemd, como Ubuntu:
+
+```bash
+$ timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+Para comprobar la configuración, ejecutar `timedatectl`. Tiene que aparecer `RTC in local TZ: yes`.
+
+Para volver a configurar la hora con el RTC en UTC:
+
+```bash
+$ timedatectl set-local-rtc 0 --adjust-system-clock
+```
+
+---
+
+## GRUB customizer
+
+[GRUB customizer](https://launchpad.net/grub-customizer) es un entorno gráfico para configurar las opciones de GRUB. Para [instalarlo en Ubuntu](https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer), hay que ejecutar lo siguiente:
+
+```bash
+$ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+$ sudo apt update
+$ sudo apt install grub-customizer
+```
+
+Una vez instalado, hay que poner el timeout de GRUB a 3 segundos y seleccionar como arranque por defecto la segunda partición de Windows, normalmente en `/dev/sda2`. Es la partición donde está instalado el sistema operativo, no la partición donde está instalado el loader de Windows.
 
 ---
 
