@@ -13,19 +13,18 @@
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/highlight.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Ubuntu";
     var mkdocs_page_input_path = "ubuntu.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/ubuntu/";
   </script>
   
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -39,7 +38,7 @@
         <a href=".." class="icon icon-home"> Documentación de Alvaro</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
@@ -221,7 +220,11 @@
         
             <li><a class="toctree-l4" href="#enlaces-documentacion">Enlaces, documentación</a></li>
         
+            <li><a class="toctree-l4" href="#instalacion-con-miniiso">Instalación con mini.iso</a></li>
+        
             <li><a class="toctree-l4" href="#ubuntu-gnome-flashback">Ubuntu GNOME Flashback</a></li>
+        
+            <li><a class="toctree-l4" href="#grub-customizer">GRUB customizer</a></li>
         
             <li><a class="toctree-l4" href="#evolution">Evolution</a></li>
         
@@ -296,15 +299,60 @@
 <li><a href="https://askubuntu.com/questions/53822/how-do-you-run-ubuntu-server-with-a-gui">How do you run Ubuntu Server with a GUI?</a>: en la respuesta 42 hay una explicación detallada de las diferentes opciones para instalar un entorno gráfico a un Ubuntu Server</li>
 </ul>
 <hr />
+<h2 id="instalacion-con-miniiso">Instalación con mini.iso</h2>
+<p>Hace una instalación de un sistema minimo. Los paquetes que se instalan se descargan, por lo que para ejecutar esta instalación hay que estar conectado a internet.</p>
+<p>Esta instalación no se puede ejecutar en sistemas basados en UEFI, porque el <code>mini.iso</code> no tiene los archivos necesarios para arrancar el ordenador en modo UEFI. El ordenador arrancaría en <em>BIOS compatibility mode</em>, Para realizar 'instalaciones mini' en modo UEFI hay que usar Ubuntu Server.</p>
+<p>En la <a href="https://help.ubuntu.com/community/Installation/MinimalCD">página de descripción de esta instalación</a> se encuentra el <a href="http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/mini.iso">enlace de descarga del archivo mini.iso correspondiente a Ubuntu 18.04</a>.</p>
+<p>Cuando se ejecuta <code>tasksel</code> en la instalación, no seleccionar ningún paquete.</p>
+<p>Al instalar GRUB, asegurarse de que se selecciona el dispositivo correspondiente al disco duro. Normalmente, el primer dispositivo de la lista suele ser el disco USB, el disco duro es el segundo.</p>
+<hr />
 <h2 id="ubuntu-gnome-flashback">Ubuntu GNOME Flashback</h2>
 <p>Es una sesión GNOME muy ligera, basada en GTK3, que no tiene efectos 3D y que es perfecta para ejecutarse en máquinas virtuales y a través de VNC. Otra ventaja, en comparación por ejemplo con el desktop Mate, es que tiene los programas GNOME de siempre, los mismos que el Ubuntu GNOME estándar.</p>
-<p>Para instalar GNOME Flasback desde cero, recomiendo instalar un Ubuntu usado la imagen <code>mini.iso</code>. Cuando se ejecuta <code>tasksel</code> en la instalación, no seleccionar ningún paquete.</p>
 <p>Una vez reiniciado el sistema después de la instalación, hay varias opciones:</p>
 <ul>
 <li>Para una instalación lo más ligera posible, que ocupa en memoria unos 650KB sin ejecutar ningún programa: ejecutar <code>sudo apt install --no-install-recommends ubuntu-gnome-desktop</code>, después ejecutar <code>sudo apt install lightdm gnome-session-flashback</code>. Al instalar <code>lightdm</code> se abrirá una ventana para escoger el session manager (gdm3 o lightdm), seleccionar lightdm. Reiniciar otra vez el sistema. En la ventana del lightdm, pulsar en la rueda para seleccionar la sesión y seleccionar la sesión <code>GNOME Flashback</code>. Es una instalación muy ligera pero no se instalan muchos de los paquetes de uso habitual (calculadora, editor de textos, gestor de archivos comprimidos, etc.), que hay que instalar después a mano.</li>
 <li>Para tener un desktop GNOME completo, con todos los programas habituales instalados, aunque ocupe un poco más de memoria: ejecutar <code>sudo apt install ubuntu-gnome-desktop</code>, o <code>sudo apt install ubuntu-desktop</code> después ejecutar <code>sudo apt install lightdm gnome-session-flashback</code>. Al instalar <code>lightdm</code> se abrirá una ventana para escoger el session manager (gdm3 o lightdm), seleccionar lightdm. Reiniciar otra vez el sistema. En la ventana del lightdm, pulsar en la rueda para seleccionar la sesión y seleccionar la sesión <code>GNOME Flashback</code>.</li>
 <li>Otra opción para empezar con ella es <code>sudo apt install gnome-session</code> que instala una sesión GNOME3 sin las personalizaciones de Ubuntu y un conjunto mínimo de aplicaciones. Una diferencia entre <code>gnome-session</code> y <code>ubuntu-gnome-desktop</code> es que <code>gnome-session</code> no tiene ninguna de las personalizaciones de Ubuntu, incluido el artwork (colores, fondos de pantalla). A partir de ahí, seguir los siguientes pasos explicados anteriormente.</li>
 </ul>
+<hr />
+<h3 id="networkmanager-not-managing-ethernet-device">NetworkManager not managing ethernet device</h3>
+<p>Seguir las instrucciones de https://askubuntu.com/questions/1112796/networkmanager-not-managing-ethernet-device y https://forum.linuxconfig.org/t/wired-unmanaged-ubuntu-desktop-issue/1574/2.</p>
+<p>Hay que editar el archivo <code>/etc/netplan/01-netcfg.yaml</code> y dejarlo así:</p>
+<pre><code># This file describes the network interfaces available on your system
+# For more information, see netplan(5).
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp0s3:
+      dhcp4: yes
+</code></pre>
+
+<p>Una vez editado, ejecutar:</p>
+<pre><code class="bash">$ sudo netplan --debug generate
+$ sudo netplan apply
+</code></pre>
+
+<h3 id="configurar-hora-para-que-se-la-misma-que-windows">Configurar hora para que se la misma que Windows</h3>
+<p>Por defecto, Linux asume que el RTC del ordenador está en UTC, no en hora local. Sin embargo, Windows asume que el RTC está en hora local.</p>
+<p>Para que no haya cambios de hora cuando se hace dual boot entre Linux y Windows, lo más sencillo (y con más soporte) es <a href="https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/">configurar Linux para que asuma que el RTC está en hora local</a>. Para ello, hay que ejecutar lo siguiente en distribuciones que utilizan systemd, como Ubuntu:</p>
+<pre><code class="bash">$ timedatectl set-local-rtc 1 --adjust-system-clock
+</code></pre>
+
+<p>Para comprobar la configuración, ejecutar <code>timedatectl</code>. Tiene que aparecer <code>RTC in local TZ: yes</code>.</p>
+<p>Para volver a configurar la hora con el RTC en UTC:</p>
+<pre><code class="bash">$ timedatectl set-local-rtc 0 --adjust-system-clock
+</code></pre>
+
+<hr />
+<h2 id="grub-customizer">GRUB customizer</h2>
+<p><a href="https://launchpad.net/grub-customizer">GRUB customizer</a> es un entorno gráfico para configurar las opciones de GRUB. Para <a href="https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer">instalarlo en Ubuntu</a>, hay que ejecutar lo siguiente:</p>
+<pre><code class="bash">$ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+$ sudo apt update
+$ sudo apt install grub-customizer
+</code></pre>
+
+<p>Una vez instalado, hay que poner el timeout de GRUB a 3 segundos y seleccionar como arranque por defecto la segunda partición de Windows, normalmente en <code>/dev/sda2</code>. Es la partición donde está instalado el sistema operativo, no la partición donde está instalado el loader de Windows.</p>
 <hr />
 <h2 id="evolution">Evolution</h2>
 <h3 id="conexion-al-servidor-exchange-de-office365">Conexión al servidor Exchange de Office365</h3>
@@ -418,8 +466,9 @@ $ sudo snap install --classic dmd &amp;&amp; sudo snap install --classic dub
     </span>
 </div>
     <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
 
 </body>
 </html>

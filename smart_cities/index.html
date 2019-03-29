@@ -13,19 +13,18 @@
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../css/highlight.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "Smart Cities";
     var mkdocs_page_input_path = "smart_cities.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/smart_cities/";
   </script>
   
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -39,7 +38,7 @@
         <a href=".." class="icon icon-home"> Documentación de Alvaro</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
@@ -308,6 +307,8 @@
 </ul>
 <h3 id="sur">Sur</h3>
 <ul>
+<li>(29/03/19) <a href="https://www.esmartcity.es/2019/03/29/andalucia-asigna-ocho-millones-euros-estrategias-smart-city-municipios-menos-20000-habitantes">Andalucía asigna ocho millones de euros para estrategias de smart city en municipios de menos de 20.000 habitantes</a>: La Junta de Andalucía prepara un programa de financiación con ocho millones de euros procedentes de Fondos Feder para que los municipios de menos de 20.000 habitantes puedan definir sus estrategias smart city. Así lo ha anunciado este jueves el consejero de Economía, Conocimiento, Empresas y Universidad, Rogelio Velasco en el X Foro Greencities en Málaga sobre Inteligencia y Sostenibilidad Urbana. Este programa de apoyo se hará mediante el modelo de “ayuda en especie”, ha avanzado el consejero, lo que implica que los municipios que opten a proyectos en esta línea no recibirán la financiación directa para llevarlos a cabo, “sino que será la Junta de Andalucía la responsable de licitar y ejecutar los proyectos técnicos, además de aportar el 80% de su financiación”.</li>
+<li>(26/03/19) <a href="https://www.esmartcity.es/2019/03/26/ciudad-gaditana-san-roque-inicia-trabajos-ejecutar-edusi-mas-seis-millones-euros">La ciudad gaditana de San Roque inicia los trabajos para ejecutar su EDUSI con más de 6 millones de euros</a>: El Ministerio de Hacienda publicó en diciembre de 2018 en el Boletín Oficial del Estado la orden mediante al cual se iniciaba el proceso para la concesión de fondos Edusi. El Proyecto “San Roque Avanza 2020”, que fue aprobado para su financiación por esta línea de ayudas, contempla una inversión total de 6.250.000 euros.</li>
 <li>(25/03/19) <a href="https://www.esmartcity.es/2019/03/25/red-es-adjudica-proyecto-municipios-cordobeses-inteligentes-sostenibles-ute-formada-nec-sice">Red.es adjudica el proyecto “Municipios cordobeses inteligentes y sostenibles” a una UTE formada por NEC y SICE</a>: El proyecto “Municipios cordobeses inteligentes y sostenibles”, seleccionado en la II Convocatoria de Ciudades Inteligentes para España tiene empresa adjudicataria para su ejecución. Red.es, la entidad pública que gestiona la convocatoria, ha publicado su adjudicación a NEC y a SICE (Sociedad Ibérica de Construcciones Eléctricas), que forman la “UTE Smart City Córdoba”. l proyecto, presupuestado en cuatro millones de euros y cofinanciado con Fondos Feder, se centra en aspectos clave para la prestación de servicios públicos en estos municipios, como la mejora en el suministro de agua, la recogida de residuos, la eficiencia energética y la transparencia municipal. “Municipios cordobeses inteligentes y sostenibles” se destina a los ayuntamientos de la provincia que tengan menos de 20.000 habitantes. Se desarrollará una Plataforma Provincial Inteligente como solución transversal que sirva de base a los servicios de información de la provincia y recopile datos procedentes de los diversos servicios municipales que proporcionen información sobre la propia provincia, sus empresas y ciudadanos.</li>
 <li>(11/02/19) <a href="https://www.esmartcity.es/2019/02/11/casi-43000-usuarios-9-millones-euros-ahorros-resultados-implantacion-administracion-electronica-malaga">Casi 43.000 usuarios y 9 millones de euros de ahorro, resultados de la implantación de la Administración electrónica en Málaga</a>: Casi 43.000 usuarios registrados en procesos de tramitación telemática y un ahorro de más de nueve millones de euros es el balance de cuatro años de implantación de Administración electrónica presentado por el Ayuntamiento de Málaga este jueves.</li>
 <li>(08/02/19) <a href="https://www.esmartcity.es/2019/02/08/sevilla-acuerda-desarrollar-parking-inteligente-parque-cientifico-tecnologico-cartuja">Sevilla acuerda desarrollar un parking inteligente en el Parque Científico y Tecnológico Cartuja</a>: Sevilla va a desarrollar un proyecto piloto en el Parque Científico y Tecnológico de la Cartuja en el que se va a implantar parking inteligente basado en el control de afluencia mediante 21 cámaras con analítica embebida, esto es, visualización y análisis de datos en tiempo real, y cinco paneles de mensajería variable para informar a los conductores que acudan al recinto sobre los aparcamientos disponibles en superficie.</li>
@@ -512,8 +513,9 @@ Para hacer de este barrio emblemático un lugar para todas las personas y un des
     </span>
 </div>
     <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
 
 </body>
 </html>
