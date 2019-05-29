@@ -9,7 +9,7 @@
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * Closures
     * [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-    * [Closures explained with JavaScript](http://skilldrick.co.uk/2011/04/closures-explained-with-javascript/)
+    * [A simple guide to help you understand closures in JavaScript](https://medium.com/free-code-camp/javascript-closures-simplified-d0d23fa06ba4)
     * [A brief introduction to closures](http://skilldrick.co.uk/2010/11/a-brief-introduction-to-closures/)
     * [Closures explained with JavaScript](http://skilldrick.co.uk/2011/04/closures-explained-with-javascript/)
 * Patrón Módulo (Module Pattern)
