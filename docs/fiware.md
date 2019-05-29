@@ -4,6 +4,10 @@
 
 ## Enlaces, documentación, recursos
 
+* [FIWARE Step-by-Step Tutorials](https://fiware-tutorials.readthedocs.io/en/latest/index.html): This is a collection of tutorials for the FIWARE system. Each tutorial consists of a series of exercises to demonstrate the correct use of individual FIWARE components and shows the flow of context data within a simple Smart Solution either by connecting to a series of dummy IoT devices or manipulating the context directly or programmatically.
+* [FIWARE Github](https://github.com/FIWARE)
+* [FIWARE Developers Catalogue](https://www.fiware.org/developers/catalogue/): The FIWARE Catalogue is a curated framework of open source platform components which can be assembled together and with other third-party platform components to accelerate the development of Smart Solutions. The main and only mandatory component of any “Powered by FIWARE” platform or solution is the FIWARE Orion Context Broker Generic Enabler, which brings a cornerstone function in any smart solution: the need to manage context information, enabling to perform updates and bring access to context.
+* [Github FIWARE Catalogue](https://github.com/FIWARE/catalogue)
 * [FIWARE-NGSI v2 Specification](http://telefonicaid.github.io/fiware-orion/api/v2/stable/)
 * [Presentación de Fermín Galán - Orion Context Broker 20181218](https://www.slideshare.net/fermingalan/orion-context-broker-20181218)
 * [Thinking Cities](https://thinking-cities.readthedocs.io/)
