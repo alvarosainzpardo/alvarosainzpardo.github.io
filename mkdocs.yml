@@ -29,6 +29,7 @@ pages:
     - R: data_science/R.md
   - Hi-Fi:
       - Darkvoice 336SE: hifi/darkvoice.md
+      - IMR R1 Zenith: hifi/r1-zenith.md
   - AgileVentures:
     - Charity Commission API: agileventures/charity_commission_api.md
   - Atom: atom.md
