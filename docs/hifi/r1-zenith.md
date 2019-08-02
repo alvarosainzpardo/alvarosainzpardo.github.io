@@ -15,7 +15,7 @@
 
 ## Filtros
 
-https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg127211#msg127211 (JMR): Los agudos suenan recortados en el Zenith con filtros azules comparado con el R1; el R1 resulta algo sibilante en comparación. En el R1 me voy a filtros rosas para evitar picos en los agudos, con los filtros azules en el Zenith estoy bien (mismos tips, los grandes de silicona de serie). Los bajos en el filtro azul me suenan tan bien o mejor en el Zenith que con los filtros rosas en el R1.
+<https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg127211#msg127211> (JMR): Los agudos suenan recortados en el Zenith con filtros azules comparado con el R1; el R1 resulta algo sibilante en comparación. En el R1 me voy a filtros rosas para evitar picos en los agudos, con los filtros azules en el Zenith estoy bien (mismos tips, los grandes de silicona de serie). Los bajos en el filtro azul me suenan tan bien o mejor en el Zenith que con los filtros rosas en el R1.
 
 (stersa): Confirmado que los filtros de los R1 son distintos de los Zenith.
 
@@ -23,7 +23,7 @@ https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg127211#msg127211 
 
 (stersa): Estos Zenith son muy buenos, muy refinados..y mejoran en los medios, todo está más controlado y sobre todo el grave es perverso..por la adicción que provoca.  Sin dudas, el mejor IEM que ha pasado por mis manos a día de hoy, por sonido y perfil adecuado a mi gusto, sobre todo con el filtro azul.  El Rosa,ya hay temas que rozan lo exagerado en graves, y el negro para bassheads tremebundos,, Aún no he probado otros filtros.
 
-https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128015#msg128015 (Replicante): No sé si os habéis dado cuenta que los filtros azules están huecos. Escribí a Bob pensando que los míos estaban defectuosos por eso mismo y su respuesta fue: The blue filter does not have any foam in them.  The filters behave differently in the Zenith to the original R1 and so people will need to retest to find their new preferred filter.
+<https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128015#msg128015> (Replicante): No sé si os habéis dado cuenta que los filtros azules están huecos. Escribí a Bob pensando que los míos estaban defectuosos por eso mismo y su respuesta fue: The blue filter does not have any foam in them.  The filters behave differently in the Zenith to the original R1 and so people will need to retest to find their new preferred filter.
 
 https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128183#msg128183 (Ampherio): Alguien ha probado otros filtros y le ha gustado más que en los R1?  Yo realmente solo he probado los filtros azules y algo los rosas, pero me dice Bob, aparte de que me ha enviado otros Zenith testesdos, esto: The zenith is not the same as the r1,  so your favourite filter on r1 will not be the same on the zenith.  My favourite on r1 is also blue filter but on zenith it is copper as its nicely presented.
 
@@ -63,10 +63,9 @@ https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128112#msg128112 
 
 [MandarinES Symbio W](https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg129186#msg129186)
 
+[http://symbioeartips.com/termek/symbio-w/]
 
-http://symbioeartips.com/termek/symbio-w/
-
-https://www.audiosanctuary.co.uk/mandarines-symbio-eartips-w-widebore.html
+[https://www.audiosanctuary.co.uk/mandarines-symbio-eartips-w-widebore.html]
 
 [Tips RHA](https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg129207#msg129207):
 
