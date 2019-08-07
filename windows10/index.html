@@ -234,6 +234,8 @@
         
             <li><a class="toctree-l4" href="#reverse-the-scroll-of-mouse-natural-scrolling">Reverse the scroll of mouse (natural scrolling)</a></li>
         
+            <li><a class="toctree-l4" href="#cliente-ssh-de-windows-10-y-ncat">Cliente ssh de Windows 10 y Ncat</a></li>
+        
         </ul>
     
 
@@ -337,6 +339,17 @@ C:\Windows\system32&gt; cscript slmgr.vbs /ato
 <li>Restart your device to reflect the changes.</li>
 <li>Check the result.</li>
 </ol>
+<hr />
+<h2 id="cliente-ssh-de-windows-10-y-ncat">Cliente ssh de Windows 10 y Ncat</h2>
+<p>Para que el cliente ssh nativo de Windows 10 funcione detrás del proxy, hay que instalar la utilidad <a href="https://nmap.org/">Ncat del paquete Nmap</a>.</p>
+<p>Para instalar el paquete Nmap, vas a la <a href="https://nmap.org/download.html">página de descargas</a>, descargas el programa de instalación y lo ejecutas. Cuando el installer pregunta qué componentes quieres instalar, desmarca los componentes Npcap, Network Performance Improvements y Zenmap. Npcap es un packet capture y Zenmap es un cliente gráfico. No son necesarios para establecer un tunel proxy con el comando ncat y además el Network Performance Improvements toca el registry de Windows. El paquete Nmap también se puede instalar manualmente, aunque yo lo he hecho automáticamente con el programa de instalación. Puedes consultar las <a href="https://nmap.org/book/inst-windows.html">instrucciones detalladas para instalar Nmap en Windows</a>.</p>
+<p>ACTUALIZACIÓN: la utilidad Ncat tiene su <a href="https://nmap.org/ncat/">propia página de inicio</a> dentro de Nmap. En esa página se explica que tienen una versión compilada estáticamente, de forma que se puede usar el programa sin instalar nada más. Hay una <a href="https://nmap.org/ncat/guide/index.html">guia de uso de Ncat</a> y una <a href="https://nmap.org/book/ncat-man.html">página de manual</a>.</p>
+<p>Una vez instalado ncat, tienes que configurar ssh para que lo utilice como ProxyCommand. Esto lo haces editando el archivo ~/.ssh/config".La configuración del comando ProxyCommand con Ncat en Windows 10 es esta:</p>
+<pre><code>Host *
+  ProxyCommand C:\Program Files (x86)\Nmap\ncat.exe --proxy proxyinternet.tesa:8080 --proxy-type http --proxy-auth user:password %h %p
+</code></pre>
+
+<hr />
               
             </div>
           </div>
