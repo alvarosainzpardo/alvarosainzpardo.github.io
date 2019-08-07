@@ -53,3 +53,22 @@ _Important: This section, method, or task contains steps that tell you how to mo
 1. Close the Registry Editor windows.
 1. Restart your device to reflect the changes.
 1. Check the result.
+
+---
+
+## Cliente ssh de Windows 10 y Ncat
+
+Para que el cliente ssh nativo de Windows 10 funcione detrás del proxy, hay que instalar la utilidad [Ncat del paquete Nmap](https://nmap.org/).
+
+Para instalar el paquete Nmap, vas a la [página de descargas](https://nmap.org/download.html), descargas el programa de instalación y lo ejecutas. Cuando el installer pregunta qué componentes quieres instalar, desmarca los componentes Npcap, Network Performance Improvements y Zenmap. Npcap es un packet capture y Zenmap es un cliente gráfico. No son necesarios para establecer un tunel proxy con el comando ncat y además el Network Performance Improvements toca el registry de Windows. El paquete Nmap también se puede instalar manualmente, aunque yo lo he hecho automáticamente con el programa de instalación. Puedes consultar las [instrucciones detalladas para instalar Nmap en Windows](https://nmap.org/book/inst-windows.html).
+
+ACTUALIZACIÓN: la utilidad Ncat tiene su [propia página de inicio](https://nmap.org/ncat/) dentro de Nmap. En esa página se explica que tienen una versión compilada estáticamente, de forma que se puede usar el programa sin instalar nada más. Hay una [guia de uso de Ncat](https://nmap.org/ncat/guide/index.html) y una [página de manual](https://nmap.org/book/ncat-man.html).
+
+Una vez instalado ncat, tienes que configurar ssh para que lo utilice como ProxyCommand. Esto lo haces editando el archivo ~/.ssh/config".La configuración del comando ProxyCommand con Ncat en Windows 10 es esta:
+
+```
+Host *
+  ProxyCommand C:\Program Files (x86)\Nmap\ncat.exe --proxy proxyinternet.tesa:8080 --proxy-type http --proxy-auth user:password %h %p
+```
+
+---

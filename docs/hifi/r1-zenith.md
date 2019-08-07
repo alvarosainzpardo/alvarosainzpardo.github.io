@@ -31,7 +31,7 @@ A mi el azul me gusta con los Zenith, pero quizás se queda con poco cuerpo, as�
 
 https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128201#msg128201 (stersa): He efectuado pruebas con todos los filtros,(Todos con los mismos TIPS) y ...Por orden de preferencias...y coinciden con los que más me gustaban en los R1 anteriores 1.-AZUL  2.-ROSA  3.-NEGRO Comentar que tanto el filtro azul como el negro vienen SIN RELLENAR,y que las diferencias están y se notan, por lo que no sé muy bien en que consisten tales diferencias para que suenen tan distintos.  Los rosas, los naranjas y los cobre,Si que están rellenados.unos en blanco y otros en negro. Estan con una especie de foam,entiendo para modificar el sonido.  Unos en blanco y otros en negro.Excepto los azules y negros.  Solo tienes que mirar a traves.
 
-https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg129823#msg129823 (stersa):
+<https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg129823#msg129823> (stersa):
 
 Al final,tengo que darle la razon al bueno de Bob,y tener que admitir que los filtros que mejor les sientan a los Zenith,son los Cobre.
 Son los mas “relajados” y musicales.
@@ -48,24 +48,23 @@ Los Filtros Cobre le dan un plus a los Zenith.
 
 Para trote con los Artiste DC1 . Pedí los Senfer DT6 para probar, pues hay criticas buenas y malas al unísono y eso me anima siempre a probar. 16 euros no hace daño
 
-
 ---
 
 ## Tips
 
-https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128021#msg128021 (Ampherio, stersa): Stersa, los has escuchado con las Spiral Dot?, a mi con esas tips se me van por arriba mucho, pero con sus propias tips mejora la cosa, aunque no tanto como pensaba. Si,pero estos Zenith,mejoran con una insercion un poco mas profunda,y ahora obtengo el mejor sonido,tal como dije con las propias de Imr,grandes. Las del canutillo amarillo.  Todo en su sitio con los azules.  Con los R1,preferia la spiral dots L,por su poca insercion.
+<https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128021#msg128021> (Ampherio, stersa): Stersa, los has escuchado con las Spiral Dot?, a mi con esas tips se me van por arriba mucho, pero con sus propias tips mejora la cosa, aunque no tanto como pensaba. Si,pero estos Zenith,mejoran con una insercion un poco mas profunda,y ahora obtengo el mejor sonido,tal como dije con las propias de Imr,grandes. Las del canutillo amarillo.  Todo en su sitio con los azules.  Con los R1,preferia la spiral dots L,por su poca insercion.
 
-https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128024#msg128024 (stersa): También me están gustando mucho, tanto con azules, como con rosa ,con las tips RHA.  Ahora estoy con los rosa, y se nota ese plus de graves respecto a los Azules.  Para según que tipo de musica es un plus con unos u otros.  Es lo bueno de estos Iems,que se pueden acomodar fácilmente a lo que quieres escuchar.  En cambio con las Tips Spinfit,noto el sonido como más delgado, sin presencia correcta de los graves a los que estoy acostumbrado.  En fin, un montón de posibilidades en base a filtros,tips,etc,etc...para los amantes del cacharreo. ;)
+<https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128024#msg128024> (stersa): También me están gustando mucho, tanto con azules, como con rosa ,con las tips RHA.  Ahora estoy con los rosa, y se nota ese plus de graves respecto a los Azules.  Para según que tipo de musica es un plus con unos u otros.  Es lo bueno de estos Iems,que se pueden acomodar fácilmente a lo que quieres escuchar.  En cambio con las Tips Spinfit,noto el sonido como más delgado, sin presencia correcta de los graves a los que estoy acostumbrado.  En fin, un montón de posibilidades en base a filtros,tips,etc,etc...para los amantes del cacharreo. ;)
 
-https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128112#msg128112 (stersa): Pero que lo pruebes con el standard,pues el ultimo cable Yinyoo,me llego con la fase cambiada,cosa que por desgracia es habitual.  Por eso de tantos comentarios que mucha gente preferia el sonido de los standard.  Respecto a los Tips,a MI en lis R1Z,me gustan mas con el filtro azul,los propios de IMR o RHA.  Y los Spiral Dots L que eran preferidos en los anteriores,en loscZ,prefiero una talla menos,pues requieren mas inserción que los R1.  No he tenido ningun problema con los agudos ,ni con los filtros azules ni con los rosa.  
+<https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128112#msg128112> (stersa): Pero que lo pruebes con el standard,pues el ultimo cable Yinyoo,me llego con la fase cambiada,cosa que por desgracia es habitual.  Por eso de tantos comentarios que mucha gente preferia el sonido de los standard.  Respecto a los Tips,a MI en lis R1Z,me gustan mas con el filtro azul,los propios de IMR o RHA.  Y los Spiral Dots L que eran preferidos en los anteriores,en loscZ,prefiero una talla menos,pues requieren mas inserción que los R1.  No he tenido ningun problema con los agudos ,ni con los filtros azules ni con los rosa.  
 
 [Discusion en head-fi sobre tips para el R1 Zenith](https://www.head-fi.org/threads/imr-r1-thread.866361/page-148)
 
 [MandarinES Symbio W](https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg129186#msg129186)
 
-[http://symbioeartips.com/termek/symbio-w/]
+<http://symbioeartips.com/termek/symbio-w/>
 
-[https://www.audiosanctuary.co.uk/mandarines-symbio-eartips-w-widebore.html]
+<https://www.audiosanctuary.co.uk/mandarines-symbio-eartips-w-widebore.html>
 
 [Tips RHA](https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg129207#msg129207):
 
@@ -73,12 +72,12 @@ Parece que son varias las personas que usan las Symbio W, por algo será, lásti
 
 Entretanto y mientras llegan los filtros nuevos y las JVC M y MS me he pedido este conjunto de tips de RHA, que también me han recomendado, lo interesante es que se trata de un pack variado que me permitirá hacer diferentes pruebas:
 
-https://www.rha-audio.com/es/products/accessories/mix-tips?c=129
+<https://www.rha-audio.com/es/products/accessories/mix-tips?c=129>
 
 El fabricante ofrece muchas otras opciones de compra, aunque yo me he decantado por la anterior por ser una especie de "menú degustación" de sus opciones. Aquí todo lo que ofrecen en cuanto a tips, por si os sirve a alguno:
 
-https://www.rha-audio.com/es/accessories/ear-tips
-https://www.rha-audio.com/es/accessories/comply-foam
+<https://www.rha-audio.com/es/accessories/ear-tips>
+<https://www.rha-audio.com/es/accessories/comply-foam>
 
 [Tips Newbee](https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg129208#msg129208)
 
@@ -86,7 +85,7 @@ https://www.rha-audio.com/es/accessories/comply-foam
 
 Por si a alguien más le interesase, parece ser que las Symbio W de Mandarines vuelven a estar disponibles en todos sus posibles tamaños:
 
-http://symbioeartips.com/termek/symbio-w/
+<http://symbioeartips.com/termek/symbio-w/>
 
 Acabo de pedírmelas en una combinación SML.
 
@@ -97,17 +96,17 @@ Acabo de pedírmelas en una combinación SML.
 
 Pues nada, ya las he probado, junto con las BEE pedí unas Comply para hacer pruebas, las T500 y las TSX con wax guard. A pesar de que las Comply no eran del agrado de muchos con los Zenith por los añadidos que pueden hacerle al sonido, he podido comprobar que para mi pueden ser una opción, el modelo T me va muy bien, se ajustan de lujo y aislan de una manera que no había conseguido con ninguna de las que he probado, e incluso hacen que no se me salgan los Zenith, muy bien en definitiva con las Comply (las TS no las he probado todavía). 
 
-  Peeeeeero, al probar las Bee he descubierto lo que para mi pueden ser los Tips definitivos. En principio y una vez que haga más pruebas no veo que aporten nada extra al sonido, solo comodidad con los Zenith, aislan muy bien como las Comply, aunque me ha costado 10 segundos más colocarme los iem correctamente. Así he podido descubrir de lo que pueden ser capaces estos pequeños altavoces para oidos, creo que no los había escuchado como los he probado hace 10 minutos. Con Stadium Arcadium de los Red hot chili peppers, he descubierto detalles que con otros tips no había escuchado. A falta de más pruebas he de decir que me han gustado mucho.
+Peeeeeero, al probar las Bee he descubierto lo que para mi pueden ser los Tips definitivos. En principio y una vez que haga más pruebas no veo que aporten nada extra al sonido, solo comodidad con los Zenith, aislan muy bien como las Comply, aunque me ha costado 10 segundos más colocarme los iem correctamente. Así he podido descubrir de lo que pueden ser capaces estos pequeños altavoces para oidos, creo que no los había escuchado como los he probado hace 10 minutos. Con Stadium Arcadium de los Red hot chili peppers, he descubierto detalles que con otros tips no había escuchado. A falta de más pruebas he de decir que me han gustado mucho.
 
 Un detalle de estos tips es que la memory foam de la que están hechos es que recupera la forma de manera mas lenta que otros, por lo que al comprimirla tienes más tiempo para colocar los iem's mucho mejor. Para mi un acierto. Estoy muy contento y por supuesto agradecido al compañero Morphine por este descubrimiento que me ha hecho, MUCHAS GRACIAS.
 
- Por supuesto las recomiendo por precio y comodidad. Estoy seguro de que al compañero Dezasete le irían de lujo.
+Por supuesto las recomiendo por precio y comodidad. Estoy seguro de que al compañero Dezasete le irían de lujo.
 
 ---
 
 ## Cables
 
-https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg127229#msg127229 (stersa): Con la oferta de los Yinyoo,no vale la pena estar preocupados , se prueban y ya está.. ;) Tres valen lo mismo que el de BOB..a ver como cuadran, pues lo mejores que los Zenith ya vienen con los dos pines son ángulo y no tiene porque haber problemas con las curvaturas que vienen en los cables que he comprado.
+<https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg127229#msg127229> (stersa): Con la oferta de los Yinyoo,no vale la pena estar preocupados , se prueban y ya está.. ;) Tres valen lo mismo que el de BOB..a ver como cuadran, pues lo mejores que los Zenith ya vienen con los dos pines son ángulo y no tiene porque haber problemas con las curvaturas que vienen en los cables que he comprado.
 
 Mi preferencia es el cable silver plated de la propia IMR, fino, ligero y muy cómodo en definitiva, te olvidas que lo llevas puesto. Intento ser prudente y comedido, como aficionados tendemos a hypearnos y no quiero inducir a nadie a gastar dinero con expectativas que quizás son diferentes a las mías. Los de Yinyoo están muy bien y a precio imbatible, vale la pena probarlos para lo que cuestan.
 
@@ -123,7 +122,7 @@ Yo también me hice con un Yinyoo en su día para los R1. El conector es muy bue
 
 [Cable effect audio ares 2 que mencionan en head-fi](https://www.head-fi.org/threads/imr-r1-thread.866361/page-149): Hey. Its an effect audio ares 2. It's had quite a positive effect on the Zenith. I recommend them if you want a bit more depth and more manageable treble. I usually buy toxic cables but the current waiting list is about 4 months.
 
-https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128553#msg128553 (stersa): En Aliexpres se encuentran desde 10 euros..  Reza que no tengan la fase cambiada como el que me llego a mi y otros muchos,pues al tener la curva ..es complicado arreglarlo.  Lo.mejor es que lo puedes devolver en Amazon.  A mi me envian otro nuevo con la fase correcta al reclamar al vendedor de Ali Yo espero los yinyoo de 16 cores que no llevan curvatura .Estuve muy contento de ellos con los R1.
+<https://www.auriculares-hifi.com/foro/index.php?topic=11400.msg128553#msg128553> (stersa): En Aliexpres se encuentran desde 10 euros..  Reza que no tengan la fase cambiada como el que me llego a mi y otros muchos,pues al tener la curva ..es complicado arreglarlo.  Lo.mejor es que lo puedes devolver en Amazon.  A mi me envian otro nuevo con la fase correcta al reclamar al vendedor de Ali Yo espero los yinyoo de 16 cores que no llevan curvatura .Estuve muy contento de ellos con los R1.
 
 ---
 
