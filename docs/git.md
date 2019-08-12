@@ -4,6 +4,8 @@
 
 ## Enlaces, documentación
 
+* [More productive Git](https://increment.com/open-source/more-productive-git/)
+* [A bunch of awesome git tutorials](https://gist.github.com/jaseemabid/1321592)
 * [Git Quick Reference](http://jonas.nitro.dk/git/quick-reference.html)
 * [Git Inmersion](http://gitimmersion.com/index.html): tutorial de git interactivo, inspirado en la premisa de que conocer algo es hacerlo.
 * [Understanding Git Conceptually](https://www.sbf5.com/~cduan/technical/git/)
