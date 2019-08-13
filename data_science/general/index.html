@@ -13,18 +13,19 @@
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "General";
     var mkdocs_page_input_path = "data_science/general.md";
-    var mkdocs_page_url = "/data_science/general/";
+    var mkdocs_page_url = null;
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
 
@@ -38,7 +39,7 @@
         <a href="../.." class="icon icon-home"> Documentación de Alvaro</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -89,11 +90,37 @@
     <ul class="subnav">
                 <li class="">
                     
+    <span class="caption-text">Hi-Fi</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../hifi/darkvoice/">Darkvoice 336SE</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../hifi/r1-zenith/">IMR R1 Zenith</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../lossless/">Lossless</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
     <span class="caption-text">Programación</span>
     <ul class="subnav">
                 <li class="toctree-l3">
                     
+    <a class="" href="../../atom/">Atom</a>
+                </li>
+                <li class="toctree-l3">
+                    
     <a class="" href="../../programming/emmet/">Emmet</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../git/">Git</a>
                 </li>
                 <li class="toctree-l3">
                     
@@ -120,6 +147,10 @@
     <a class="" href="../../programming/ruby/rspec/">RSpec</a>
                 </li>
     </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../vscode/">Visual Studio Code</a>
                 </li>
     </ul>
                 </li>
@@ -167,20 +198,6 @@
                 </li>
                 <li class="">
                     
-    <span class="caption-text">Hi-Fi</span>
-    <ul class="subnav">
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../hifi/darkvoice/">Darkvoice 336SE</a>
-                </li>
-                <li class="toctree-l3">
-                    
-    <a class="" href="../../hifi/r1-zenith/">IMR R1 Zenith</a>
-                </li>
-    </ul>
-                </li>
-                <li class="">
-                    
     <span class="caption-text">AgileVentures</span>
     <ul class="subnav">
                 <li class="toctree-l3">
@@ -191,19 +208,15 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../atom/">Atom</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../../docker/">Docker</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../git/">Git</a>
+    <a class="" href="../../brew/">Homebrew</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../brew/">Homebrew</a>
+    <a class="" href="../../markdown/">Markdown</a>
                 </li>
                 <li class="">
                     
@@ -215,6 +228,10 @@
                 </li>
                 <li class="">
                     
+    <a class="" href="../../robocopy/">Robocopy</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../ssh/">Ssh</a>
                 </li>
                 <li class="">
@@ -223,27 +240,15 @@
                 </li>
                 <li class="">
                     
-    <a class="" href="../../vim/">Vim</a>
-                </li>
-                <li class="">
-                    
     <a class="" href="../../ubuntu/">Ubuntu</a>
                 </li>
                 <li class="">
                     
+    <a class="" href="../../vim/">Vim</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../../windows10/">Windows 10</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../markdown/">Markdown</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../robocopy/">Robocopy</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../lossless/">Lossless</a>
                 </li>
     </ul>
 	    </li>
@@ -270,11 +275,11 @@
     
       
         
-          <li>Personal &raquo;</li>
+          <li>Data Science &raquo;</li>
         
       
         
-          <li>Data Science &raquo;</li>
+          <li>Personal &raquo;</li>
         
       
     
@@ -373,7 +378,7 @@
         <a href="../cursos/" class="btn btn-neutral float-right" title="Cursos">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../programming/ruby/rspec/" class="btn btn-neutral" title="RSpec"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../vscode/" class="btn btn-neutral" title="Visual Studio Code"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -399,7 +404,7 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../programming/ruby/rspec/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../vscode/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
         <span style="margin-left: 15px"><a href="../cursos/" style="color: #fcfcfc">Next &raquo;</a></span>
@@ -407,9 +412,8 @@
     </span>
 </div>
     <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js"></script>
-      <script src="../../search/require.js"></script>
-      <script src="../../search/search.js"></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
 
 </body>
 </html>
