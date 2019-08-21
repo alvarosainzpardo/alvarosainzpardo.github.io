@@ -12,21 +12,23 @@ pages:
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md
 - Personal:
+  - Backgammon: backgammon.md
   - Hi-Fi:
       - Darkvoice 336SE: hifi/darkvoice.md
       - IMR R1 Zenith: hifi/r1-zenith.md
-      - Lossless: lossless.md
+      - Lossless: hifi/lossless.md
   - Programación:
-    - Atom: atom.md
+    - Atom: programming/atom.md
     - Emmet: programming/emmet.md
-    - Git: git.md
+    - Git: programming/git.md
     - JavaScript: programming/javascript.md
     - Python: programming/python.md
     - Ruby:
       - General: programming/ruby/general.md
       - Rails: programming/ruby/rails.md
       - RSpec: programming/ruby/rspec.md
-    - Visual Studio Code: vscode.md
+    - Vim: programming/vim.md
+    - Visual Studio Code: programming/vscode.md
   - Data Science:
     - General: data_science/general.md
     - Cursos: data_science/cursos.md
@@ -45,5 +47,4 @@ pages:
   - Ssh: ssh.md
   - Tmux: tmux.md
   - Ubuntu: ubuntu.md
-  - Vim: vim.md
   - Windows 10: windows10.md
