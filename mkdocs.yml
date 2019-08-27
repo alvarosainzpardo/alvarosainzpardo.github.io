@@ -12,8 +12,6 @@ pages:
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md
 - Personal:
-  - Backgammon: backgammon.md
-  - Detailing: detailing.md
   - Hi-Fi:
       - Darkvoice 336SE: hifi/darkvoice.md
       - IMR R1 Zenith: hifi/r1-zenith.md
@@ -39,7 +37,10 @@ pages:
     - R: data_science/R.md
   - AgileVentures:
     - Charity Commission API: agileventures/charity_commission_api.md
+  - Backgammon: backgammon.md
+  - Detailing: detailing.md
   - Docker: docker.md
+  - GeoJSON: geojson.md
   - Homebrew: brew.md
   - Markdown: markdown.md
   - MySQL: mysql.md
