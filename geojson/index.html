@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>PuTTY - Documentación de Alvaro</title>
+  <title>GeoJSON - Documentación de Alvaro</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "PuTTY";
-    var mkdocs_page_input_path = "putty.md";
-    var mkdocs_page_url = "/putty/";
+    var mkdocs_page_name = "GeoJSON";
+    var mkdocs_page_input_path = "geojson.md";
+    var mkdocs_page_url = "/geojson/";
   </script>
   
   <script src="../js/jquery-2.1.1.min.js"></script>
@@ -209,9 +209,21 @@
                     
     <a class="" href="../docker/">Docker</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../geojson/">GeoJSON</a>
+    <a class="current" href="./">GeoJSON</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#geojson">GeoJSON</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#enlaces">Enlaces</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
@@ -225,23 +237,9 @@
                     
     <a class="" href="../mysql/">MySQL</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">PuTTY</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#putty">PuTTY</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#enlaces-documentacion">Enlaces, documentación</a></li>
-        
-            <li><a class="toctree-l4" href="#hacer-login-automaticamente-con-user-y-password">Hacer login automáticamente con user y password</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../putty/">PuTTY</a>
                 </li>
                 <li class="">
                     
@@ -292,7 +290,7 @@
         
       
     
-    <li>PuTTY</li>
+    <li>GeoJSON</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -302,24 +300,17 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="putty">PuTTY</h1>
-<hr />
-<h2 id="enlaces-documentacion">Enlaces, documentación</h2>
+                <h1 id="geojson">GeoJSON</h1>
+<h2 id="enlaces">Enlaces</h2>
 <ul>
-<li><a href="https://www.ssh.com/ssh/putty/putty-manuals/0.68/index.html">PuTTY User Manual</a><ul>
-<li><a href="https://www.ssh.com/ssh/putty/putty-manuals/0.68/Chapter3.html#using-cmdline">Starting a session from the command line</a></li>
+<li><a href="https://geojson.org/">GeoJSON</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7946">GeoJSON Spec</a></li>
+<li><a href="https://macwright.org/2015/03/23/geojson-second-bite.html">More than you ever wanted to know about GeoJSON</a></li>
+<li><a href="https://medium.com/@sumit.arora/what-is-geojson-geojson-basics-visualize-geojson-open-geojson-using-qgis-open-geojson-3432039e336d">A primer on GeoJSON standard and visualization tools</a></li>
+<li><a href="https://github.com/tmcw/awesome-geojson">GeoJSON utilities that will make your life easier</a></li>
+<li><a href="https://macwright.org/2016/06/05/falsehoods-developers-believe-about-geojson.html">Falsehoods developers believe about GeoJSON</a></li>
+<li><a href="https://macwright.org/2016/11/07/the-geojson-ietf-standard.html">Everything you need to know now about RFC 7946 GeoJSON</a></li>
 </ul>
-</li>
-<li><a href="http://jafty.com/blog/how-to-make-putty-automatically-login-with-user-and-password/">How to Make Putty Automatically Login with User and Password</a></li>
-</ul>
-<hr />
-<h2 id="hacer-login-automaticamente-con-user-y-password">Hacer login automáticamente con user y password</h2>
-<p>Para hacer ssh a una máquina haciendo login automáticamente con user y password hay que utilizar command line options de PuTTY. En la configuración de una sesión, se puede especificar el user pero no la password. La password hay que pasarla como opción en la línea del comando.</p>
-<p>Ejemplos:</p>
-<pre><code class="dos">C:\&gt; putty -load sesion -pw password
-C:\&gt; putty -load sesion -l user -pw password
-C:\&gt; putty -ssh user@host -pw password
-</code></pre>
               
             </div>
           </div>
@@ -327,10 +318,10 @@ C:\&gt; putty -ssh user@host -pw password
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../robocopy/" class="btn btn-neutral float-right" title="Robocopy">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../brew/" class="btn btn-neutral float-right" title="Homebrew">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../mysql/" class="btn btn-neutral" title="MySQL"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../docker/" class="btn btn-neutral" title="Docker"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -356,10 +347,10 @@ C:\&gt; putty -ssh user@host -pw password
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../mysql/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../docker/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../robocopy/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../brew/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
