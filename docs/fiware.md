@@ -4,6 +4,10 @@
 
 ## Enlaces, documentación, recursos
 
+* Para analizar las notificaciones que envía Cygnus:
+    * [Webhook.site](https://webhook.site/): Webhook.site allows you to easily test webhooks and other types of HTTP requests.
+    * [PutsReq](https://putsreq.com/): PutsReq lets you record HTTP requests and fake responses like no other tool available.
+    * [JSON Viewer](https://codebeautify.org/jsonviewer)
 * [FIWARE Step-by-Step Tutorials](https://fiware-tutorials.readthedocs.io/en/latest/index.html): This is a collection of tutorials for the FIWARE system. Each tutorial consists of a series of exercises to demonstrate the correct use of individual FIWARE components and shows the flow of context data within a simple Smart Solution either by connecting to a series of dummy IoT devices or manipulating the context directly or programmatically.
 * [FIWARE Github](https://github.com/FIWARE)
 * [FIWARE Developers Catalogue](https://www.fiware.org/developers/catalogue/): The FIWARE Catalogue is a curated framework of open source platform components which can be assembled together and with other third-party platform components to accelerate the development of Smart Solutions. The main and only mandatory component of any “Powered by FIWARE” platform or solution is the FIWARE Orion Context Broker Generic Enabler, which brings a cornerstone function in any smart solution: the need to manage context information, enabling to perform updates and bring access to context.
