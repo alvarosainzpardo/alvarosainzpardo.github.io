@@ -15,6 +15,7 @@ pages:
   - Hi-Fi:
       - Darkvoice 336SE: hifi/darkvoice.md
       - IMR R1 Zenith: hifi/r1-zenith.md
+      - IMR R2 Aten: hifi/r2-aten.md
       - Lossless: hifi/lossless.md
   - Programación:
     - Atom: programming/atom.md
