@@ -24,6 +24,7 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 
 ### Otros enlaces
 
+* [A Practical Guide to Feature Engineering in Python](https://heartbeat.fritz.ai/a-practical-guide-to-feature-engineering-in-python-8326e40747c8): Feature engineering is one of the most important skills needed in data science and machine learning. It has a major influence on the performance of machine learning models and even the quality of insights derived during exploratory data analysis (EDA). In this article, we’re going to learn some important techniques and tools that will help you properly extract, prepare, and engineer features from your dataset.
 * [IBM Data Science Community: A landscape diagram for Python data](https://community.ibm.com/community/user/datascience/blogs/paco-nathan/2019/03/12/a-landscape-diagram-for-python-data): This article introduces a landscape diagram which shows 50 or so of the most popular Python libraries and frameworks used in data science. Landscape diagrams illustrate components within a technology stack alongside their complementary technologies. In other words, “How do the parts fit together?”
 * [Machine Learning Plus](https://www.machinelearningplus.com/blog/): Simple and straightforward tutorials on machine learning in R and Python. No boring theory. Or never-ending technical specs.  Just simple guides with clear examples.
     * [Top 50 matplotlib Visualizations – The Master Plots (with full python code)](https://www.machinelearningplus.com/plots/top-50-matplotlib-visualizations-the-master-plots-python/)
