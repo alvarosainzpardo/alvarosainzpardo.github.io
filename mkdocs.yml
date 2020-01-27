@@ -13,6 +13,7 @@ pages:
   - Espacios Digitales: espacios_digitales.md
 - Personal:
   - Hi-Fi:
+      - General: hifi/general.md
       - Darkvoice 336SE: hifi/darkvoice.md
       - IMR R1 Zenith: hifi/r1-zenith.md
       - IMR R2 Aten: hifi/r2-aten.md
