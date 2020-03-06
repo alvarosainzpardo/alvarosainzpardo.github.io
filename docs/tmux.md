@@ -20,4 +20,10 @@
 * [copy paste in tmux](https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/)
 * [TMUX – The Terminal Multiplexer (Part 1)](http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/)
 * [TMUX – The Terminal Multiplexer (Part 2)](https://blog.hawkhost.com/2010/07/02/tmux-%E2%80%93-the-terminal-multiplexer-part-2/)
-
+* [tmux in practice: a series of tutorials on how to use tmux, the powerful virtual server multiplexer](https://medium.com/free-code-camp/tmux-in-practice-series-of-posts-ae34f16cfab0): Explore tmux and its tough questions and tricks, including features, nested sessions, scrollback buffer, clipboard integration, and iTerm2 integration.
+    * Part 1. [Tmux in practice: explores local and nested remote tmux sessions](https://medium.com/@alexeysamoshkin/tmux-in-practice-local-and-nested-remote-tmux-sessions-4f7ba5db8795)
+    * Part 2. [tmux in practice: iTerm2 and tmux integration](https://medium.com/@alexeysamoshkin/tmux-in-practice-iterm2-and-tmux-integration-7fb0991c6c01)
+    * Part 3. [tmux in practice: scrollback buffer](https://medium.com/@alexeysamoshkin/tmux-in-practice-scrollback-buffer-47d5ffa71c93)
+    * Part 4. [tmux in practice: integration with system clipboard](https://medium.com/@alexeysamoshkin/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b)
+    * Part 5. [tmux in practice: copy text from remote session using SSH remote tunnel and systemd service](https://medium.com/@alexeysamoshkin/tmux-in-practice-copy-text-from-remote-session-using-ssh-remote-tunnel-and-systemd-service-dd3c51bca1fa)
+    * Everything discussed here you can see in action by checking my tmux Configuration project on Github: [tmux-config](https://github.com/samoshkin/tmux-config)

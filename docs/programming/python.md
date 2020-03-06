@@ -9,6 +9,7 @@
 * [Adding a Simple GUI to Your Pandas Script](http://pbpython.com/pandas-gui.html)
 * [Collecting Data with Google Forms and Pandas](http://pbpython.com/pandas-google-forms-part1.html)
 * [Visualizing Google Forms Data with Seaborn](http://pbpython.com/pandas-google-forms-part2.html)
-
+* [Understanding Python variables and Memory Management](http://foobarnbaz.com/2012/07/08/understanding-python-variables/)
+* [Is Python pass-by-reference or pass-by-value?](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick)
 ---
 

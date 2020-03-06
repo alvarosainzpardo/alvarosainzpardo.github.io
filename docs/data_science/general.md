@@ -1,6 +1,6 @@
 # Data Science en general
 
-## Enlaces, tutoriales, documentación, libros
+## Tutoriales, documentación, libros
 
 ### Data Science Primer: Basic Concepts for Beginners
 
@@ -54,7 +54,7 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 * [An Introduction to Statistical Learning with Applications in R](https://www-bcf.usc.edu/~gareth/ISL/)
     * [ISLR-python](https://github.com/JWarmenhoven/ISLR-python): This repository contains Python code for a selection of tables, figures and LAB sections from the book ['An Introduction to Statistical Learning with Applications in R'](http://www-bcf.usc.edu/%7Egareth/ISL/index.html) by James, Witten, Hastie, Tibshirani (2013).
 
-### Enlaces
+## Enlaces
 
 * [Build your own Robust Deep Learning Environment in Minutes](https://towardsdatascience.com/build-your-own-robust-deep-learning-environment-in-minutes-354cf140a5a6): this guide is meant to ease you into racing through the less desirable aspects of setting up your own deep learning environment.
 * [Data Versioning](https://emilygorcenski.com/post/data-versioning/)
@@ -81,3 +81,6 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 * [¿Pedaleas en la ciudad?: Analiza con Excel la seguridad de los ciclistas en Madrid](http://data-speaks.luca-d3.com/2017/09/pedaleas-en-bicimad-analiza-con-excel.html): artículo del blog de [LUCA](https://www.luca-d3.com/index.html) en el que se hace un análisis descriptivo de datos de accidentes de bicicleta descargados del portal de datos abiertos del ayuntamiento de Madrid. El análisis se hace con Excel, y hay información sobre características y funciones avanzadas de las tablas dinámicas
 * [Tus datos más limpios...(II). Excel, "Waterproof"](http://data-speaks.luca-d3.com/2017/06/tus-datos-mas-limpiosii-excel-waterproof.html): otroartículo del blog de [LUCA](https://www.luca-d3.com/index.html), en este se realiza un tratamiento y limpieza de datos usando Excel
 * [Tus datos más limpios, casi sin frotar](http://data-speaks.luca-d3.com/2017/06/tus-datos-mas-limpios-casi-sin-frotar.html): artículo un poco flojillo del blog de [LUCA](https://www.luca-d3.com/index.html) sobre el problema de la limpieza de datos pero en el que se mencionan las herramientas de limpieza de datos [OpenRefine](http://openrefine.org/), [Trifacta Wrangler](https://www.trifacta.com/start-wrangling/) y [DataCleaner](https://datacleaner.org/). OpenRefine es una herramienta open source que se denominaba anteriormente Google Refine
+* Presto
+    * [Presto on FlashBlade S3](https://medium.com/@joshua_robinson/presto-on-flashblade-s3-486ecb449574)
+    * [Presto-Powered S3 Data Warehouse on Kubernetes](https://medium.com/@joshua_robinson/presto-powered-s3-data-warehouse-on-kubernetes-aea89d2f40e8)
