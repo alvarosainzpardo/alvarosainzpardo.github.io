@@ -1,7 +1,7 @@
 site_name: Documentación de Alvaro
 remote_branch: master
 theme: readthedocs
-pages:
+nav:
 - Home: index.md
 - Trabajo:
   - Smart Cities: smart_cities.md
