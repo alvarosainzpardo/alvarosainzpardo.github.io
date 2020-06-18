@@ -22,7 +22,7 @@ Al instalar GRUB, asegurarse de que se selecciona el dispositivo correspondiente
 
 ---
 
-## Ubuntu GNOME Flashback
+### Ubuntu GNOME Flashback
 
 Es una sesión GNOME muy ligera, basada en GTK3, que no tiene efectos 3D y que es perfecta para ejecutarse en máquinas virtuales y a través de VNC. Otra ventaja, en comparación por ejemplo con el desktop Mate, es que tiene los programas GNOME de siempre, los mismos que el Ubuntu GNOME estándar.
 
@@ -153,6 +153,10 @@ $ sudo apt remove/purge rclone
 
 ### Enlaces
 
+* [How to Sync Microsoft OneDrive with Linux](https://www.maketecheasier.com/sync-onedrive-linux/): [Onedrive](https://github.com/abraunegg/onedrive) is a CLI-based client that allows you to sync quickly and easily with OneDrive. Explains how to install and use the abraunegg OneDrive client.
+* [How To Mount OneDrive In Linux Using Rclone (Supports Business And Personal Accounts)](https://www.linuxuprising.com/2018/07/how-to-mount-onedrive-in-linux-using.html): This article explains how to mount OneDrive in Linux using [Rclone](https://rclone.org/).
+* [OneDrive Client for Linux](https://github.com/abraunegg/onedrive): A free Microsoft OneDrive Client which supports OneDrive Personal, OneDrive for Business, OneDrive for Office365 and Sharepoint. This powerful and highly configurable client can run on all major Linux distributions, as a Docker container and on FreeBSD. It supports one-way and two-way sync capabilities and securely connects to Microsoft OneDrive services. This client is a 'fork' of the [skilion](https://github.com/skilion/onedrive) client which was abandoned in 2018.
+* [ExpanDrive](https://www.expandrive.com/): producto comercial para sincronizar con todos los almacenamientos cloud
 * [Using OneDrive with Linux](https://www.phillipsj.net/posts/using-onedrive-with-linux)
 * [Rclone](https://rclone.org/)
 * [OneDrive Free Client](https://github.com/skilion/onedrive)
