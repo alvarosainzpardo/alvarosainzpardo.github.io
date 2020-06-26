@@ -40,7 +40,7 @@
     * [JavaScript cheat sheet: Tips & tricks](https://jaxenter.com/javascript-crib-notes-136893.html)
     * [Buggy JavaScript Code: The 10 Most Common Mistakes JavaScript Developers Make](https://www.toptal.com/javascript/10-most-common-javascript-mistakes)
     * [The Top 11 Mistakes That JavaScript Developers Make](https://www.airpair.com/javascript/posts/eleven-mistakes-developers-javascript)
-* [So You Want to Use JavaScript in The Next Freelance Project ]: this series will be part of the outcome of my study. As the name implies, I will not cover primary level such as “if, else” (condition), “for” (or any kinds of loops), or basic OOP concepts. Instead, I will focus only on differences so you can learn this versatile language like reviewing a pull request, and use it the next day in your next awesome project:
+* [So You Want to Use JavaScript in The Next Freelance Project ](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-some-basics-470a3ca66cb2): this series will be part of the outcome of my study. As the name implies, I will not cover primary level such as “if, else” (condition), “for” (or any kinds of loops), or basic OOP concepts. Instead, I will focus only on differences so you can learn this versatile language like reviewing a pull request, and use it the next day in your next awesome project:
     * [Some Basics](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-some-basics-470a3ca66cb2)
     * [String and Array](https://codeburst.io/holmeshe-so-you-want-to-use-javascript-in-the-next-freelance-project-string-and-array-46b0d6def50c)
     * [This](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-this-d83be51378c4)
@@ -48,6 +48,7 @@
     * [Prototype(1)](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-prototype-1-1908b6d58652)
     * [Prototype(2)](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-prototype-2-527167ce2857)
     * [Async](https://codeburst.io/so-you-want-to-use-javascript-in-the-next-freelance-project-async-6639e268caef)
+* [A Practical Guide to TypeScript - How to Build a Pokedex app using HTML, CSS, and TypeScript](https://dev.to/ibrahima92/a-practical-guide-to-typescript-how-to-build-a-pokedex-app-using-html-css-and-typescript-4h7p)
 
 ---
 

@@ -11,5 +11,7 @@
 * [Visualizing Google Forms Data with Seaborn](http://pbpython.com/pandas-google-forms-part2.html)
 * [Understanding Python variables and Memory Management](http://foobarnbaz.com/2012/07/08/understanding-python-variables/)
 * [Is Python pass-by-reference or pass-by-value?](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick)
+* [Python Decorators- A Weapon To Be Mastered](https://medium.com/analytics-vidhya/python-decorators-a-weapon-to-be-mastered-be310b519ac5)
+
 ---
 
