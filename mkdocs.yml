@@ -14,10 +14,11 @@ nav:
 - Personal:
   - Hi-Fi:
       - General: hifi/general.md
+      - Lossless: hifi/lossless.md
+      - Linux Audiofilo: hifi/linux-audiofilo.md
       - Darkvoice 336SE: hifi/darkvoice.md
       - IMR R1 Zenith: hifi/r1-zenith.md
       - IMR R2 Aten: hifi/r2-aten.md
-      - Lossless: hifi/lossless.md
   - Programación:
     - Atom: programming/atom.md
     - Emmet: programming/emmet.md
