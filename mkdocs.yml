@@ -41,6 +41,7 @@ nav:
   - AgileVentures:
     - Charity Commission API: agileventures/charity_commission_api.md
   - Backgammon: backgammon.md
+  - Cerraduras: cerraduras.md
   - Detailing: detailing.md
   - Docker: docker.md
   - GeoJSON: geojson.md
