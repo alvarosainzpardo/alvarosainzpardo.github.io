@@ -6,7 +6,7 @@ El "pack de seguridad" para una puerta blindada se compone de:
 
 * Cilindro/bombillo/bombín de seguridad:
     * Anti-bumping
-    * Anti-impressioning
+    * Anti-impressioning (anti-impresión)
     * Puente antirrotura
 * Escudo para evitar la rotura del cilindro
 * Cerrojo auxiliar para evitar apalancamiento de la puerta
