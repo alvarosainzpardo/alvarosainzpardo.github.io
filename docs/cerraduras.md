@@ -5,9 +5,9 @@
 El "pack de seguridad" para una puerta blindada se compone de:
 
 * Cilindro/bombillo/bombín de seguridad:
-  * Anti-bumping
-  * Anti-impressioning
-  * Puente antirrotura
+    * Anti-bumping
+    * Anti-impressioning
+    * Puente antirrotura
 * Escudo para evitar la rotura del cilindro
 * Cerrojo auxiliar para evitar apalancamiento de la puerta
 
@@ -15,9 +15,9 @@ El "pack de seguridad" para una puerta blindada se compone de:
 
 Características mínimas:
 
-  * puente antirrotura
-  * anti-impressioning
-  * anti-bumping
+* puente antirrotura
+* anti-impressioning
+* anti-bumping
 
 Marcas/modelos:
 
@@ -29,10 +29,10 @@ Marcas/modelos:
 Para evitar la rotura del cilindro/bombín.
 
 * Marca Disec
-  * Gama ROK 2019
-    * Para puertas blindadas
-  * Gama KRIPTON 2019
-    * Para puertas acorazadas. Para puertas blindadas no merece la pena, los ladrones antes te hacen un boquete en la puerta blindada que intentar romper el escudo
+    * Gama ROK 2019
+        * Para puertas blindadas
+    * Gama KRIPTON 2019
+        * Para puertas acorazadas. Para puertas blindadas no merece la pena, los ladrones antes te hacen un boquete en la puerta blindada que intentar romper el escudo
 
 ## Cerrojo auxiliar
 
@@ -41,33 +41,33 @@ Evita el apalancamiento.
 Modelos:
 
 * SAG EP40 (2019 como mínimo)
-  * Con cilindro KABA experT pluS
+    * Con cilindro KABA experT pluS
 * SAG EP50 (2019 como mínimo)
-  * Con cilindro KESO 8000 Omega2
+    * Con cilindro KESO 8000 Omega2
 
 ## Pedido y preguntas al cerrajero
 
 * Preguntar SAG EP40 vs. SAG EP50
 * Preguntar si tiene un "pack" con SAG EP50 + KESO 8000 Omega2
-  * Confirmar si el KESO 8000 Omega2 tiene pomo
-  * Placa frontal reforzada
+    * Confirmar si el KESO 8000 Omega2 tiene pomo
+    * Placa frontal reforzada
 
 * SAG EP50
-  * CROMADO
-  Preguntas:
-    * Confirmar modelo 2020 : se supone que el del 2020 tiene la posibilidad de la placa frontal reforzada
-    * Barra más larga?
-    * Placa frontal reforzada?
+    * CROMADO
+    * Preguntas:
+        * Confirmar modelo 2020 : se supone que el del 2020 tiene la posibilidad de la placa frontal reforzada
+        * Barra más larga?
+        * Placa frontal reforzada?
 
 * KESO 8000 Omega2
-  * Igualamiento de llaves
-  * Color: Azul oscuro, Negro, Gris, Rojo
+    * Igualamiento de llaves
+    * Color: Azul oscuro, Negro, Gris, Rojo
 
 * Escudo Disec ROK 2019 o KRIPTON 2019
-  * Preguntar ROK o KRIPTON?
-  * Confirmar modelos 2019
-  * Confirmar lenteja manganeso
-  * Color cromado
+    * Preguntar ROK o KRIPTON?
+    * Confirmar modelos 2019
+    * Confirmar lenteja manganeso
+    * Color cromado
 
 ## Presupuesto online (sólo compra)
 
