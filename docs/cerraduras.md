@@ -51,18 +51,15 @@ Modelos:
 * Preguntar si tiene un "pack" con SAG EP50 + KESO 8000 Omega2
     * Confirmar si el KESO 8000 Omega2 tiene pomo
     * Placa frontal reforzada
-
 * SAG EP50
     * CROMADO
     * Preguntas:
         * Confirmar modelo 2020 : se supone que el del 2020 tiene la posibilidad de la placa frontal reforzada
         * Barra más larga?
         * Placa frontal reforzada?
-
 * KESO 8000 Omega2
     * Igualamiento de llaves
     * Color: Azul oscuro, Negro, Gris, Rojo
-
 * Escudo Disec ROK 2019 o KRIPTON 2019
     * Preguntar ROK o KRIPTON?
     * Confirmar modelos 2019
