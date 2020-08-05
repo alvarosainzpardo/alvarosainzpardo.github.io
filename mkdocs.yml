@@ -12,6 +12,8 @@ nav:
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md
 - Personal:
+  - Música:
+      - Albums Tidal: tidal-albums.md
   - Hi-Fi:
       - General: hifi/general.md
       - Lossless: hifi/lossless.md
