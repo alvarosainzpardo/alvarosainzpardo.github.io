@@ -198,6 +198,16 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#aplicaciones-web-de-emulacion-de-terminal-para-el-browser">Aplicaciones web de emulación de terminal para el browser</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bash-y-utilidades-gui-para-bash">Bash y utilidades GUI para bash</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#enlaces_1">Enlaces</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dialog">Dialog</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#whiptail">Whiptail</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#zenity">Zenity</a>
+    </li>
     </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../windows10/">Windows 10</a>
@@ -373,6 +383,39 @@ $ sudo snap install --classic dmd &amp;&amp; sudo snap install --classic dub
 <li><a href="https://github.com/yudai/gotty">GoTTY</a></li>
 <li><a href="https://github.com/tsl0922/ttyd">ttyd</a></li>
 </ul>
+<h2 id="bash-y-utilidades-gui-para-bash">Bash y utilidades GUI para bash</h2>
+<p>Para añadir widgets interactivos, o elementos de interfaz gráfico de usuario (GUI) a los shell scripts, como ventanas de mensajes, checkboxes, menús, etc, estas son las utilidades principales:</p>
+<ul>
+<li>Whiptail</li>
+<li><a href="https://invisible-island.net/dialog/">Dialog</a></li>
+<li><a href="https://wiki.gnome.org/Projects/Zenity">Zenity</a></li>
+</ul>
+<p>Whiptail y Dialog funcionan en modo texto. Dialog utiliza la librería ncurses. Whiptail utiliza la librería newt, y es la utilidad usada por las distribuciones Debian/Ubuntu en sus scripts de configuración. Zenity funciona en modo gráfico (X11) y utiliza la librería GTK. Whiptail y Dialog funcionan en cualquier sesión, local o sesión remota por ssh (siempre que en el ordenador destino esté instalado el paquete correspondiente). Zenity únicamente funciona en una sesión local y ejecutando el shell script dentro del entorno gráfico. Por lo demás, son similares en funcionamiento.</p>
+<h2 id="enlaces_1">Enlaces</h2>
+<ul>
+<li><a href="https://bash.cyberciti.biz/guide/Menu_driven_scripts">Menu driven scripts</a></li>
+</ul>
+<h2 id="dialog">Dialog</h2>
+<ul>
+<li><a href="https://bash.cyberciti.biz/guide/Bash_display_dialog_boxes">Bash display dialog boxes</a></li>
+<li><a href="https://www.linuxjournal.com/article/2807">Dialog: An Introductory Tutorial</a><ul>
+<li><a href="https://www.linuxjournal.com/files/linuxjournal.com/linuxjournal/articles/028/2807/2807l1.html">Listing 1: Sound Driver Configuration Utility</a></li>
+</ul>
+</li>
+<li><a href="http://linuxcommand.org/lc3_adv_dialog.php">dialog</a></li>
+<li><a href="https://invisible-island.net/dialog/dialog-figures.html">Dialog Widget List</a></li>
+</ul>
+<h2 id="whiptail">Whiptail</h2>
+<ul>
+<li><a href="https://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail">Bash Shell Scripting/Whiptail</a></li>
+</ul>
+<h2 id="zenity">Zenity</h2>
+<ul>
+<li><a href="https://help.gnome.org/users/zenity/3.32/">Zenity Manual</a></li>
+<li><a href="https://www.howtogeek.com/435020/how-to-add-a-gui-to-linux-shell-scripts/">How to Add a GUI to Linux Shell Scripts</a></li>
+<li><a href="https://linuxconfig.org/how-to-use-graphical-widgets-in-bash-scripts-with-zenity">How to use graphical widgets in bash scripts with zenity</a></li>
+</ul>
+<hr />
               
             </div>
           </div>
