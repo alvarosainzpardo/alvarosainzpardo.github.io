@@ -176,3 +176,38 @@ Los siguientes programas son emuladores de terminal que funcionan como aplicacio
 * [Xterm.js](https://github.com/xtermjs/xterm.js)
 * [GoTTY](https://github.com/yudai/gotty)
 * [ttyd](https://github.com/tsl0922/ttyd)
+
+## Bash y utilidades GUI para bash
+
+Para añadir widgets interactivos, o elementos de interfaz gráfico de usuario (GUI) a los shell scripts, como ventanas de mensajes, checkboxes, menús, etc, estas son las utilidades principales:
+
+* Whiptail
+* [Dialog](https://invisible-island.net/dialog/)
+* [Zenity](https://wiki.gnome.org/Projects/Zenity)
+
+Whiptail y Dialog funcionan en modo texto. Dialog utiliza la librería ncurses. Whiptail utiliza la librería newt, y es la utilidad usada por las distribuciones Debian/Ubuntu en sus scripts de configuración. Zenity funciona en modo gráfico (X11) y utiliza la librería GTK. Whiptail y Dialog funcionan en cualquier sesión, local o sesión remota por ssh (siempre que en el ordenador destino esté instalado el paquete correspondiente). Zenity únicamente funciona en una sesión local y ejecutando el shell script dentro del entorno gráfico. Por lo demás, son similares en funcionamiento.
+
+## Enlaces
+
+* [Menu driven scripts](https://bash.cyberciti.biz/guide/Menu_driven_scripts)
+
+## Dialog
+
+* [Bash display dialog boxes](https://bash.cyberciti.biz/guide/Bash_display_dialog_boxes)
+* [Dialog: An Introductory Tutorial](https://www.linuxjournal.com/article/2807)
+    * [Listing 1: Sound Driver Configuration Utility](https://www.linuxjournal.com/files/linuxjournal.com/linuxjournal/articles/028/2807/2807l1.html)
+* [dialog](http://linuxcommand.org/lc3_adv_dialog.php)
+* [Dialog Widget List](https://invisible-island.net/dialog/dialog-figures.html)
+
+## Whiptail
+
+* [Bash Shell Scripting/Whiptail](https://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail)
+
+## Zenity
+
+* [Zenity Manual](https://help.gnome.org/users/zenity/3.32/)
+* [How to Add a GUI to Linux Shell Scripts](https://www.howtogeek.com/435020/how-to-add-a-gui-to-linux-shell-scripts/)
+* [How to use graphical widgets in bash scripts with zenity](https://linuxconfig.org/how-to-use-graphical-widgets-in-bash-scripts-with-zenity)
+
+---
+
