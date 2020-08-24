@@ -187,11 +187,11 @@ Para añadir widgets interactivos, o elementos de interfaz gráfico de usuario (
 
 Whiptail y Dialog funcionan en modo texto. Dialog utiliza la librería ncurses. Whiptail utiliza la librería newt, y es la utilidad usada por las distribuciones Debian/Ubuntu en sus scripts de configuración. Zenity funciona en modo gráfico (X11) y utiliza la librería GTK. Whiptail y Dialog funcionan en cualquier sesión, local o sesión remota por ssh (siempre que en el ordenador destino esté instalado el paquete correspondiente). Zenity únicamente funciona en una sesión local y ejecutando el shell script dentro del entorno gráfico. Por lo demás, son similares en funcionamiento.
 
-## Enlaces
+### Enlaces
 
 * [Menu driven scripts](https://bash.cyberciti.biz/guide/Menu_driven_scripts)
 
-## Dialog
+### Dialog
 
 * [Bash display dialog boxes](https://bash.cyberciti.biz/guide/Bash_display_dialog_boxes)
 * [Dialog: An Introductory Tutorial](https://www.linuxjournal.com/article/2807)
@@ -199,15 +199,59 @@ Whiptail y Dialog funcionan en modo texto. Dialog utiliza la librería ncurses. 
 * [dialog](http://linuxcommand.org/lc3_adv_dialog.php)
 * [Dialog Widget List](https://invisible-island.net/dialog/dialog-figures.html)
 
-## Whiptail
+### Whiptail
 
 * [Bash Shell Scripting/Whiptail](https://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail)
 
-## Zenity
+### Zenity
 
 * [Zenity Manual](https://help.gnome.org/users/zenity/3.32/)
 * [How to Add a GUI to Linux Shell Scripts](https://www.howtogeek.com/435020/how-to-add-a-gui-to-linux-shell-scripts/)
 * [How to use graphical widgets in bash scripts with zenity](https://linuxconfig.org/how-to-use-graphical-widgets-in-bash-scripts-with-zenity)
 
 ---
+
+## Tell PulseAudio to ignore a USB device using udev
+
+* [Tell PulseAudio to ignore a USB device using udev](https://jamielinux.com/blog/tell-pulseaudio-to-ignore-a-usb-device-using-udev/) 
+
+### Gather USB device information
+
+Before creating a udev rule, you need to find a unique way to identify your USB device. lsusb will list all connected USB devices:
+
+```bash
+$ lsusb
+Bus 004 Device 003: ID 1852:5110 GYROCOM C&C Co., LTD
+```
+
+Use the Bus and Device numbers from above to gather more information about your device. We’re mostly interested in the idVendor and idProduct:
+
+```bash
+$ sudo lsusb -v -s 004:003
+...
+idVendor           0x1852 GYROCOM C&C Co., LTD
+idProduct          0x5110
+...
+```
+
+### Create a udev rule
+
+Your system should have udev rules already defined in the `/lib/udev/rules.d` directory, such as `90-pulseaudio.rules`. There should also be a `/etc/udev/rules.d` directory where you can define your own rules.
+
+The rules are parsed in lexical order. Create a file called `/etc/udev/rules.d/89-pulseaudio-usb.rules`, so that it’s parsed just before `90-pulseaudio.rules` (though you may have to experiment with the numbering if things don’t work as expected).
+
+Open the file in your favourite editor and create a rule. Use the `idVendor` and `idProduct` numbers from earlier to uniquely match your USB device, and then set an environment variable that tells PulseAudio to ignore the device:
+
+```bash
+ATTRS{idVendor}=="1852", ATTRS{idProduct}=="5110", ENV{PULSE_IGNORE}="1"
+```
+
+Optionally, you might want to apply other changes to the device, such as access permissions or device ownership. Write each rule on a separate line:
+
+```bash
+ATTRS{idVendor}=="1852", ATTRS{idProduct}=="5110", ENV{PULSE_IGNORE}="1"
+ATTRS{idVendor}=="1852", ATTRS{idProduct}=="5110", GROUP="mpd"
+```
+
+Reboot your system and PulseAudio will no longer acknowledge that your USB device exists.
 

@@ -8,6 +8,19 @@
 * [FAXTER: Biblioteca](http://www.faxter.es/Biblioteca/tabid/87/Default.aspx)
     * [Curso Básico de Electrónica Digital](http://www.faxter.es/Biblioteca/Cursillo01/tabid/107/Default.aspx)
 
+## Tips IEM
+
+* [The Iconic AZLA SednaEarfit Silicon Tips – Is Their Price Justified?](https://www.audioreviews.org/azla-sednaearfit-value/): artículo donde cuentan el proceso de R&D de los iems, su proceso de fabricación y la justificación de su precio. No valoran el sonido
+* [Tweaking Tips – A Simplified Guide To IEM Silicone Eartips UPDATED 2020-08-21](https://www.audioreviews.org/guide-to-iem-silicone-eartips/)
+
+---
+
+https://www.auriculares-hifi.com/foro/index.php?topic=13784.msg150201#msg150201 (Rafamtz)
+
+Los azla sednaearfit ligth o xelastec, sellan muy bien, y tiene orificio de salida de sonido amplio.  lo unico es que son caros, los encuentras en amazon.  Los (AZLA SednaEarfit) light son un poco mas moldeables, por lo tanto un poco mas comodos.
+
+---
+
 ## Cables IEM
 
 Los cables tienen diferente número de _cores_ (4 _cores_, 8 _cores_, 16 _cores_). Teóricamente, a mayor número de _cores_ mayor calidad del sonido, porque se aumenta el efecto llamado _skin effect_. Cada _core_ tiene un número de núcleos. Un cable puede tener menos cores pero más núcleos por core. Además de los cores, influyen otros factores en la calidad del sonido, como la pureza del cobre utilizado, la calidad de construcción, la calidad de los materiales utilizdos, etc. Un cable con mayor número de _cores_ es más grueso y más pesado. Tienes que prestar atención al grosor y flexibilidad de la parte del cable que va hacia el iem, una vez que se han separado los dos canales izquierdo y derecho. Un cable de 4 _cores_ lleva 2 cables a cada iem. Un cable de 8 _cores_ lleva 4 cables a cada iem. Y así sucesivamente. Es posible que más de 8 cores lleven un cable demasiado gordo y poco flexible a los IEM.
