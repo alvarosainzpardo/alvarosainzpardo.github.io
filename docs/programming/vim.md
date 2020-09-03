@@ -546,3 +546,45 @@ En muchos tutoriales sobre vim en OSX se recomienda mapear la tecla **Caps Lock*
 No tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuación el programa para realizarlo, para referencia futura.
 
 El programa para mapear la tecla **Caps Lock** es [Seil](https://pqrs.org/osx/karabiner/seil.html.en). El mismo desarrollador tiene otra utilidad para hacer mapeos más generales de teclado llamada [Karabiner](https://pqrs.org/osx/karabiner/index.html.en).
+
+
+## Folding
+
+El _folding_ está deshabilitado por defecto en vim. Además, por defecto el _folding_ es manual. Para configurar el folding de forma análoga a otros editores, o sea, folding automático activado y basado en sintaxis y con todos los niveles abiertos al abrir el archivo (sin folding), hay que añadir lo siguiente al archivo `.vimrc`:
+
+```vim
+set foldmethod=syntax
+set nofoldenable
+```
+
+Otras opciones son:
+
+```
+set foldmethod=indent
+set foldnestmax=10
+set foldlevel=2
+```
+Una vez activado, los comandos más habituales para trabajar con _folds_ son:
+
+* <kbd>z</kbd> + <kbd>o</kbd> opens a fold at the cursor.
+* <kbd>z</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> opens all folds at the cursor.
+* <kbd>z</kbd> + <kbd>c</kbd> closes a fold at the cursor.
+* <kbd>z</kbd> + <kbd>m</kbd> increases the foldlevel by one.
+* <kbd>z</kbd> + <kbd>Shift</kbd> + <kbd>m</kbd> closes all open folds.
+* <kbd>z</kbd> + <kbd>r</kbd> decreases the foldlevel by one.
+* <kbd>z</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> decreases the foldlevel to zero -- all folds will be open.
+
+## Comentar lineas de código
+
+Para comentar líneas de código, o descomentarlas, hay que hacer lo siguiente:
+
+* Teclear <kbd>Ctrl</kbd> + <kbd>v</kbd> para entrar en modo _rectangular visual selection_
+* Seleccionar el rectángulo correspondiente a los espacios en blanco del inicio de las líneas que se quieren comentar
+* Sustituir (<kbd>r</kbd>) los espacios en blanco por los caracteres de comentario correspondientes al tipo de archivo
+* Alternativamente a lo anterior, insertar al inicio (<kbd>Shift</kbd> + <kbd>i</kbd>) los caracteres de comentario
+
+Para descomentar las líneas de código:
+
+* Teclear <kbd>Ctrl</kbd> + <kbd>v</kbd> para entrar en modo _rectangular visual selection_
+* Seleccionar el rectángulo correspondiente a los caracteres de comentario
+* Sustituirlos por blanco (<kbd>r</kbd> + <kbd>space</kbd>) o eliminarlos (<kbd>x</kbd>)
