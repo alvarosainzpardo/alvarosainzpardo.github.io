@@ -178,6 +178,10 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#folding">Folding</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#comentar-lineas-de-codigo">Comentar lineas de código</a>
+    </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../vscode/">Visual Studio Code</a>
@@ -717,6 +721,42 @@ call plug#end()
 <p>En muchos tutoriales sobre vim en OSX se recomienda mapear la tecla <strong>Caps Lock</strong> por <strong>Esc</strong>. El motivo es que la tecla <strong>Esc</strong> en el teclado del mac está muy lejos en la esquina superior izquierda, es muy pequeña y es una tecla muy usada en vim. AVISO: Este mapeo no se puede hacer dentro de vim, se tiene que hacer a nivel de sistema operativo. De esta forma, el mapeo afectará al funcionamiento de todo el sistema, no únicamente la aplicación vim.</p>
 <p>No tengo nada claro hacer este mapeo, precisamente porque afecta a todo el sistema, pero pongo a continuación el programa para realizarlo, para referencia futura.</p>
 <p>El programa para mapear la tecla <strong>Caps Lock</strong> es <a href="https://pqrs.org/osx/karabiner/seil.html.en">Seil</a>. El mismo desarrollador tiene otra utilidad para hacer mapeos más generales de teclado llamada <a href="https://pqrs.org/osx/karabiner/index.html.en">Karabiner</a>.</p>
+<h2 id="folding">Folding</h2>
+<p>El <em>folding</em> está deshabilitado por defecto en vim. Además, por defecto el <em>folding</em> es manual. Para configurar el folding de forma análoga a otros editores, o sea, folding automático activado y basado en sintaxis y con todos los niveles abiertos al abrir el archivo (sin folding), hay que añadir lo siguiente al archivo <code>.vimrc</code>:</p>
+<pre><code class="vim">set foldmethod=syntax
+set nofoldenable
+</code></pre>
+
+<p>Otras opciones son:</p>
+<pre><code>set foldmethod=indent
+set foldnestmax=10
+set foldlevel=2
+</code></pre>
+
+<p>Una vez activado, los comandos más habituales para trabajar con <em>folds</em> son:</p>
+<ul>
+<li><kbd>z</kbd> + <kbd>o</kbd> opens a fold at the cursor.</li>
+<li><kbd>z</kbd> + <kbd>Shift</kbd> + <kbd>o</kbd> opens all folds at the cursor.</li>
+<li><kbd>z</kbd> + <kbd>c</kbd> closes a fold at the cursor.</li>
+<li><kbd>z</kbd> + <kbd>m</kbd> increases the foldlevel by one.</li>
+<li><kbd>z</kbd> + <kbd>Shift</kbd> + <kbd>m</kbd> closes all open folds.</li>
+<li><kbd>z</kbd> + <kbd>r</kbd> decreases the foldlevel by one.</li>
+<li><kbd>z</kbd> + <kbd>Shift</kbd> + <kbd>r</kbd> decreases the foldlevel to zero -- all folds will be open.</li>
+</ul>
+<h2 id="comentar-lineas-de-codigo">Comentar lineas de código</h2>
+<p>Para comentar líneas de código, o descomentarlas, hay que hacer lo siguiente:</p>
+<ul>
+<li>Teclear <kbd>Ctrl</kbd> + <kbd>v</kbd> para entrar en modo <em>rectangular visual selection</em></li>
+<li>Seleccionar el rectángulo correspondiente a los espacios en blanco del inicio de las líneas que se quieren comentar</li>
+<li>Sustituir (<kbd>r</kbd>) los espacios en blanco por los caracteres de comentario correspondientes al tipo de archivo</li>
+<li>Alternativamente a lo anterior, insertar al inicio (<kbd>Shift</kbd> + <kbd>i</kbd>) los caracteres de comentario</li>
+</ul>
+<p>Para descomentar las líneas de código:</p>
+<ul>
+<li>Teclear <kbd>Ctrl</kbd> + <kbd>v</kbd> para entrar en modo <em>rectangular visual selection</em></li>
+<li>Seleccionar el rectángulo correspondiente a los caracteres de comentario</li>
+<li>Sustituirlos por blanco (<kbd>r</kbd> + <kbd>space</kbd>) o eliminarlos (<kbd>x</kbd>)</li>
+</ul>
               
             </div>
           </div>
