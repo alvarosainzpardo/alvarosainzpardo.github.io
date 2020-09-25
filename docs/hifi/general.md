@@ -77,3 +77,8 @@ Cables baratos que me han llamado la atención:
 * [iBasso CA04](https://headphoniaks.com/tienda/ibasso-ca04/): 42,00€ en Headphoniaks (Disponible. Envío en 24 horas.)
 * [iBasso CA02 adaptador balanceado](https://novomusica.com/tienda/imagen-sonido-profesional/ibasso/ibasso-ca02-adaptador-balanceado-8648): 21€ en Novomusica (cerrado por vacaciones hasta el 23/08)
 * [IBASSO CA02](https://www.audiophonics.fr/en/jack-adapters/ibasso-ca02-balanced-adapter-female-jack-25mm-to-male-jack-44mm-gold-plated-p-14314.html) en Audiophonics
+
+## Topping DX3 Pro
+
+* [Question about PCM filter mode setting of Topping DX3 Pro LDAC](https://www.audiosciencereview.com/forum/index.php?threads/question-about-pcm-filter-mode-setting-of-topping-dx3-pro-ldac.10044/)
+* https://www.audiosciencereview.com/forum/index.php?attachments/1-png.18389/
