@@ -26,6 +26,10 @@
 * [Backgammon Galaxy Academy](https://www.backgammongalaxy.com/academy)
     * [Lesson 1: Don't bury yours checkers](https://www.backgammongalaxy.com/blog/beginners-mistakes-in-backgammon-01)
     * [Beginner's Mistakes in Backgammon 2 of 12: Don't run if you're behind in the race](https://www.backgammongalaxy.com/blog/beginners-mistakes-in-backgammon-2-of-12)
+* [The Fortuitous Press](http://www.fortuitouspress.com/): libro "Backgammon Bootcamp" y otros libros y recursos.
+* [GammonLife.com](http://www.gammonlife.com/)
+    * [Getting started with GNUBG – A Guided Tour](http://www.gammonlife.com/gnu/index.htm)
+    * [GammonLife Writers - Backgammon Articles](http://www.gammonlife.com/writers/index.htm)
 
 ## Libros
 
