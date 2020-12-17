@@ -38,6 +38,7 @@
 ### Sur
 
 * (30/10/20) [Globalvia, Meep y el Ayuntamiento de Sevilla estrenan Meep Sevilla by Globalvia, la primera aplicación de Mobility as a Service (Maas)](https://www.globalvia.com/sala_de_prensa/NoticiaDetalle.aspx?BtnSubMenu=30&id=5304)
+    * [Llega una App de movilidad para Sevilla](https://elcorreoweb.es/sevilla/llega-una-app-de-movilidad-para-sevilla-AJ6902525): Una App permitirá planificar desplazamientos en Metro, Tussam o Sevici y efectuar pagos en alquiler de motos
     * [Meep](https://meep.app/es/)
     * [Llega a Sevilla la primera aplicación para planificar, reservar y pagar distintos transportes](https://www.diariodesevilla.es/sevilla/Meep-Globalvia-Sevilla-Llega-primera-app-reservar-pagar-transporte-movilidad_0_1515148727.html): Meep by Globalvía ya funciona en los 900 taxis ligados a Radiotaxi y Teletaxi, y en las motos eléctricas de alquiler (muving). A primeros de 2021 debe incorporarse el Metro de Sevilla y los patinetes eléctricos que estarán de prueba
     * [Globalvia impulsa la conexión del transporte público y los patinetes eléctricos](https://www.diariodesevilla.es/sevilla/Globalvia-conexion-transporte-patinetes-electricos_0_1497450521.html): El acuerdo de colaboración entre Globalvia, líder en gestión de infraestructuras, y Bird, líder en servicio de alquiler de patinetes eléctricos, marca tendencia para implantar la multimodalidad conectada como eje de la vida urbana
