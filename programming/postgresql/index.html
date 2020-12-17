@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Atom - Documentación de Alvaro</title>
+  <title>PostgreSQL - Documentación de Alvaro</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Atom";
-    var mkdocs_page_input_path = "programming/atom.md";
+    var mkdocs_page_name = "PostgreSQL";
+    var mkdocs_page_input_path = "programming/postgresql.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -67,7 +67,7 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Personal</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="#">Música</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../tidal-albums/">Albums Tidal</a>
@@ -90,21 +90,9 @@
                 </li>
     </ul>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="#">Programación</a>
-    <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Atom</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#enlaces-documentacion">Enlaces, documentación</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#remote-atom">Remote Atom</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#utilidad-rmate">Utilidad rmate</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#paquete-remote-atom">Paquete Remote Atom</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="#">Programación</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../atom/">Atom</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../emmet/">Emmet</a>
                 </li>
@@ -201,16 +189,8 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Programación &raquo;</li>
-        
-      
-        
-          <li>Personal &raquo;</li>
-        
-      
     
-    <li>Atom</li>
+    <li>PostgreSQL</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -221,43 +201,16 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="atom">Atom</h1>
-<hr />
-<h2 id="enlaces-documentacion">Enlaces, documentación</h2>
-<hr />
-<h2 id="remote-atom">Remote Atom</h2>
-<p>El editor TextMate tiene una funcionalidad de edición remota de ficheros a través de una sesión ssh. Esta funcionalidad ha sido copiada posteriormente por otros editores, como Visual Studio Code o Atom.</p>
-<p>Para utilizar esta funcionalidad:</p>
+                <h1 id="postgresql">PostgreSQL</h1>
+<h2 id="enlaces-documentacion-recursos-etc">Enlaces, documentación, recursos, etc</h2>
 <ul>
-<li>Se tiene que ejecutar una sesión ssh haciendo <em>remote port forwarding</em> del puerto 52698:</li>
+<li><a href="https://blog.timescale.com/tutorials/how-to-install-psql-on-mac-ubuntu-debian-windows/">How to install psql on Mac, Ubuntu, Debian, Windows</a></li>
+<li><a href="https://stackoverflow.com/questions/44654216/correct-way-to-install-psql-without-full-postgres-on-macos">Correct way to install psql without full Postgres on macOS?</a></li>
 </ul>
-<pre><code class="language-bash">$ ssh -R 52698:localhost:52698 &lt;user@host&gt;
-</code></pre>
-<ul>
-<li>En la máquina remota, se tiene que editar el archivo ejecutando <code>rmate &lt;nombre de archivo&gt;</code></li>
-<li>En la máquina local, el editor Atom tiene que tener instalado el paquete <code>Remote Atom</code> con el servidor arrancado</li>
-</ul>
-<h3 id="utilidad-rmate">Utilidad rmate</h3>
-<p>Existen dos versiones de este programa: la origina desarrollada por TextMate, que está implementada en Ruby, y un portado usando shell script, que es más fácil de instalar porque no tiene la dependencia de Ruby.</p>
-<ul>
-<li><a href="https://github.com/aurora/rmate">aurora/rmate</a>: <code>rmate</code> implementado en shell script. Esta es la versión que yo utilizo</li>
-<li><a href="https://github.com/textmate/rmate">textmate/rmate</a>: la versión original de TextMate, implementada en Ruby</li>
-</ul>
-<h3 id="paquete-remote-atom">Paquete Remote Atom</h3>
-<p>Para instalar el paquete Remote Atom, seleccionas "Preferences...", después "+ seleccionas Install" y en la ventana de instalar paquetes buscas el paquete <code>remote-atom</code>. Hay que instalar la versión del usuario <em>randy3k</em>.</p>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../emmet/" class="btn btn-neutral float-right" title="Emmet">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../../hifi/r2-aten/" class="btn btn-neutral" title="IMR R2 Aten"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -281,10 +234,6 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../hifi/r2-aten/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../emmet/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

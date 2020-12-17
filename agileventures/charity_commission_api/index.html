@@ -278,7 +278,7 @@
 <li><a href="http://savonrb.com/version3/">Version 3</a> (unstable)</li>
 </ul>
 <h3 id="ejemplo-de-como-usar-el-api-de-la-charity-commission">Ejemplo de como usar el API de la Charity Commission</h3>
-<pre><code class="ruby">gem install httpclient
+<pre><code class="language-ruby">gem install httpclient
 gem install savon
 
 require 'savon'
@@ -295,7 +295,6 @@ response = client.call(:get_charities_by_keyword, message: {APIKey: 'dfd1db9b-7a
 response.body
 # =&gt; {:get_charities_by_keyword_response=&gt;{:get_charities_by_keyword_result=&gt;{:charity_list=&gt;{:registered_charity_number=&gt;&quot;1170963&quot;, :subsidiary_number=&gt;&quot;0&quot;, :charity_name=&gt;&quot;AGILEVENTURES                                                                                                                                         &quot;, :main_charity_name=&gt;&quot;AGILEVENTURES                                                                                                                                         &quot;, :registration_status=&gt;&quot;Registered&quot;, :public_email_address=&gt;&quot;info@agileventures.org&quot;, :main_phone_number=&gt;&quot;07964143662&quot;}}, :@xmlns=&gt;&quot;http://www.charitycommission.gov.uk/&quot;}}
 </code></pre>
-
 <h3 id="enlaces">Enlaces</h3>
 <hr />
               

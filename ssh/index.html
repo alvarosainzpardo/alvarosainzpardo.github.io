@@ -234,18 +234,15 @@
 <hr />
 <h2 id="usar-ssh-detras-de-un-proxy">Usar ssh detrás de un proxy</h2>
 <p>El comando para realizar una conexión ssh a través de un servidor proxy es:</p>
-<pre><code class="bash">$ ssh &lt;user&gt;@&lt;host&gt; -o &quot;ProxyCommand=nc -X connect -x &lt;proxyhost&gt;:&lt;proxyport&gt; %h %p&quot;
+<pre><code class="language-bash">$ ssh &lt;user&gt;@&lt;host&gt; -o &quot;ProxyCommand=nc -X connect -x &lt;proxyhost&gt;:&lt;proxyport&gt; %h %p&quot;
 </code></pre>
-
 <p>Por ejemplo:</p>
-<pre><code class="bash">$ ssh asainz@sulaco.ttcloud.net -o &quot;ProxyCommand=nc -X connect -x proxyinternet.tesa:8080 %h %p&quot;
+<pre><code class="language-bash">$ ssh asainz@sulaco.ttcloud.net -o &quot;ProxyCommand=nc -X connect -x proxyinternet.tesa:8080 %h %p&quot;
 </code></pre>
-
 <p>Para que este comando funcione, el servidor proxy tiene que aceptar el método de conexión <code>CONNECT</code> y el comando <code>nc</code> tiene que estar instalado en el sistema.</p>
 <p>Para usar un proxy socks5 el comando es:</p>
-<pre><code class="bash">$ ssh &lt;user&gt;@&lt;host&gt; -o &quot;ProxyCommand=nc -X 5 -x &lt;proxyhost&gt;:&lt;proxyport&gt; %h %p&quot;
+<pre><code class="language-bash">$ ssh &lt;user&gt;@&lt;host&gt; -o &quot;ProxyCommand=nc -X 5 -x &lt;proxyhost&gt;:&lt;proxyport&gt; %h %p&quot;
 </code></pre>
-
 <p>Y para usar un proxy socks4 se utilizaría la opción <code>-X 4</code>.</p>
 <p>Para no tener que teclear el comando cada vez que se utiliza el cliente ssh se puede configurar esta opción en el archivo de configuración de ssh, <code>~/.ssh/config</code>.</p>
 <p>Se puede añadir la opción para todos los hosts:</p>
@@ -273,9 +270,8 @@
 <li><a href="https://michaelheap.com/ssh-config-files/">SSH Config Files</a></li>
 </ul>
 <p>La opción para conectarse a un servidor que requiere autenticación por clave privada es <code>-i &lt;archivo.pem&gt;</code>:</p>
-<pre><code class="bash">$ ssh &lt;user&gt;@&lt;host&gt; -i &lt;path/file.pem&gt;
+<pre><code class="language-bash">$ ssh &lt;user&gt;@&lt;host&gt; -i &lt;path/file.pem&gt;
 </code></pre>
-
 <p>El archivo .pem tiene que tener permisos de lectura únicamente para el propietario del archivo (<code>chmod 400 &lt;archivo.pem&gt;</code>).</p>
 <p>La configuracíón equivalente en el archivo <code>~/.ssh/config</code>sería:</p>
 <pre><code>Host &lt;host&gt;
