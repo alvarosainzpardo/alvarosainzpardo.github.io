@@ -110,5 +110,8 @@ Andrej’s blog, karpathy.github.io, provides good insights on niche subjects in
 
 ## Enlaces
 
+* [Predict Future Sales](https://www.kaggle.com/c/competitive-data-science-predict-future-sales): This challenge serves as final project for the "[How to win a data science competition](https://www.coursera.org/learn/competitive-data-science/home/welcome)" Coursera course.
+    * [How to Win a Data Science Competition: Learn from Top Kagglers](https://www.coursera.org/learn/competitive-data-science)
+    * [Bayesian Methods for Machine Learning](https://www.coursera.org/learn/bayesian-methods-in-machine-learning?specialization=aml)
 * [Learn AI for Free](https://medium.com/@fluffymaccoy/learn-ai-for-free-5b186cde3990): There’s a skills shortage in AI. Thinking of retraining? Here are some free learning resources to find out if it is for you.This article lists some of the best AI learning materials that are available for free. I’m bound to have missed a few; please let me know your favorites in the comments and why you think they should be included.
 * [How to download Coursera’s courses before they’re gone forever](https://medium.freecodecamp.org/the-day-472-free-online-courses-will-vanish-from-the-internet-3060bb4e9704)

@@ -2,6 +2,15 @@
 
 ---
 
+## Cursos que estoy haciendo
+
+* [freeCodeCamp.org](https://www.freecodecamp.org/): estoy logado con mi cuenta de Github alvarosainzpardo@gmail.com
+* [The Odin Project](https://www.theodinproject.com/): estoy logado con mi cuenta de Github alvarosainzpardo@gmail.com
+    * Tienen cursos de Javascript y de Ruby on Rails
+* [hackr.io](https://hackr.io/): para encontrar cursos de programación, machine learning, etc.
+
+---
+
 ## Enlaces, tutoriales, documentación, libros
 
 * [Eloquent JavaScript](http://eloquentjavascript.net/)

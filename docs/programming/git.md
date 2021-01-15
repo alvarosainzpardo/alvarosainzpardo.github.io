@@ -4,6 +4,8 @@
 
 ## Enlaces, documentación
 
+* [Visualizing Git Concepts with D3](http://onlywei.github.io/explain-git-with-d3/)
+* [A Visual Git Reference](http://marklodato.github.io/visual-git-guide/index-en.html)
 * [More productive Git](https://increment.com/open-source/more-productive-git/)
 * [A bunch of awesome git tutorials](https://gist.github.com/jaseemabid/1321592)
 * [Git Quick Reference](http://jonas.nitro.dk/git/quick-reference.html)
@@ -183,3 +185,37 @@ $ git config --global --unset https.proxy
 ```
 
 Si la conexión a github.com es mediante ssh, cuando se accede detrás de un proxy hay que [configurar el ssh para que utilice un proxy](http://docs.alvarosainzpardo.com/ssh/#usar-ssh-detras-de-un-proxy) para las conexiones.
+
+## Comandos git
+
+### git data model
+
+El modelo de datos de git tiene tres elementos:
+
+* Working tree / working directory
+* Staging area / index
+* Repository (HEAD)
+
+El _working tree_ el es sistema de archivos del sistema operativo, el directorio local de trabajo.
+
+La _staging area_, también llamada _index_, es el área intermedia a la que se añaden los archivos cuando se ejecuta un `git add`.
+
+El repositorio de git contiene el conjunto de _commits_ que se van haciendo. El repositorio de git, más específicamente, contiene:
+
+* Un conjunto de _commit objects_
+* Un conjunto de referencias a _commit objets_, que se llaman _heads_
+
+Un _commit object_ contiene:
+
+* Un conjunto de archivos
+* Referencias a los _parent commit objects_, los _commit objects_ padres de este _commit object_
+* Un hash SHA1, una cadena de 40 caracteres que identifica univocamente a este _commit object_
+
+En todo momento, hay un último commit activo, que será el padre del nuevo commit que se haga en el repositorio. El _head_ del commit activo se denomina _HEAD_ (con mayúsculas). Dicho de otro modo, _HEAD_ siempre es la referencia (_head_) del actual commit activo, el último commit que se ha hecho, y que será el padre del nuevo commit que se haga.
+
+### git reset (--soft, --hard, etc)
+
+* [No comprendo la diferencia entre reset soft y reset mixed, alguien me podría explicar la diferencia?](https://platzi.com/discusiones/1170-git-github/321-53433eef-e76d-4620-9bad-103597d1d943/)
+* [The difference between git reset — mixed, — soft and — hard](https://medium.com/@keshshen/the-difference-between-git-reset-mixed-soft-and-hard-299704b12a7a)
+* [What's the difference between git reset --mixed, --soft, and --hard?](https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard)
+* [In plain English, what does “git reset” do?](https://stackoverflow.com/questions/2530060/in-plain-english-what-does-git-reset-do)
