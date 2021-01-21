@@ -10,6 +10,7 @@
 * El artículo [My experience with Vim](https://idyllic.co/blog/vim-and-moi/) tiene una lista de plugins recomendados.
 * [Indenting source code](http://vim.wikia.com/wiki/Indenting_source_code)
 * [Setup Vim, Powerline and iTerm2 on Mac OS X](https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x)
+* [Changing Vim indentation behavior by file type](https://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type)
 
 ### Libros
 

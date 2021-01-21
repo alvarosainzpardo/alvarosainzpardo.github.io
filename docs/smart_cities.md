@@ -37,6 +37,7 @@
 
 ### Sur
 
+* (21/01/21) [En marcha la plataforma de ciudad inteligente del municipio gaditano de Rota](https://www.esmartcity.es/2021/01/21/en-marcha-plataforma-ciudad-inteligente-municipio-gaditano-rota)
 * (12/01/21) [La provincia de Sevilla adquiere fondos Feder para dos nuevas iniciativas inteligentes](https://www.esmartcity.es/2021/01/12/provincia-sevilla-adquiere-fondos-feder-dos-nuevas-iniciativas-inteligentes): La Diputación de Sevilla, a través de su Oficina de Transformación Digital, ha resultado beneficiaria de fondos Feder para llevar a cabo dos proyectos en la línea de Agrupación de la Orden de Incentivos de la Junta de Andalucía para el impulso al desarrollo de ciudades y territorios inteligentes: ‘Sevilla Provincia Inteligente’ y ‘Entorno Virtual Corporativo y Seguridad’.
 * (30/10/20) [Globalvia, Meep y el Ayuntamiento de Sevilla estrenan Meep Sevilla by Globalvia, la primera aplicación de Mobility as a Service (Maas)](https://www.globalvia.com/sala_de_prensa/NoticiaDetalle.aspx?BtnSubMenu=30&id=5304)
     * [Llega una App de movilidad para Sevilla](https://elcorreoweb.es/sevilla/llega-una-app-de-movilidad-para-sevilla-AJ6902525): Una App permitirá planificar desplazamientos en Metro, Tussam o Sevici y efectuar pagos en alquiler de motos
