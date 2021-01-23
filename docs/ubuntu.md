@@ -255,3 +255,19 @@ ATTRS{idVendor}=="1852", ATTRS{idProduct}=="5110", GROUP="mpd"
 
 Reboot your system and PulseAudio will no longer acknowledge that your USB device exists.
 
+---
+
+## Teclado Apple Magic Keyboard
+
+Emparejar el teclado bluetooth. Al finalizar el emparejamiento el teclado se comporta como un numpad, únicamente funcionan las teclas numéricas, el Enter, poco más. Para arreglar ese problema y que el teclado funcione correctamente hay que usar la utilidad `numlockx`:
+
+```bash
+sudo apt update
+sudo apt install numlockx
+numlockx off*Probably it also makes sense to add 'numlock off' as startup command in 'gnome-session-properties'
+```
+
+Más información sobre el tema en:
+
+* [How to pair Apple Magic Keyboard (A1314) on Ubuntu 18.04 and act as Numpad](https://medium.com/macoclock/how-to-pair-apple-magic-keyboard-a1314-on-ubuntu-18-04-and-act-as-numpad-42fe4402454c)
+* [ArchLinux - Apple Keyboard](https://wiki.archlinux.org/index.php/Apple_Keyboard)
