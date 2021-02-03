@@ -11,6 +11,7 @@
 * [Indenting source code](http://vim.wikia.com/wiki/Indenting_source_code)
 * [Setup Vim, Powerline and iTerm2 on Mac OS X](https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x)
 * [Changing Vim indentation behavior by file type](https://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type)
+* [Write Code Faster in Vim](https://jacobcomer.medium.com/write-code-faster-in-vim-c564ff9b9f6c)
 
 ### Libros
 
@@ -548,7 +549,6 @@ No tengo nada claro hacer este mapeo, precisamente porque afecta a todo el siste
 
 El programa para mapear la tecla **Caps Lock** es [Seil](https://pqrs.org/osx/karabiner/seil.html.en). El mismo desarrollador tiene otra utilidad para hacer mapeos más generales de teclado llamada [Karabiner](https://pqrs.org/osx/karabiner/index.html.en).
 
-
 ## Folding
 
 El _folding_ está deshabilitado por defecto en vim. Además, por defecto el _folding_ es manual. Para configurar el folding de forma análoga a otros editores, o sea, folding automático activado y basado en sintaxis y con todos los niveles abiertos al abrir el archivo (sin folding), hay que añadir lo siguiente al archivo `.vimrc`:
@@ -589,3 +589,12 @@ Para descomentar las líneas de código:
 * Teclear <kbd>Ctrl</kbd> + <kbd>v</kbd> para entrar en modo _rectangular visual selection_
 * Seleccionar el rectángulo correspondiente a los caracteres de comentario
 * Sustituirlos por blanco (<kbd>r</kbd> + <kbd>space</kbd>) o eliminarlos (<kbd>x</kbd>)
+
+## Macros
+
+1. Para empezar a grabar la macro, teclear la letra <kbd>q</kbd> seguido de un caracter en minúscula que será el nombre de la macro. Por ejemplo, teclear <kbd>qa</kbd>
+1. Realizar las acciones de edición que se deseen, se puede alternar entre el modo normal, el modo visual y el modo edición las veces que se quiera
+1. Detener la grabación de la macro tecleando <kbd>q</kbd>
+1. Ejecutar la macro tecleando <kbd>@</kbd> seguido del nombre de la macro. Siguiendo con el mismo ejemplo, teclear <kbd>@a</kbd>
+1. Para repetir la ejecución de la macro un número de veces, teclear <kbd>:NN@</kbd> seguido del nombre de la macro. Por ejemplo, para ejecutar la macro anterior 15 veces seguidas, teclear <kbd>:15@a</kbd>
+1. Nota: Si se quiere ejecutar una macro una vez por línea, y se quiere repetir la ejecución de la macro un número de veces, el último comando de edición de la macro tiene que mover la posición del cursor a la línea siguiente
