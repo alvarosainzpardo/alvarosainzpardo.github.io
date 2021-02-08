@@ -10,8 +10,9 @@
 
 ## Tips IEM
 
+* [Azla SednaEarfit Original Series Eartips Review – Take The Plunge, Gangnam Style](https://www.audioreviews.org/azla-sednaearfit-review-jk/): Análisis, sonido incluido, de los AZLA SednaEarfit, con las diferencias entre los Regular/Original y los Light, tanto largos como cortos
 * [The Iconic AZLA SednaEarfit Silicon Tips – Is Their Price Justified?](https://www.audioreviews.org/azla-sednaearfit-value/): artículo donde cuentan el proceso de R&D de los iems, su proceso de fabricación y la justificación de su precio. No valoran el sonido
-* [Tweaking Tips – A Simplified Guide To IEM Silicone Eartips UPDATED 2020-08-21](https://www.audioreviews.org/guide-to-iem-silicone-eartips/)
+* [Tweaking Tips – A Simplified Guide To IEM Silicone Eartips UPDATED 2020-12-31](https://www.audioreviews.org/guide-to-iem-silicone-eartips/)
 
 ---
 
