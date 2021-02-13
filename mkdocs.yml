@@ -21,6 +21,7 @@ nav:
       - Darkvoice 336SE: hifi/darkvoice.md
       - IMR R1 Zenith: hifi/r1-zenith.md
       - IMR R2 Aten: hifi/r2-aten.md
+      - Tidal Albums: hifi/tidal-albums.md
   - Programación:
     - Atom: programming/atom.md
     - Emmet: programming/emmet.md
@@ -33,6 +34,8 @@ nav:
       - RSpec: programming/ruby/rspec.md
     - Vim: programming/vim.md
     - Visual Studio Code: programming/vscode.md
+    - APIs:
+      - Tidal API: programming/api/tidal-api.md
   - Data Science:
     - General: data_science/general.md
     - Cursos: data_science/cursos.md
@@ -46,8 +49,10 @@ nav:
   - Cerraduras: cerraduras.md
   - Detailing: detailing.md
   - Docker: docker.md
+  - General: general.md
   - GeoJSON: geojson.md
   - Homebrew: brew.md
+  - LibreOffice: libreoffice.md
   - Markdown: markdown.md
   - MySQL: mysql.md
   - PuTTY: putty.md
