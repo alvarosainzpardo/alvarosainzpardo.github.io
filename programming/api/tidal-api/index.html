@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Rails - Documentación de Alvaro</title>
+  <title>Tidal API - Documentación de Alvaro</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Rails";
-    var mkdocs_page_input_path = "programming/ruby/rails.md";
+    var mkdocs_page_name = "Tidal API";
+    var mkdocs_page_input_path = "programming/api/tidal-api.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -104,19 +104,13 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../python/">Python</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">Ruby</a>
-    <ul class="current">
-                <li class="toctree-l3"><a class="reference internal" href="../general/">General</a>
+                <li class="toctree-l2"><a class="reference internal" href="#">Ruby</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ruby/general/">General</a>
                 </li>
-                <li class="toctree-l3 current"><a class="reference internal current" href="./">Rails</a>
-    <ul class="current">
-    <li class="toctree-l4"><a class="reference internal" href="#enlaces-tutoriales">Enlaces, tutoriales</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#documentacion-libros">Documentación, libros</a>
-    </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ruby/rails/">Rails</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../rspec/">RSpec</a>
+                <li class="toctree-l3"><a class="reference internal" href="../../ruby/rspec/">RSpec</a>
                 </li>
     </ul>
                 </li>
@@ -124,9 +118,13 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../vscode/">Visual Studio Code</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="#">APIs</a>
-    <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../../api/tidal-api/">Tidal API</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">APIs</a>
+    <ul class="current">
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">Tidal API</a>
+    <ul class="current">
+    <li class="toctree-l4"><a class="reference internal" href="#enlaces-documentacion-etc">Enlaces, documentación, etc.</a>
+    </li>
+    </ul>
                 </li>
     </ul>
                 </li>
@@ -208,7 +206,7 @@
     
       
         
-          <li>Ruby &raquo;</li>
+          <li>APIs &raquo;</li>
         
       
         
@@ -220,7 +218,7 @@
         
       
     
-    <li>Rails</li>
+    <li>Tidal API</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -231,11 +229,35 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="ruby-on-rails">Ruby on Rails</h1>
-<hr />
-<h2 id="enlaces-tutoriales">Enlaces, tutoriales</h2>
-<h2 id="documentacion-libros">Documentación, libros</h2>
-<hr />
+                <h1 id="tidal-api">Tidal API</h1>
+<h2 id="enlaces-documentacion-etc">Enlaces, documentación, etc.</h2>
+<ul>
+<li>tidalapi: Tidal API wrapper en Python<ul>
+<li><a href="https://pypi.org/project/tidalapi/">Pagina del proyecto</a></li>
+<li><a href="https://tidalapi.netlify.app/">tidalapi’s documentation</a></li>
+<li><a href="https://pythonhosted.org/tidalapi/">tidalapi's documentation</a> (pagina alternativa)</li>
+<li><a href="https://pythonhosted.org/tidalapi/">Repositorio GitHub</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/yaronzz/Tidal-Media-Downloader">Tidal-Media-Downloader</a>: is an application that lets you download videos and tracks from Tidal. Python</li>
+<li>JavaScript<ul>
+<li><code>npm search tidal</code></li>
+<li>tidal-api-wrapper<ul>
+<li><a href="https://www.npmjs.com/package/tidal-api-wrapper">tidal-api-wrapper - npm</a></li>
+<li><a href="https://github.com/spencercharest/tidal-api">Repositorio GitHub</a>: This library is no longer maintained. It will remain hosted in read-only mode for forking.</li>
+</ul>
+</li>
+<li><a href="https://github.com/korve/tidal-api">korve / tidal-api</a>: fork de tidal-api-wrapper que parece que sí tiene mantenimiento (4 commits ahead)</li>
+<li><a href="https://github.com/lucaslg26/TidalAPI">lucaslg26 / TidalAPI</a></li>
+</ul>
+</li>
+<li>roon community<ul>
+<li><a href="https://community.roonlabs.com/t/i-cant-login-to-tidal/93383">I can’t login to Tidal</a></li>
+<li><a href="https://community.roonlabs.com/t/roon-tidal-cannot-login/57021">Roon + tidal: cannot login</a></li>
+<li>En esos posts he visto este token: Imi5DLPIAVRmszdL y este otro: wdgaB1CilGA-S_s2 <code>Trace: [tidal/http] POST https://api.tidalhifi.com/v1/login/username?token=Imi5DLPIAVRmszdL =&gt; Success</code> y <code>https://api.tidal.com/v1/login/username?token=wdgaB1CilGA-S_s2</code></li>
+</ul>
+</li>
+</ul>
               
             </div>
           </div>
@@ -243,10 +265,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../rspec/" class="btn btn-neutral float-right" title="RSpec">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../../data_science/general/" class="btn btn-neutral float-right" title="General">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../general/" class="btn btn-neutral" title="General"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../vscode/" class="btn btn-neutral" title="Visual Studio Code"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -272,10 +294,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../general/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../vscode/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../rspec/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../../data_science/general/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
