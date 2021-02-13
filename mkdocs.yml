@@ -12,8 +12,6 @@ nav:
   - Video: video.md
   - Espacios Digitales: espacios_digitales.md
 - Personal:
-  - Música:
-      - Albums Tidal: tidal-albums.md
   - Hi-Fi:
       - General: hifi/general.md
       - Lossless: hifi/lossless.md
@@ -29,7 +27,7 @@ nav:
     - HTML/CSS: programming/html-css.md
     - JavaScript: programming/javascript.md
     - MySQL: programming/mysql.md
-    - PostgreSQL: postgresql.md
+    - PostgreSQL: programming/postgresql.md
     - Python: programming/python.md
     - Ruby:
       - General: programming/ruby/general.md
