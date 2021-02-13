@@ -112,6 +112,14 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#configurar-git-detras-de-un-proxy">Configurar git detrás de un proxy</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#comandos-git">Comandos git</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#git-data-model">git data model</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#git-reset-soft-hard-etc">git reset (--soft, --hard, etc)</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../javascript/">JavaScript</a>
@@ -229,6 +237,8 @@
 <hr />
 <h2 id="enlaces-documentacion">Enlaces, documentación</h2>
 <ul>
+<li><a href="http://onlywei.github.io/explain-git-with-d3/">Visualizing Git Concepts with D3</a></li>
+<li><a href="http://marklodato.github.io/visual-git-guide/index-en.html">A Visual Git Reference</a></li>
 <li><a href="https://increment.com/open-source/more-productive-git/">More productive Git</a></li>
 <li><a href="https://gist.github.com/jaseemabid/1321592">A bunch of awesome git tutorials</a></li>
 <li><a href="http://jonas.nitro.dk/git/quick-reference.html">Git Quick Reference</a></li>
@@ -340,6 +350,35 @@ $ git config --global https.proxy http://ds01170:&lt;passwd&gt;@proxyinternet.te
 $ git config --global --unset https.proxy
 </code></pre>
 <p>Si la conexión a github.com es mediante ssh, cuando se accede detrás de un proxy hay que <a href="http://docs.alvarosainzpardo.com/ssh/#usar-ssh-detras-de-un-proxy">configurar el ssh para que utilice un proxy</a> para las conexiones.</p>
+<h2 id="comandos-git">Comandos git</h2>
+<h3 id="git-data-model">git data model</h3>
+<p>El modelo de datos de git tiene tres elementos:</p>
+<ul>
+<li>Working tree / working directory</li>
+<li>Staging area / index</li>
+<li>Repository (HEAD)</li>
+</ul>
+<p>El <em>working tree</em> el es sistema de archivos del sistema operativo, el directorio local de trabajo.</p>
+<p>La <em>staging area</em>, también llamada <em>index</em>, es el área intermedia a la que se añaden los archivos cuando se ejecuta un <code>git add</code>.</p>
+<p>El repositorio de git contiene el conjunto de <em>commits</em> que se van haciendo. El repositorio de git, más específicamente, contiene:</p>
+<ul>
+<li>Un conjunto de <em>commit objects</em></li>
+<li>Un conjunto de referencias a <em>commit objets</em>, que se llaman <em>heads</em></li>
+</ul>
+<p>Un <em>commit object</em> contiene:</p>
+<ul>
+<li>Un conjunto de archivos</li>
+<li>Referencias a los <em>parent commit objects</em>, los <em>commit objects</em> padres de este <em>commit object</em></li>
+<li>Un hash SHA1, una cadena de 40 caracteres que identifica univocamente a este <em>commit object</em></li>
+</ul>
+<p>En todo momento, hay un último commit activo, que será el padre del nuevo commit que se haga en el repositorio. El <em>head</em> del commit activo se denomina <em>HEAD</em> (con mayúsculas). Dicho de otro modo, <em>HEAD</em> siempre es la referencia (<em>head</em>) del actual commit activo, el último commit que se ha hecho, y que será el padre del nuevo commit que se haga.</p>
+<h3 id="git-reset-soft-hard-etc">git reset (--soft, --hard, etc)</h3>
+<ul>
+<li><a href="https://platzi.com/discusiones/1170-git-github/321-53433eef-e76d-4620-9bad-103597d1d943/">No comprendo la diferencia entre reset soft y reset mixed, alguien me podría explicar la diferencia?</a></li>
+<li><a href="https://medium.com/@keshshen/the-difference-between-git-reset-mixed-soft-and-hard-299704b12a7a">The difference between git reset — mixed, — soft and — hard</a></li>
+<li><a href="https://stackoverflow.com/questions/3528245/whats-the-difference-between-git-reset-mixed-soft-and-hard">What's the difference between git reset --mixed, --soft, and --hard?</a></li>
+<li><a href="https://stackoverflow.com/questions/2530060/in-plain-english-what-does-git-reset-do">In plain English, what does “git reset” do?</a></li>
+</ul>
               
             </div>
           </div>

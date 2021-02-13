@@ -182,6 +182,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#comentar-lineas-de-codigo">Comentar lineas de código</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#macros">Macros</a>
+    </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../vscode/">Visual Studio Code</a>
@@ -289,6 +291,8 @@
 <li>El artículo <a href="https://idyllic.co/blog/vim-and-moi/">My experience with Vim</a> tiene una lista de plugins recomendados.</li>
 <li><a href="http://vim.wikia.com/wiki/Indenting_source_code">Indenting source code</a></li>
 <li><a href="https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x">Setup Vim, Powerline and iTerm2 on Mac OS X</a></li>
+<li><a href="https://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type">Changing Vim indentation behavior by file type</a></li>
+<li><a href="https://jacobcomer.medium.com/write-code-faster-in-vim-c564ff9b9f6c">Write Code Faster in Vim</a></li>
 </ul>
 <h3 id="libros">Libros</h3>
 <p><a href="https://vim.swaroopch.com/">A Byte of Vim</a> es un libro sobre Vim (versión 7). Se puede leer online en la web del libro y también está disponible su descarga gratuita en formato ebook: <a href="https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-vim">pdf</a>, <a href="https://www.gitbook.com/download/epub/book/swaroopch/byte-of-vim">epub</a> y <a href="https://www.gitbook.com/download/mobi/book/swaroopch/byte-of-vim">mobi</a>. El libro en formato <em>raw</em> está disponible en su <a href="https://github.com/swaroopch/byte-of-vim">repositorio github</a>.</p>
@@ -733,6 +737,15 @@ set foldlevel=2
 <li>Seleccionar el rectángulo correspondiente a los caracteres de comentario</li>
 <li>Sustituirlos por blanco (<kbd>r</kbd> + <kbd>space</kbd>) o eliminarlos (<kbd>x</kbd>)</li>
 </ul>
+<h2 id="macros">Macros</h2>
+<ol>
+<li>Para empezar a grabar la macro, teclear la letra <kbd>q</kbd> seguido de un caracter en minúscula que será el nombre de la macro. Por ejemplo, teclear <kbd>qa</kbd></li>
+<li>Realizar las acciones de edición que se deseen, se puede alternar entre el modo normal, el modo visual y el modo edición las veces que se quiera</li>
+<li>Detener la grabación de la macro tecleando <kbd>q</kbd></li>
+<li>Ejecutar la macro tecleando <kbd>@</kbd> seguido del nombre de la macro. Siguiendo con el mismo ejemplo, teclear <kbd>@a</kbd></li>
+<li>Para repetir la ejecución de la macro un número de veces, teclear <kbd>:NN@</kbd> seguido del nombre de la macro. Por ejemplo, para ejecutar la macro anterior 15 veces seguidas, teclear <kbd>:15@a</kbd></li>
+<li>Nota: Si se quiere ejecutar una macro una vez por línea, y se quiere repetir la ejecución de la macro un número de veces, el último comando de edición de la macro tiene que mover la posición del cursor a la línea siguiente</li>
+</ol>
               
             </div>
           </div>

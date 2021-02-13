@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>MySQL - Documentación de Alvaro</title>
+  <title>Static site generators - Documentación de Alvaro</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "MySQL";
-    var mkdocs_page_input_path = "mysql.md";
+    var mkdocs_page_name = "Static site generators";
+    var mkdocs_page_input_path = "static-site-generators.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -67,7 +67,7 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Personal</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="#">Música</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../tidal-albums/">Albums Tidal</a>
@@ -154,17 +154,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../markdown/">Markdown</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">MySQL</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#enlaces-documentacion">Enlaces, documentación</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#comandos">Comandos</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#mysqldump">mysqldump</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../mysql/">MySQL</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../putty/">PuTTY</a>
                     </li>
@@ -199,12 +189,8 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
-        
-          <li>Personal &raquo;</li>
-        
-      
     
-    <li>MySQL</li>
+    <li>Static site generators</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -215,71 +201,45 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mysql">MySQL</h1>
-<hr />
-<h2 id="enlaces-documentacion">Enlaces, documentación</h2>
+                <h1 id="static-site-generators">Static site generators</h1>
+<h2 id="enlaces">Enlaces</h2>
 <ul>
-<li><a href="http://staff.washington.edu/weller/mysql/">MySQL cheat sheet</a></li>
+<li><a href="https://daveceddia.com/start-blog-gatsby-netlify/">Start a Blog in 2019 with Gatsby.js and Netlify</a></li>
+<li><a href="https://www.gatsbyjs.com/docs/tutorial/">Gatsby Tutorial</a></li>
+<li><a href="https://www.netlify.com/blog/2016/03/08/a-step-by-step-guide-nanoc-on-netlify/#main">A Step-by-Step Guide: Nanoc on Netlify</a></li>
+<li><a href="https://nanoc.ws/doc/tutorial/">Nanoc Tutorial</a></li>
+<li><a href="https://nanoc.ws/doc/deploying/">Deploying Nanoc sites</a></li>
+<li><a href="https://docs.github.com/en/github/working-with-github-pages">Working with GitHub Pages</a></li>
 </ul>
-<hr />
-<h2 id="comandos">Comandos</h2>
-<h3 id="mysqldump">mysqldump</h3>
-<p><a href="https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html">mysqldump official documentation (5.7)</a></p>
-<p>Para hacer un dump de una base de datos:</p>
-<pre><code class="language-bash">$ mysqldump -u root -p database &gt; dump.sql
-</code></pre>
-<p>Para restaurar un dump:</p>
-<pre><code class="language-bash">$ mysql -u root -p &lt; dump.sql
-</code></pre>
-<p>Para hacer un dump de varias bases de datos a la vez:</p>
-<pre><code class="language-bash">$ mysqldump -u root -p --databases database1 database2 ... &gt; dump.sql
-</code></pre>
-<p>Para hacer un dump de todas las bases de datos (incluida la base de datos mysql):</p>
-<pre><code class="language-bash">$ mysqldump -u root -p --all-databases --flush-privileges &gt; dump.sql
-</code></pre>
-<p>La opción <code>--flush-privileges</code> es necesaria siempre que se incluya la base de datos <code>mysql</code> en la lista de bases de datos de las que se va a hacer el dump.</p>
-<p>El comando para hacer un dump completo de un servidor mysql:</p>
-<pre><code class="language-bash">$ mysqldump -u root -p --all-databases --flush-privileges --routines &gt; dump.sql
-</code></pre>
-<p>Para hacer un dump de únicamente la estructura de las bases de datos (tablas, etc.) pero sin copiar los datos:</p>
-<pre><code class="language-bash">$ mysqldump -u root -p --no-data ... &gt; dump.sql
-</code></pre>
-<p>Si se quiere añadir al dump una orden <code>DROP DATABASE ...</code> antes de las ordenes <code>CREATE DATABASE</code>:</p>
-<pre><code class="language-bash">$ mysqldump -u root -p --add-drop-database ... &gt; dump.sql
-</code></pre>
-<p>La opción <code>--single-transaction</code> asegura un snapshot consistente entre todas las tablas porque todo el dump se realiza en una única transacción. Esta opción funciona únicamente con el storage engine InnoDB (el habitual). El comando para hacer un dump completo de un servidor asegurando consistencia sería:</p>
-<pre><code class="language-bash">$ mysqldump -u root -p --all-databases --flush-privileges --routines --single-transaction&gt; dump.sql
-</code></pre>
-<p>Todos los comandos mysqldump que redirigen la salida estándar a un archivo podrían tener problemas con los conjuntos de caracteres en algunas bases de datos. Si se produce este problema, sustituir la redirección por la opción <code>-r</code>:</p>
-<pre><code class="language-bash">$ mysqldump -u root -p database -r dump.sql
-</code></pre>
-<p>Para hacer el restore sin ningún problema de conjuntos de caracteres (si es necesario, sustituir 'utf8' por el conjunto de caracteres que corresponda):</p>
-<pre><code class="language-bash">$ mysql -u root -p --default-character-set=utf8
-mysql&gt; set names 'utf8';
-mysql&gt; source backup.sql;
-</code></pre>
-<p>Para comprimir el archivo dump, enviar la salida de mysqldump a un compresor, por ejemplo:</p>
-<pre><code class="language-bash"># Comprimir un dump
-$ mysqldump -u [user] -p[password]--single-transaction --quick --all-databases | gzip &gt; alldb.sql.gz
-# Restaurar un dump comprimido
-$ gunzip &lt; alldb.sql.gz | mysql -u [user] -p[password]
-</code></pre>
-<p>Para restaurar el dump comprimido:</p>
-<pre><code class="language-bash"></code></pre>
-<hr />
+<h2 id="introduccion">Introducción</h2>
+<p>Los generadores de sitios web estáticos (en inglés, <em>static site generators</em>) son una categoría especial de CMS que generan webs totalmente estáticas a partir del contenido almacenado en el repositorio. Al ser contenido totalmente estático, los sitios web pueden desplegarse en cualquier CDN. Normalmente, los propios static site generators tienen un repositorio basado únicamente en archivos. De esta forma, el propio sitio se puede guardar en Github, por ejemplo, y desplegarse en un servicio de alojamiento a partir de ahí.</p>
+<p>Las páginas web se pueden escribir en diferentes lenguajes de marcado, comúnmente se usa Markdown.</p>
+<p>Los static site generatos se usan mucho en portales web modernos, porque son muy rápidos, al ser el contenido totalmente estático.</p>
+<p>El concepto, así como todas las tecnologías de site generators, se explica en la web <a href="https://jamstack.org/">Jamstack</a>. Los principios fundamentales son:</p>
+<ul>
+<li>Desacoplamiento de las capas que componen el site, en particular desacoplamiento total entre el backend y en frontend</li>
+<li>Pre-renderización de todo el frontend, de forma que todo el frontend está compuesto por páginas estáticas</li>
+</ul>
+<p>Plataformas:</p>
+<ul>
+<li><a href="https://ghost.org/">Ghost</a>: es un headless CMS, que es algo distinto a un static site generator, pero que se utiliza también para el concepto Jamstack. Un headless CMS únicamente se ocupa del backend, está desacoplado del frontend, que en el concepto Jamstack se pre-renderiza totalmente en páginas estáticas</li>
+<li><a href="https://jekyllrb.com/">Jekyll</a>: El site generator de Github. Hecho en Ruby.</li>
+<li><a href="https://www.gatsbyjs.com/">Gatsby</a></li>
+<li><a href="https://gohugo.io/">Hugo</a></li>
+<li><a href="https://nanoc.ws/">Nanoc</a>: hecho con Ruby</li>
+<li><a href="https://www.11ty.dev/">Eleventy</a>: es lo que utiliza Jamstack</li>
+<li><a href="https://nextjs.org/">Next.js</a></li>
+<li><a href="https://www.mkdocs.org/">Mkdocs</a></li>
+</ul>
+<p>Alojamiento:</p>
+<ul>
+<li><a href="https://pages.github.com/">Github Pages</a></li>
+<li><a href="https://www.netlify.com/">Netlify</a></li>
+</ul>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../putty/" class="btn btn-neutral float-right" title="PuTTY">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../markdown/" class="btn btn-neutral" title="Markdown"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -303,10 +263,6 @@ $ gunzip &lt; alldb.sql.gz | mysql -u [user] -p[password]
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../markdown/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../putty/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
