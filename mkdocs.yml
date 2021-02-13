@@ -26,16 +26,16 @@ nav:
     - Atom: programming/atom.md
     - Emmet: programming/emmet.md
     - Git: programming/git.md
-    - HTML/CSS: html-css.md
+    - HTML/CSS: programming/html-css.md
     - JavaScript: programming/javascript.md
-    - MySQL: mysql.md
+    - MySQL: programming/mysql.md
     - PostgreSQL: postgresql.md
     - Python: programming/python.md
     - Ruby:
       - General: programming/ruby/general.md
       - Rails: programming/ruby/rails.md
       - RSpec: programming/ruby/rspec.md
-    - Static Site Generators: static-site-generators.md
+    - Static Site Generators: programming/static-site-generators.md
     - Vim: programming/vim.md
     - Visual Studio Code: programming/vscode.md
     - APIs:
