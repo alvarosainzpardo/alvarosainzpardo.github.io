@@ -26,12 +26,16 @@ nav:
     - Atom: programming/atom.md
     - Emmet: programming/emmet.md
     - Git: programming/git.md
+    - HTML/CSS: html-css.md
     - JavaScript: programming/javascript.md
+    - MySQL: mysql.md
+    - PostgreSQL: postgresql.md
     - Python: programming/python.md
     - Ruby:
       - General: programming/ruby/general.md
       - Rails: programming/ruby/rails.md
       - RSpec: programming/ruby/rspec.md
+    - Static Site Generators: static-site-generators.md
     - Vim: programming/vim.md
     - Visual Studio Code: programming/vscode.md
     - APIs:
@@ -54,7 +58,6 @@ nav:
   - Homebrew: brew.md
   - LibreOffice: libreoffice.md
   - Markdown: markdown.md
-  - MySQL: mysql.md
   - PuTTY: putty.md
   - Robocopy: robocopy.md
   - Ssh: ssh.md
