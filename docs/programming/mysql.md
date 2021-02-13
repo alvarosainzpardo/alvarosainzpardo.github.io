@@ -20,48 +20,45 @@ Para hacer un dump de una base de datos:
 $ mysqldump -u root -p database > dump.sql
 ```
 
+Para hacer un dump de varias tablas una base de datos:
+
+```bash
+$ mysqldump -u root -p database table1 table2 ... > dump.sql
+```
+
 Para restaurar un dump:
 
 ```bash
 $ mysql -u root -p < dump.sql
 ```
 
-Para hacer un dump de varias bases de datos a la vez:
+Opciones del comando `mysqldump`:
 
 ```bash
+# Para hacer un dump de varias bases de datos a la vez:
 $ mysqldump -u root -p --databases database1 database2 ... > dump.sql
-```
-
-Para hacer un dump de todas las bases de datos (incluida la base de datos mysql):
-
-```bash
+# Para hacer un dump de todas las bases de datos (incluida la base de datos mysql):
 $ mysqldump -u root -p --all-databases --flush-privileges > dump.sql
+# Comando para hacer un dump completo de un servidor mysql
+$ mysqldump -u root -p --all-databases --flush-privileges --routines > dump.sql
+# Para volcar la estructura de las bases de datos pero sin copiar los datos se usa --no-data, -d
+$ mysqldump -u root -p --no-data ... > dump.sql
+# Si se quiere añadir al dump una orden `DROP DATABASE ...` antes de las ordenes `CREATE DATABASE`:
+$ mysqldump -u root -p --add-drop-database ... > dump.sql
+# Para volcar únicamente los datos se usa --no-create-info, -t
+$ mysqldump -u root -p --no-create-info --skip-triggers --compact ... > mydb_data.sql
 ```
 
 La opción `--flush-privileges` es necesaria siempre que se incluya la base de datos `mysql` en la lista de bases de datos de las que se va a hacer el dump.
 
-El comando para hacer un dump completo de un servidor mysql:
+Cuando se quieren volcar únicamente los datos (generar únicamente INSERTS) es necesario añadir también la opción `--skip-triggers` para que no se incluyan en el volcado órdenes de creación de triggers, si los hubiese en la base de datos.
 
-```bash
-$ mysqldump -u root -p --all-databases --flush-privileges --routines > dump.sql
-```
-
-Para hacer un dump de únicamente la estructura de las bases de datos (tablas, etc.) pero sin copiar los datos:
-
-```bash
-$ mysqldump -u root -p --no-data ... > dump.sql
-```
-
-Si se quiere añadir al dump una orden `DROP DATABASE ...` antes de las ordenes `CREATE DATABASE`:
-
-```bash
-$ mysqldump -u root -p --add-drop-database ... > dump.sql
-```
+La opción `--compact` no genera comentarios en el archivo dump, generando un dump de menor tamaño, útil cuando se están volcando únicamente los datos.
 
 La opción `--single-transaction` asegura un snapshot consistente entre todas las tablas porque todo el dump se realiza en una única transacción. Esta opción funciona únicamente con el storage engine InnoDB (el habitual). El comando para hacer un dump completo de un servidor asegurando consistencia sería:
 
 ```bash
-$ mysqldump -u root -p --all-databases --flush-privileges --routines --single-transaction> dump.sql
+$ mysqldump -u root -p --all-databases --flush-privileges --routines --single-transaction > dump.sql
 ```
 
 Todos los comandos mysqldump que redirigen la salida estándar a un archivo podrían tener problemas con los conjuntos de caracteres en algunas bases de datos. Si se produce este problema, sustituir la redirección por la opción `-r`:
@@ -85,11 +82,6 @@ Para comprimir el archivo dump, enviar la salida de mysqldump a un compresor, po
 $ mysqldump -u [user] -p[password]--single-transaction --quick --all-databases | gzip > alldb.sql.gz
 # Restaurar un dump comprimido
 $ gunzip < alldb.sql.gz | mysql -u [user] -p[password]
-```
-
-Para restaurar el dump comprimido:
-
-```bash
 ```
 
 ---
