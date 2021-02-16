@@ -27,6 +27,7 @@ nav:
     - Git: programming/git.md
     - HTML/CSS: programming/html-css.md
     - JavaScript: programming/javascript.md
+    - MongoDB: programming/mongodb.md
     - MySQL: programming/mysql.md
     - PostgreSQL: programming/postgresql.md
     - Python: programming/python.md
