@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Atom - Documentación de Alvaro</title>
+  <title>MongoDB - Documentación de Alvaro</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Atom";
-    var mkdocs_page_input_path = "programming/atom.md";
+    var mkdocs_page_name = "MongoDB";
+    var mkdocs_page_input_path = "programming/mongodb.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -90,19 +90,7 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="#">Programación</a>
     <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Atom</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#enlaces-documentacion">Enlaces, documentación</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#remote-atom">Remote Atom</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#utilidad-rmate">Utilidad rmate</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#paquete-remote-atom">Paquete Remote Atom</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../atom/">Atom</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../emmet/">Emmet</a>
                 </li>
@@ -112,7 +100,19 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../javascript/">JavaScript</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../mongodb/">MongoDB</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">MongoDB</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#enlaces-documentacion">Enlaces, documentación</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cheat-sheet">Cheat Sheet</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#comandos">Comandos</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#mongodump-y-mongorestore">mongodump y mongorestore</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../mysql/">MySQL</a>
                 </li>
@@ -226,7 +226,7 @@
         
       
     
-    <li>Atom</li>
+    <li>MongoDB</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -237,30 +237,48 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="atom">Atom</h1>
+                <h1 id="mongodb">MongoDB</h1>
 <hr />
 <h2 id="enlaces-documentacion">Enlaces, documentación</h2>
+<p>*</p>
 <hr />
-<h2 id="remote-atom">Remote Atom</h2>
-<p>El editor TextMate tiene una funcionalidad de edición remota de ficheros a través de una sesión ssh. Esta funcionalidad ha sido copiada posteriormente por otros editores, como Visual Studio Code o Atom.</p>
-<p>Para utilizar esta funcionalidad:</p>
-<ul>
-<li>Se tiene que ejecutar una sesión ssh haciendo <em>remote port forwarding</em> del puerto 52698:</li>
-</ul>
-<pre><code class="language-bash">$ ssh -R 52698:localhost:52698 &lt;user@host&gt;
+<h2 id="cheat-sheet">Cheat Sheet</h2>
+<pre><code class="language-js">// Mostrar bases de datos
+&gt; show dbs
+// Usar/crear una base de datos
+&gt; use mydatabase
+// Mostrar la base de datos activa
+&gt; db
+// Eliminar (drop) base de datos
+&gt; use mydatabase
+&gt; db.dropDatabase()
+// Mostrar colecciones
+&gt; show collections
+&gt; db.getCollectionNames()
+[&quot;mycollection&quot;, &quot;system.indexes&quot;]
+// Crear collection &quot;mycollection&quot;
+&gt; db.createCollection(&quot;mycollection&quot;)
+// Una collection se crea al guardar el primer documento
+&gt; db.mycollection.insert({&quot;name&quot;: &quot;Alvaro&quot;})
+&gt; db.mycollection.save({&quot;name&quot;: &quot;Alvaro&quot;})
+// select count(*) from ...
+&gt; db.mycollection.count()
+// select * from ...
+&gt; db.mycollection.find({})
+// delete from ...
+&gt; db.mycollection.remove({})
+&gt; db.mycollection.deleteMany({})
+// drop table ...
+&gt; db.mycollection.drop()
+// Recorrer el resultado de una consulta (el resultado de la consulta es una lista)
+&gt; db.mycollection.find().forEach(function(mydocument) {...})
+&gt; db.getCollectionNames().forEach(function(collectionname) {...})
 </code></pre>
-<ul>
-<li>En la máquina remota, se tiene que editar el archivo ejecutando <code>rmate &lt;nombre de archivo&gt;</code></li>
-<li>En la máquina local, el editor Atom tiene que tener instalado el paquete <code>Remote Atom</code> con el servidor arrancado</li>
-</ul>
-<h3 id="utilidad-rmate">Utilidad rmate</h3>
-<p>Existen dos versiones de este programa: la origina desarrollada por TextMate, que está implementada en Ruby, y un portado usando shell script, que es más fácil de instalar porque no tiene la dependencia de Ruby.</p>
-<ul>
-<li><a href="https://github.com/aurora/rmate">aurora/rmate</a>: <code>rmate</code> implementado en shell script. Esta es la versión que yo utilizo</li>
-<li><a href="https://github.com/textmate/rmate">textmate/rmate</a>: la versión original de TextMate, implementada en Ruby</li>
-</ul>
-<h3 id="paquete-remote-atom">Paquete Remote Atom</h3>
-<p>Para instalar el paquete Remote Atom, seleccionas "Preferences...", después "+ seleccionas Install" y en la ventana de instalar paquetes buscas el paquete <code>remote-atom</code>. Hay que instalar la versión del usuario <em>randy3k</em>.</p>
+<hr />
+<h2 id="comandos">Comandos</h2>
+<h3 id="mongodump-y-mongorestore">mongodump y mongorestore</h3>
+<pre><code class="language-bash"># 
+</code></pre>
               
             </div>
           </div>
@@ -268,10 +286,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../emmet/" class="btn btn-neutral float-right" title="Emmet">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../mysql/" class="btn btn-neutral float-right" title="MySQL">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../hifi/tidal-albums/" class="btn btn-neutral" title="Tidal Albums"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../javascript/" class="btn btn-neutral" title="JavaScript"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -297,10 +315,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../hifi/tidal-albums/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../javascript/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../emmet/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../mysql/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
