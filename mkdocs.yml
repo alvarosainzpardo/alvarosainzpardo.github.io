@@ -47,6 +47,7 @@ nav:
     - Forecasting: data_science/forecasting.md
     - Natural Language Proccessing: data_science/nlp.md
     - R: data_science/R.md
+    - Web Scraping: data_science/web_scraping.md
   - AgileVentures:
     - Charity Commission API: agileventures/charity_commission_api.md
   - Backgammon: backgammon.md
@@ -55,6 +56,7 @@ nav:
   - Docker: docker.md
   - General: general.md
   - GeoJSON: geojson.md
+  - Gimp: gimp.md
   - Homebrew: brew.md
   - LibreOffice: libreoffice.md
   - Markdown: markdown.md
