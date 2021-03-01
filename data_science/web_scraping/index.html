@@ -120,6 +120,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../programming/static-site-generators/">Static Site Generators</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../programming/sqlite/">SQLite</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../programming/vim/">Vim</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../programming/vscode/">Visual Studio Code</a>
@@ -148,6 +150,14 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Web Scraping</a>
     <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#enlaces-documentacion-tutoriales-etc">Enlaces, documentación, tutoriales, etc.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ejemplos-recetas">Ejemplos, recetas</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#jq">jq</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#simplejson">simplejson</a>
+    </li>
     </ul>
                 </li>
     </ul>
@@ -232,7 +242,7 @@
             <div class="section">
               
                 <h1 id="web-scraping">Web Scraping</h1>
-<h1 id="enlaces-documentacion-tutoriales-etc">Enlaces, documentación, tutoriales, etc.</h1>
+<h2 id="enlaces-documentacion-tutoriales-etc">Enlaces, documentación, tutoriales, etc.</h2>
 <ul>
 <li><a href="https://github.com/ericchiang/pup">pup</a></li>
 <li><a href="https://stedolan.github.io/jq/">jq</a><ul>
@@ -269,13 +279,8 @@
 <li><a href="https://simplejson.readthedocs.io/">simplejson - Readthedocs page</a></li>
 </ul>
 </li>
-<li><a href="https://e.printstacktrace.blog/how-to-convert-json-to-csv-from-the-command-line/">How to convert JSON to CSV from the command-line?</a><ul>
-<li><a href="https://e.printstacktrace.blog/jq-cookbook/">jq cookbook</a></li>
-<li><a href="https://www.youtube.com/c/eprintstacktrace/search?query=jq">jq YouTube videos</a></li>
 </ul>
-</li>
-<li><a href="https://www.freecodecamp.org/news/how-to-transform-json-to-csv-using-jq-in-the-command-line-4fa7939558bf/">How to transform JSON to CSV using jq in the command line</a></li>
-</ul>
+<hr />
 <h2 id="ejemplos-recetas">Ejemplos, recetas</h2>
 <pre><code class="language-bash"># Usa scrape, xml2json y jq
 curl &quot;http://clojurescript.net/&quot; | scrape -be '//body/script' | xml2json | jq '.html.body.script[].src
@@ -287,12 +292,33 @@ curl &quot;http://clojurescript.net/&quot; | scrape -be '//body/script' | xml2js
    hxselect -i &quot;div.most_popular_content&quot; |  
    lynx -stdin -dump &gt; theMostPoupularInNews
 </code></pre>
-<p>Then, do something like this:</p>
+<pre><code class="language-bash">
+</code></pre>
+<hr />
+<h2 id="jq">jq</h2>
+<ul>
+<li><a href="https://e.printstacktrace.blog/how-to-convert-json-to-csv-from-the-command-line/">How to convert JSON to CSV from the command-line?</a><ul>
+<li><a href="https://e.printstacktrace.blog/jq-cookbook/">jq cookbook</a></li>
+<li><a href="https://www.youtube.com/c/eprintstacktrace/search?query=jq">jq YouTube videos</a></li>
+</ul>
+</li>
+<li><a href="https://www.freecodecamp.org/news/how-to-transform-json-to-csv-using-jq-in-the-command-line-4fa7939558bf/">How to transform JSON to CSV using jq in the command line</a></li>
+<li><a href="https://remysharp.com/drafts/jq-recipes">jq recipes</a></li>
+<li><a href="https://jqterm.com/">jqTerm</a></li>
+</ul>
+<p>Do something like this:</p>
 <pre><code class="language-bash">cat file.json | jq -c '.[] | {&quot;index&quot;: {&quot;_index&quot;: &quot;bookmarks&quot;, &quot;_type&quot;: &quot;bookmark&quot;, &quot;_id&quot;: .id}}, .' | curl -XPOST localhost:9200/_bulk --data-binary @-
 </code></pre>
 <p>We’re taking the file file.json and piping its contents to jq first with the -c flag to construct compact output. Here’s the nugget: We’re taking advantage of the fact that jq can construct not only one but multiple objects per line of input. For each line, we’re creating the control JSON Elasticsearch needs (with the ID from our original object) and creating a second line that is just our original JSON object (.).</p>
-<pre><code class="language-bash">
+<p>Para transformar un json en csv usando jq hay que usar la orden <code>@csv</code> al final del pipeline. Hay que generar la primera fila con los nombres de las columnas y las filas siguientes, únicamente con los valores. La orden <code>@csv</code> procesa elementos individuales, no un array de elementos. Cada elemento tiene que ser un array de valores. Hay que generar, por tanto, un primer array con los nombres de las columnas y después, un array de valores por cada elemento (por cada linea del csv). Para generar el array con los nombres de las columnas hay que usar <code>(first | keys_unsorted)</code>. La orden <code>first</code> se queda con el primer elemento. La orden <code>keys_unsorted</code> se queda únicamente con las claves, sin ordenar alfabéticamente (en el mismo orden que aparecen en el objeto json). Para generar la secuencia de arrays de valores, un array por cada objeto json, hay que usar <code>map([to_entries[] | .value]) | .[]</code>. La función <code>map</code> espera un array de objetos y aplica el filtro pasado como parámetro a cada uno de los objetos del array, generando un array resultado. La orden <code>to_entries[]</code> transforma cada clave en un objeto {key: clave, value: valor}, eso se pasa a <code>.value</code> para quedarse con el valor y se empaqueta todo en un array con <code>[]</code>. Se genera, por tanto, un array de arrays que desempaqueta después con <code>.[]</code>. Juntandolo todo, sería:</p>
+<pre><code>jq -r '(first | keys_unsorted) as $keys | map([to_entries[] | .value]) as $rows | $keys, $rows[] | @csv'
 </code></pre>
+<p>Una versión más compacta de lo anterior sería:</p>
+<pre><code>jq -r '(first | keys_unsorted), (map([.[]]) | .[]) | @csv' archivo.json &gt; archivo.csv
+</code></pre>
+<p>Para que la orden anterior funcione, el archivo json tiene que ser un array de objetos json.</p>
+<p>El filtro <code>to_entries[] | .value</code> es equivalente a <code>.[]</code>. Cuando se aplica a un objeto, el filtro <code>.[]</code> devuelve los valores del objeto separados por comas. El filtro <code>[.[]]</code> genera un array con los valores del objeto</p>
+<hr />
 <h2 id="simplejson">simplejson</h2>
 <p>What’s wrong with the native json module in Python? Nothing! In fact, Python'sjson is simplejson. Meaning, Python takes a version of simplejson and incorporates it into each release. But usingsimplejson has some advantages:</p>
 <ul>
