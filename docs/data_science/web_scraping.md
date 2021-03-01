@@ -1,6 +1,6 @@
 # Web Scraping
 
-# Enlaces, documentación, tutoriales, etc.
+## Enlaces, documentación, tutoriales, etc.
 
 * [pup](https://github.com/ericchiang/pup)
 * [jq](https://stedolan.github.io/jq/)
@@ -25,10 +25,8 @@
 * [JSON Queries? Empower your users with JMESPath!](https://levelup.gitconnected.com/json-queries-give-your-users-jmespath-power-ef8ab0d38553)
 * [simplejson](https://github.com/simplejson/simplejson)
     * [simplejson - Readthedocs page](https://simplejson.readthedocs.io/)
-* [How to convert JSON to CSV from the command-line?](https://e.printstacktrace.blog/how-to-convert-json-to-csv-from-the-command-line/)
-    * [jq cookbook](https://e.printstacktrace.blog/jq-cookbook/)
-    * [jq YouTube videos](https://www.youtube.com/c/eprintstacktrace/search?query=jq)
-* [How to transform JSON to CSV using jq in the command line](https://www.freecodecamp.org/news/how-to-transform-json-to-csv-using-jq-in-the-command-line-4fa7939558bf/)
+
+---
 
 ## Ejemplos, recetas
 
@@ -46,7 +44,22 @@ wget fetches the HTML code from BBC, which is then normalized by hxnormalize to 
    lynx -stdin -dump > theMostPoupularInNews
 ```
 
-Then, do something like this:
+```bash
+
+```
+
+---
+
+## jq
+
+* [How to convert JSON to CSV from the command-line?](https://e.printstacktrace.blog/how-to-convert-json-to-csv-from-the-command-line/)
+    * [jq cookbook](https://e.printstacktrace.blog/jq-cookbook/)
+    * [jq YouTube videos](https://www.youtube.com/c/eprintstacktrace/search?query=jq)
+* [How to transform JSON to CSV using jq in the command line](https://www.freecodecamp.org/news/how-to-transform-json-to-csv-using-jq-in-the-command-line-4fa7939558bf/)
+* [jq recipes](https://remysharp.com/drafts/jq-recipes)
+* [jqTerm](https://jqterm.com/)
+
+Do something like this:
 
 ```bash
 cat file.json | jq -c '.[] | {"index": {"_index": "bookmarks", "_type": "bookmark", "_id": .id}}, .' | curl -XPOST localhost:9200/_bulk --data-binary @-
@@ -54,9 +67,23 @@ cat file.json | jq -c '.[] | {"index": {"_index": "bookmarks", "_type": "bookmar
 
 We’re taking the file file.json and piping its contents to jq first with the -c flag to construct compact output. Here’s the nugget: We’re taking advantage of the fact that jq can construct not only one but multiple objects per line of input. For each line, we’re creating the control JSON Elasticsearch needs (with the ID from our original object) and creating a second line that is just our original JSON object (.).
 
-```bash
+Para transformar un json en csv usando jq hay que usar la orden `@csv` al final del pipeline. Hay que generar la primera fila con los nombres de las columnas y las filas siguientes, únicamente con los valores. La orden `@csv` procesa elementos individuales, no un array de elementos. Cada elemento tiene que ser un array de valores. Hay que generar, por tanto, un primer array con los nombres de las columnas y después, un array de valores por cada elemento (por cada linea del csv). Para generar el array con los nombres de las columnas hay que usar `(first | keys_unsorted)`. La orden `first` se queda con el primer elemento. La orden `keys_unsorted` se queda únicamente con las claves, sin ordenar alfabéticamente (en el mismo orden que aparecen en el objeto json). Para generar la secuencia de arrays de valores, un array por cada objeto json, hay que usar `map([to_entries[] | .value]) | .[]`. La función `map` espera un array de objetos y aplica el filtro pasado como parámetro a cada uno de los objetos del array, generando un array resultado. La orden `to_entries[]` transforma cada clave en un objeto {key: clave, value: valor}, eso se pasa a `.value` para quedarse con el valor y se empaqueta todo en un array con `[]`. Se genera, por tanto, un array de arrays que desempaqueta después con `.[]`. Juntandolo todo, sería:
 
 ```
+jq -r '(first | keys_unsorted) as $keys | map([to_entries[] | .value]) as $rows | $keys, $rows[] | @csv'
+```
+
+Una versión más compacta de lo anterior sería:
+
+```
+jq -r '(first | keys_unsorted), (map([.[]]) | .[]) | @csv' archivo.json > archivo.csv
+```
+
+Para que la orden anterior funcione, el archivo json tiene que ser un array de objetos json.
+
+El filtro `to_entries[] | .value` es equivalente a `.[]`. Cuando se aplica a un objeto, el filtro `.[]` devuelve los valores del objeto separados por comas. El filtro `[.[]]` genera un array con los valores del objeto
+
+---
 
 ## simplejson
 

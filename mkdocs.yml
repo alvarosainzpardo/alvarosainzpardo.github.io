@@ -36,6 +36,7 @@ nav:
       - Rails: programming/ruby/rails.md
       - RSpec: programming/ruby/rspec.md
     - Static Site Generators: programming/static-site-generators.md
+    - SQLite: programming/sqlite.md
     - Vim: programming/vim.md
     - Visual Studio Code: programming/vscode.md
     - APIs:
