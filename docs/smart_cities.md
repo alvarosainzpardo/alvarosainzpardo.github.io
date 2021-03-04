@@ -10,6 +10,7 @@
 
 ### Centro
 
+* (03/03/21) [El nuevo visor urbanístico de Madrid ofrece información unificada de los suelos de actividad económica](https://www.esmartcity.es/2021/03/03/nuevo-visor-urbanistico-madrid-ofrece-informacion-unificada-suelos-actividad-economica): A partir de ahora, todas las parcelas de actividad económica en la ciudad de Madrid se encuentran a disposición de la ciudadanía en un único mapa que se irá actualizando con los cambios que experimenten y los planeamientos que se vayan aprobando. Este visor urbanístico está disponible en el apartado de Urbanismo de la página web municipal y [en este enlace](https://madrid.maps.arcgis.com/apps/webappviewer/index.html?id=6f4533df3a9c409ea51198f46038f17d&extent=-424842.4715%2C4916890.8487%2C-390827.9939%2C4936535.165%2C102100).
 * (28/07/20) [Madrid comienza el despliegue de 1.300 papeleras inteligentes por toda la ciudad](https://www.esmartcity.es/2020/07/28/madrid-comienza-despliegue-1300-papeleras-inteligentes-toda-ciudad): El Ayuntamiento de Madrid ha comenzado a desplegar 1.300 papeleras inteligentes que se distribuirán por los 21 distritos de la ciudad hasta el mes de octubre, cuando quedarán totalmente implantadas. Estos dispositivos compactadores funcionan con energía solar y están equipados con sensores para monitorizar los niveles de llenado y la actividad de recogida.
     * [Llegan a Madrid las papeleras inteligentes](https://elpais.com/espana/madrid/2020-07-23/llegan-a-madrid-las-papeleras-inteligentes.html)
     * [Cibeles](http://www.sulo.es/es/productos/papeleras-urbanas/cibeles.html)
