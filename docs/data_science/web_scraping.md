@@ -108,3 +108,20 @@ I would just use the defaultjson, unless you specifically need:
 * something that is not in the standard library
 
 Simplejson can be a lot faster than json, because it has some critical parts implemented in C. This speed will not be of interest to you, unless you are working with millions of JSON files. In that case, also check out UltraJSON, which is supposed to be even faster because almost all of it is written in C. 
+
+---
+
+## Datasets
+
+### COVID-19
+
+* [The COVID Tracking Project](https://covidtracking.com/): The COVID Tracking Project will stop collecting data on March 7, 2021
+    * [The COVID Tracking Project - GitHub Page](https://github.com/COVID19Tracking)
+* [Datadista - datasets/COVID-19](https://github.com/datadista/datasets/tree/master/COVID%2019)
+* [Datos oficiales de COVID-19 en España](https://github.com/rubenfcasal/COVID-19)
+* [Escovid19data: Capturando colaborativamente datos de COVID-19 por provincias en España](https://lab.montera34.com/covid19/)
+    * [Escovid19data - GitHub Page](https://github.com/montera34/escovid19data)
+    * [Scripts para generar los datos de COVID-19 por provincias en España del proyecto Escovid19data](https://code.montera34.com:4443/numeroteca/covid19)
+* [Instituto de Salud Carlos III - COVID-19 en España](https://cnecovid.isciii.es/)
+    * [Situación y evolución de la pandemia de COVID-19 en España](https://cnecovid.isciii.es/covid19/)
+    * [Documentación y datos](https://cnecovid.isciii.es/covid19/#documentaci%C3%B3n-y-datos)
