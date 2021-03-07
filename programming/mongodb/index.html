@@ -246,9 +246,22 @@
                 <h1 id="mongodb">MongoDB</h1>
 <hr />
 <h2 id="enlaces-documentacion">Enlaces, documentación</h2>
-<p>*</p>
+<ul>
+<li><a href="https://docs.mongodb.com/v3.6/">The MongoDB 3.6 Manual</a></li>
+<li><a href="https://docs.mongodb.com/manual/">The MongoDB 4.4 Manual</a></li>
+<li><a href="https://pymongo.readthedocs.io/">PyMongo Documentation</a></li>
+<li><a href="https://docs.mongodb.com/database-tools/">The MongoDB Database Tools Documentation</a>: mongodump, mongorestore, mongoexport, mongoimport</li>
+<li><a href="https://docs.mongodb.com/manual/tutorial/backup-and-restore-tools/">Back Up and Restore with MongoDB Tools</a></li>
+</ul>
 <hr />
 <h2 id="cheat-sheet">Cheat Sheet</h2>
+<pre><code class="language-bash"># Conectarse a un servidor local (puerto 27017)
+$ mongo
+# Conectarse a un servidor remoto
+$ mongo &quot;mongodb://myhost:port/&quot;
+# Conectarse a un servidor remoto especificando base de datos
+$ mongo &quot;mongodb://myhost:port/mydatabase&quot;
+</code></pre>
 <pre><code class="language-js">// Mostrar bases de datos
 &gt; show dbs
 // Usar/crear una base de datos
@@ -283,7 +296,10 @@
 <hr />
 <h2 id="comandos">Comandos</h2>
 <h3 id="mongodump-y-mongorestore">mongodump y mongorestore</h3>
-<pre><code class="language-bash"># 
+<pre><code class="language-bash"># Dump de una base de datos, comprimido, especificando el archivo de salida
+$ mongodump --db=mydatabase --gzip --archive=myfile.dump.gz
+# Restore de un archivo comprimido
+$ mongorestore --gzip --archive=myfile.dump.gz 
 </code></pre>
               
             </div>
