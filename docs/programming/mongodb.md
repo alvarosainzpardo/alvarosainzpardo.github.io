@@ -4,11 +4,24 @@
 
 ## Enlaces, documentación
 
-*
+* [The MongoDB 3.6 Manual](https://docs.mongodb.com/v3.6/)
+* [The MongoDB 4.4 Manual](https://docs.mongodb.com/manual/)
+* [PyMongo Documentation](https://pymongo.readthedocs.io/)
+* [The MongoDB Database Tools Documentation](https://docs.mongodb.com/database-tools/): mongodump, mongorestore, mongoexport, mongoimport
+* [Back Up and Restore with MongoDB Tools](https://docs.mongodb.com/manual/tutorial/backup-and-restore-tools/)
 
 ---
 
 ## Cheat Sheet
+
+```bash
+# Conectarse a un servidor local (puerto 27017)
+$ mongo
+# Conectarse a un servidor remoto
+$ mongo "mongodb://myhost:port/"
+# Conectarse a un servidor remoto especificando base de datos
+$ mongo "mongodb://myhost:port/mydatabase"
+```
 
 ```js
 // Mostrar bases de datos
@@ -50,5 +63,8 @@
 ### mongodump y mongorestore
 
 ```bash
-# 
+# Dump de una base de datos, comprimido, especificando el archivo de salida
+$ mongodump --db=mydatabase --gzip --archive=myfile.dump.gz
+# Restore de un archivo comprimido
+$ mongorestore --gzip --archive=myfile.dump.gz 
 ```
