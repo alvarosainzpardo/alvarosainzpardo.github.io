@@ -194,6 +194,7 @@ Para hacer de este barrio emblemático un lugar para todas las personas y un des
 
 ### Otros
 
+* (17/03/21) [La Supermanzana de Barcelona, un nuevo modelo urbano sostenible para avanzar hacia una ciudad más saludable, próxima y humana](https://www.esmartcity.es/2021/03/17/supermanzana-barcelona-nuevo-modelo-urbano-sostenible-avanzar-hacia-ciudad-mas-saludable-proxima-humana): Los [concursos de ideas lanzados por el Ayuntamiento de Barcelona](https://ajuntament.barcelona.cat/superilles/es/content/resolucion-de-los-concursos-de-ideas-de-superilla-barcelona) ya han seleccionado las 8 propuestas ganadoras entre un total de 86 que se presentaron para crear la Supermanzana de Barcelona.
 * (16/03/21) [Las soluciones de Kunak permiten monitorizar la calidad del aire y la alerta temprana de incendios](https://www.esmartcity.es/2021/03/16/soluciones-kunak-permiten-monitorizar-calidad-aire-alerta-temprana-incendios)
 * (05/03/21) [Tecnología de vídeo e IA en el área de ‘Smart City’: Evaluación crítica y posibles aplicaciones](https://www.esmartcity.es/comunicaciones/comunicacion-tecnologia-video-ia-area-smart-city-evaluacion-critica-posibles-aplicaciones): Miguel Ballabriga, Sales Manager, [Dallmeier](https://www.dallmeier.com/en)
 * (02/02/21) [Plataforma electrónica para la optimización de permisos de ocupaciones temporales del dominio público](https://www.esmartcity.es/comunicaciones/comunicacion-plataforma-electronica-optimizacion-permisos-ocupaciones-temporales-dominio-publico)

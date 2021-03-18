@@ -2,17 +2,26 @@
 
 ---
 
-## Enlaces
-
-Hay buenos tutoriales de Markdown en:
+## Enlaces, Tutoriales, Recursos, etc.
 
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
 
 Editores online de Markdown, con capacidad de gestionat y publicar sitios web completos en Github Pages:
+
 * [Prose](https://github.com/prose/prose)
 * [StackEdit](https://stackedit.io/)
+
+---
+
+## Editores WYSIWYG de Markdown
+
+* [Typora](https://typora.io/)
+  
+  * [Themes](https://theme.typora.io/)
+
+* [MarkText](https://github.com/marktext/marktext)
 
 ---
 
@@ -28,10 +37,15 @@ Editores online de Markdown, con capacidad de gestionat y publicar sitios web co
 ```
 
 # H1
+
 ## H2
+
 ### H3
+
 #### H4
+
 ##### H5
+
 ###### H6
 
 ---
@@ -39,7 +53,6 @@ Editores online de Markdown, con capacidad de gestionat y publicar sitios web co
 ## Párrafos
 
 ```
-
 Para empezar un párrafo nuevo, se deja arriba una línea en blanco. En otros elementos de Markdown (listas, líneas de separación) también hay que poner una línea en blanco encima.
 
 Este es otro párrafo.
