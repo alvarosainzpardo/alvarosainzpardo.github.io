@@ -46,6 +46,15 @@ $ mongo "mongodb://myhost:port/mydatabase"
 > db.mycollection.count()
 // select * from ...
 > db.mycollection.find({})
+// select field1, field2, ..., fieldN from ... (with _id)
+> db.mycollection.find({field1: true, field2: true, ..., fieldN: true})
+> db.mycollection.find({field1: 1, field2: 1, ..., fieldN: 1})
+// select field1, field2, ..., fieldN from ... (without _id)
+> db.mycollection.find({_id: false, field1: true, field2: true, ..., fieldN: true})
+> db.mycollection.find({_id: 0, field1: 1, field2: 1, ..., fieldN: 1})
+// select * except field1, field2, ... fieldN from ...
+> db.mycollection.find({field1: false, field2: false, ..., fieldN: false})
+> db.mycollection.find({field1: 0, field2: 0, ..., fieldN: 0})
 // delete from ...
 > db.mycollection.remove({})
 > db.mycollection.deleteMany({})
@@ -54,6 +63,41 @@ $ mongo "mongodb://myhost:port/mydatabase"
 // Recorrer el resultado de una consulta (el resultado de la consulta es una lista)
 > db.mycollection.find().forEach(function(mydocument) {...})
 > db.getCollectionNames().forEach(function(collectionname) {...})
+```
+
+### Operadores de comparación
+
+```js
+// select * where field = val
+> db.mycollection.find({field: val})
+// select * where field <> val
+> db.mycollection.find({field: {$ne: val}})
+// select * where field > val
+> db.mycollection.find({field: {$gt: val}})
+// select * where field >= val
+> db.mycollection.find({field: {$gte: val}})
+// select * where field < val
+> db.mycollection.find({field: {$lt: val}})
+// select * where field <= val
+> db.mycollection.find({field: {$lte: val}})
+// select * where field in (val, ...)
+> db.mycollection.find({field: {$in: [val, ...]})
+// select * where field not in (val, ...)
+> db.mycollection.find({field: {$nin: [val, ...]}})
+```
+
+### Operadores lógicos
+
+```js
+// select * where cond1 and cond2 and ... condN
+> db.mycollection.find({cond1}, {cond2}, ..., {condN})
+> db.mycollection.find({$and: [{cond1}, {cond2}, ..., {condN}]})
+// select * where cond1 or cond2 or ... condN
+> db.mycollection.find({$or: [{cond1}, {cond2}, ..., {condN}]})
+// select * where not cond
+>> db.mycollection.find({$not: {cond}})
+// select * where cond1 nor cond2 ... nor condN
+> db.mycollection.find({$nor: [{cond1}, {cond2}, ..., {condN}]})
 ```
 
 ---
