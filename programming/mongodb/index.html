@@ -105,6 +105,12 @@
     <li class="toctree-l3"><a class="reference internal" href="#enlaces-documentacion">Enlaces, documentación</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#cheat-sheet">Cheat Sheet</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#operadores-de-comparacion">Operadores de comparación</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#operadores-logicos">Operadores lógicos</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#comandos">Comandos</a>
         <ul>
@@ -284,6 +290,15 @@ $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 &gt; db.mycollection.count()
 // select * from ...
 &gt; db.mycollection.find({})
+// select field1, field2, ..., fieldN from ... (with _id)
+&gt; db.mycollection.find({field1: true, field2: true, ..., fieldN: true})
+&gt; db.mycollection.find({field1: 1, field2: 1, ..., fieldN: 1})
+// select field1, field2, ..., fieldN from ... (without _id)
+&gt; db.mycollection.find({_id: false, field1: true, field2: true, ..., fieldN: true})
+&gt; db.mycollection.find({_id: 0, field1: 1, field2: 1, ..., fieldN: 1})
+// select * except field1, field2, ... fieldN from ...
+&gt; db.mycollection.find({field1: false, field2: false, ..., fieldN: false})
+&gt; db.mycollection.find({field1: 0, field2: 0, ..., fieldN: 0})
 // delete from ...
 &gt; db.mycollection.remove({})
 &gt; db.mycollection.deleteMany({})
@@ -292,6 +307,35 @@ $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 // Recorrer el resultado de una consulta (el resultado de la consulta es una lista)
 &gt; db.mycollection.find().forEach(function(mydocument) {...})
 &gt; db.getCollectionNames().forEach(function(collectionname) {...})
+</code></pre>
+<h3 id="operadores-de-comparacion">Operadores de comparación</h3>
+<pre><code class="language-js">// select * where field = val
+&gt; db.mycollection.find({field: val})
+// select * where field &lt;&gt; val
+&gt; db.mycollection.find({field: {$ne: val}})
+// select * where field &gt; val
+&gt; db.mycollection.find({field: {$gt: val}})
+// select * where field &gt;= val
+&gt; db.mycollection.find({field: {$gte: val}})
+// select * where field &lt; val
+&gt; db.mycollection.find({field: {$lt: val}})
+// select * where field &lt;= val
+&gt; db.mycollection.find({field: {$lte: val}})
+// select * where field in (val, ...)
+&gt; db.mycollection.find({field: {$in: [val, ...]})
+// select * where field not in (val, ...)
+&gt; db.mycollection.find({field: {$nin: [val, ...]}})
+</code></pre>
+<h3 id="operadores-logicos">Operadores lógicos</h3>
+<pre><code class="language-js">// select * where cond1 and cond2 and ... condN
+&gt; db.mycollection.find({cond1}, {cond2}, ..., {condN})
+&gt; db.mycollection.find({$and: [{cond1}, {cond2}, ..., {condN}]})
+// select * where cond1 or cond2 or ... condN
+&gt; db.mycollection.find({$or: [{cond1}, {cond2}, ..., {condN}]})
+// select * where not cond
+&gt;&gt; db.mycollection.find({$not: {cond}})
+// select * where cond1 nor cond2 ... nor condN
+&gt; db.mycollection.find({$nor: [{cond1}, {cond2}, ..., {condN}]})
 </code></pre>
 <hr />
 <h2 id="comandos">Comandos</h2>
