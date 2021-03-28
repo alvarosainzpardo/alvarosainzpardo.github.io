@@ -4,6 +4,7 @@
 
 ## Enlaces, Tutoriales, Recursos, etc.
 
+* [Tutorial 17.3 - Markdown and Pandoc](https://www.flutterbys.com.au/stats/tut/tut17.3.html)
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Markdown: Syntax](https://daringfireball.net/projects/markdown/syntax)
