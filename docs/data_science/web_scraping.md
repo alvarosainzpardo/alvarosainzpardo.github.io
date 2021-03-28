@@ -52,12 +52,20 @@ wget fetches the HTML code from BBC, which is then normalized by hxnormalize to 
 
 ## jq
 
+### Enlaces
+
 * [How to convert JSON to CSV from the command-line?](https://e.printstacktrace.blog/how-to-convert-json-to-csv-from-the-command-line/)
     * [jq cookbook](https://e.printstacktrace.blog/jq-cookbook/)
     * [jq YouTube videos](https://www.youtube.com/c/eprintstacktrace/search?query=jq)
 * [How to transform JSON to CSV using jq in the command line](https://www.freecodecamp.org/news/how-to-transform-json-to-csv-using-jq-in-the-command-line-4fa7939558bf/)
 * [jq recipes](https://remysharp.com/drafts/jq-recipes)
 * [jqTerm](https://jqterm.com/)
+
+### Recetas
+
+* `{devices: [.devices[] | select(.device_id | test("^THR|^AIQ") | not)] | sort_by(.device_id)}`: procesa la salida del get devices del iot-agent. Filtra por los dispositivos cuyo device_id cumple la expresión regular y los ordena por device_id
+* `[.devices[] | .device_id] | join(" ")`: procesa la salida de la llamada get devices del iot-agent. Lo transforma en un array de device_id. Ese arrray lo aplana con join para dejarlo en una secuencia de device_id separada por espacio en blanco, que se puede usar en un bucle for de un shell script
+* `{actionType: "DELETE", entities: [.[] | {id, type}]}`: procesa la salida de la llamada get entities del CB. La transforma en el payload de la llamada NGSI, de tipo batch, que sirve para borrar un conjunto de entidades
 
 Do something like this:
 
