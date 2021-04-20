@@ -12,6 +12,12 @@
 * [Setup Vim, Powerline and iTerm2 on Mac OS X](https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x)
 * [Changing Vim indentation behavior by file type](https://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type)
 * [Write Code Faster in Vim](https://jacobcomer.medium.com/write-code-faster-in-vim-c564ff9b9f6c)
+* Artículos sobre vim de la web [The Valuable Dev](https://thevaluable.dev/)
+    * [Is Vim Really Not For You? A Beginner Guide](https://thevaluable.dev/vim-beginner/): manos siempre en el teclado, mecanografia, velocidad de escritura, desactivar teclas de flechas, 
+        * [atypingtest.com - Start Typing Faster](http://www.atypingtest.com/)
+        * [-Snake-HJKL->](https://matthieucneude.com/snake/)
+    * [A Vim Guide for Intermediate Users](https://thevaluable.dev/vim-intermediate/)
+    * [A Vim Guide for Advanced Users](https://thevaluable.dev/vim-advanced/)
 
 ### Libros
 
