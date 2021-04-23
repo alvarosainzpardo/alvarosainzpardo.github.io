@@ -261,14 +261,15 @@
 </ul>
 <hr />
 <h2 id="cheat-sheet">Cheat Sheet</h2>
-<pre><code class="language-bash"># Conectarse a un servidor local (puerto 27017)
+<pre><code class="bash"># Conectarse a un servidor local (puerto 27017)
 $ mongo
 # Conectarse a un servidor remoto
 $ mongo &quot;mongodb://myhost:port/&quot;
 # Conectarse a un servidor remoto especificando base de datos
 $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 </code></pre>
-<pre><code class="language-js">// Mostrar bases de datos
+
+<pre><code class="js">// Mostrar bases de datos
 &gt; show dbs
 // Usar/crear una base de datos
 &gt; use mydatabase
@@ -308,8 +309,9 @@ $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 &gt; db.mycollection.find().forEach(function(mydocument) {...})
 &gt; db.getCollectionNames().forEach(function(collectionname) {...})
 </code></pre>
+
 <h3 id="operadores-de-comparacion">Operadores de comparación</h3>
-<pre><code class="language-js">// select * where field = val
+<pre><code class="js">// select * where field = val
 &gt; db.mycollection.find({field: val})
 // select * where field &lt;&gt; val
 &gt; db.mycollection.find({field: {$ne: val}})
@@ -326,8 +328,9 @@ $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 // select * where field not in (val, ...)
 &gt; db.mycollection.find({field: {$nin: [val, ...]}})
 </code></pre>
+
 <h3 id="operadores-logicos">Operadores lógicos</h3>
-<pre><code class="language-js">// select * where cond1 and cond2 and ... condN
+<pre><code class="js">// select * where cond1 and cond2 and ... condN
 &gt; db.mycollection.find({cond1}, {cond2}, ..., {condN})
 &gt; db.mycollection.find({$and: [{cond1}, {cond2}, ..., {condN}]})
 // select * where cond1 or cond2 or ... condN
@@ -337,10 +340,11 @@ $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 // select * where cond1 nor cond2 ... nor condN
 &gt; db.mycollection.find({$nor: [{cond1}, {cond2}, ..., {condN}]})
 </code></pre>
+
 <hr />
 <h2 id="comandos">Comandos</h2>
 <h3 id="mongodump-y-mongorestore">mongodump y mongorestore</h3>
-<pre><code class="language-bash"># Dump de una base de datos, comprimido, especificando el archivo de salida
+<pre><code class="bash"># Dump de una base de datos, comprimido, especificando el archivo de salida
 $ mongodump --db=mydatabase --gzip --archive=myfile.dump.gz
 # Restore de un archivo comprimido
 $ mongorestore --gzip --archive=myfile.dump.gz 

@@ -318,33 +318,39 @@ network:
     enp0s3:
       dhcp4: yes
 </code></pre>
+
 <p>Una vez editado, ejecutar:</p>
-<pre><code class="language-bash">$ sudo netplan --debug generate
+<pre><code class="bash">$ sudo netplan --debug generate
 $ sudo netplan apply
 </code></pre>
+
 <h3 id="configurar-hora-para-que-se-la-misma-que-windows">Configurar hora para que se la misma que Windows</h3>
 <p>Por defecto, Linux asume que el RTC del ordenador está en UTC, no en hora local. Sin embargo, Windows asume que el RTC está en hora local.</p>
 <p>Para que no haya cambios de hora cuando se hace dual boot entre Linux y Windows, lo más sencillo (y con más soporte) es <a href="https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/">configurar Linux para que asuma que el RTC está en hora local</a>. Para ello, hay que ejecutar lo siguiente en distribuciones que utilizan systemd, como Ubuntu:</p>
-<pre><code class="language-bash">$ timedatectl set-local-rtc 1 --adjust-system-clock
+<pre><code class="bash">$ timedatectl set-local-rtc 1 --adjust-system-clock
 </code></pre>
+
 <p>Para comprobar la configuración, ejecutar <code>timedatectl</code>. Tiene que aparecer <code>RTC in local TZ: yes</code>.</p>
 <p>Para volver a configurar la hora con el RTC en UTC:</p>
-<pre><code class="language-bash">$ timedatectl set-local-rtc 0 --adjust-system-clock
+<pre><code class="bash">$ timedatectl set-local-rtc 0 --adjust-system-clock
 </code></pre>
+
 <hr />
 <h2 id="grub-customizer">GRUB customizer</h2>
 <p><a href="https://launchpad.net/grub-customizer">GRUB customizer</a> es un entorno gráfico para configurar las opciones de GRUB. Para <a href="https://launchpad.net/~danielrichter2007/+archive/ubuntu/grub-customizer">instalarlo en Ubuntu</a>, hay que ejecutar lo siguiente:</p>
-<pre><code class="language-bash">$ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+<pre><code class="bash">$ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 $ sudo apt update
 $ sudo apt install grub-customizer
 </code></pre>
+
 <p>Una vez instalado, hay que poner el timeout de GRUB a 3 segundos y seleccionar como arranque por defecto la segunda partición de Windows, normalmente en <code>/dev/sda2</code>. Es la partición donde está instalado el sistema operativo, no la partición donde está instalado el loader de Windows.</p>
 <hr />
 <h2 id="evolution">Evolution</h2>
 <h3 id="conexion-al-servidor-exchange-de-office365">Conexión al servidor Exchange de Office365</h3>
 <p>Instalar los paquetes <code>evolution</code> y <code>evolution-ews</code>.</p>
-<pre><code class="language-bash">$ sudo apt install evolution evolution-evs
+<pre><code class="bash">$ sudo apt install evolution evolution-evs
 </code></pre>
+
 <p>Para configurar la cuenta, hay que seguir <a href="https://rc.partners.org/kb/article/2702">estas instrucciones</a>. Cuando se da de alta la cuenta, tienes que estar conectado directamente a internet, sin proxy, para que funcione el paso en el que se hace el 'fetch'.</p>
 <p>Una vez configurada la cuenta, se puede volver a poner el proxy. La única opción de proxy que funciona (a fecha de Marzo 2019) es el proxy manual.</p>
 <h4 id="instructions">Instructions:</h4>
@@ -375,15 +381,18 @@ $ sudo apt install grub-customizer
 <h2 id="onedrive">OneDrive</h2>
 <p>Para intentar acceder al OneDrive for Business desde Linux, he seguido las instrucciones de <a href="https://www.phillipsj.net/posts/using-onedrive-with-linux">Using OneDrive with Linux</a>. He configurado <a href="https://github.com/skilion/onedrive">OneDrive Free Client</a> y <a href="https://rclone.org/">Rclone</a>. Los dos fallan en el mismo paso: cuando hay que dar permiso de acceso a una aplicación de terceros desde la cuenta corporativa de OneDrive.</p>
 <p>OneDrive FreeClient lo tengo descargado en <code>projects/onedrive</code>, se puede borrar el directorio si finalmente no lo uso. El programa, como tal, no llegué a instalarlo, lo probé desde ese directorio. Para poderlo compilar, tuve que instalar lo siguiente, que finalmente se puede desinstalar también:</p>
-<pre><code class="language-bash">$ sudo apt install libcurl4-openssl-dev libsqlite3-dev
+<pre><code class="bash">$ sudo apt install libcurl4-openssl-dev libsqlite3-dev
 $ sudo snap install --classic dmd &amp;&amp; sudo snap install --classic dub
 </code></pre>
+
 <p>Rclone sirve para sincronizar muchos servicios de almacenamiento en la nube. Para Rclone sí que tuve que instalar un paquete deb:</p>
-<pre><code class="language-bash">$ sudo dpkg -i rclone-v1.46-linux-amd64.deb
+<pre><code class="bash">$ sudo dpkg -i rclone-v1.46-linux-amd64.deb
 </code></pre>
+
 <p>Para desinstalarlo:</p>
-<pre><code class="language-bash">$ sudo apt remove/purge rclone
+<pre><code class="bash">$ sudo apt remove/purge rclone
 </code></pre>
+
 <h3 id="enlaces">Enlaces</h3>
 <ul>
 <li><a href="https://www.maketecheasier.com/sync-onedrive-linux/">How to Sync Microsoft OneDrive with Linux</a>: <a href="https://github.com/abraunegg/onedrive">Onedrive</a> is a CLI-based client that allows you to sync quickly and easily with OneDrive. Explains how to install and use the abraunegg OneDrive client.</li>
@@ -447,34 +456,39 @@ $ sudo snap install --classic dmd &amp;&amp; sudo snap install --classic dub
 </ul>
 <h3 id="gather-usb-device-information">Gather USB device information</h3>
 <p>Before creating a udev rule, you need to find a unique way to identify your USB device. lsusb will list all connected USB devices:</p>
-<pre><code class="language-bash">$ lsusb
+<pre><code class="bash">$ lsusb
 Bus 004 Device 003: ID 1852:5110 GYROCOM C&amp;C Co., LTD
 </code></pre>
+
 <p>Use the Bus and Device numbers from above to gather more information about your device. We’re mostly interested in the idVendor and idProduct:</p>
-<pre><code class="language-bash">$ sudo lsusb -v -s 004:003
+<pre><code class="bash">$ sudo lsusb -v -s 004:003
 ...
 idVendor           0x1852 GYROCOM C&amp;C Co., LTD
 idProduct          0x5110
 ...
 </code></pre>
+
 <h3 id="create-a-udev-rule">Create a udev rule</h3>
 <p>Your system should have udev rules already defined in the <code>/lib/udev/rules.d</code> directory, such as <code>90-pulseaudio.rules</code>. There should also be a <code>/etc/udev/rules.d</code> directory where you can define your own rules.</p>
 <p>The rules are parsed in lexical order. Create a file called <code>/etc/udev/rules.d/89-pulseaudio-usb.rules</code>, so that it’s parsed just before <code>90-pulseaudio.rules</code> (though you may have to experiment with the numbering if things don’t work as expected).</p>
 <p>Open the file in your favourite editor and create a rule. Use the <code>idVendor</code> and <code>idProduct</code> numbers from earlier to uniquely match your USB device, and then set an environment variable that tells PulseAudio to ignore the device:</p>
-<pre><code class="language-bash">ATTRS{idVendor}==&quot;1852&quot;, ATTRS{idProduct}==&quot;5110&quot;, ENV{PULSE_IGNORE}=&quot;1&quot;
+<pre><code class="bash">ATTRS{idVendor}==&quot;1852&quot;, ATTRS{idProduct}==&quot;5110&quot;, ENV{PULSE_IGNORE}=&quot;1&quot;
 </code></pre>
+
 <p>Optionally, you might want to apply other changes to the device, such as access permissions or device ownership. Write each rule on a separate line:</p>
-<pre><code class="language-bash">ATTRS{idVendor}==&quot;1852&quot;, ATTRS{idProduct}==&quot;5110&quot;, ENV{PULSE_IGNORE}=&quot;1&quot;
+<pre><code class="bash">ATTRS{idVendor}==&quot;1852&quot;, ATTRS{idProduct}==&quot;5110&quot;, ENV{PULSE_IGNORE}=&quot;1&quot;
 ATTRS{idVendor}==&quot;1852&quot;, ATTRS{idProduct}==&quot;5110&quot;, GROUP=&quot;mpd&quot;
 </code></pre>
+
 <p>Reboot your system and PulseAudio will no longer acknowledge that your USB device exists.</p>
 <hr />
 <h2 id="teclado-apple-magic-keyboard">Teclado Apple Magic Keyboard</h2>
 <p>Emparejar el teclado bluetooth. Al finalizar el emparejamiento el teclado se comporta como un numpad, únicamente funcionan las teclas numéricas, el Enter, poco más. Para arreglar ese problema y que el teclado funcione correctamente hay que usar la utilidad <code>numlockx</code>:</p>
-<pre><code class="language-bash">sudo apt update
+<pre><code class="bash">sudo apt update
 sudo apt install numlockx
 numlockx off*Probably it also makes sense to add 'numlock off' as startup command in 'gnome-session-properties'
 </code></pre>
+
 <p>Más información sobre el tema en:</p>
 <ul>
 <li><a href="https://medium.com/macoclock/how-to-pair-apple-magic-keyboard-a1314-on-ubuntu-18-04-and-act-as-numpad-42fe4402454c">How to pair Apple Magic Keyboard (A1314) on Ubuntu 18.04 and act as Numpad</a></li>

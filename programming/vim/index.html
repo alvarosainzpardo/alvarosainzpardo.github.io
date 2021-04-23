@@ -315,6 +315,20 @@
 <li><a href="https://coderwall.com/p/yiot4q/setup-vim-powerline-and-iterm2-on-mac-os-x">Setup Vim, Powerline and iTerm2 on Mac OS X</a></li>
 <li><a href="https://stackoverflow.com/questions/158968/changing-vim-indentation-behavior-by-file-type">Changing Vim indentation behavior by file type</a></li>
 <li><a href="https://jacobcomer.medium.com/write-code-faster-in-vim-c564ff9b9f6c">Write Code Faster in Vim</a></li>
+<li>Artículos sobre vim de la web <a href="https://thevaluable.dev/">The Valuable Dev</a><ul>
+<li><a href="https://thevaluable.dev/vim-beginner/">Is Vim Really Not For You? A Beginner Guide</a>: manos siempre en el teclado, mecanografia, velocidad de escritura, desactivar teclas de flechas, <ul>
+<li><a href="http://www.atypingtest.com/">atypingtest.com - Start Typing Faster</a></li>
+<li><a href="https://matthieucneude.com/snake/">-Snake-HJKL-&gt;</a></li>
+</ul>
+</li>
+<li><a href="https://thevaluable.dev/vim-intermediate/">A Vim Guide for Intermediate Users</a></li>
+<li><a href="https://thevaluable.dev/vim-advanced/">A Vim Guide for Advanced Users</a></li>
+</ul>
+</li>
+<li><a href="https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim">Boost Your Coding Fu With VSCode and Vim</a><ul>
+<li><a href="https://github.com/VSCodeVim/Vim">VSCodeVim</a>: Vim emulation for Visual Studio Code</li>
+</ul>
+</li>
 </ul>
 <h3 id="libros">Libros</h3>
 <p><a href="https://vim.swaroopch.com/">A Byte of Vim</a> es un libro sobre Vim (versión 7). Se puede leer online en la web del libro y también está disponible su descarga gratuita en formato ebook: <a href="https://www.gitbook.com/download/pdf/book/swaroopch/byte-of-vim">pdf</a>, <a href="https://www.gitbook.com/download/epub/book/swaroopch/byte-of-vim">epub</a> y <a href="https://www.gitbook.com/download/mobi/book/swaroopch/byte-of-vim">mobi</a>. El libro en formato <em>raw</em> está disponible en su <a href="https://github.com/swaroopch/byte-of-vim">repositorio github</a>.</p>
@@ -334,45 +348,55 @@
 </ul>
 <h3 id="instalacion">Instalación</h3>
 <p>The default config file location is:</p>
-<pre><code class="language-sh">~/.config/nvim/init.vim
+<pre><code class="sh">~/.config/nvim/init.vim
 </code></pre>
+
 <p>Puede ser un nuevo archivo o un link simbólico al <code>~/.vimrc</code> existente (como en mi caso) para tener un único archivo de configuración válido para Vim y para Neovim..</p>
-<pre><code class="language-sh">$ mkdir -p ~/.config/nvim
+<pre><code class="sh">$ mkdir -p ~/.config/nvim
 $ ln -s ~/.vimrc ~/.config/nvim/init.vim
 </code></pre>
+
 <p>o:</p>
-<pre><code class="language-sh">$ mkdir -p ~/.config/nvim
+<pre><code class="sh">$ mkdir -p ~/.config/nvim
 $ ln -s ~/.vim/vimrc ~/.config/nvim/init.vim
 </code></pre>
+
 <h4 id="ubuntu">Ubuntu</h4>
 <p>Para instalar la versión estable:</p>
-<pre><code class="language-sh">$ sudo add-apt-repository ppa:neovim-ppa/stable
+<pre><code class="sh">$ sudo add-apt-repository ppa:neovim-ppa/stable
 </code></pre>
+
 <p>Para instalar la última versión de desarrollo/inestable:</p>
-<pre><code class="language-sh">$ sudo add-apt-repository ppa:neovim-ppa/unstable
+<pre><code class="sh">$ sudo add-apt-repository ppa:neovim-ppa/unstable
 </code></pre>
+
 <p>Después, ejecutar:</p>
-<pre><code class="language-sh">$ sudo apt-get update
+<pre><code class="sh">$ sudo apt-get update
 $ sudo apt-get install neovim
 </code></pre>
+
 <h4 id="macos">macOS</h4>
-<pre><code class="language-sh">$ brew install neovim
+<pre><code class="sh">$ brew install neovim
 </code></pre>
+
 <h4 id="instalar-el-soporte-para-python">Instalar el soporte para python</h4>
-<pre><code class="language-sh">$ pip2 install -U neovim
+<pre><code class="sh">$ pip2 install -U neovim
 $ pip3 install -U neovim
 </code></pre>
+
 <p>To complete python integration, add the following lines to your <code>~/.config/nvim/init.vim</code>:</p>
-<pre><code class="language-vim">let g:python2_host_prog = '/usr/local/bin/python'
+<pre><code class="vim">let g:python2_host_prog = '/usr/local/bin/python'
 let g:python3_host_prog = '/usr/local/bin/python3'
 </code></pre>
+
 <p>Next, you should check <code>:CheckHealth</code> command in nvim to see any issues with plugins and Python providers.</p>
 <hr />
 <h2 id="buffers-ventanas-pestanas">Buffers, ventanas, pestañas</h2>
 <p>Son tres conceptos que se mezclan un poco en vim, sobre todo si eres un principiante.</p>
 <p>Vim, de forma estándar, arranca con una ventana que ocupa toda el área de trabajo de vim (el emulador de terminal o la ventana del sistema operativo). En esa ventana se pueden abrir muchos archivos, por ejemplo ejecutando:</p>
-<pre><code class="language-sh">$ vim *.c
+<pre><code class="sh">$ vim *.c
 </code></pre>
+
 <p>Después de ejecutar ese comando, en la ventana de vim sólo se mostrará el último de esos archivos que se haya abierto (posiblemente según el orden alfabético de los mismos), pero todos los archivos están abiertos en sus correspondientes buffers de edición, sólo que están ocultos, no se muestran en la ventana. En una ventana sólo se puede mostrar un buffer a la vez. Para trabajar con todos esos buffers abiertos, se puede ir cambiando el buffer que se muestra en la ventana o se pueden abrir más ventanas, dividiendo la "ventana de la aplicación vim" en varias ventanas de edición, cada ventana mostrando un buffer de edición diferente. Incluso se puede abrir el mismo buffer en dos ventanas distintas, para ver en cada ventana una zona distinta del mismo archivo.</p>
 <h3 id="ventanas">Ventanas</h3>
 <p>Cuando se abre una nueva ventana, se divide el área de trabajo de vim. Se puede dividir verticalmente u horizontalmente.</p>
@@ -424,9 +448,11 @@ al comando.</p>
 <p>Añadir lo siguiente al <code>vimrc</code> y ejecutar <code>PluginInstall</code> en Vim:</p>
 <pre><code>Plugin 'chriskempson/base16-vim'
 </code></pre>
+
 <p>Seleccionar el esquema de color deseado, por ejemplo:</p>
 <pre><code>colorscheme base16-default-dark
 </code></pre>
+
 <p>La lista de temas de color disponibles en Base16 está en https://github.com/chriskempson/base16-vim/tree/master/colors.</p>
 <p>La página de Base16 para vim tiene bastantes recetas para configurar Base16 para vim en modo terminal. Consultar también https://github.com/chriskempson/base16-iterm2 para información sobre colores Base16 para iTerm2 y https://github.com/chriskempson/base16-shell, que es una utilidad para configurar los colores del terminal.</p>
 <p><strong>[UPDATE: 02/08/17]</strong>: parece ser que hay emuladores de terminal en los que se puede cambiar la paleta de 256 colores, por ejemplo iTerm2. En el esquema de color Base16 se puede utilizar esta opción (cambiar la paleta de 256 colores) incluso se proporciona un <em>shell script</em> para cambiar los colores 17-21 de la paleta (para dejar los colores 0-15 sin cambiar y no afectar a otros programas) y versiones específicas de los temas de color para esta configuración. Hay más información sobre este tema en la página <a href="https://vi.stackexchange.com/questions/8935/how-to-install-base16-for-iterm2">How to install base16 for iTerm2?</a>.</p>
@@ -459,10 +485,11 @@ al comando.</p>
 <p><strong>[UPDATE: 02/08/17]</strong>: parece ser que hay emuladores de terminal en los que se puede cambiar la paleta de 256 colores, por ejemplo iTerm2. En el esquema de color Base16 se puede utilizar esta opción (cambiar la paleta de 256 colores) incluso se proporciona un <em>shell script</em> para cambiar los colores 17-21 de la paleta (para dejar los colores 0-15 sin cambiar y no afectar a otros programas) y versiones específicas de los temas de color para esta configuración.</p>
 <p>Cuando el emulador de terminal tiene soporte para <em>true color</em> están disponibles 32 millones de colores (colores de 24 bits) por lo que cualquier paleta de colores de cualquier programa se ve perfectamente. Es exactamente igual que lo que pasa cuando se utiliza un escritorio gráfico (Mac, Windows, etc). Esta es la opción recomendada.</p>
 <p>Para saber si un emulador de terminal tiene soporte para <em>true color</em> o no, el siguiente comando:</p>
-<pre><code class="language-bash">$ printf &quot;\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n&quot;
+<pre><code class="bash">$ printf &quot;\x1b[38;2;255;100;0mTRUECOLOR\x1b[0m\n&quot;
 </code></pre>
+
 <p>debe escribir la palabra TRUECOLOR en color rojo en un emulador de terminal con soporte para <em>true color</em>. También se puede ejecutar el siguiente comando <em>awk</em>, que en un terminar con soporte para <em>true color</em> debe mostrar un degradado de colores contínuo:</p>
-<pre><code class="language-awk">$ awk 'BEGIN{
+<pre><code class="awk">$ awk 'BEGIN{
     s=&quot;/\\/\\/\\/\\/\\&quot;; s=s s s s s s s s;
     for (colnum = 0; colnum&lt;77; colnum++) {
         r = 255-(colnum*255/76);
@@ -476,30 +503,34 @@ al comando.</p>
     printf &quot;\n&quot;;
 }'
 </code></pre>
+
 <p>Para que vim utilice <em>true colors</em> en modo terminal hay que añadir <code>set termguicolors</code> en <code>.vimrc</code>. Los terminales <strong>mintty</strong> (Cygwin), <strong>iTerm2</strong> (Mac) y <strong>gnuterm</strong> (Linux) tienen soporte para <em>true color</em>.</p>
 <p><strong>[UPDATE: 12/07/2017]</strong> Hay un problema con el <em>colorscheme</em> <strong>Solarized</strong> en modo terminal con el <em>true color</em> activado. Los colores salen totalmente cambiados, tanto con el background light como dark.</p>
 <hr />
 <h3 id="silent-commands">Silent commands</h3>
 <p>Para suprimir los mensjes de un comando, ejecutarlo con <code>silent</code> delante. Si se quieren suprimir ademas los posibles mensjes de error, entonces ejecutarlo con <code>silent!</code> delante. Si es un comando shell, <code>silent</code> también elimina la necesidad de pulsar \&lt;CR> después de la ejecución del comando.</p>
 <p>Ejemplos:</p>
-<pre><code class="language-vim">&quot; If colorscheme one doesn't exist, no error messages are displayed
+<pre><code class="vim">&quot; If colorscheme one doesn't exist, no error messages are displayed
 silent! colorscheme one
 &quot; Silent execution of shell commands
 silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 </code></pre>
+
 <h3 id="execute">Execute</h3>
 <p>:exe[cute] {expr1} ..   Executes the string that results from the evaluation of {expr1} as an Ex command.  Multiple arguments are concatenated, with a space in between.  To avoid the extra space use the "." operator to concatenate strings into one argument.</p>
 <p>Ejemplos:</p>
-<pre><code class="language-vim">silent execute '!mkdir -p ' . s:root_path . '/bundle'
+<pre><code class="vim">silent execute '!mkdir -p ' . s:root_path . '/bundle'
 silent execute '!git clone https://github.com/VundleVim/Vundle.vim.git ' . s:root_path . '/bundle/Vundle.vim'
 </code></pre>
+
 <h4 id="comprobar-que-un-plugin-esta-cargado-antes-de-ejecutar-un-comando">Comprobar que un plugin está cargado antes de ejecutar un comando</h4>
 <p>Utilizar <code>if exists()</code> con alguna variable, función o comando proporcionado por el plugin para comprobar que está cargado.
 Por ejemplo:</p>
-<pre><code class="language-vim">if exists('*SyntasticStatuslineFlag')
+<pre><code class="vim">if exists('*SyntasticStatuslineFlag')
   set statusline+=%{SyntasticStatuslineFlag()}
 endif
 </code></pre>
+
 <p>Opciones de <code>exists()</code>:</p>
 <ul>
 <li>exists('varname'): para una variable</li>
@@ -577,22 +608,25 @@ endif
 <p><a href="https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim">Descargar plug.vim</a>
 y grabarlo en el directorio "autoload".</p>
 <h5 id="vim_1">Vim</h5>
-<pre><code class="language-sh">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+<pre><code class="sh">curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 </code></pre>
+
 <h4 id="neovim_1">Neovim</h4>
-<pre><code class="language-sh">curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+<pre><code class="sh">curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 </code></pre>
+
 <p>Se puede automatizar la instalación poniendo el comando en el archivo de configuración de Vim tal y como se sugiere <a href="https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation">aqui</a>.</p>
 <p>Place the following code in your .vimrc before <code>plug#begin()</code> call:</p>
-<pre><code class="language-vim">if empty(glob('~/.vim/autoload/plug.vim'))
+<pre><code class="vim">if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 &quot; autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
   autocmd VimEnter * PlugInstall --sync
 endif
 </code></pre>
+
 <p>Note that <code>--sync</code> flag is used to block the execution until the installer finishes.</p>
 <p>(If you're behind an HTTP proxy, you may need to add <code>--insecure</code> option to the curl command. In that case, you also need to set $GIT_SSL_NO_VERIFY to true.)</p>
 <h4 id="uso_1">Uso</h4>
@@ -607,7 +641,7 @@ endif
 </li>
 </ol>
 <h4 id="example">Example</h4>
-<pre><code class="language-vim">&quot; Specify a directory for plugins
+<pre><code class="vim">&quot; Specify a directory for plugins
 &quot; - For Neovim: ~/.config/nvim/plugged
 &quot; - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
@@ -645,6 +679,7 @@ Plug '~/my-prototype-plugin'
 &quot; Initialize plugin system
 call plug#end()
 </code></pre>
+
 <p>Reload .vimrc and <code>:PlugInstall</code> to install plugins.</p>
 <h3 id="commands">Commands</h3>
 <table>
@@ -710,6 +745,7 @@ call plug#end()
 <p>En la sección de <strong>Vundle</strong> de <code>.vimrc</code>, añadir:</p>
 <pre><code>Plugin 'tpope/vim-fugitive'
 </code></pre>
+
 <h4 id="uso_3">Uso</h4>
 <p>Los comandos de Fugitive empiezan con G (g mayúscula). Se utilizan en modo vim normal, tecleando los dos puntos (:). Los comandos más habituales son:</p>
 <ul>
@@ -727,14 +763,16 @@ call plug#end()
 <p>El programa para mapear la tecla <strong>Caps Lock</strong> es <a href="https://pqrs.org/osx/karabiner/seil.html.en">Seil</a>. El mismo desarrollador tiene otra utilidad para hacer mapeos más generales de teclado llamada <a href="https://pqrs.org/osx/karabiner/index.html.en">Karabiner</a>.</p>
 <h2 id="folding">Folding</h2>
 <p>El <em>folding</em> está deshabilitado por defecto en vim. Además, por defecto el <em>folding</em> es manual. Para configurar el folding de forma análoga a otros editores, o sea, folding automático activado y basado en sintaxis y con todos los niveles abiertos al abrir el archivo (sin folding), hay que añadir lo siguiente al archivo <code>.vimrc</code>:</p>
-<pre><code class="language-vim">set foldmethod=syntax
+<pre><code class="vim">set foldmethod=syntax
 set nofoldenable
 </code></pre>
+
 <p>Otras opciones son:</p>
 <pre><code>set foldmethod=indent
 set foldnestmax=10
 set foldlevel=2
 </code></pre>
+
 <p>Una vez activado, los comandos más habituales para trabajar con <em>folds</em> son:</p>
 <ul>
 <li><kbd>z</kbd> + <kbd>o</kbd> opens a fold at the cursor.</li>

@@ -269,12 +269,13 @@
 </ul>
 <hr />
 <h2 id="cheat-sheet">Cheat Sheet</h2>
-<pre><code class="language-bash"># Instalar sqlite:
+<pre><code class="bash"># Instalar sqlite:
 $ sudo apt install sqlite3
 # Instalar sqlitebrowser
 $ sudo apt install sqlitebrowser
 </code></pre>
-<pre><code class="language-sql"># Ayuda
+
+<pre><code class="sql"># Ayuda
 sqlite&gt; .help
 # Lista de tablas
 sqlite&gt; .tables
@@ -286,10 +287,11 @@ sqlite&gt;.import archivo.csv tabla
 # Ejecutar sentencias de archivo
 sqlite&gt;.read archivo
 </code></pre>
+
 <hr />
 <h2 id="comandos">Comandos</h2>
 <h3 id="importar-archivo-csv">Importar archivo csv</h3>
-<pre><code class="language-bash"># La opción -csv sirve para poner .mode csv
+<pre><code class="bash"># La opción -csv sirve para poner .mode csv
 # Si la tabla no existe, se crea
 $ sqlite3 -csv database.db &quot;.import arvhivo.csv tabla&quot;
 </code></pre>

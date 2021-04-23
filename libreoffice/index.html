@@ -245,8 +245,9 @@
 </ul>
 <h2 id="instalar-fuentes-de-microsoft">Instalar fuentes de Microsoft</h2>
 <p>Instalar el paquete para TTF MS Core fonts:</p>
-<pre><code class="language-bash">$ sudo apt install ttf-mscorefonts-installer
+<pre><code class="bash">$ sudo apt install ttf-mscorefonts-installer
 </code></pre>
+
 <p>Ese paquete suele instalarse como parte de la instalación del paquete <code>ubuntu-restricted-extras</code>.</p>
 <p>Instalar las fuentes Calibri, etc. Para ello hay que descargarse el PowerPoint Viewer 2007, dentro de ese paquete estan las fuentes. Podemos extraer las fuentes manualmente, usando la utilidad <code>cabextract</code> o automatizar todo el proceso (descarga, extracción e instalación de fuentes) usando el siguiente script:</p>
 <pre><code>$ wget -qO- http://plasmasturm.org/code/vistafonts-installer/vistafonts-installer | bash
