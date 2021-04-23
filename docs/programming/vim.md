@@ -18,6 +18,8 @@
         * [-Snake-HJKL->](https://matthieucneude.com/snake/)
     * [A Vim Guide for Intermediate Users](https://thevaluable.dev/vim-intermediate/)
     * [A Vim Guide for Advanced Users](https://thevaluable.dev/vim-advanced/)
+* [Boost Your Coding Fu With VSCode and Vim](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim)
+    * [VSCodeVim](https://github.com/VSCodeVim/Vim): Vim emulation for Visual Studio Code
 
 ### Libros
 
