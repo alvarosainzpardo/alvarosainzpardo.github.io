@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Cerraduras - Documentación de Alvaro</title>
+  <title>High Sierra - Documentación de Alvaro</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Cerraduras";
-    var mkdocs_page_input_path = "cerraduras.md";
+    var mkdocs_page_name = "High Sierra";
+    var mkdocs_page_input_path = "high_sierra.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -162,23 +162,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../backgammon/">Backgammon</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Cerraduras</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#pack-de-seguridad">Pack de seguridad</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#cilindro">Cilindro</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#escudo">Escudo</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#cerrojo-auxiliar">Cerrojo auxiliar</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#pedido-y-preguntas-al-cerrajero">Pedido y preguntas al cerrajero</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#presupuesto-online-solo-compra">Presupuesto online (sólo compra)</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#recursos">Recursos</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../cerraduras/">Cerraduras</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../detailing/">Detailing</a>
                     </li>
@@ -190,7 +174,27 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../gimp/">Gimp</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../high_sierra/">High Sierra</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">High Sierra</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#enlaces">Enlaces</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#anti-aliasing-sub-pixel-rendering">Anti-aliasing, Sub-pixel rendering</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#big-sur-patch">Big Sur patch</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rsync">Rsync</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fonts">Fonts</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#brew">Brew</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#xcode">Xcode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#iterm2">iTerm2</a>
+    </li>
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../brew/">Homebrew</a>
                     </li>
@@ -236,7 +240,7 @@
         
       
     
-    <li>Cerraduras</li>
+    <li>High Sierra</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -247,117 +251,63 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="cerraduras-para-puertas-blindadas">Cerraduras para puertas blindadas</h1>
-<h2 id="pack-de-seguridad">Pack de seguridad</h2>
-<p>El "pack de seguridad" para una puerta blindada se compone de:</p>
+                <h1 id="high-sierra">High Sierra</h1>
+<h2 id="enlaces">Enlaces</h2>
 <ul>
-<li>Cilindro/bombillo/bombín de seguridad:<ul>
-<li>Anti-bumping</li>
-<li>Anti-impressioning (anti-impresión)</li>
-<li>Puente antirrotura</li>
+<li><a href="http://www.dosdude1.com/">dosdude1</a></li>
+<li><a href="https://everymac.com/">EveryMac.com</a></li>
+<li><a href="https://support.apple.com/kb/SP777?locale=en_US">macOS Mojave - Technical Specifications</a></li>
+<li><a href="https://www.youtube.com/watch?v=v9sE_FhSdT8">How to Install macOS 10.14 Mojave on an Unsupported Mac</a></li>
+<li><a href="https://github.com/mas-cli/mas">mas-cli</a></li>
+<li><a href="https://discussions.apple.com/thread/251247486">iCloud.com - Safari 13 unable to login, also Apple Support idmsa issues</a></li>
+<li><a href="https://discussions.apple.com/thread/251211674">How I solved the Safari 13 and High Sierra problem with idmsa.apple.com unsecure connection (all Apple logins)</a></li>
+<li><a href="https://discussions.apple.com/thread/251210686?answerId=252326921022#252326921022">Unable to establish secure connection to idmsa.apple.com</a></li>
 </ul>
-</li>
-<li>Escudo para evitar la rotura del cilindro</li>
-<li>Cerrojo auxiliar para evitar apalancamiento de la puerta</li>
-</ul>
-<h2 id="cilindro">Cilindro</h2>
-<p>Características mínimas:</p>
+<h3 id="anti-aliasing-sub-pixel-rendering">Anti-aliasing, Sub-pixel rendering</h3>
 <ul>
-<li>puente antirrotura</li>
-<li>anti-impressioning</li>
-<li>anti-bumping</li>
+<li><a href="http://alienryderflex.com/sub_pixel/">Understanding Sub-Pixel (LCD Screen) Anti-Aliased Font Rendering</a></li>
+<li><a href="https://colinstodd.com/posts/tech/fix-macos-catalina-fonts-after-upgrade.html">Fix MacOS Catalina or macOS Big Sur Fonts After Upgrade</a></li>
+<li><a href="https://ahmadawais.com/fix-macos-mojave-font-rendering-issue/">Fix macOS Mojave Font Rendering Issue | Big Sur Update</a></li>
+<li>(26/09/18) <a href="https://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/">How to Fix Blurry Fonts in MacOS Mojave for Non-Retina Displays</a></li>
+<li>(30/10/18) <a href="https://www.howtogeek.com/358596/how-to-fix-blurry-fonts-on-macos-mojave-with-subpixel-antialiasing/">How to Fix Blurry Fonts on macOS Mojave (With Subpixel Antialiasing)</a></li>
+<li><a href="https://forums.macrumors.com/threads/the-subpixel-aa-debacle-and-font-rendering.2184484/">The subpixel-AA debacle and font rendering</a></li>
+<li><a href="https://discussions.apple.com/thread/250998388">macOS Catalina vs Mojave sub-pixel antialiasing</a></li>
 </ul>
-<p>Marcas/modelos:</p>
+<h3 id="big-sur-patch">Big Sur patch</h3>
 <ul>
-<li>KABA Expert Plus</li>
-<li>KESO 8000 Omega2</li>
+<li><a href="https://www.reddit.com/r/BigSurPatcher/">BigSurPatcher</a></li>
+<li><a href="https://www.reddit.com/r/CatalinaPatcher/comments/he0tco/what_dosdude1_thinks_about_big_sur_in_terms_of_a/">What DosDude1 thinks about Big Sur (in terms of a new patcher)</a></li>
+<li>big-sur-micropatcher<ul>
+<li><a href="https://www.macworld.co.uk/how-to/install-macos-old-mac-3654960/">How to install macOS Big Sur on an old unsupported Mac</a></li>
+<li><a href="https://github.com/barrykn/big-sur-micropatcher">big-sur-micropatcher</a></li>
 </ul>
-<h2 id="escudo">Escudo</h2>
-<p>Para evitar la rotura del cilindro/bombín.</p>
+</li>
+<li>Patched Sur<ul>
+<li><a href="https://github.com/BenSova/Patched-Sur">Patched Sur</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="rsync">Rsync</h2>
+<p>Las opciones de rsync para preservar fechas de creación, modificación, ACLs, metadatos, etc. son: <code>rsync -avAX origen destino</code>. La opción <code>-v</code> es para verbose. Si origen es un directorio hay diferencia entre si el directorio termina o no en slash (/). Si el directorio no termina en slash (<code>rsync -avAX origen destino</code>), se crea el directorio origen en destino y se copia su contenido. Si el directorio origen termina en slash (<code>rsync -avAX origen/ destino</code>) el comando lo que hace es copiar en destino el contenido de origen. La opción <code>--delete</code> borra de destino los archivos de origen que hubiesen sido borrados, sirve para mantener totalmente sincronizados los contenidos de origen y destino, propagando los borrados de origen.</p>
+<h2 id="fonts">Fonts</h2>
+<p>Para instalar fonts, hay que copiarlas a <code>~/Library/Fonts</code>. Hay que copiar el directorio 'Telefonica' y el directorio ''.</p>
+<h2 id="brew">Brew</h2>
+<p>Brew no está ya soportado en High Sierra pero se instala bien y por ahora no me ha dado problemas.</p>
+<p>Para instalarlo, hay que ejecutar el script de instalación. Este script instala las command-line tools de Xcode, pero es mejor instalar Xcode completo, creo que incluso antes que instalar Brew (quizá así Brew no instala las command-line tools). Macvim da error al compilar si no está instalado Xcode completo.</p>
+<h2 id="xcode">Xcode</h2>
+<p>La última versión de Xcode compatible con High Sierra (macOS 10.13.6) es la versión 10.1. Esta versión ya no se puede descargar de la App Store. Para descargar Xcode 10.1 hay que ir a https://developer.apple.com/download/more/, autenticarse con el Apple Id,  y buscar "Xcode 10.1", la descarga es del 23 de Octubre de 2019. Se descarga un archivo con extensión <code>.xip</code>, haciendo doble click en el archivo se descomprime y se extrae la aplicación Xcode, que hay que mover al directorio de Aplicaciones.</p>
+<p>En la página <a href="https://codewithchris.com/xcode-update/">Xcode 10.2 on High Sierra – Step by Step</a> hay instrucciones detalladas sobre cómo conseguir ejecutar la versión 10.2.1 de Xcode en High Sierra. En los comentarios de la página hay gente que reporta que, siguiendo las mismas instrucciones, han conseguido ejecutar la versión 10.3 de Xcode.</p>
+<p>He descargado Xcode 10.1, Xcode 10.2.1 y Xcode 10.3.</p>
+<h2 id="iterm2">iTerm2</h2>
+<p>La última versión de iTerm2 compatible con High Sierra es la 3.3.12. Me la he descargado.</p>
+<p>Para configurarlo, tengo que crear un profile llamado 'asainz (132x43)'. En este profile, tengo que hacer lo siguiente:</p>
 <ul>
-<li>Marca Disec<ul>
-<li>Gama ROK 2019<ul>
-<li>Para puertas blindadas</li>
-</ul>
-</li>
-<li>Gama KRIPTON 2019<ul>
-<li>Para puertas acorazadas. Para puertas blindadas no merece la pena, los ladrones antes te hacen un boquete en la puerta blindada que intentar romper el escudo</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="cerrojo-auxiliar">Cerrojo auxiliar</h2>
-<p>Evita el apalancamiento.</p>
-<p>Modelos:</p>
-<ul>
-<li>SAG EP40 (2019 como mínimo)<ul>
-<li>Con cilindro KABA experT pluS</li>
-</ul>
-</li>
-<li>SAG EP50 (2019 como mínimo)<ul>
-<li>Con cilindro KESO 8000 Omega2</li>
-</ul>
-</li>
-</ul>
-<h2 id="pedido-y-preguntas-al-cerrajero">Pedido y preguntas al cerrajero</h2>
-<ul>
-<li>Preguntar SAG EP40 vs. SAG EP50</li>
-<li>Preguntar si tiene un "pack" con SAG EP50 + KESO 8000 Omega2<ul>
-<li>Confirmar si el KESO 8000 Omega2 tiene pomo</li>
-<li>Placa frontal reforzada</li>
-</ul>
-</li>
-<li>SAG EP50<ul>
-<li>CROMADO</li>
-<li>Preguntas:<ul>
-<li>Confirmar modelo 2020 : se supone que el del 2020 tiene la posibilidad de la placa frontal reforzada</li>
-<li>Barra más larga?</li>
-<li>Placa frontal reforzada?</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>KESO 8000 Omega2<ul>
-<li>Igualamiento de llaves</li>
-<li>Color: Azul oscuro, Negro, Gris, Rojo</li>
-</ul>
-</li>
-<li>Escudo Disec ROK 2019 o KRIPTON 2019<ul>
-<li>Preguntar ROK o KRIPTON?</li>
-<li>Confirmar modelos 2019</li>
-<li>Confirmar lenteja manganeso</li>
-<li>Color cromado</li>
-</ul>
-</li>
-</ul>
-<h2 id="presupuesto-online-solo-compra">Presupuesto online (sólo compra)</h2>
-<ul>
-<li>Cerrojo SAP EP50 + KESO 8000 Omega2 PREMIUN 60mm POMO 3 LLAVES : 295€ (ferreteria Cavero)</li>
-<li>DISEC ESCUDO BD280 ROK CROMO MANGANESO 2020: 69,95€ (ferreteria Cavero)</li>
-<li>Cerrojo SAG EP40: 162,95€</li>
-<li>Cerrojo SAG EP40: 145,00€ 5 llaves (ferreteria cavero)</li>
-<li>Cerrojo SAG EP50: Desde 185€ con 3 llaves 212€ con 5 llaves (tu cerrajero de seguridad)</li>
-<li>Bombin KESO 8000 Omega2: 149€ (tu cerrajero de seguridad)</li>
-<li>Bombillo KABA Expert Plus: Reforzado desde 119€-134€ Extreme desde 135€</li>
-</ul>
-<h2 id="recursos">Recursos</h2>
-<ul>
-<li>https://www.protegeo.com/cerraduras/cerrojo-sag-ep50-con-bombillo-keso-8000</li>
-<li>https://www.protegeo.com/cerraduras/cerrojo-sag-ep40-con-bombillo-kaba-expert</li>
-<li>https://tucerrajerodeseguridad.com/tienda/bombines-de-seguridad/perfil-europeo/bombin-keso-8000-premium/</li>
-<li>https://tucerrajerodeseguridad.com/tienda/bombines-de-seguridad/cerrojo-sag-ep50-keso-8000/</li>
-<li>https://tucerrajerodeseguridad.com/tienda/bombines-de-seguridad/perfil-europeo/bombin-kaba-expert/</li>
-<li>https://tucerrajerodeseguridad.com/tienda/bombines-de-seguridad/perfil-europeo/kaba-expert-extreme/</li>
-<li>https://www.ferreteriacavero.es/</li>
-<li>https://www.ferreteriacavero.es/producto/cerrojo-sag-ep40-2019-cromo-bombin-kaba-expert-plus-5-llaves-108393</li>
-<li>https://www.ferreteriacavero.es/producto/sag-ep50-2020-keso-8000-omega2-premiun-60mm-pomo-3-llaves-109089</li>
-<li>https://www.ferreteriacavero.es/producto/disec-escudo-bd280-rok-cromo-manganeso-2020-108430</li>
-<li>https://loisangroup.com/shop/producto/cilindro-kaba-expert-plus/</li>
-<li>https://loisangroup.com/shop/categoria-producto/cilindros/keso-8000-omega-2/</li>
-<li>Canal Youtube Tu Cerrajero de Seguridad: https://www.youtube.com/channel/UCAe8LRtrDDxobiOW8T7wflg</li>
-<li>Canal Youtube Cerrajeros Loisan: https://www.youtube.com/channel/UCa2zEqmzgLvrz_PGAdJfBjg</li>
-<li>Canal Youtube Protegeo TV: https://www.youtube.com/channel/UCLybjG1jcdbcWLrqAerRaZw</li>
+<li>Ponerlo como profile por defecto</li>
+<li>Tamaño de ventana 132x43</li>
+<li>Seleccionar la font 'Meslo LG S for Powerline' Regular de tamaño 14</li>
+<li>Importar los color presets <code>One Dark.itermcolors</code> y <code>One Light.itermcolors</code>. Seleccionar el color preset 'One Dark'</li>
+<li>Activar transparencia (muy poca)</li>
+<li>Activar el blur por defecto</li>
 </ul>
               
             </div>
@@ -366,10 +316,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../detailing/" class="btn btn-neutral float-right" title="Detailing">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../brew/" class="btn btn-neutral float-right" title="Homebrew">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../backgammon/" class="btn btn-neutral" title="Backgammon"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../gimp/" class="btn btn-neutral" title="Gimp"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -395,10 +345,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../backgammon/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../gimp/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../detailing/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../brew/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
