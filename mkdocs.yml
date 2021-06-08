@@ -29,6 +29,7 @@ nav:
     - JavaScript: programming/javascript.md
     - MongoDB: programming/mongodb.md
     - MySQL: programming/mysql.md
+    - No-Code: programming/no-code.md
     - PostgreSQL: programming/postgresql.md
     - Python: programming/python.md
     - Ruby:
@@ -58,6 +59,7 @@ nav:
   - General: general.md
   - GeoJSON: geojson.md
   - Gimp: gimp.md
+  - High Sierra: high_sierra.md
   - Homebrew: brew.md
   - LibreOffice: libreoffice.md
   - Markdown: markdown.md
