@@ -86,3 +86,4 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 * Presto
     * [Presto on FlashBlade S3](https://medium.com/@joshua_robinson/presto-on-flashblade-s3-486ecb449574)
     * [Presto-Powered S3 Data Warehouse on Kubernetes](https://medium.com/@joshua_robinson/presto-powered-s3-data-warehouse-on-kubernetes-aea89d2f40e8)
+* (23/05/21) [Automated Data Wrangling](https://catalyst.coop/2021/05/23/automated-data-wrangling/): A growing array of techniques apply machine learning directly to the problems of data wrangling. They often start out as open research projects but then become proprietary. How can we build automated data wrangling systems for open data?
