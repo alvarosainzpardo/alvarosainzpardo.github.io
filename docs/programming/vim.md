@@ -20,6 +20,12 @@
     * [A Vim Guide for Advanced Users](https://thevaluable.dev/vim-advanced/)
 * [Boost Your Coding Fu With VSCode and Vim](https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim)
     * [VSCodeVim](https://github.com/VSCodeVim/Vim): Vim emulation for Visual Studio Code
+* The Valuable Dev: autor de [The Mouseless Dev](https://themouseless.dev/)
+    * (06/04/21) [Is Vim Really Not For You? A Beginner Guide](https://thevaluable.dev/vim-beginner/): enlaces para escribir a máquina, búsquedas horizontales en la línea que estás editando
+    * (28/04/21) [A Vim Guide for Intermediate Users](https://thevaluable.dev/vim-intermediate/): buffers, windows, tabs
+    * (16/03/21) [A Vim Guide for Advanced Users](https://thevaluable.dev/vim-advanced/): g global command, substitute
+    * (24/05/21) [A Vim Guide for Adept Users](https://thevaluable.dev/vim-adept/): folding
+    * (27/06/21) [A Vim Guide For Veteran Users](https://thevaluable.dev/vim-veteran/)
 
 ### Libros
 

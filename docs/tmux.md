@@ -27,3 +27,7 @@
     * Part 4. [tmux in practice: integration with system clipboard](https://medium.com/@alexeysamoshkin/tmux-in-practice-integration-with-system-clipboard-bcd72c62ff7b)
     * Part 5. [tmux in practice: copy text from remote session using SSH remote tunnel and systemd service](https://medium.com/@alexeysamoshkin/tmux-in-practice-copy-text-from-remote-session-using-ssh-remote-tunnel-and-systemd-service-dd3c51bca1fa)
     * Everything discussed here you can see in action by checking my tmux Configuration project on Github: [tmux-config](https://github.com/samoshkin/tmux-config)
+* (25/04/20) [What's tmux and How to Configure It: a Detailed Guide](https://thevaluable.dev/tmux-config-mouseless/): tmux integration with system clipboard
+* (06/03/19) [tmux Copy & Paste on OS X: A Better Future](https://thoughtbot.com/blog/tmux-copy-paste-on-os-x-a-better-future)
+    * (19/07/13) [How to Copy and Paste with tmux on Mac OS X](https://thoughtbot.com/blog/how-to-copy-and-paste-with-tmux-on-mac-os-x)
+    * [ChrisJohnsen / tmux-MacOSX-pasteboard](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
