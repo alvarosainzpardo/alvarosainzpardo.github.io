@@ -278,7 +278,12 @@
 <li><a href="https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard">ChrisJohnsen / tmux-MacOSX-pasteboard</a></li>
 </ul>
 </li>
+<li>(01/04/20) <a href="https://mitchellt.com/2020/04/01/copying-from-tmux-wsl-windows-terminal.html">Copying text to the clipboard: tmux, WSL, Windows Terminal</a></li>
 </ul>
+<p>tl;dr</p>
+<pre><code>if-shell -b 'test -n &quot;$WSLENV&quot;' 'bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel clip.exe'
+if-shell -b 'test -n &quot;$WSLENV&quot;' 'bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel clip.exe'
+</code></pre>
               
             </div>
           </div>
