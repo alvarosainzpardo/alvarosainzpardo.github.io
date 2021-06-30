@@ -31,3 +31,11 @@
 * (06/03/19) [tmux Copy & Paste on OS X: A Better Future](https://thoughtbot.com/blog/tmux-copy-paste-on-os-x-a-better-future)
     * (19/07/13) [How to Copy and Paste with tmux on Mac OS X](https://thoughtbot.com/blog/how-to-copy-and-paste-with-tmux-on-mac-os-x)
     * [ChrisJohnsen / tmux-MacOSX-pasteboard](https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard)
+* (01/04/20) [Copying text to the clipboard: tmux, WSL, Windows Terminal](https://mitchellt.com/2020/04/01/copying-from-tmux-wsl-windows-terminal.html)
+
+tl;dr
+
+```
+if-shell -b 'test -n "$WSLENV"' 'bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel clip.exe'
+if-shell -b 'test -n "$WSLENV"' 'bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel clip.exe'
+```
