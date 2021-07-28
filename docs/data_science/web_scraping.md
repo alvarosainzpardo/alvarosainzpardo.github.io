@@ -61,8 +61,10 @@ wget fetches the HTML code from BBC, which is then normalized by hxnormalize to 
 * [jq recipes](https://remysharp.com/drafts/jq-recipes)
 * [jqTerm](https://jqterm.com/)
 
-### Recetas
+### Recetas para APIs FIWARE
 
+* `{devices: [.devices[] | {device_id, entity_name, entity_type, attributes, static_attributes, lazy, commands, endpoint: (.endpoint // ""), protocol}]}`: procesa la salida del get devices del iot-agent. La transforma el payload para el api de registrar devices (en otro subservicio, por ejemplo). Sirve para copiar dispositivos de un servicio/subservicio a otro. La parte `endpoint: (.endpoint // "")` es opcional. En este caso se está usando el operador "valor por defecto" (`//`): si el json de entrada no tiene el atributo endpoint o su valor es nulo, entonces se pone comillas dobles. Para que el operador "valor por defecto" funcione hay que encerrar toda la expresión entre paréntesis
+* `{services: [.services[] | {protocol: [.protocol], description, apikey, entity_type, attributes, static_attributes, lazy, commands}]}`: procesa la salida de get protocols del iot-agent. La transforma en el payload para el api de crear protocolos (en otro servicio/subservicio, por ejemplo). Sirve para copiar protocolos de un servicio/subservicio en otro.
 * `{devices: [.devices[] | select(.device_id | test("^THR|^AIQ") | not)] | sort_by(.device_id)}`: procesa la salida del get devices del iot-agent. Filtra por los dispositivos cuyo device_id cumple la expresión regular y los ordena por device_id
 * `[.devices[] | .device_id] | join(" ")`: procesa la salida de la llamada get devices del iot-agent. Lo transforma en un array de device_id. Ese arrray lo aplana con join para dejarlo en una secuencia de device_id separada por espacio en blanco, que se puede usar en un bucle for de un shell script
 * `{actionType: "DELETE", entities: [.[] | {id, type}]}`: procesa la salida de la llamada get entities del CB. La transforma en el payload de la llamada NGSI, de tipo batch, que sirve para borrar un conjunto de entidades
