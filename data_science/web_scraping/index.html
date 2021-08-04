@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="../../css/theme.css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -25,8 +25,9 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
+  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -40,7 +41,7 @@
         <a href="../.." class="icon icon-home"> Documentación de Alvaro</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -239,11 +240,11 @@
     
       
         
-          <li>Personal &raquo;</li>
+          <li>Data Science &raquo;</li>
         
       
         
-          <li>Data Science &raquo;</li>
+          <li>Personal &raquo;</li>
         
       
     
@@ -255,7 +256,6 @@
   
   <hr/>
 </div>
-
           <div role="main">
             <div class="section">
               
@@ -300,18 +300,21 @@
 </ul>
 <hr />
 <h2 id="ejemplos-recetas">Ejemplos, recetas</h2>
-<pre><code class="language-bash"># Usa scrape, xml2json y jq
+<pre><code class="bash"># Usa scrape, xml2json y jq
 curl &quot;http://clojurescript.net/&quot; | scrape -be '//body/script' | xml2json | jq '.html.body.script[].src
 </code></pre>
+
 <p>wget fetches the HTML code from BBC, which is then normalized by hxnormalize to improve digestability by hxselect (both installed on Ubuntu by sudo apt-get install html-xml-utils), which then extracts the part of the code being identified by the CSS selector. Lynx finally turns the code into a layouted text that you would see in a browser.</p>
-<pre><code class="language-bash">~&gt; echo &quot;http://www.bbc.com&quot; |
+<pre><code class="bash">~&gt; echo &quot;http://www.bbc.com&quot; |
    wget -O- -i- | 
    hxnormalize -x | 
    hxselect -i &quot;div.most_popular_content&quot; |  
    lynx -stdin -dump &gt; theMostPoupularInNews
 </code></pre>
-<pre><code class="language-bash">
+
+<pre><code class="bash">
 </code></pre>
+
 <hr />
 <h2 id="jq">jq</h2>
 <h3 id="enlaces">Enlaces</h3>
@@ -334,15 +337,18 @@ curl &quot;http://clojurescript.net/&quot; | scrape -be '//body/script' | xml2js
 <li><code>{actionType: "DELETE", entities: [.[] | {id, type}]}</code>: procesa la salida de la llamada get entities del CB. La transforma en el payload de la llamada NGSI, de tipo batch, que sirve para borrar un conjunto de entidades</li>
 </ul>
 <p>Do something like this:</p>
-<pre><code class="language-bash">cat file.json | jq -c '.[] | {&quot;index&quot;: {&quot;_index&quot;: &quot;bookmarks&quot;, &quot;_type&quot;: &quot;bookmark&quot;, &quot;_id&quot;: .id}}, .' | curl -XPOST localhost:9200/_bulk --data-binary @-
+<pre><code class="bash">cat file.json | jq -c '.[] | {&quot;index&quot;: {&quot;_index&quot;: &quot;bookmarks&quot;, &quot;_type&quot;: &quot;bookmark&quot;, &quot;_id&quot;: .id}}, .' | curl -XPOST localhost:9200/_bulk --data-binary @-
 </code></pre>
+
 <p>We’re taking the file file.json and piping its contents to jq first with the -c flag to construct compact output. Here’s the nugget: We’re taking advantage of the fact that jq can construct not only one but multiple objects per line of input. For each line, we’re creating the control JSON Elasticsearch needs (with the ID from our original object) and creating a second line that is just our original JSON object (.).</p>
 <p>Para transformar un json en csv usando jq hay que usar la orden <code>@csv</code> al final del pipeline. Hay que generar la primera fila con los nombres de las columnas y las filas siguientes, únicamente con los valores. La orden <code>@csv</code> procesa elementos individuales, no un array de elementos. Cada elemento tiene que ser un array de valores. Hay que generar, por tanto, un primer array con los nombres de las columnas y después, un array de valores por cada elemento (por cada linea del csv). Para generar el array con los nombres de las columnas hay que usar <code>(first | keys_unsorted)</code>. La orden <code>first</code> se queda con el primer elemento. La orden <code>keys_unsorted</code> se queda únicamente con las claves, sin ordenar alfabéticamente (en el mismo orden que aparecen en el objeto json). Para generar la secuencia de arrays de valores, un array por cada objeto json, hay que usar <code>map([to_entries[] | .value]) | .[]</code>. La función <code>map</code> espera un array de objetos y aplica el filtro pasado como parámetro a cada uno de los objetos del array, generando un array resultado. La orden <code>to_entries[]</code> transforma cada clave en un objeto {key: clave, value: valor}, eso se pasa a <code>.value</code> para quedarse con el valor y se empaqueta todo en un array con <code>[]</code>. Se genera, por tanto, un array de arrays que desempaqueta después con <code>.[]</code>. Juntandolo todo, sería:</p>
 <pre><code>jq -r '(first | keys_unsorted) as $keys | map([to_entries[] | .value]) as $rows | $keys, $rows[] | @csv'
 </code></pre>
+
 <p>Una versión más compacta de lo anterior sería:</p>
 <pre><code>jq -r '(first | keys_unsorted), (map([.[]]) | .[]) | @csv' archivo.json &gt; archivo.csv
 </code></pre>
+
 <p>Para que la orden anterior funcione, el archivo json tiene que ser un array de objetos json.</p>
 <p>El filtro <code>to_entries[] | .value</code> es equivalente a <code>.[]</code>. Cuando se aplica a un objeto, el filtro <code>.[]</code> devuelve los valores del objeto separados por comas. El filtro <code>[.[]]</code> genera un array con los valores del objeto</p>
 <hr />
@@ -354,11 +360,12 @@ curl &quot;http://clojurescript.net/&quot; | scrape -be '//body/script' | xml2js
 <li>It has (optional) parts that are written in C, making it very fast.</li>
 </ul>
 <p>Due to these facts, something you will often see in scripts that work with JSON is this:</p>
-<pre><code class="language-python">try:
+<pre><code class="python">try:
   import simplejson as json
 except ImportError:
   import json
 </code></pre>
+
 <p>I would just use the defaultjson, unless you specifically need:</p>
 <ul>
 <li>raw speed</li>
@@ -419,18 +426,17 @@ except ImportError:
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href="../R/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../../agileventures/charity_commission_api/" style="color: #fcfcfc">Next &raquo;</a></span>
-    
-  </span>
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../R/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../agileventures/charity_commission_api/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
 </div>
     <script>var base_url = '../..';</script>
-    <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
