@@ -100,6 +100,28 @@ $ mongo "mongodb://myhost:port/mydatabase"
 > db.mycollection.find({$nor: [{cond1}, {cond2}, ..., {condN}]})
 ```
 
+### Proyecciones (selección de atributos)
+
+````js
+// select _id, col1 from mycollection where cond1
+> db.mycollection.find({cond1}, {col1: 1})
+> db.mycollection.find({cond1}, {col1: true})
+// select _id, col1, col2, ... colN from mycollection where cond1
+> db.mycollection.find({cond1}, {col1: 1, col2: 1, ..., colN: 1})
+// Excluir atributos de la salida
+> db.mycollection.find({cond1, ..., condN}, {col1: 0, col2: 0, ..., colN: 0})
+// Suprimir _id: select col1, col2, ... colN from mycollection where cond1
+> db.mycollection.find({cond1}, {_id: 0, col1: 1, col2: 1, ..., colN: 1})
+// No se pueden mezclar atributos con 1 y atributos con 0. Únicamente con _id
+> db.groups.find({service: "castellon"}, {apikey: 0, resource: 1}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "Cannot do inclusion on field resource in exclusion projection",
+        "code" : 31253,
+        "codeName" : "Location31253"
+}
+````
+
 ---
 
 ## Comandos
