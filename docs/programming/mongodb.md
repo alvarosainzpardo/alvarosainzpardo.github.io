@@ -102,7 +102,9 @@ $ mongo "mongodb://myhost:port/mydatabase"
 
 ### Proyecciones (selección de atributos)
 
-````js
+[Project Fields to Return from Query](https://docs.mongodb.com/manual/tutorial/project-fields-from-query-results/)
+
+```js
 // select _id, col1 from mycollection where cond1
 > db.mycollection.find({cond1}, {col1: 1})
 > db.mycollection.find({cond1}, {col1: true})
@@ -120,7 +122,7 @@ Error: error: {
         "code" : 31253,
         "codeName" : "Location31253"
 }
-````
+```
 
 ---
 
