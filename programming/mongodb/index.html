@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="../../css/theme.css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
   
   <script>
     // Current page data
@@ -25,9 +25,8 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
-  
 </head>
 
 <body class="wy-body-for-nav" role="document">
@@ -41,7 +40,7 @@
         <a href="../.." class="icon icon-home"> Documentación de Alvaro</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -238,11 +237,11 @@
     
       
         
-          <li>Programación &raquo;</li>
+          <li>Personal &raquo;</li>
         
       
         
-          <li>Personal &raquo;</li>
+          <li>Programación &raquo;</li>
         
       
     
@@ -254,6 +253,7 @@
   
   <hr/>
 </div>
+
           <div role="main">
             <div class="section">
               
@@ -269,15 +269,14 @@
 </ul>
 <hr />
 <h2 id="cheat-sheet">Cheat Sheet</h2>
-<pre><code class="bash"># Conectarse a un servidor local (puerto 27017)
+<pre><code class="language-bash"># Conectarse a un servidor local (puerto 27017)
 $ mongo
 # Conectarse a un servidor remoto
 $ mongo &quot;mongodb://myhost:port/&quot;
 # Conectarse a un servidor remoto especificando base de datos
 $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 </code></pre>
-
-<pre><code class="js">// Mostrar bases de datos
+<pre><code class="language-js">// Mostrar bases de datos
 &gt; show dbs
 // Usar/crear una base de datos
 &gt; use mydatabase
@@ -317,9 +316,8 @@ $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 &gt; db.mycollection.find().forEach(function(mydocument) {...})
 &gt; db.getCollectionNames().forEach(function(collectionname) {...})
 </code></pre>
-
 <h3 id="operadores-de-comparacion">Operadores de comparación</h3>
-<pre><code class="js">// select * where field = val
+<pre><code class="language-js">// select * where field = val
 &gt; db.mycollection.find({field: val})
 // select * where field &lt;&gt; val
 &gt; db.mycollection.find({field: {$ne: val}})
@@ -336,9 +334,8 @@ $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 // select * where field not in (val, ...)
 &gt; db.mycollection.find({field: {$nin: [val, ...]}})
 </code></pre>
-
 <h3 id="operadores-logicos">Operadores lógicos</h3>
-<pre><code class="js">// select * where cond1 and cond2 and ... condN
+<pre><code class="language-js">// select * where cond1 and cond2 and ... condN
 &gt; db.mycollection.find({cond1}, {cond2}, ..., {condN})
 &gt; db.mycollection.find({$and: [{cond1}, {cond2}, ..., {condN}]})
 // select * where cond1 or cond2 or ... condN
@@ -348,9 +345,8 @@ $ mongo &quot;mongodb://myhost:port/mydatabase&quot;
 // select * where cond1 nor cond2 ... nor condN
 &gt; db.mycollection.find({$nor: [{cond1}, {cond2}, ..., {condN}]})
 </code></pre>
-
 <h3 id="proyecciones-seleccion-de-atributos">Proyecciones (selección de atributos)</h3>
-<pre><code class="js">// select _id, col1 from mycollection where cond1
+<pre><code class="language-js">// select _id, col1 from mycollection where cond1
 &gt; db.mycollection.find({cond1}, {col1: 1})
 &gt; db.mycollection.find({cond1}, {col1: true})
 // select _id, col1, col2, ... colN from mycollection where cond1
@@ -368,11 +364,10 @@ Error: error: {
         &quot;codeName&quot; : &quot;Location31253&quot;
 }
 </code></pre>
-
 <hr />
 <h2 id="comandos">Comandos</h2>
 <h3 id="mongodump-y-mongorestore">mongodump y mongorestore</h3>
-<pre><code class="bash"># Dump de una base de datos, comprimido, especificando el archivo de salida
+<pre><code class="language-bash"># Dump de una base de datos, comprimido, especificando el archivo de salida
 $ mongodump --db=mydatabase --gzip --archive=myfile.dump.gz
 # Restore de un archivo comprimido
 $ mongorestore --gzip --archive=myfile.dump.gz 
@@ -410,17 +405,18 @@ $ mongorestore --gzip --archive=myfile.dump.gz
   </div>
 
   <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../mouseless-desktop/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../mysql/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mouseless-desktop/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mysql/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
     <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
