@@ -78,7 +78,7 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
 * [Common Excel Task in Python: Vlookup with Pandas Merge](https://medium.com/importexcel/common-excel-task-in-python-vlookup-with-pandas-merge-c99d4e108988)
 * [Common Excel Tasks Demonstrated in Pandas](http://pbpython.com/excel-pandas-comp.html)
 * [Common Excel Tasks Demonstrated in Pandas - Part 2](http://pbpython.com/excel-pandas-comp-2.html)
-* [Pythoon Pandas Tutorial: A Complete Introduction for Beginners](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
+* [Python Pandas Tutorial: A Complete Introduction for Beginners](https://www.learndatasci.com/tutorials/python-pandas-tutorial-complete-introduction-for-beginners/)
 
 ---
 
@@ -94,3 +94,15 @@ Se recomienda utilizar [Conda](https://conda.io/docs/) para instalar los paquete
     * (15/10/2020) [Visualization with Plotly.Express: Comprehensive guide](https://towardsdatascience.com/visualization-with-plotly-express-comprehensive-guide-eb5ee4b50b57)
     * (14/06/2019) [Getting Started with Plot.ly](https://towardsdatascience.com/getting-started-with-plot-ly-3c73706a837c): tiene un ejemplo bueno de timeseries chart, con una paleta de color en gama de azules usando `sns.color_palette`
     * (23/05/2019) [Plotly Express Yourself](https://towardsdatascience.com/plotly-express-yourself-98366e35ad0f): uso del atributo `template='ggplot2'` en la funcion `px.line` para cambiar el aspecto de la gráfica
+
+---
+
+## XGBoost
+
+### Enlaces
+
+* [XGBoost Documentation](https://xgboost.readthedocs.io/)
+* [Getting Started with XGBoost in scikit-learn](https://towardsdatascience.com/getting-started-with-xgboost-in-scikit-learn-f69f5f470a97)
+* [Using XGBoost in Python](https://www.datacamp.com/community/tutorials/xgboost-in-python)
+* [Using XGBoost with Scikit-learn](https://www.kaggle.com/alvarosainzpardo/using-xgboost-with-scikit-learn)
+* [Gradient Boosting with Scikit-Learn, XGBoost, LightGBM, and CatBoost](https://machinelearningmastery.com/gradient-boosting-with-scikit-learn-xgboost-lightgbm-and-catboost/)
