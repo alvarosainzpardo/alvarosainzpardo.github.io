@@ -56,6 +56,9 @@ En la web [Unsupervised Methods](https://unsupervisedmethods.com/) hay varios ar
 
 ## Enlaces
 
+* (21/02/22) KDnuggets - The Complete Collection of Data Science Cheat Sheets:
+    * [The Complete Collection of Data Science Cheat Sheets – Part 1](https://www.kdnuggets.com/2022/02/complete-collection-data-science-cheat-sheets-part-1.html)
+    * [The Complete Collection of Data Science Cheat Sheets – Part 2](https://www.kdnuggets.com/2022/02/complete-collection-data-science-cheat-sheets-part-2.html)
 * [3Blue1Brown: Linear Algebra](https://www.youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B): lista de reproducción sobre algebra lineal, explica muy bien los conceptos geométricos asociados a las operaciones
     * [3Blue1Brown](https://www.3blue1brown.com/): 3blue1brown, or 3b1b for those who prefer less of a tongue-twister, centers around presenting math with a visuals-first approach.
 * [Build your own Robust Deep Learning Environment in Minutes](https://towardsdatascience.com/build-your-own-robust-deep-learning-environment-in-minutes-354cf140a5a6): this guide is meant to ease you into racing through the less desirable aspects of setting up your own deep learning environment.
