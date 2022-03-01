@@ -106,6 +106,17 @@ Andrej Karpathy was previously a Research Scientist at OpenAI, and CS graduate s
 
 Andrej’s blog, karpathy.github.io, provides good insights on niche subjects in machine learning. It is by no means supposed to serve as an introduction or tutorial on machine learning. However, for more experienced practitioners, his blog can serve to be extremely useful. He even provides other gems like “A Survival Guide to a PhD”. His blog can be found [here](http://karpathy.github.io/).
 
+## Cursos de NLP
+
+[Documentación de Hugging Face](https://huggingface.co/docs): documentación de Transformers y más
+
+[Curso de Hugging Face](https://huggingface.co/course): curso de Transformers. This course:
+
+Requires a good knowledge of Python
+Is better taken after an introductory deep learning course, such as fast.ai’s [Practical Deep Learning for Coders](https://course.fast.ai/) or one of the [programs developed by DeepLearning.AI](https://www.deeplearning.ai/programs/)
+Does not expect prior PyTorch or TensorFlow knowledge, though some familiarity with either of those will help
+After you’ve completed this course, we recommend checking out DeepLearning.AI’s [Natural Language Processing Specialization](https://www.coursera.org/specializations/natural-language-processing), which covers a wide range of traditional NLP models like naive Bayes and LSTMs that are well worth knowing about!
+
 ---
 
 ## Enlaces
