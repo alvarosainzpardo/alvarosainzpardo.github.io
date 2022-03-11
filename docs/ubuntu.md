@@ -264,10 +264,69 @@ Emparejar el teclado bluetooth. Al finalizar el emparejamiento el teclado se com
 ```bash
 sudo apt update
 sudo apt install numlockx
-numlockx off*Probably it also makes sense to add 'numlock off' as startup command in 'gnome-session-properties'
+numlockx off
+
+*Probably it also makes sense to add 'numlock off' as startup command in 'gnome-session-properties'
 ```
 
 Más información sobre el tema en:
 
 * [How to pair Apple Magic Keyboard (A1314) on Ubuntu 18.04 and act as Numpad](https://medium.com/macoclock/how-to-pair-apple-magic-keyboard-a1314-on-ubuntu-18-04-and-act-as-numpad-42fe4402454c)
 * [ArchLinux - Apple Keyboard](https://wiki.archlinux.org/index.php/Apple_Keyboard)
+
+---
+
+## Gestionar imagenes del iPhone
+
+### Conectar el iPhone en Ubuntu 20.04
+
+En Ubuntu 20.04, la libreria `libimobiledevice6` no tiene un soporte completo para las últimas versiones de iOS y al conectar un iPhone a Ubuntu ya no se puede acceder a las imágenes del teléfono. Este problema está resuelto en versiones de Ubuntu más modernas.
+
+He encontrado en esta página: [Backup iPhone’s photos in Ubuntu 20.04](https://wuzhaojun.wordpress.com/2021/03/19/memo-of-backup-iphones-photos-in-ubuntu-20-04/) instrucciones sobre cómo poder acceder a las imágenes del iPhone usando el terminal.
+
+En resumen, hay que ejecutar los comandos siguientes:
+
+```bash
+# Instalar las librerias y utilidades necesarias
+$ sudo apt install libimobiledevice6 libimobiledevice-utils ifuse
+
+# Conectar el iphone por USB, se debería detectar automáticamente
+# Si el iPhone no se detecta, ejecutar:
+$ idevicepair pair
+# Optionally, expose a socket to multiplex connections from and to iPhone (only if the usbmuxd wasn’t automatically triggered by systemd when connecting the iphone to Ubuntu. aka, if usbmuxd doesn’t exist in the output of “ps -axf | grep usbmuxd”)
+$ sudo usbmuxd -z -f -v
+
+# Montar el almacenamiento del iPhone en un directorio
+mkdir iphone
+ifuse ~/iphone
+# Copiar las imágenes
+cp -r ~/iphone/DCIM ~/any-backup-folder
+# Desmontar el almacenamiento del iPhone
+fusermount -u ~/iphone
+# Si el iPhone se tuvo que emparejar manualmente:
+$ idevicepair unpair
+```
+
+### Visualizar imágenes HEIC
+
+* [How to Open iOS HEIC Photos or Convert to JPG/PNG in Ubuntu 20.04](https://ubuntuhandbook.org/index.php/2021/06/open-heic-convert-jpg-png-ubuntu-20-04/)
+* [How to view .HEIC photos from iPhone IOS 11+ on Ubuntu?](https://askubuntu.com/questions/1298595/how-to-view-heic-photos-from-iphone-ios-11-on-ubuntu)
+* [Any app on Ubuntu to open and/or convert HEIF pictures (.HEIC, High Efficiency Image File Format)?](https://askubuntu.com/questions/958355/any-app-on-ubuntu-to-open-and-or-convert-heif-pictures-heic-high-efficiency-i)
+
+Para visualizar imágenes .HEIC hay que instalar los paquetes:
+
+```bash
+sudo apt update
+sudo apt install heif-gdk-pixbuf
+sudo apt install heif-thumbnailer
+sudo apt install libheif-examples
+```
+El paquete `heif-gdk-pixbuf` instala las librerías necesarias para ver imágenes .HEIC en los programas de tratamiento de imágenes (como ImageViewer), el paquete `heif-thumbnailer` instala el soporte para que aparezcan los thumbnails de las imágenes en Nautilus. El tercer paquete instala la utilidad `heif-convert`, que sirve para convertir las imágenes a JPEG.
+
+Para convertir en modo batch un lote de imágenes .HEIC a JPG:
+
+```bash
+for file in *.HEIC; do heif-convert -q 100 $file ${file/%.HEIC/.jpg}; done
+```
+
+El parámetro `-q` sirve para especificar la calidad de la conversión, si no se usa el valor por defecto es 92.
