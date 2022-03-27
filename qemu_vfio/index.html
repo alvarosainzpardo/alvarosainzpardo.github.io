@@ -60,7 +60,7 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Personal</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="#">Hi-Fi</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../hifi/general/">General</a>
@@ -179,6 +179,48 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../putty/">PuTTY</a>
                   </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">QEMU / VFIO</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#enlaces-tutoriales-documentacion">Enlaces, tutoriales, documentación</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#instalacion">Instalación</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#allow-non-root-user-to-use-kvmqemu-virtualization">Allow Non-root User to use KVM/QEMU Virtualization</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#logs">Logs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#edit-qemuconf">Edit qemu.conf</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#start-libvirtd-service">Start libvirtd service</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enabling-the-virtual-machine-default-network">Enabling the virtual machine default network</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#default-uri-choice">Default URI choice</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gpu-passthrough">GPU passthrough</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#enlaces">Enlaces</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#desenlazar-la-tarjeta-de-video-al-driver-antes-de-ejecutar-el-display-manager">Desenlazar la tarjeta de video al driver antes de ejecutar el Display Manager</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#enlazar-dinamicamente-la-tarjeta-de-video-a-los-drivers-de-video-y-vfio-pci">Enlazar dinámicamente la tarjeta de video a los drivers de video y vfio-pci</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#automatizar-que-vfio-pci-este-enlazado-a-la-tarjeta-grafica-antes-de-arrancar-el-display-manager">Automatizar que vfio-pci esté enlazado a la tarjeta gráfica antes de arrancar el display manager</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#audio">Audio</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#enlaces_1">Enlaces</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../robocopy/">Robocopy</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../ssh/">Ssh</a>
@@ -203,7 +245,8 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>QEMU / VFIO</li>
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Personal &raquo;</li><li>QEMU / VFIO</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -398,6 +441,10 @@ vhost-net
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../putty/" class="btn btn-neutral float-left" title="PuTTY"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../robocopy/" class="btn btn-neutral float-right" title="Robocopy">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -419,6 +466,10 @@ vhost-net
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../putty/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../robocopy/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
