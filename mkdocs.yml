@@ -65,6 +65,7 @@ nav:
   - LibreOffice: libreoffice.md
   - Markdown: markdown.md
   - PuTTY: putty.md
+  - QEMU / VFIO: qemu_vfio.md
   - Robocopy: robocopy.md
   - Ssh: ssh.md
   - Tmux: tmux.md
