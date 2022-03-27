@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>QEMU / VFIO - Documentación de Alvaro</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "QEMU / VFIO";
+        var mkdocs_page_input_path = "qemu_vfio.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Documentación de Alvaro
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Trabajo</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../smart_cities/">Smart Cities</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../uma/">Universidad de Málaga</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../fiware/">FIWARE</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../calidad_aire/">Calidad del Aire</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../video/">Video</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../espacios_digitales/">Espacios Digitales</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Personal</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Hi-Fi</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../hifi/general/">General</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../hifi/lossless/">Lossless</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../hifi/linux-audiofilo/">Linux Audiofilo</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../hifi/darkvoice/">Darkvoice 336SE</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../hifi/r1-zenith/">IMR R1 Zenith</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../hifi/r2-aten/">IMR R2 Aten</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../hifi/review-songs/">Review Songs</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../hifi/tidal-albums/">Tidal Albums</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Programación</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/atom/">Atom</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/emmet/">Emmet</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/git/">Git</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/html-css/">HTML/CSS</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/javascript/">JavaScript</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/mouseless-desktop/">Mouseless Desktop</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/mongodb/">MongoDB</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/mysql/">MySQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/no-code/">No-Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/postgresql/">PostgreSQL</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/python/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Ruby</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../programming/ruby/general/">General</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../programming/ruby/rails/">Rails</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../programming/ruby/rspec/">RSpec</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/static-site-generators/">Static Site Generators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/sqlite/">SQLite</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/vim/">Vim</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../programming/vscode/">Visual Studio Code</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">APIs</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../programming/api/tidal-api/">Tidal API</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Data Science</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../data_science/general/">General</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_science/cursos/">Cursos</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_science/python/">Python</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_science/forecasting/">Forecasting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_science/nlp/">Natural Language Proccessing</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_science/R/">R</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../data_science/web_scraping/">Web Scraping</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">AgileVentures</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../agileventures/charity_commission_api/">Charity Commission API</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../backgammon/">Backgammon</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cerraduras/">Cerraduras</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../detailing/">Detailing</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../docker/">Docker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../general/">General</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../geojson/">GeoJSON</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gimp/">Gimp</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../high_sierra/">High Sierra</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../brew/">Homebrew</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../libreoffice/">LibreOffice</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../markdown/">Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../putty/">PuTTY</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../robocopy/">Robocopy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ssh/">Ssh</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../tmux/">Tmux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ubuntu/">Ubuntu</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../windows10/">Windows 10</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Documentación de Alvaro</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>QEMU / VFIO</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="qemu-vfio">QEMU / VFIO</h1>
+<h2 id="enlaces-tutoriales-documentacion">Enlaces, tutoriales, documentación</h2>
+<ul>
+<li><a href="https://github.com/bryansteiner/gpu-passthrough-tutorial">GitHub -  bryansteiner/gpu-passthrough-tutorial</a></li>
+<li><a href="https://www.ibm.com/docs/en/linux-on-systems?topic=virtualization-kvm">Linux on KVM</a><ul>
+<li><a href="https://www.ibm.com/docs/en/linux-on-systems?topic=through-pci">Preparing PCI pass-through devices</a></li>
+<li><a href="https://www.ibm.com/docs/en/linux-on-systems?topic=vfio-pass-through-pci">Configuring pass-through PCI devices</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="instalacion">Instalación</h2>
+<p>Manjaro: <a href="https://wiki.manjaro.org/index.php/Virt-manager">Virt-manager</a> tiene buenos tips sobre la instalación y configuración de qemu, libvirt, virtio disks y la creación y optimización de maquinas virtuales Windows.</p>
+<p>From terminal:</p>
+<pre><code class="language-bash"># Manjaro / Arch based
+sudo pacman -S --needed virt-manager qemu vde2 iptables-nft dnsmasq bridge-utils openbsd-netcat edk2-ovmf swtpm libguestfs
+# Ubuntu / Debian based
+sudo apt install qemu ...
+</code></pre>
+<h3 id="allow-non-root-user-to-use-kvmqemu-virtualization">Allow Non-root User to use KVM/QEMU Virtualization</h3>
+<p>By default, only user "root" can create and manage virtual machines. To allow non-root users to create and manage virtual machines, you should follow the libvirtd configuration below.</p>
+<ol>
+<li>Execute the following command to edit the libvirtd configuration.</li>
+</ol>
+<pre><code class="language-bash">sudo nano /etc/libvirt/libvirtd.conf
+</code></pre>
+<p>Uncomment the option "unix_sock_group" and enter the group name as "libvirt".</p>
+<pre><code># Set the UNIX domain socket group ownership. This can be used to
+# allow a 'trusted' set of users access to management capabilities
+# without becoming root.
+#
+# This setting is not required or honoured if using systemd socket
+# activation.
+#
+# This is restricted to 'root' by default.
+unix_sock_group = &quot;libvirt&quot;
+</code></pre>
+<p>After that, uncomment the option "unix_sock_rw_perms" and leave the permission as default "0770".</p>
+<pre><code># Set the UNIX socket permissions for the R/W socket. This is used
+# for full management of VMs
+#
+# This setting is not required or honoured if using systemd socket
+# activation.
+#
+# Default allows only root. If PolicyKit is enabled on the socket,
+# the default will change to allow everyone (eg, 0777)
+#
+# If not using PolicyKit and setting group ownership for access
+# control, then you may want to relax this too.
+unix_sock_rw_perms = &quot;0770&quot;
+</code></pre>
+<p>Save the configuration by pressing the Ctrl+x button and type y, then enter.</p>
+<ol>
+<li>Add user to libvirt group to use the system-level virtual machines (qemu:///system):</li>
+</ol>
+<pre><code class="language-bash">sudo usermod -a -G libvirt $USER
+newgrp libvirt
+</code></pre>
+<blockquote>
+<p>Note</p>
+<ol>
+<li>You don't need this step to run system-level virtual machines. However, virt-manager will prompt for sudoer's password when launch if the user is not in the libvirt group</li>
+<li>You can also create user-level virtual machines (qemu:///session) and use without sudoer's privelige. However, some features such as VirtioFS file sharing may be unavailable in qemu:///session</li>
+</ol>
+</blockquote>
+<h3 id="logs">Logs</h3>
+<p>IMPORTANT: You need this for detailed logs. Add this lines at the end of the file</p>
+<pre><code>log_filters=&quot;1:qemu&quot;
+log_outputs=&quot;1:file:/var/log/libvirt/libvirtd.log&quot;
+</code></pre>
+<h3 id="edit-qemuconf">Edit qemu.conf</h3>
+<pre><code class="language-bash">sudo nano /etc/libvirt/qemu.conf
+</code></pre>
+<p>Edit the following lines.</p>
+<pre><code>#user = &quot;root&quot; to user = &quot;your username&quot;
+#group = &quot;root&quot; to group = &quot;your username&quot;
+</code></pre>
+<h3 id="start-libvirtd-service">Start libvirtd service</h3>
+<p>Enable and start service:</p>
+<pre><code class="language-bash">sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+</code></pre>
+<h3 id="enabling-the-virtual-machine-default-network">Enabling the virtual machine default network</h3>
+<p>Important: This will make your virsh internal network automaticly start when you start up your computer.</p>
+<pre><code class="language-bash">sudo virsh net-autostart default
+</code></pre>
+<p>If you prefer not to have the virtual machine network not to automaticly start you will have to run this
+command ever time you start up your computer.</p>
+<pre><code class="language-bash">sudo virsh net-start default
+</code></pre>
+<h3 id="default-uri-choice">Default URI choice</h3>
+<p><a href="https://libvirt.org/uri.html">Connection URIs</a>: libvirt will use the following logic to determine what URI to use. The configuration file is <code>/etc/libvirt/libvirt.conf</code> for the root user, or <code>$XDG_CONFIG_HOME/libvirt/libvirt.conf</code> for any unprivileged user.</p>
+<ol>
+<li>The environment variable <code>LIBVIRT_DEFAULT_URI</code></li>
+<li>The client configuration file <code>uri_default</code> parameter</li>
+<li>Probe each hypervisor in turn until one that works is found</li>
+</ol>
+<h2 id="gpu-passthrough">GPU passthrough</h2>
+<h4 id="enlaces">Enlaces</h4>
+<ul>
+<li><a href="https://www.reddit.com/r/VFIO/comments/79e2ll/vfio_is_not_taking_the_gpu/?sort=old">VFIO is not taking the GPU</a></li>
+<li><a href="https://www.reddit.com/r/VFIO/comments/592f0l/vfiopci_binding_audio_but_not_gpu/?sort=old">vfio-pci binding audio but not gpu</a></li>
+<li><a href="https://www.reddit.com/r/VFIO/comments/6jk1bp/pcie_bus_issues/?sort=old">PCI-E Bus Issues</a></li>
+<li><a href="https://pastebin.com/FsBXjHcw"> Verequies Q35 QEMU/KVM Config</a></li>
+</ul>
+<h3 id="desenlazar-la-tarjeta-de-video-al-driver-antes-de-ejecutar-el-display-manager">Desenlazar la tarjeta de video al driver antes de ejecutar el Display Manager</h3>
+<p>Para poder desenlazar y enlazar dinámicamente la tarjeta de video a los drivers (nvidia/vfio-pci/etc.) es necesario que en el arranque del ordenador, cuando se ejecuta el display manager (gdm), la tarjeta de video NO esté enlazada al driver de video. No hace falta que la tarjeta esté enlazada al driver <code>vfio-pci</code>, pero sí es obligatorio que no esté enlazada al driver de video.</p>
+<p>Para hacerlo, hay que ir a un VT (con Ctrl+Alt+F2/F3/etc) y ejecutar lo siguiente:</p>
+<pre><code class="language-bash"># Parar gdm
+sudo systemctl stop gdm
+# Desenlazar la tarjeta de video al driver de video
+sudo sh -c &quot;echo 0000:01:00.0 &gt; /sys/bus/pci/devices/0000:01:00.0/driver/unbind&quot;
+# Arrancar gdm
+sudo systemctl start gdm
+</code></pre>
+<h3 id="enlazar-dinamicamente-la-tarjeta-de-video-a-los-drivers-de-video-y-vfio-pci">Enlazar dinámicamente la tarjeta de video a los drivers de video y vfio-pci</h3>
+<p>Dentro del desktop environment, abrir un terminal y ejecutar lo siguiente.</p>
+<p>Para enlazar la tarjeta de video al driver <code>vfio-pci</code>:</p>
+<pre><code class="language-bash"># Desenlazar la tarjeta de video del driver de video
+sudo sh -c &quot;echo 0000:01:00.0 &gt; /sys/bus/pci/devices/0000:01:00.0/driver/unbind&quot;
+# Enlazar la tarjeta de video (10de:1f91) al driver vfio-pci
+sudo sh -c &quot;echo 10de 1f91 &gt; /sys/bus/pci/drivers/vfio-pci/new_id&quot;
+sudo sh -c &quot;echo 10de 1f91 &gt; /sys/bus/pci/drivers/vfio-pci/remove_id&quot;
+# Verificar el resultado
+lspci -Dnnk -d 10de:1f91
+</code></pre>
+<p>Para enlazar la tarjeta de video al driver <code>nvidia</code>:</p>
+<pre><code class="language-bash"># Desenlazar la tarjeta de video del driver vfio-pci
+sudo sh -c &quot;echo 0000:01:00.0 &gt; /sys/bus/pci/devices/0000:01:00.0/driver/unbind&quot;
+# Enlazar la tarjeta de video (10de:1f91) al driver nvidia
+sudo sh -c &quot;echo 10de 1f91 &gt; /sys/bus/pci/drivers/nvidia/new_id&quot;
+sudo sh -c &quot;echo 10de 1f91 &gt; /sys/bus/pci/drivers/nvidia/remove_id&quot;
+# Verificar el resultado
+lspci -Dnnk -d 10de:1f91
+prime-run glxinfo | grep &quot;OpenGL renderer&quot; # El resultado tiene que ser &quot;OpenGL renderer string: NVIDIA GeForce GTX 1650/PCIe/SSE2&quot;
+</code></pre>
+<h4 id="automatizar-que-vfio-pci-este-enlazado-a-la-tarjeta-grafica-antes-de-arrancar-el-display-manager">Automatizar que <code>vfio-pci</code> esté enlazado a la tarjeta gráfica antes de arrancar el display manager</h4>
+<p>Enlaces:</p>
+<ul>
+<li><a href="https://www.reddit.com/r/VFIO/comments/8siwno/nvidia_vfiopci_help/?sort=old">nvidia vfio-pci help</a>: ejemplo de bind/unbind y comando <code>sudo lsof /dev/dri/card*</code></li>
+<li><a href="https://www.reddit.com/r/VFIO/comments/qjm8fj/cant_unbind_nvidia_from_nvidia_driver/?sort=old">Can't unbind nvidia from nvidia driver</a>: unbind vtconsoles</li>
+<li><a href="https://www.reddit.com/r/VFIO/comments/7o4y41/need_some_help_unbinding_my_nvidia_gfx_from_host/?sort=old">Need Some Help Unbinding My Nvidia GFX from Host for Hot-swapping</a>: <a href="https://www.reddit.com/r/VFIO/comments/7o4y41/comment/ds75tm4/?utm_source=share&amp;utm_medium=web2x&amp;context=3">comentario</a> del usuario marmeladapk con unbind vtconsoles y efi-framebuffer</li>
+<li><a href="https://lore.kernel.org/linux-pci/GYS4g2uNcGZCeRW-hNJORKGDsXQAfHgFJ0AdUuap04pphi3FvRHzp09US6FzF4b7HqW1wYMPt8yIIwTWdMRDthHEVMdpQvxtzg8uuNfVS0A=@protonmail.com/T/">How does the "/sys/bus/pci/drivers/<em>/</em>" interface work?</a></li>
+<li><a href="https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-bus-pci">https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-bus-pci</a></li>
+</ul>
+<p>Varias alternativas:</p>
+<ul>
+<li>Cargar y enlazar el driver <code>vfio-pci</code> en el <code>initramfs</code> antes de que se cargue el módulo <code>nvidia</code></li>
+<li>Cargar y enlazar el driver <code>vfio-pci</code> como módulo antes que el módulo del driver <code>nvidia</code></li>
+<li>Ejecutar un script que desenlace de la tarjeta gráfica el driver de video (<code>nvidia</code>/<code>radeon</code>/etc) antes de arrancar el servicio del display manager (<code>gdm</code>/<code>lightdm</code>/etc)</li>
+</ul>
+<p>Por defecto, en Manjaro/Arch/etc los drivers <code>vfio-pci</code> y <code>nvidia</code> se cargan como módulos. En este caso, hay que configurar que el driver <code>vfio-pci</code> se carga antes que el driver <code>nvidia</code>. En ambas alternativas (initramfs o módulo) hay que configurar que el driver <code>vfio-pci</code> se enlace con la tarjeta gráfica, la forma de hacerlo es distinta en cada caso. En el caso de <code>initramfs</code> hay que hacerlo con parámetros de GRUB. En el caso de cargar el driver como módulo, hay que hacerlo con opciones de configuración de <code>modprobe</code>.</p>
+<h5 id="cargar-vfio-pci-en-initramfs">Cargar <code>vfio-pci</code> en initramfs</h5>
+<h5 id="cargar-vfio-pci-como-modulo">Cargar <code>vfio-pci</code> como módulo</h5>
+<p>Enlaces:</p>
+<ul>
+<li><a href="https://www.reddit.com/r/VFIO/comments/79e2ll/vfio_is_not_taking_the_gpu/?sort=old">VFIO is not taking the GPU</a></li>
+<li><a href="https://www.reddit.com/r/VFIO/comments/592f0l/vfiopci_binding_audio_but_not_gpu/?sort=old">vfio-pci binding audio but not gpu</a></li>
+<li><a href="https://wiki.archlinux.org/title/Kernel_module">Kernel module</a></li>
+<li><a href="https://man.archlinux.org/man/modules-load.d.5">modules-load.d - Configure kernel modules to load at boot</a></li>
+</ul>
+<pre><code class="language-bash">$ cat /etc/modprobe.d/vfio_pci.conf
+softdep nvidia pre: vfio_pci
+options vfio_pci ids=10de:1f91
+$ cat /etc/modules-load.d/modules.conf
+vfio
+vfio_iommu_type1
+vfio_pci
+vfio_virqfd
+vhost-net
+</code></pre>
+<h5 id="ejecutar-script-que-desenlaza-el-driver-de-video-antes-de-arrancar-el-servicio-del-display-manager">Ejecutar script que desenlaza el driver de video antes de arrancar el servicio del display manager</h5>
+<p>Enlaces:</p>
+<ul>
+<li><a href="https://www.reddit.com/r/VFIO/comments/79e2ll/vfio_is_not_taking_the_gpu/?sort=old">VFIO is not taking the GPU</a></li>
+</ul>
+<p>El usuario de reddit <a href="https://www.reddit.com/user/Verequies/">Verequies</a> utiliza un <a href="https://pastebin.com/zLQPHPQk">shell script</a> para desenlazar la tarjeta gráfica en el arranque y posteriormente enlazarla alternativamente al driver vfio_pci y al driver gráfico. Además de usar el filesystem <code>/sys/bus/pci/[drivers|devices]/*</code> hace llamadas a <code>/proc/acpi/call</code> para encender y apagar la tarjeta gráfica. No me funciona el script tal cual, si borro un device con <code>remove</code> ya no vuelve a aparcer nunca más, aunque haga 'echo 1 &gt; /sys/bus/pci/rescan'.</p>
+<h3 id="audio">Audio</h3>
+<h4 id="enlaces_1">Enlaces</h4>
+<ul>
+<li><a href="https://www.reddit.com/r/VFIO/comments/74vokw/improved_pulse_audio_driver_for_qemu/">Improved Pulse Audio Driver for QEMU - Testers/coders needed!</a></li>
+<li><a href="https://www.reddit.com/r/VFIO/comments/746t4h/getting_rid_of_audio_crackling_once_and_for_all/">Getting rid of audio crackling once and for all (by patching QEMU)</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
