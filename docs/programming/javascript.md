@@ -13,6 +13,7 @@
 
 ## Enlaces, tutoriales, documentación, libros
 
+* [ECMAScript 6 Features](http://git.io/es6features)
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
 * [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -61,3 +62,30 @@
 
 ---
 
+## Librerias
+
+* [jQuery](https://jquery.com/): [jQuery](https://github.com/jquery/jquery) is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+    * [Sizzle](https://github.com/jquery/sizzle): A pure-JavaScript CSS selector engine designed to be easily dropped in to a host library.
+* [Underscore.js](https://underscorejs.org/): [Underscore](https://github.com/jashkenas/underscore/) is a JavaScript library that provides a whole mess of useful functional programming helpers without extending any built-in objects. Underscore provides over 100 functions that support both your favorite workaday functional helpers: map, filter, invoke — as well as more specialized goodies: function binding, javascript templating, creating quick indexes, deep equality testing, and so on.
+* [Lodash](https://lodash.com/): [Lodash](https://github.com/lodash/lodash) is a modern JavaScript utility library delivering modularity, performance & extras. An alternative to Underscore.
+* [Backbone.js](https://backbonejs.org/): [Backbone.js](https://github.com/jashkenas/backbone/) gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface. 
+
+---
+
+## Promises, Async, Await
+
+### Enlaces
+
+* MDN
+    * [Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
+    * [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+* Google Developers
+    * [JavaScript Promises: an introduction](https://web.dev/promises/)
+    * [Async functions - making promises friendly](https://web.dev/javascript-async-functions/)
+* Mastering JS
+    * [How to Wait 1 Second in JavaScript](https://masteringjs.io/tutorials/fundamentals/wait-1-second-then)
+    * [Promises in JavaScript](https://masteringjs.io/tutorials/fundamentals/promise)
+    * [The Promise then() Function in JavaScript](https://masteringjs.io/tutorials/fundamentals/then)
+    * [Resolve a Promise in JavaScript](https://masteringjs.io/tutorials/fundamentals/promise-resolve)
+    * [Understanding Async/Await in JavaScript](https://masteringjs.io/tutorials/fundamentals/async-await)
+* [Async Functions in JavaScript](https://thecodebarbarian.com/async-functions-in-javascript.html)
