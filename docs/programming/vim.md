@@ -46,6 +46,8 @@
 * [Neovim](https://neovim.io/)
 * [Github de Neovim](https://github.com/neovim/neovim)
 * [Wiki](https://github.com/neovim/neovim/wiki)
+* [Top 23 Lua Colorscheme Projects (Jun 2022)](https://www.libhunt.com/l/lua/topic/colorscheme): Open-source Lua projects categorized as Colorscheme
+* [LunarVim/nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide): A Basic Stable IDE config for Neovim
 * [Neovim with Python on macOS](https://sergeykalistratov.com/neovim-with-python-on-macos/)
 * [Switching to NeoVim (Part 1)](https://arusahni.net/blog/2015/03/switching-to-neovim-part-1.html)
 * [Switching to NeoVim (Part 2)](https://arusahni.net/blog/2015/04/switching-to-neovim-part-2.html): con información para configurar la sección del plugin manager del `.vimrc` de forma que sea compatible con Vim y con Neovim. Su archivo `.vimrc` está [aqui](https://github.com/arusahni/dotfiles/blob/master/vimrc). He usado lo que cuenta para configurar mi `.vimrc`
@@ -99,18 +101,22 @@ $ sudo apt-get install neovim
 $ brew install neovim
 ```
 
-#### Instalar el soporte para python
+#### Instalar el soporte para python y node.js
 
 ```sh
 $ pip2 install -U neovim
 $ pip3 install -U neovim
 ```
 
-To complete python integration, add the following lines to your `~/.config/nvim/init.vim`:
+Optional: To complete python integration, add the following lines to your `~/.config/nvim/init.vim`:
 
 ```vim
-let g:python2_host_prog = '/usr/local/bin/python'
-let g:python3_host_prog = '/usr/local/bin/python3'
+let g:python2_host_prog = '/path/to/binary/python'
+let g:python3_host_prog = '/path/to/binary/python3'
+```
+
+```sh
+$ npm install --global neovim
 ```
 
 Next, you should check `:CheckHealth` command in nvim to see any issues with plugins and Python providers.
