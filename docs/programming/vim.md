@@ -43,11 +43,18 @@
 
 ### Enlaces
 
+* [Top 23 Lua Colorscheme Projects (Jun 2022)](https://www.libhunt.com/l/lua/topic/colorscheme): Open-source Lua projects categorized as Colorscheme
+* [LunarVim/nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide): A Basic Stable IDE config for Neovim
+* [NvChad/NvChad](https://github.com/NvChad/NvChad): NvChad is a neovim config written in lua aiming to provide a base configuration with very beautiful UI and blazing fast startuptime (around 0.02 secs ~ 0.07 secs). We tweak UI plugins such as telescope, nvim-tree, bufferline etc well to provide an asethetic UI experience.
+* [LunarVim/LunarVim](https://github.com/LunarVim/LunarVim): An IDE layer for Neovim with sane defaults. Completely free and community driven.
+* [tjdevries/config_manager/tree/master/xdg_config/nvim](https://github.com/tjdevries/config_manager/tree/master/xdg_config/nvim)
+* [Getting started using Lua in Neovim](https://github.com/nanotee/nvim-lua-guide)
+* [Everything you need to know to configure neovim using lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/): So today I'm going to share with you everything I learned while I was migrating my own configuration from vimscript to lua.
+* [Learn Neovim The Practical Way](https://alpha2phi.medium.com/learn-neovim-the-practical-way-8818fcf4830f#545a): All articles on how to configure and program Neovim.
+* [getNF](https://github.com/ronniedroid/getnf): A better way to install NerdFonts
 * [Neovim](https://neovim.io/)
 * [Github de Neovim](https://github.com/neovim/neovim)
 * [Wiki](https://github.com/neovim/neovim/wiki)
-* [Top 23 Lua Colorscheme Projects (Jun 2022)](https://www.libhunt.com/l/lua/topic/colorscheme): Open-source Lua projects categorized as Colorscheme
-* [LunarVim/nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide): A Basic Stable IDE config for Neovim
 * [Neovim with Python on macOS](https://sergeykalistratov.com/neovim-with-python-on-macos/)
 * [Switching to NeoVim (Part 1)](https://arusahni.net/blog/2015/03/switching-to-neovim-part-1.html)
 * [Switching to NeoVim (Part 2)](https://arusahni.net/blog/2015/04/switching-to-neovim-part-2.html): con información para configurar la sección del plugin manager del `.vimrc` de forma que sea compatible con Vim y con Neovim. Su archivo `.vimrc` está [aqui](https://github.com/arusahni/dotfiles/blob/master/vimrc). He usado lo que cuenta para configurar mi `.vimrc`
